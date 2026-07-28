@@ -1,0 +1,51 @@
+name: Update and publish packages
+
+on:
+  schedule:
+    - cron: "0 * * * *" # hourly
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: "Packages to check, space separated. Blank means all of them."
+        required: false
+        default: ""
+      force:
+        description: "Update even when there is no new version"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-packages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: windows-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Install Chocolatey AU
+        run: choco install chocolatey-au --yes --no-progress
+
+      - name: Update packages
+        shell: powershell
+        env:
+          api_key: ${{ secrets.CHOCO_API_KEY }}
+          au_Push: "true"
+          github_api_key: ${{ secrets.GITHUB_TOKEN }}
+          github_user_repo: ${{ github.repository }}
+        run: .\update_all.ps1 -Name ('${{ inputs.packages }}' -split ' ' -ne '') -Force:$${{ inputs.force || false }}
+
+      - name: Publish report
+        if: always()
+        shell: powershell
+        run: Get-Content Update-AUPackages.md -ErrorAction Ignore | Add-Content $Env:GITHUB_STEP_SUMMARY

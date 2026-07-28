@@ -1,0 +1,34 @@
+name: Test packages
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Install Chocolatey AU
+        run: choco install chocolatey-au --yes --no-progress
+
+      # Force runs every updater and packs every package without pushing anything,
+      # so a broken update.ps1, a dead download URL or an invalid nuspec fails here.
+      - name: Force update and pack all packages
+        shell: powershell
+        env:
+          github_api_key: ${{ secrets.GITHUB_TOKEN }}
+          github_user_repo: ${{ github.repository }}
+        run: .\update_all.ps1 -Force
+
+      - name: Publish report
+        if: always()
+        shell: powershell
+        run: Get-Content Update-AUPackages.md -ErrorAction Ignore | Add-Content $Env:GITHUB_STEP_SUMMARY
