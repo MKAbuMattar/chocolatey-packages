@@ -2,27 +2,28 @@
 
 ## About T3 Code
 
-**T3 Code** is a minimal web GUI for coding agents — the best way to code with AI. It is currently Codex-first, with Claude Code support coming soon.
+T3 Code is a minimal web GUI for coding agents. It works with Codex today, and Claude Code
+support is planned.
 
-T3 Code runs as a **Node.js WebSocket server** that wraps [Codex CLI](https://github.com/openai/codex) (`codex app-server`) and serves a React-based web UI. It also ships as a standalone **Electron desktop app** — which is the version this Chocolatey package installs.
+It runs as a Node.js WebSocket server that wraps [Codex CLI](https://github.com/openai/codex)
+(`codex app-server`) and serves a React web UI. It also ships as a standalone Electron
+desktop app, which is the version this Chocolatey package installs.
 
-**Key features:**
+What it gives you:
 
-- Clean, minimal chat interface for AI coding sessions
-- Full-access and supervised session modes (controls sandbox and approval policies)
-- Thread and project management with conversation history
-- Codex model selection (including fast/flex service tier options)
-- Auto-update support for the desktop app
-- Remote access support via auth token and custom host/port
-- Customizable keybindings (`~/.t3/keybindings.json`)
+- A chat interface for AI coding sessions
+- Full-access and supervised session modes, which control sandbox and approval policies
+- Thread and project management, with conversation history
+- Codex model selection, including the fast and flex service tiers
+- Auto-update for the desktop app
+- Remote access through an auth token and a custom host and port
+- Customizable keybindings in `~/.t3/keybindings.json`
 
-> **Note:** T3 Code is in very early alpha. Expect bugs.
-
----
+T3 Code is in early alpha. Expect bugs.
 
 ## Prerequisites
 
-Before installing or running T3 Code, you must have **Codex CLI** installed and authenticated on your machine.
+You need Codex CLI installed and authenticated before T3 Code will do anything useful.
 
 1. Install Codex CLI:
 
@@ -30,21 +31,18 @@ Before installing or running T3 Code, you must have **Codex CLI** installed and 
    npm install -g @openai/codex
    ```
 
-2. Authenticate Codex (via API key or ChatGPT login — see [Codex CLI docs](https://github.com/openai/codex)).
+2. Authenticate Codex with an API key or a ChatGPT login. The
+   [Codex CLI docs](https://github.com/openai/codex) cover both.
 
-3. Verify `codex` is on your `PATH`:
+3. Check that `codex` is on your `PATH`:
 
    ```powershell
    codex --version
    ```
 
-Without an authenticated Codex CLI, T3 Code will launch but sessions will fail.
-
----
+Without an authenticated Codex CLI, T3 Code still launches, but sessions fail.
 
 ## Installation
-
-Install T3 Code using Chocolatey:
 
 ```powershell
 choco install t3-code
@@ -56,19 +54,13 @@ Install a specific version:
 choco install t3-code --version <version>
 ```
 
-After installation, launch **T3 Code** from the Start Menu or your desktop shortcut.
-
----
+Then launch T3 Code from the Start Menu or the desktop shortcut.
 
 ## Upgrade
-
-Upgrade to the latest version:
 
 ```powershell
 choco upgrade t3-code
 ```
-
----
 
 ## Uninstall
 
@@ -76,24 +68,22 @@ choco upgrade t3-code
 choco uninstall t3-code
 ```
 
----
-
 ## Links
 
-| Resource        | URL                                                       |
-| --------------- | --------------------------------------------------------- |
-| Website         | https://t3.codes/                                         |
-| Source code     | https://github.com/pingdotgg/t3code                       |
-| Releases        | https://github.com/pingdotgg/t3code/releases              |
-| Discord support | https://discord.gg/jn4EGJjrvv                             |
-| Chocolatey page | https://community.chocolatey.org/packages/t3-code         |
+| Resource        | URL                                                                            |
+| --------------- | ------------------------------------------------------------------------------ |
+| Website         | https://t3.codes/                                                              |
+| Source code     | https://github.com/pingdotgg/t3code                                            |
+| Releases        | https://github.com/pingdotgg/t3code/releases                                   |
+| Discord support | https://discord.gg/jn4EGJjrvv                                                  |
+| Chocolatey page | https://community.chocolatey.org/packages/t3-code                              |
 | Package repo    | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/t3-code |
-
----
 
 ## License
 
-This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and is licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar)
+and licensed under the
+[MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
-T3 Code itself is copyright © 2026 T3 Tools Inc., also under the [MIT License](https://github.com/pingdotgg/t3code/blob/main/LICENSE).
-    
+T3 Code itself is copyright 2026 T3 Tools Inc., also under the
+[MIT License](https://github.com/pingdotgg/t3code/blob/main/LICENSE).

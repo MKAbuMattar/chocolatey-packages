@@ -13,11 +13,11 @@
 </div>
 
 Source for the [Chocolatey](https://chocolatey.org) packages maintained by
-[@MKAbuMattar](https://github.com/MKAbuMattar). Every package is an
-[automatic package](https://docs.chocolatey.org/en-us/create/automatic-packages/): a
+[@MKAbuMattar](https://github.com/MKAbuMattar). Every package here is an
+[automatic package](https://docs.chocolatey.org/en-us/create/automatic-packages/). A
 scheduled workflow checks upstream for a new version, updates the package, packs it,
-pushes it to the Chocolatey Community Repository and cuts a GitHub release — one
-package at a time, without a human in the loop.
+pushes it to the Chocolatey Community Repository and creates a GitHub release, one package
+at a time. Nobody has to run anything by hand.
 
 ## Packages
 
@@ -39,12 +39,12 @@ automatic/<id>/
   <id>.nuspec               package metadata (version is maintained by the updater)
   update.ps1                how to find the latest version, URL and what to replace
   tools/chocolateyInstall.ps1
-  README.md                 package description - synced into the nuspec on every update
+  README.md                 package description, synced into the nuspec on every update
 icons/                      package icons, served over jsDelivr instead of hotlinked
 update_all.ps1              the updater entry point used by CI and locally
 ```
 
-Folder name, nuspec file name and package id must match — that is how
+Folder name, nuspec file name and package id must match, because that is how
 [Chocolatey AU](https://github.com/chocolatey-community/chocolatey-au) finds packages.
 
 ## How the automation works
@@ -61,8 +61,8 @@ Folder name, nuspec file name and package id must match — that is how
 6. The run report is published as the workflow summary.
 
 `test.yaml` runs on every pull request and does the same thing with `-Force`, which
-rebuilds every package without pushing anything — a dead URL, a broken `update.ps1` or an
-invalid nuspec fails the PR.
+rebuilds every package without pushing anything. A dead download URL, a broken
+`update.ps1` or an invalid nuspec fails the PR.
 
 ### Secrets
 

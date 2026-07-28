@@ -3,7 +3,7 @@
   <metadata>
     <id>pixi</id>
     <version>0.74.0.20260728</version>
-    <title>Pixi - Package Management Made Easy</title>
+    <title>Pixi</title>
     <authors>prefix.dev</authors>
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/prefix-dev/pixi/blob/main/LICENSE</licenseUrl>
@@ -11,53 +11,33 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pixi.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[
-## Downloads
-
-To install Pixi, run the following command from the command line or from PowerShell:
+## Install
 
 ```powershell
 choco install pixi
 ```
 
-This command will download and install Pixi package manager.
-
-## Manual Installation
-
-To install Pixi manually, visit [pixi.sh](https://pixi.sh/) or follow the instructions at [https://github.com/prefix-dev/pixi](https://github.com/prefix-dev/pixi).
+To install by hand instead, follow the instructions at [pixi.sh](https://pixi.sh/) or in
+the [pixi repository](https://github.com/prefix-dev/pixi).
 
 ## What is Pixi?
 
-This package automates the installation of Pixi. Pixi is a cross-platform, multi-language package manager and workflow tool built on the foundation of the conda ecosystem. It provides developers with an exceptional experience similar to popular package managers like cargo or npm, but for any language.
+Pixi is a cross-platform, multi-language package manager and workflow tool built on the
+conda ecosystem. It manages project dependencies the way cargo or npm do, except it is
+not tied to one language. This package installs it.
 
-## Highlights
+## What it does
 
-With Pixi, you can:
+- Installs packages for Python, C++, R and other languages from conda channels
+- Runs on Linux, Windows and macOS, including Apple Silicon
+- Keeps a lock file up to date so environments can be reproduced
+- Uses a command-line interface close to cargo's
+- Installs tools per project or system wide
+- Is written in Rust, on top of the [rattler](https://github.com/conda/rattler) library
 
-• Supports multiple languages including Python, C++, and R using Conda packages
+Available packages are listed on [prefix.dev](https://prefix.dev/).
 
-• Compatible with all major operating systems: Linux, Windows, macOS (including Apple Silicon)
-
-• Always includes an up-to-date lock file for reproducible environments
-
-• Provides a clean and simple Cargo-like command-line interface
-
-• Install tools per-project or system-wide
-
-• Entirely written in Rust and built on top of the rattler library
-
-Find available packages on [prefix.dev](https://prefix.dev/).
-
-## System Requirements
-
-Pixi is compatible with Linux, Windows, and macOS (including Apple Silicon).
-
-Built on top of the [rattler](https://github.com/conda/rattler) library.
-
-## Documentation
-
-Consult the official documentation at [https://pixi.sh/](https://pixi.sh/).
-
-## Getting Started
+## Getting started
 
 Initialize a new workspace:
 
@@ -79,10 +59,10 @@ pixi task add test 'pytest -s'
 pixi run test
 ```
 
-## Stay Updated
+## Documentation
 
-🚀 Visit the [GitHub repository](https://github.com/prefix-dev/pixi) for the latest releases and updates.
-    
+The official documentation is at [pixi.sh](https://pixi.sh/). Releases are listed in the
+[GitHub repository](https://github.com/prefix-dev/pixi/releases).
     ]]></description>
     <summary>Pixi is a cross-platform, multi-language package manager and workflow tool built on the conda ecosystem.</summary>
     <releaseNotes>https://github.com/prefix-dev/pixi/releases/tag/v0.74.0</releaseNotes>

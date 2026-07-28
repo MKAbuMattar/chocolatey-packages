@@ -1,48 +1,59 @@
 # Witsy AI Chocolatey Package
 
+## Install
+
+```powershell
+choco install witsy
+```
+
 ## What is Witsy?
 
-Witsy is a BYOK (Bring Your Own Keys) AI application: it means you need to have API keys for the LLM providers you want to use. Alternatively,
-you can use [Ollama](https://ollama.com) to run models locally on your machine for free and use them in Witsy.
+Witsy is a BYOK (bring your own keys) AI application, so you need API keys for the LLM
+providers you want to use. You can also point it at [Ollama](https://ollama.com) and run
+models locally for free.
 
-Non-exhaustive feature list:
-- OpenAI, Ollama, Anthropic, MistralAI, Google, xAI, OpenRouter, DeepSeek, Groq and Cerebras models supported
-- Connect other providers (together, siliconflow, fireworks...) through the OpenAI compatibility layer
-- Chat completion with vision models support (describe an image)
-- Text-to-image and text-to-video with OpenAI, HuggingFace, and Replicate
-- Scratchpad to interactively create the best content with any model!
-- Prompt anywhere allows to generate content directly in any application
-- AI commands runnable on the highlighted text in almost any application
-- Experts prompt you to specialize your bot on a specific topic
-- LLM plugins to augment LLM: execute Python code, search the Internet...
-- Long-term memory plugin to increase the relevance of LLM answers
-- Read aloud assistant messages (requires OpenAI or ElevenLabs API key)
-- Read aloud any text in other applications (requires OpenAI or ElevenLabs API key)
-- Chat with your local files and documents (RAG)
-- Transcription/Dictation (Speech-to-Text)
-- Realtime Chat aka Voice Mode
-- Anthropic Computer Use support
-- Local history of conversations (with automatic titles)
-- Formatting and copying to the clipboard-generated code
-- Conversation PDF export
-- Image copy and download
+Some of what it does:
+
+- Supports OpenAI, Ollama, Anthropic, MistralAI, Google, xAI, OpenRouter, DeepSeek, Groq
+  and Cerebras models
+- Connects to other providers such as Together, SiliconFlow and Fireworks through the
+  OpenAI compatibility layer
+- Handles chat completion with vision models, so it can describe an image
+- Generates images and video with OpenAI, HuggingFace and Replicate
+- Includes a scratchpad for working on content with any model
+- Generates content directly inside other applications with Prompt Anywhere
+- Runs AI commands on highlighted text in almost any application
+- Specializes a bot on a topic through experts
+- Extends models with plugins that execute Python code or search the internet
+- Keeps long-term memory to make answers more relevant
+- Reads assistant messages aloud, and any text in other applications, with an OpenAI or
+  ElevenLabs API key
+- Searches your local files and documents (RAG)
+- Transcribes speech to text
+- Runs a realtime voice mode
+- Supports Anthropic Computer Use
+- Stores conversation history locally and titles conversations automatically
+- Formats generated code and copies it to the clipboard
+- Exports conversations as PDF, and copies or downloads images
 
 ## Prompt Anywhere
 
-Generate content in any application:
-- From any editable content in any application
-- Hit the Prompt anywhere shortcut (Shift+Control+Space / ^⇧Space)
+To generate content inside another application:
+
+- Start from any editable content
+- Press the Prompt Anywhere shortcut (Shift+Control+Space, or Command+Shift+Space on Mac)
 - Enter your prompt in the window that pops up
-- Watch Witsy enter the text directly in your application!
+- Witsy types the text into the application for you
 
-## AI Commands
+## AI commands
 
-AI commands are quick helpers accessible from a shortcut that leverages LLM to boost your productivity:
-- Select any text in any application
-- Hit the AI command shortcut (Alt+Control+Space / ⌃⌥Space)
-- Select one of the commands and let LLM do their magic!
+AI commands run a model against text you have selected, from a keyboard shortcut:
 
-You can also create custom commands with the prompt of your liking!
+- Select text in any application
+- Press the AI command shortcut (Alt+Control+Space, or Control+Option+Space on Mac)
+- Pick one of the commands
+
+You can add custom commands with your own prompts.
 
 ![commands1](https://raw.githubusercontent.com/Kochava-Studios/witsy/refs/heads/main/doc/commands1.jpg)
 ![commands2](https://raw.githubusercontent.com/Kochava-Studios/witsy/refs/heads/main/doc/commands2.jpg)
@@ -50,30 +61,34 @@ You can also create custom commands with the prompt of your liking!
 
 ## Experts
 
-From [https://github.com/f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts).
+The expert prompts come from
+[awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts).
 
 ## Scratchpad
 
-https://www.youtube.com/watch?v=czcSbG2H-wg
+There is a walkthrough of the scratchpad on
+[YouTube](https://www.youtube.com/watch?v=czcSbG2H-wg).
 
 ## Chat with your documents (RAG)
 
-You can connect each chat with a document repository: Witsy will first search for relevant documents in your local files and provide this info to the LLM. To do so:
+You can attach a document repository to a chat. Witsy searches your local files first and
+passes what it finds to the model. To set one up:
 
-- Click on the database icon on the left of the prompt
-- Click Manage and then create a document repository
-- OpenAI Embedding requires an API key, and Ollama requires an embedding model
-- Add documents by clicking the + button on the right-hand side of the window
-- Once your document repository is created, click on the database icon once more and select the document repository you want to use. The icon should turn blue
+- Click the database icon to the left of the prompt
+- Click Manage, then create a document repository
+- Pick an embedding model. OpenAI embedding needs an API key, Ollama needs an embedding
+  model installed
+- Add documents with the + button on the right of the window
+- Click the database icon again and select the repository. The icon turns blue
 
-## Transcription / Dictation (Speech-to-Text)
+## Transcription and dictation (speech to text)
 
-You can transcribe audio recorded on the microphone to text. Transcription can be done using the OpenAI Whisper online model (requires API key) or using the local Whisper model (requires download of large files). Once the text is transcribed you can:
-
-- Copy it to your clipboard
-- Insert it in the application that was running before you activated the dictation
+Witsy can transcribe audio from your microphone, either with the OpenAI Whisper online
+model, which needs an API key, or with a local Whisper model, which needs a large
+download. Once the text is transcribed you can copy it to the clipboard or insert it into
+whichever application was running before you started dictating.
 
 ## Anthropic Computer Use
 
-https://www.youtube.com/watch?v=vixl7I07hBk
-    
+There is a demo of Computer Use support on
+[YouTube](https://www.youtube.com/watch?v=vixl7I07hBk).

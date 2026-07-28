@@ -37,8 +37,8 @@ Thanks for helping out with these Chocolatey packages.
   updater. Do not bump them by hand.
 - A package's description lives in `automatic/<id>/README.md` and is copied into the
   nuspec on every update, so edit the README rather than the nuspec `<description>`.
-- Keep package ids lowercase, checksums sha256, and never commit the software itself -
-  installers are downloaded at install time.
+- Keep package ids lowercase and checksums sha256. Never commit the software itself.
+  Installers are downloaded at install time.
 - Follow the [Chocolatey packaging documentation](https://docs.chocolatey.org/en-us/create/create-packages/).
 
 ## Reporting issues

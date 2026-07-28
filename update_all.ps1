@@ -15,7 +15,7 @@
     .Example
         .\update_all.ps1 -Force
         # Re-run every updater and pack every package even when there is no new version.
-        # Never pushes - this is the smoke test mode used by pull requests.
+        # Never pushes. This is the smoke test mode used by pull requests.
 
     .Example
         .\update_all.ps1 -Name witsy -Force
