@@ -87,13 +87,13 @@ choco uninstall t3-code
 | Releases        | https://github.com/pingdotgg/t3code/releases              |
 | Discord support | https://discord.gg/jn4EGJjrvv                             |
 | Chocolatey page | https://community.chocolatey.org/packages/t3-code         |
-| Package repo    | https://github.com/MKAbuMattar/t3-code-chocolatey-package |
+| Package repo    | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/t3-code |
 
 ---
 
 ## License
 
-This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and is licensed under the [MIT License](LICENSE).
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and is licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 T3 Code itself is copyright © 2026 T3 Tools Inc., also under the [MIT License](https://github.com/pingdotgg/t3code/blob/main/LICENSE).
     

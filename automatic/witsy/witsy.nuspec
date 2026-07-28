@@ -10,7 +10,8 @@
     <projectUrl>https://witsyai.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/witsy.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## What is Witsy?
+    <description><![CDATA[
+## What is Witsy?
 
 Witsy is a BYOK (Bring Your Own Keys) AI application: it means you need to have API keys for the LLM providers you want to use. Alternatively,
 you can use [Ollama](https://ollama.com) to run models locally on your machine for free and use them in Witsy.
@@ -87,7 +88,7 @@ You can transcribe audio recorded on the microphone to text. Transcription can b
 
 https://www.youtube.com/watch?v=vixl7I07hBk
     
-]]></description>
+    ]]></description>
     <summary>Witsy: A flexible BYOK AI application for integrating various LLM providers or running models locally.</summary>
     <releaseNotes>https://github.com/Kochava-Studios/witsy/releases/tag/v3.5.2</releaseNotes>
     <tags>witsy ai byok llm ollama</tags>

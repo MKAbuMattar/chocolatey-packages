@@ -10,7 +10,8 @@
     <projectUrl>https://lmstudio.ai/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/lmstudio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Downloads
+    <description><![CDATA[
+## Downloads
 
 To install LM Studio, run the following command from the command line or from PowerShell:
 
@@ -70,7 +71,7 @@ Visit the [System Requirements](https://lmstudio.ai/docs/system-requirements) pa
 
 🚀 See the [LM Studio blog](https://lmstudio.ai/blog) for release announcements.
     
-]]></description>
+    ]]></description>
     <summary>LM Studio is a desktop application that allows you to run large language models (LLMs) on your laptop, entirely offline.</summary>
     <releaseNotes>https://lmstudio.ai/blog</releaseNotes>
     <tags>lm-studio ai llm ollama</tags>

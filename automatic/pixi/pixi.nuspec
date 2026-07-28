@@ -10,7 +10,8 @@
     <projectUrl>https://pixi.sh/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pixi.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Downloads
+    <description><![CDATA[
+## Downloads
 
 To install Pixi, run the following command from the command line or from PowerShell:
 
@@ -82,7 +83,7 @@ pixi run test
 
 🚀 Visit the [GitHub repository](https://github.com/prefix-dev/pixi) for the latest releases and updates.
     
-]]></description>
+    ]]></description>
     <summary>Pixi is a cross-platform, multi-language package manager and workflow tool built on the conda ecosystem.</summary>
     <releaseNotes>https://github.com/prefix-dev/pixi/releases/tag/v0.74.0</releaseNotes>
     <tags>pixi package-manager conda rust python workflow developer-tools</tags>
