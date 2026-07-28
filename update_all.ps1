@@ -14,19 +14,19 @@
 
     .Example
         .\update_all.ps1 -Force
-        # Re-run every package updater and pack every package even when there is no new
-        # version. With $Env:au_Push unset this pushes nothing - the smoke test mode.
+        # Re-run every updater and pack every package even when there is no new version.
+        # Never pushes - this is the smoke test mode used by pull requests.
 
     .Example
         .\update_all.ps1 -Name witsy -Force
-        # Rebuild a single package regardless of its current version.
+        # Same, for a single package.
 #>
 [CmdletBinding()]
 param(
     # Packages to check. Defaults to all of them.
     [string[]]$Name,
 
-    # Update and pack packages even when there is no new version.
+    # Update and pack packages even when there is no new version. Pushes nothing.
     [switch]$Force
 )
 
@@ -38,7 +38,10 @@ $Options = [ordered]@{
     Timeout       = 100                                     # Web request timeout in seconds
     UpdateTimeout = 1200                                    # Per package timeout in seconds
     Threads       = 10
-    Push          = $Env:au_Push -eq 'true'
+    # -Force rebuilds packages that have no new version, which would publish a
+    # pointless fix-notation release, so forcing never pushes. Republish by hand
+    # from the package folder instead (see README).
+    Push          = ($Env:au_Push -eq 'true') -and (!$Force)
     PushAll       = $true
     RepeatSleep   = 60
     RepeatCount   = 2

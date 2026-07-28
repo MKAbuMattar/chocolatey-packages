@@ -10,7 +10,7 @@ on:
         required: false
         default: ""
       force:
-        description: "Update even when there is no new version"
+        description: "Rebuild even when there is no new version (dry run, pushes nothing)"
         type: boolean
         default: false
 
