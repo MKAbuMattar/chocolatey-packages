@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pixi</id>
-    <version>0.74.0</version>
+    <version>0.74.0.20260728</version>
     <title>Pixi - Package Management Made Easy</title>
     <authors>prefix.dev</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://pixi.sh/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pixi.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Downloads
+    <description><![CDATA[## Downloads
 
 To install Pixi, run the following command from the command line or from PowerShell:
 
@@ -83,7 +82,7 @@ pixi run test
 
 🚀 Visit the [GitHub repository](https://github.com/prefix-dev/pixi) for the latest releases and updates.
     
-    ]]></description>
+]]></description>
     <summary>Pixi is a cross-platform, multi-language package manager and workflow tool built on the conda ecosystem.</summary>
     <releaseNotes>https://github.com/prefix-dev/pixi/releases/tag/v0.74.0</releaseNotes>
     <tags>pixi package-manager conda rust python workflow developer-tools</tags>
