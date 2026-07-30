@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>dyad</id>
+    <version>0.0.0</version>
+    <title>Dyad</title>
+    <authors>dyad-sh</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/dyad-sh/dyad/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://dyad.sh</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/dyad.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install dyad
+```
+
+Chocolatey downloads the official installer from the [dyad-sh/dyad](https://github.com/dyad-sh/dyad/releases) releases and runs it silently.
+
+## What is Dyad?
+
+Local, open-source AI app builder for power users v0 / Lovable / Replit / Bolt alternative Star if you like it!.
+
+Upstream describes it with these topics: ai-app-builder, anthropic, artificial-intelligence, bolt, deepseek, gemini, generative-ai, github.
+
+## Upgrade
+
+```powershell
+choco upgrade dyad
+```
+
+## Uninstall
+
+```powershell
+choco uninstall dyad
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://dyad.sh |
+| Source code | https://github.com/dyad-sh/dyad |
+| Releases | https://github.com/dyad-sh/dyad/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/dyad |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/dyad |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Dyad itself is distributed under its own [license](https://github.com/dyad-sh/dyad/blob/main/LICENSE).
+    ]]></description>
+    <summary>Local, open-source AI app builder for power users v0 / Lovable / Replit / Bolt alternative Star if you like it!</summary>
+    <releaseNotes>https://github.com/dyad-sh/dyad/releases/tag/v1.9.0</releaseNotes>
+    <tags>dyad ai-app-builder anthropic bolt deepseek gemini generative-ai github llm</tags>
+    <projectSourceUrl>https://github.com/dyad-sh/dyad</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/dyad-sh/dyad/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/dyad</packageSourceUrl>
+    <docsUrl>https://dyad.sh</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

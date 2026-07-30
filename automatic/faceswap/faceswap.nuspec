@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>faceswap</id>
+    <version>0.0.0</version>
+    <title>Faceswap</title>
+    <authors>deepfakes</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/deepfakes/faceswap/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://www.faceswap.dev</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/faceswap.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install faceswap
+```
+
+Chocolatey downloads the official installer from the [deepfakes/faceswap](https://github.com/deepfakes/faceswap/releases) releases and runs it silently.
+The published installer is a small bootstrapper, so it downloads the rest of Faceswap during setup and needs a working internet connection.
+
+## What is Faceswap?
+
+Deepfakes Software For All.
+
+Upstream describes it with these topics: deep-face-swap, deep-learning, deep-neural-networks, deepface, deepfakes, deeplearning, face-swap, faceswap.
+
+## Upgrade
+
+```powershell
+choco upgrade faceswap
+```
+
+## Uninstall
+
+```powershell
+choco uninstall faceswap
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://www.faceswap.dev |
+| Source code | https://github.com/deepfakes/faceswap |
+| Releases | https://github.com/deepfakes/faceswap/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/faceswap |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/faceswap |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Faceswap itself is distributed under its own [license](https://github.com/deepfakes/faceswap/blob/master/LICENSE).
+    ]]></description>
+    <summary>Deepfakes Software For All</summary>
+    <releaseNotes>https://github.com/deepfakes/faceswap/releases/tag/v3.0.0</releaseNotes>
+    <tags>faceswap deep-face-swap deep-learning deepface deepfakes deeplearning face-swap fakeapp</tags>
+    <projectSourceUrl>https://github.com/deepfakes/faceswap</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/deepfakes/faceswap/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/faceswap</packageSourceUrl>
+    <docsUrl>https://www.faceswap.dev</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

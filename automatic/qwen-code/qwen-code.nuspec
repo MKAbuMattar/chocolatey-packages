@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>qwen-code</id>
+    <version>0.0.0</version>
+    <title>Qwen Code</title>
+    <authors>QwenLM</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/QwenLM/qwen-code/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://qwenlm.github.io/qwen-code-docs/en/users/overview</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/qwen-code.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install qwen-code
+```
+
+Chocolatey downloads the official Windows build from the [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code/releases) releases and puts it on your PATH.
+The archive bundles its own Node.js runtime and a copy of ripgrep. Only the `qwen` command is put on your PATH, so the bundled `node`, `npm` and `rg` do not shadow anything you already have installed.
+
+## What is Qwen Code?
+
+An open-source AI coding agent that lives in your terminal.
+
+## Upgrade
+
+```powershell
+choco upgrade qwen-code
+```
+
+## Uninstall
+
+```powershell
+choco uninstall qwen-code
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://qwenlm.github.io/qwen-code-docs/en/users/overview |
+| Source code | https://github.com/QwenLM/qwen-code |
+| Releases | https://github.com/QwenLM/qwen-code/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/qwen-code |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/qwen-code |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Qwen Code itself is distributed under its own [license](https://github.com/QwenLM/qwen-code/blob/main/LICENSE).
+    ]]></description>
+    <summary>An open-source AI coding agent that lives in your terminal</summary>
+    <releaseNotes>https://github.com/QwenLM/qwen-code/releases/tag/v0.21.1</releaseNotes>
+    <tags>qwen-code ai coding-agent cli qwen</tags>
+    <projectSourceUrl>https://github.com/QwenLM/qwen-code</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/QwenLM/qwen-code/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/qwen-code</packageSourceUrl>
+    <docsUrl>https://qwenlm.github.io/qwen-code-docs/en/users/overview</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

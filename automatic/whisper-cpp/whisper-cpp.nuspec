@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>whisper-cpp</id>
+    <version>0.0.0</version>
+    <title>whisper.cpp</title>
+    <authors>ggml-org</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/ggml-org/whisper.cpp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ggml-org/whisper.cpp</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/whisper-cpp.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install whisper-cpp
+```
+
+Chocolatey downloads the official Windows build from the [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp/releases) releases and puts it on your PATH.
+The archive holds more than twenty executables, including test binaries. Only `whisper-cli` and `whisper-server` are put on your PATH.
+
+## What is whisper.cpp?
+
+Port of OpenAI's Whisper model in C/C++.
+
+Upstream describes it with these topics: inference, openai, speech-recognition, speech-to-text, transformer, whisper.
+
+## Upgrade
+
+```powershell
+choco upgrade whisper-cpp
+```
+
+## Uninstall
+
+```powershell
+choco uninstall whisper-cpp
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://github.com/ggml-org/whisper.cpp |
+| Source code | https://github.com/ggml-org/whisper.cpp |
+| Releases | https://github.com/ggml-org/whisper.cpp/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/whisper-cpp |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/whisper-cpp |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+whisper.cpp itself is distributed under its own [license](https://github.com/ggml-org/whisper.cpp/blob/master/LICENSE).
+    ]]></description>
+    <summary>Port of OpenAI's Whisper model in C/C++</summary>
+    <releaseNotes>https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.1</releaseNotes>
+    <tags>whisper-cpp inference openai speech-recognition speech-to-text transformer whisper transcription cli</tags>
+    <projectSourceUrl>https://github.com/ggml-org/whisper.cpp</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/ggml-org/whisper.cpp/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/whisper-cpp</packageSourceUrl>
+    <docsUrl>https://github.com/ggml-org/whisper.cpp</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -33,11 +33,28 @@ param(
 # Local runs read secrets from update_vars.ps1 (git ignored), CI sets them as env vars.
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
+$global:au_Root = "$PSScriptRoot\automatic"
+
+# The first time AU calculates a checksum it copies Chocolatey's helpers into TEMP and
+# monkey patches them. Nothing locks that copy, so on a cold cache several threads build
+# it at once and trip over each other with "Container cannot be copied onto existing leaf
+# item" (chocolatey-au#29). Letting one small package build it first avoids the race.
+if (!(Test-Path "$Env:TEMP\chocolatey\au\chocolatey")) {
+    Write-Host 'Warming the AU chocolatey copy'
+    $warm = "$PSScriptRoot\automatic\tailspin"   # smallest download in the repo
+    if (Test-Path $warm) {
+        $global:au_WhatIf = $true               # back up and restore, so no files change
+        Push-Location $warm
+        try { .\update.ps1 | Out-Null } catch { Write-Host "Warm-up skipped: $_" }
+        finally { Pop-Location; $global:au_WhatIf = $false }
+    }
+}
+
 $Options = [ordered]@{
     Force         = [bool]$Force
     Timeout       = 100                                     # Web request timeout in seconds
     UpdateTimeout = 1200                                    # Per package timeout in seconds
-    Threads       = 10
+    Threads       = 6                                       # keep the checksum downloads from saturating the runner
     # -Force rebuilds packages that have no new version, which would publish a
     # pointless fix-notation release, so forcing never pushes. Republish by hand
     # from the package folder instead (see README).
@@ -82,7 +99,6 @@ $Options = [ordered]@{
     }
 }
 
-$global:au_Root = "$PSScriptRoot\automatic"
 $global:info = updateall -Name $Name -Options $Options
 
 if ($global:info.error_count.total) {
