@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>txm</id>
-    <version>0.0.0</version>
+    <version>0.1.5</version>
     <title>txm</title>
     <authors>thatmagicalcat</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/thatmagicalcat/txm</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/txm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install txm
@@ -50,7 +49,7 @@ choco uninstall txm
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 txm itself is distributed under its own [license](https://github.com/thatmagicalcat/txm/blob/main/LICENSE-APACHE).
-    ]]></description>
+]]></description>
     <summary>Terminal Math rendering engine</summary>
     <releaseNotes>https://github.com/thatmagicalcat/txm/releases/tag/v0.1.5</releaseNotes>
     <tags>txm math terminal rendering cli</tags>
