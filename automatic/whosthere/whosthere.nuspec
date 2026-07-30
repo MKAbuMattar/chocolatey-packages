@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>whosthere</id>
+    <version>0.0.0</version>
+    <title>whosthere</title>
+    <authors>ramonvermeulen</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/ramonvermeulen/whosthere/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ramonvermeulen/whosthere</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/whosthere.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install whosthere
+```
+
+Chocolatey downloads the official Windows build from the [ramonvermeulen/whosthere](https://github.com/ramonvermeulen/whosthere/releases) releases and puts it on your PATH.
+
+## What is whosthere?
+
+Local Area Network discovery tool with an interactive Terminal User Interface (TUI) written in Go. Discover, explore, and understand your LAN in an intuitive way. Knock Knock.. who's there?.
+
+Upstream describes it with these topics: go, golang, lan, network, network-analysis, networking, scanner, tui.
+
+## Upgrade
+
+```powershell
+choco upgrade whosthere
+```
+
+## Uninstall
+
+```powershell
+choco uninstall whosthere
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://github.com/ramonvermeulen/whosthere |
+| Source code | https://github.com/ramonvermeulen/whosthere |
+| Releases | https://github.com/ramonvermeulen/whosthere/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/whosthere |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/whosthere |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+whosthere itself is distributed under its own [license](https://github.com/ramonvermeulen/whosthere/blob/main/LICENSE).
+    ]]></description>
+    <summary>Local Area Network discovery tool with an interactive Terminal User Interface (TUI) written in Go. Discover, explore, and understand your LAN in an intuitive way. Knock Knock.. who's there?</summary>
+    <releaseNotes>https://github.com/ramonvermeulen/whosthere/releases/tag/v0.8.3</releaseNotes>
+    <tags>whosthere go golang lan network network-analysis networking scanner tui discovery cli</tags>
+    <projectSourceUrl>https://github.com/ramonvermeulen/whosthere</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/ramonvermeulen/whosthere/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/whosthere</packageSourceUrl>
+    <docsUrl>https://github.com/ramonvermeulen/whosthere</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

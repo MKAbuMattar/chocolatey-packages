@@ -14,33 +14,49 @@ body:
         - anythingllm
         - bananas
         - cdxgen
+        - colibri
         - dashbeam
         - daytona
         - deepchat
         - dyad
+        - e2ecp
         - faceswap
+        - github-mcp-server
+        - grepai
+        - iam-policy-autopilot
         - jqp
         - kortix
         - llmfit
         - lmstudio
         - lobehub
         - meetily
+        - mindwalk
         - neohtop
+        - nub
         - octobot
         - onlook
         - openclaw-companion
+        - opencodereview
         - openwork
         - openworker
+        - ouroboros
+        - pi
         - pixi
         - pkl
+        - posthog-cli
+        - qodo-cover
         - qwen-code
         - servoshell
+        - strix
         - t3-code
         - tailspin
         - terax
         - tiny-rdm
         - tuios
+        - txm
+        - vercel-native
         - whisper-cpp
+        - whosthere
         - winapp
         - witsy
         - worldmonitor
