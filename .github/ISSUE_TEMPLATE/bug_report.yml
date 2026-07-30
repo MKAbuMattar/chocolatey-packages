@@ -10,10 +10,42 @@ body:
       label: Package
       description: Which package is this about?
       options:
+        - agent-orchestrator
+        - anythingllm
+        - bananas
+        - cdxgen
+        - dashbeam
+        - daytona
+        - deepchat
+        - dyad
+        - faceswap
+        - jqp
+        - kortix
+        - llmfit
         - lmstudio
+        - lobehub
+        - meetily
+        - neohtop
+        - octobot
+        - onlook
+        - openclaw-companion
+        - openwork
+        - openworker
         - pixi
+        - pkl
+        - qwen-code
+        - servo
         - t3-code
+        - tailspin
+        - terax
+        - tiny-rdm
+        - tuios
+        - whisper-cpp
+        - winapp
         - witsy
+        - worldmonitor
+        - xleak
+        - ytsage
         - the repository itself
     validations:
       required: true
