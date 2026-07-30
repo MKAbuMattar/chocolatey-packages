@@ -18,7 +18,7 @@ function global:au_GetLatest {
   $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
   $tag = (Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers).tag_name
   $version = $tag -replace '^v', ''
-  $asset = "tuios_$version_Windows_x86_64.tar.gz"
+  $asset = "tuios_${version}_Windows_x86_64.tar.gz"
 
   @{
     Version      = $version

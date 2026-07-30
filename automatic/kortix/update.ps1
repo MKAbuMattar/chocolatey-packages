@@ -18,7 +18,7 @@ function global:au_GetLatest {
   $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
   $tag = (Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers).tag_name
   $version = $tag -replace '^v', ''
-  $asset = "Kortix-Setup-$version.exe"
+  $asset = "Kortix-Setup-${version}.exe"
 
   @{
     Version      = $version

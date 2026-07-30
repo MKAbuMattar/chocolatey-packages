@@ -18,7 +18,7 @@ function global:au_GetLatest {
   $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
   $tag = (Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers).tag_name
   $version = $tag -replace '^v', ''
-  $asset = "TinyRDM_Setup_$version_windows_x64.exe"
+  $asset = "TinyRDM_Setup_${version}_windows_x64.exe"
 
   @{
     Version      = $version

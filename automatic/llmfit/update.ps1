@@ -18,7 +18,7 @@ function global:au_GetLatest {
   $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
   $tag = (Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers).tag_name
   $version = $tag -replace '^v', ''
-  $asset = "llmfit-v$version-x86_64-pc-windows-msvc.zip"
+  $asset = "llmfit-v${version}-x86_64-pc-windows-msvc.zip"
 
   @{
     Version      = $version
