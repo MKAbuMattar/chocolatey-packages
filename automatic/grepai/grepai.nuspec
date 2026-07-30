@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>grepai</id>
-    <version>0.0.0</version>
+    <version>0.35.0</version>
     <title>grepai</title>
     <authors>yoanbernabeu</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://yoanbernabeu.github.io/grepai/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/grepai.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install grepai
@@ -52,7 +51,7 @@ choco uninstall grepai
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 grepai itself is distributed under its own [license](https://github.com/yoanbernabeu/grepai/blob/main/LICENSE).
-    ]]></description>
+]]></description>
     <summary>Semantic Search &amp; Call Graphs for AI Agents (100% Local)</summary>
     <releaseNotes>https://github.com/yoanbernabeu/grepai/releases/tag/v0.35.0</releaseNotes>
     <tags>grepai ai claude-code cli code-search cursor developer-tools embeddings golang search semantic code</tags>
