@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>servo</id>
+    <id>servoshell</id>
     <version>0.0.0</version>
     <title>Servo</title>
     <authors>servo</authors>
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/servo/servo/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://servo.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/servo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/servoshell.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[
 ## Install
 
 ```powershell
-choco install servo
+choco install servoshell
 ```
 
 Chocolatey downloads the official Windows build from the [servo/servo](https://github.com/servo/servo/releases) releases and puts it on your PATH.
 Only the main executable is put on your PATH. The bundled libraries stay in the package folder.
+
+The package id is `servoshell`, after the executable Servo ships, because an unrelated
+"Servo Tech Demo" package already holds the `servo` id on the community repository.
 
 ## What is Servo?
 
@@ -29,13 +32,13 @@ Upstream describes it with these topics: browser, rust, servo, web, webbrowser, 
 ## Upgrade
 
 ```powershell
-choco upgrade servo
+choco upgrade servoshell
 ```
 
 ## Uninstall
 
 ```powershell
-choco uninstall servo
+choco uninstall servoshell
 ```
 
 ## Links
@@ -45,8 +48,8 @@ choco uninstall servo
 | Website | https://servo.org |
 | Source code | https://github.com/servo/servo |
 | Releases | https://github.com/servo/servo/releases |
-| Chocolatey page | https://community.chocolatey.org/packages/servo |
-| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/servo |
+| Chocolatey page | https://community.chocolatey.org/packages/servoshell |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/servoshell |
 
 ## License
 
@@ -59,7 +62,7 @@ Servo itself is distributed under its own [license](https://github.com/servo/ser
     <tags>servo browser rust web webbrowser webengine webplatform browser-engine</tags>
     <projectSourceUrl>https://github.com/servo/servo</projectSourceUrl>
     <bugTrackerUrl>https://github.com/servo/servo/issues</bugTrackerUrl>
-    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/servo</packageSourceUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/servoshell</packageSourceUrl>
     <docsUrl>https://servo.org</docsUrl>
   </metadata>
   <files>
