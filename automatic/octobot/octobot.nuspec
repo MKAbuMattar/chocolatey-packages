@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>octobot</id>
-    <version>0.0.0</version>
+    <version>2.1.1</version>
     <title>OctoBot</title>
     <authors>Drakkar-Software</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://www.octobot.cloud</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/octobot.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install octobot
@@ -52,7 +51,7 @@ choco uninstall octobot
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 OctoBot itself is distributed under its own [license](https://github.com/Drakkar-Software/OctoBot/blob/master/LICENSE).
-    ]]></description>
+]]></description>
     <summary>Free open source crypto trading bot to automate AI, Grid, DCA and TradingView strategies on Binance, Hyperliquid and 15+ exchanges, with a simple interface</summary>
     <releaseNotes>https://github.com/Drakkar-Software/OctoBot/releases/tag/2.1.1</releaseNotes>
     <tags>octobot ai-trading backtest binance-api bitcoin coinbase-bot cryptocurrencies free paper-trading</tags>
