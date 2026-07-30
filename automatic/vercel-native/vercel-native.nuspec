@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vercel-native</id>
-    <version>0.0.0</version>
+    <version>0.6.3</version>
     <title>Native SDK</title>
     <authors>vercel-labs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://native-sdk.dev</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/vercel-native.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install vercel-native
@@ -50,7 +49,7 @@ choco uninstall vercel-native
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 Native SDK itself is distributed under its own [license](https://github.com/vercel-labs/native/blob/main/LICENSE).
-    ]]></description>
+]]></description>
     <summary>Toolkit for building native desktop apps</summary>
     <releaseNotes>https://github.com/vercel-labs/native/releases/tag/v0.6.3</releaseNotes>
     <tags>vercel-native desktop sdk vercel cli</tags>
