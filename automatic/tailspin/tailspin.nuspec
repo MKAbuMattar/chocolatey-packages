@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>tailspin</id>
-    <version>0.0.0</version>
+    <version>7.0.0</version>
     <title>tailspin</title>
     <authors>bensadeh</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/bensadeh/tailspin</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/tailspin.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install tailspin
@@ -52,7 +51,7 @@ choco uninstall tailspin
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 tailspin itself is distributed under its own [license](https://github.com/bensadeh/tailspin/blob/main/LICENCE).
-    ]]></description>
+]]></description>
     <summary>A log file highlighter</summary>
     <releaseNotes>https://github.com/bensadeh/tailspin/releases/tag/7.0.0</releaseNotes>
     <tags>tailspin ccze colorizer colors file follow grc highlighter less log-viewer cli rust</tags>
