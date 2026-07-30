@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>grepai</id>
+    <version>0.0.0</version>
+    <title>grepai</title>
+    <authors>yoanbernabeu</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/yoanbernabeu/grepai/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://yoanbernabeu.github.io/grepai/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/grepai.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install grepai
+```
+
+Chocolatey downloads the official Windows build from the [yoanbernabeu/grepai](https://github.com/yoanbernabeu/grepai/releases) releases and puts it on your PATH.
+
+## What is grepai?
+
+Semantic Search & Call Graphs for AI Agents (100% Local).
+
+Upstream describes it with these topics: ai, claude-code, cli, code-search, cursor, developer-tools, embeddings, golang.
+
+## Upgrade
+
+```powershell
+choco upgrade grepai
+```
+
+## Uninstall
+
+```powershell
+choco uninstall grepai
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://yoanbernabeu.github.io/grepai/ |
+| Source code | https://github.com/yoanbernabeu/grepai |
+| Releases | https://github.com/yoanbernabeu/grepai/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/grepai |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/grepai |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+grepai itself is distributed under its own [license](https://github.com/yoanbernabeu/grepai/blob/main/LICENSE).
+    ]]></description>
+    <summary>Semantic Search &amp; Call Graphs for AI Agents (100% Local)</summary>
+    <releaseNotes>https://github.com/yoanbernabeu/grepai/releases/tag/v0.35.0</releaseNotes>
+    <tags>grepai ai claude-code cli code-search cursor developer-tools embeddings golang search semantic code</tags>
+    <projectSourceUrl>https://github.com/yoanbernabeu/grepai</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/yoanbernabeu/grepai/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/grepai</packageSourceUrl>
+    <docsUrl>https://yoanbernabeu.github.io/grepai/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

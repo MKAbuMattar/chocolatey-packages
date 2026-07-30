@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>mindwalk</id>
+    <version>0.0.0</version>
+    <title>Mindwalk</title>
+    <authors>cosmtrek</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/cosmtrek/mindwalk/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/cosmtrek/mindwalk</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/mindwalk.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install mindwalk
+```
+
+Chocolatey downloads the official Windows build from the [cosmtrek/mindwalk](https://github.com/cosmtrek/mindwalk/releases) releases and puts it on your PATH.
+
+## What is Mindwalk?
+
+A visualization tool that replays coding-agent sessions on a 3D map of your codebase.
+
+## Upgrade
+
+```powershell
+choco upgrade mindwalk
+```
+
+## Uninstall
+
+```powershell
+choco uninstall mindwalk
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://github.com/cosmtrek/mindwalk |
+| Source code | https://github.com/cosmtrek/mindwalk |
+| Releases | https://github.com/cosmtrek/mindwalk/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/mindwalk |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/mindwalk |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Mindwalk itself is distributed under its own [license](https://github.com/cosmtrek/mindwalk/blob/master/LICENSE).
+    ]]></description>
+    <summary>A visualization tool that replays coding-agent sessions on a 3D map of your codebase</summary>
+    <releaseNotes>https://github.com/cosmtrek/mindwalk/releases/tag/v0.3.0</releaseNotes>
+    <tags>mindwalk visualization coding-agent cli</tags>
+    <projectSourceUrl>https://github.com/cosmtrek/mindwalk</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/cosmtrek/mindwalk/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/mindwalk</packageSourceUrl>
+    <docsUrl>https://github.com/cosmtrek/mindwalk</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

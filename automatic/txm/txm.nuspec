@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>txm</id>
+    <version>0.0.0</version>
+    <title>txm</title>
+    <authors>thatmagicalcat</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/thatmagicalcat/txm/blob/main/LICENSE-APACHE</licenseUrl>
+    <projectUrl>https://github.com/thatmagicalcat/txm</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/txm.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install txm
+```
+
+Chocolatey downloads the official Windows build from the [thatmagicalcat/txm](https://github.com/thatmagicalcat/txm/releases) releases and puts it on your PATH.
+
+## What is txm?
+
+Terminal Math rendering engine.
+
+## Upgrade
+
+```powershell
+choco upgrade txm
+```
+
+## Uninstall
+
+```powershell
+choco uninstall txm
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://github.com/thatmagicalcat/txm |
+| Source code | https://github.com/thatmagicalcat/txm |
+| Releases | https://github.com/thatmagicalcat/txm/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/txm |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/txm |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+txm itself is distributed under its own [license](https://github.com/thatmagicalcat/txm/blob/main/LICENSE-APACHE).
+    ]]></description>
+    <summary>Terminal Math rendering engine</summary>
+    <releaseNotes>https://github.com/thatmagicalcat/txm/releases/tag/v0.1.5</releaseNotes>
+    <tags>txm math terminal rendering cli</tags>
+    <projectSourceUrl>https://github.com/thatmagicalcat/txm</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/thatmagicalcat/txm/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/txm</packageSourceUrl>
+    <docsUrl>https://github.com/thatmagicalcat/txm</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
