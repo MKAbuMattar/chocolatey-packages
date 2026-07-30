@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>onlook</id>
+    <version>0.0.0</version>
+    <title>Onlook</title>
+    <authors>onlook-dev</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/onlook-dev/onlook/blob/main/LICENSE.md</licenseUrl>
+    <projectUrl>https://onlook.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/onlook.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install onlook
+```
+
+Chocolatey downloads the official installer from the [onlook-dev/onlook](https://github.com/onlook-dev/onlook/releases) releases and runs it silently.
+
+## What is Onlook?
+
+The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, and edit your React App with AI.
+
+Upstream describes it with these topics: ai, cursor, cursor-ai, design, design-to-code, drizzle, editor, figma.
+
+## Upgrade
+
+```powershell
+choco upgrade onlook
+```
+
+## Uninstall
+
+```powershell
+choco uninstall onlook
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://onlook.com |
+| Source code | https://github.com/onlook-dev/onlook |
+| Releases | https://github.com/onlook-dev/onlook/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/onlook |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/onlook |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Onlook itself is distributed under its own [license](https://github.com/onlook-dev/onlook/blob/main/LICENSE.md).
+    ]]></description>
+    <summary>The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, and edit your React App with AI</summary>
+    <releaseNotes>https://github.com/onlook-dev/onlook/releases/tag/v0.2.32</releaseNotes>
+    <tags>onlook ai cursor cursor-ai design design-to-code drizzle editor figma</tags>
+    <projectSourceUrl>https://github.com/onlook-dev/onlook</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/onlook-dev/onlook/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/onlook</packageSourceUrl>
+    <docsUrl>https://onlook.com</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
