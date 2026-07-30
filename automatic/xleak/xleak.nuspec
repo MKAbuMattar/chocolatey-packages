@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>xleak</id>
-    <version>0.0.0</version>
+    <version>0.2.6</version>
     <title>xleak</title>
     <authors>bgreenwell</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/bgreenwell/xleak</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/xleak.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install xleak
@@ -52,7 +51,7 @@ choco uninstall xleak
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 xleak itself is distributed under its own [license](https://github.com/bgreenwell/xleak/blob/devel/LICENSE).
-    ]]></description>
+]]></description>
     <summary>A fast terminal Excel viewer with an interactive TUI. Features full-text search, formula display, lazy loading for large files, clipboard support, and export to CSV/JSON. Built with Rust and ratatui</summary>
     <releaseNotes>https://github.com/bgreenwell/xleak/releases/tag/v0.2.6</releaseNotes>
     <tags>xleak cli excel ratatui rust rust-lang spreadsheet spreadsheets tui viewer</tags>
