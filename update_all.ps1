@@ -74,6 +74,12 @@ $Options = [ordered]@{
         'Unable to connect'
         'The operation has timed out'
         'Internal Server Error'
+        # The push endpoint returns 409 with this text both when a version really
+        # exists and, occasionally, for no lasting reason. Retrying first means a
+        # transient conflict no longer silently drops the package; a real one still
+        # falls through to IgnoreOn below.
+        'package version already exists'
+        '409 (Conflict)'
     )
 
     Report        = @{                                      # Run report, published as the workflow summary
