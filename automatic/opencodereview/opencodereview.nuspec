@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>opencodereview</id>
-    <version>0.0.0</version>
+    <version>1.8.1</version>
     <title>Open Code Review</title>
     <authors>alibaba</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://open-codereview.ai</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/opencodereview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install opencodereview
@@ -52,9 +51,9 @@ choco uninstall opencodereview
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 Open Code Review itself is distributed under its own [license](https://github.com/alibaba/open-code-review/blob/main/LICENSE).
-    ]]></description>
+]]></description>
     <summary>Open-source &amp; free , Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible</summary>
-    <releaseNotes>https://github.com/alibaba/open-code-review/releases/tag/v1.8.0</releaseNotes>
+    <releaseNotes>https://github.com/alibaba/open-code-review/releases/tag/v1.8.1</releaseNotes>
     <tags>opencodereview agent agent-skills code-review harness ai cli alibaba</tags>
     <projectSourceUrl>https://github.com/alibaba/open-code-review</projectSourceUrl>
     <bugTrackerUrl>https://github.com/alibaba/open-code-review/issues</bugTrackerUrl>
