@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>terralist</id>
+    <version>0.0.0</version>
+    <title>Terralist</title>
+    <authors>terralist</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/terralist/terralist/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://www.terralist.io/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/terralist.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install terralist
+```
+
+Chocolatey downloads the official Windows build from the [terralist/terralist](https://github.com/terralist/terralist/releases) releases and puts it on your PATH.
+
+## What is Terralist?
+
+Terraform Private Registry for modules and providers manageable from a REST API.
+
+Upstream describes it with these topics: private-registry, registry, terraform, terraform-login, terraform-module, terraform-provider.
+
+## Upgrade
+
+```powershell
+choco upgrade terralist
+```
+
+## Uninstall
+
+```powershell
+choco uninstall terralist
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | http://www.terralist.io/ |
+| Source code | https://github.com/terralist/terralist |
+| Releases | https://github.com/terralist/terralist/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/terralist |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/terralist |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Terralist itself is distributed under its own [license](https://github.com/terralist/terralist/blob/master/LICENSE).
+    ]]></description>
+    <summary>Terraform Private Registry for modules and providers manageable from a REST API</summary>
+    <releaseNotes>https://github.com/terralist/terralist/releases/tag/v0.10.6</releaseNotes>
+    <tags>terralist private-registry registry terraform terraform-login terraform-module terraform-provider self-hosted server</tags>
+    <projectSourceUrl>https://github.com/terralist/terralist</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/terralist/terralist/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/terralist</packageSourceUrl>
+    <docsUrl>http://www.terralist.io/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

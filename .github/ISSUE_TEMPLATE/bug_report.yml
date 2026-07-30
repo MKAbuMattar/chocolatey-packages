@@ -11,8 +11,10 @@ body:
       description: Which package is this about?
       options:
         - agent-orchestrator
+        - alertmanager
         - anythingllm
         - bananas
+        - boring-registry
         - cdxgen
         - colibri
         - dashbeam
@@ -21,17 +23,23 @@ body:
         - dyad
         - e2ecp
         - faceswap
+        - filebrowser
+        - gfs
         - github-mcp-server
         - grepai
         - iam-policy-autopilot
         - jqp
         - kortix
+        - litestream
         - llmfit
         - lmstudio
         - lobehub
         - meetily
+        - memos
+        - mesheryctl
         - mindwalk
         - neohtop
+        - nginx-ui
         - nub
         - octobot
         - onlook
@@ -51,6 +59,7 @@ body:
         - t3-code
         - tailspin
         - terax
+        - terralist
         - tiny-rdm
         - tuios
         - txm
