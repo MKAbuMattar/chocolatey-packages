@@ -41,9 +41,13 @@ $global:au_Root = "$PSScriptRoot\automatic"
 # item" (chocolatey-au#29). Letting one small package build it first avoids the race.
 if (!(Test-Path "$Env:TEMP\chocolatey\au\chocolatey")) {
     Write-Host 'Warming the AU chocolatey copy'
-    Update-AUPackages -Name tailspin -NoPlugins -Options @{
-        Threads = 1; Push = $false; Force = $true
-    } | Out-Null
+    $warm = "$PSScriptRoot\automatic\tailspin"   # smallest download in the repo
+    if (Test-Path $warm) {
+        $global:au_WhatIf = $true               # back up and restore, so no files change
+        Push-Location $warm
+        try { .\update.ps1 | Out-Null } catch { Write-Host "Warm-up skipped: $_" }
+        finally { Pop-Location; $global:au_WhatIf = $false }
+    }
 }
 
 $Options = [ordered]@{
