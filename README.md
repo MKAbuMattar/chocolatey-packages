@@ -47,7 +47,7 @@ at a time. Nobody has to run anything by hand.
 | [pixi](automatic/pixi) | [![pixi](https://img.shields.io/chocolatey/v/pixi?color=blue&label=chocolatey&logo=chocolatey)](https://community.chocolatey.org/packages/pixi) | ![downloads](https://img.shields.io/chocolatey/dt/pixi?color=blue&label=%20) | [prefix-dev/pixi](https://github.com/prefix-dev/pixi) |
 | [pkl](automatic/pkl) | [![pkl](https://img.shields.io/chocolatey/v/pkl?color=blue&label=chocolatey&logo=chocolatey)](https://community.chocolatey.org/packages/pkl) | ![downloads](https://img.shields.io/chocolatey/dt/pkl?color=blue&label=%20) | [apple/pkl](https://github.com/apple/pkl) |
 | [qwen-code](automatic/qwen-code) | [![qwen-code](https://img.shields.io/chocolatey/v/qwen-code?color=blue&label=chocolatey&logo=chocolatey)](https://community.chocolatey.org/packages/qwen-code) | ![downloads](https://img.shields.io/chocolatey/dt/qwen-code?color=blue&label=%20) | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) |
-| [servo](automatic/servo) | [![servo](https://img.shields.io/chocolatey/v/servo?color=blue&label=chocolatey&logo=chocolatey)](https://community.chocolatey.org/packages/servo) | ![downloads](https://img.shields.io/chocolatey/dt/servo?color=blue&label=%20) | [servo/servo](https://github.com/servo/servo) |
+| [servoshell](automatic/servoshell) | [![servoshell](https://img.shields.io/chocolatey/v/servoshell?color=blue&label=chocolatey&logo=chocolatey)](https://community.chocolatey.org/packages/servoshell) | ![downloads](https://img.shields.io/chocolatey/dt/servoshell?color=blue&label=%20) | [servo/servo](https://github.com/servo/servo) |
 | [t3-code](automatic/t3-code) | [![t3-code](https://img.shields.io/chocolatey/v/t3-code?color=blue&label=chocolatey&logo=chocolatey)](https://community.chocolatey.org/packages/t3-code) | ![downloads](https://img.shields.io/chocolatey/dt/t3-code?color=blue&label=%20) | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) |
 | [tailspin](automatic/tailspin) | [![tailspin](https://img.shields.io/chocolatey/v/tailspin?color=blue&label=chocolatey&logo=chocolatey)](https://community.chocolatey.org/packages/tailspin) | ![downloads](https://img.shields.io/chocolatey/dt/tailspin?color=blue&label=%20) | [bensadeh/tailspin](https://github.com/bensadeh/tailspin) |
 | [terax](automatic/terax) | [![terax](https://img.shields.io/chocolatey/v/terax?color=blue&label=chocolatey&logo=chocolatey)](https://community.chocolatey.org/packages/terax) | ![downloads](https://img.shields.io/chocolatey/dt/terax?color=blue&label=%20) | [crynta/terax-ai](https://github.com/crynta/terax-ai) |
@@ -67,7 +67,7 @@ choco install lmstudio pixi tiny-rdm
 Or every package in this repository:
 
 ```powershell
-choco install agent-orchestrator anythingllm bananas cdxgen dashbeam daytona deepchat dyad faceswap jqp kortix llmfit lmstudio lobehub meetily neohtop octobot onlook openclaw-companion openwork openworker pixi pkl qwen-code servo t3-code tailspin terax tiny-rdm tuios whisper-cpp winapp witsy worldmonitor xleak ytsage
+choco install agent-orchestrator anythingllm bananas cdxgen dashbeam daytona deepchat dyad faceswap jqp kortix llmfit lmstudio lobehub meetily neohtop octobot onlook openclaw-companion openwork openworker pixi pkl qwen-code servoshell t3-code tailspin terax tiny-rdm tuios whisper-cpp winapp witsy worldmonitor xleak ytsage
 ```
 
 ## Layout

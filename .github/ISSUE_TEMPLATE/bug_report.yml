@@ -34,7 +34,7 @@ body:
         - pixi
         - pkl
         - qwen-code
-        - servo
+        - servoshell
         - t3-code
         - tailspin
         - terax
