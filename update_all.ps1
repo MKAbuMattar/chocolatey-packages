@@ -67,6 +67,11 @@ $Options = [ordered]@{
         'The operation has timed out'
         'Internal Server Error'
         'package version already exists'
+        # The community repository caps how many packages one maintainer can have
+        # awaiting moderation. Over that cap a push returns 403 until the queue
+        # drains, which is nothing this repository can act on, so let it retry
+        # hourly rather than turn every run red.
+        '403 (Forbidden)'
     )
 
     RepeatOn      = @(                                      # Transient - retry
@@ -108,5 +113,10 @@ $Options = [ordered]@{
 $global:info = updateall -Name $Name -Options $Options
 
 if ($global:info.error_count.total) {
-    throw "$($global:info.error_count.total) package(s) failed, see the report for details"
+    $global:info.error_info | Write-Host
+    Write-Host "::error::$($global:info.error_count.total) package(s) failed"
+    # A bare throw is not enough: with `shell: powershell` an unhandled terminating
+    # error still leaves the exit code at 0, so the step would report success while
+    # packages were failing. Exit explicitly instead.
+    exit 1
 }
