@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>dashbeam</id>
-    <version>0.0.0</version>
+    <version>0.6.0</version>
     <title>Dashbeam</title>
     <authors>tonyantony300</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://www.altsendme.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/dashbeam.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install dashbeam
@@ -52,7 +51,7 @@ choco uninstall dashbeam
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 Dashbeam itself is distributed under its own [license](https://github.com/tonyantony300/dashbeam/blob/main/LICENSE).
-    ]]></description>
+]]></description>
     <summary>Send files and folders anywhere in the world without storing in cloud - any size, any format, no accounts, no restrictions ( previously Altsendme )</summary>
     <releaseNotes>https://github.com/tonyantony300/dashbeam/releases/tag/v0.6.0</releaseNotes>
     <tags>dashbeam android file-transfer iroh linux macos p2p privacy-tools resumable</tags>
