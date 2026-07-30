@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>cdxgen</id>
-    <version>0.0.0</version>
+    <version>12.8.2</version>
     <title>cdxgen</title>
     <authors>cdxgen</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://cdxgen.github.io/cdxgen/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/cdxgen.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install cdxgen
@@ -52,7 +51,7 @@ choco uninstall cdxgen
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 cdxgen itself is distributed under its own [license](https://github.com/cdxgen/cdxgen/blob/master/LICENSE).
-    ]]></description>
+]]></description>
     <summary>Creates CycloneDX Bill of Materials (BOM) for your projects from source and container images. Supports many languages and package managers. Integrate in your CI/CD pipeline with automatic submission to Dependency Track server</summary>
     <releaseNotes>https://github.com/cdxgen/cdxgen/releases/tag/v12.8.2</releaseNotes>
     <tags>cdxgen bom cbom containers cyclonedx docker oci owasp package-url sbom security cli</tags>
