@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>t3-code</id>
-    <version>0.0.31</version>
+    <version>0.0.32</version>
     <title>T3 Code</title>
     <authors>t3.codes</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -99,7 +99,7 @@ T3 Code itself is copyright 2026 T3 Tools Inc., also under the
 [MIT License](https://github.com/pingdotgg/t3code/blob/main/LICENSE).
 ]]></description>
     <summary>T3 Code is a minimal web GUI for coding agents. It works with Codex today, and Claude Code support is planned.</summary>
-    <releaseNotes>https://github.com/pingdotgg/t3code/releases/tag/v0.0.31</releaseNotes>
+    <releaseNotes>https://github.com/pingdotgg/t3code/releases/tag/v0.0.32</releaseNotes>
     <tags>t3-code t3 ai coding-agent codex openai electron desktop gui chat developer-tools</tags>
     <projectSourceUrl>https://github.com/pingdotgg/t3code</projectSourceUrl>
     <bugTrackerUrl>https://github.com/pingdotgg/t3code/issues</bugTrackerUrl>
