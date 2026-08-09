@@ -112,9 +112,13 @@ $Options = [ordered]@{
 
 $global:info = updateall -Name $Name -Options $Options
 
-if ($global:info.error_count.total) {
-    $global:info.error_info | Write-Host
-    Write-Host "::error::$($global:info.error_count.total) package(s) failed"
+# Update-AUPackages returns the collection of packages, not the run summary, so
+# failures have to be counted from the packages themselves. Reading a summary
+# property here silently found nothing and let broken runs report success.
+$failed = @($global:info | Where-Object { $_.Error -and -not $_.Ignored })
+if ($failed) {
+    $failed | ForEach-Object { Write-Host "`nPackage: $($_.Name)`n$($_.Error)" }
+    Write-Host "::error::$($failed.Count) package(s) failed: $($failed.Name -join ', ')"
     # A bare throw is not enough: with `shell: powershell` an unhandled terminating
     # error still leaves the exit code at 0, so the step would report success while
     # packages were failing. Exit explicitly instead.
