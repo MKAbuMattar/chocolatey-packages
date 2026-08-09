@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>himalaya</id>
+    <version>0.0.0</version>
+    <title>Himalaya</title>
+    <authors>pimalaya</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/pimalaya/himalaya/blob/master/LICENSE-APACHE</licenseUrl>
+    <projectUrl>https://pimalaya.org</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/himalaya.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install himalaya
+```
+
+Chocolatey downloads the official Windows build from the [pimalaya/himalaya](https://github.com/pimalaya/himalaya/releases) releases and puts it on your PATH.
+Upstream ships the binary twice; only the copy at the root of the archive is used.
+
+## What is Himalaya?
+
+CLI to manage emails.
+
+Upstream describes it with these topics: cli, client, email, gpg, himalaya, imap, notmuch, pgp.
+
+## Upgrade
+
+```powershell
+choco upgrade himalaya
+```
+
+## Uninstall
+
+```powershell
+choco uninstall himalaya
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://pimalaya.org |
+| Source code | https://github.com/pimalaya/himalaya |
+| Releases | https://github.com/pimalaya/himalaya/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/himalaya |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/himalaya |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Himalaya itself is distributed under its own [license](https://github.com/pimalaya/himalaya/blob/master/LICENSE-APACHE).
+    ]]></description>
+    <summary>CLI to manage emails</summary>
+    <releaseNotes>https://github.com/pimalaya/himalaya/releases/tag/v2.0.0</releaseNotes>
+    <tags>himalaya cli client email gpg imap notmuch pgp smtp</tags>
+    <projectSourceUrl>https://github.com/pimalaya/himalaya</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/pimalaya/himalaya/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/himalaya</packageSourceUrl>
+    <docsUrl>https://pimalaya.org</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

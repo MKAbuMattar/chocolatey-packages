@@ -16,17 +16,22 @@ body:
         - bananas
         - boring-registry
         - cdxgen
+        - codenomad
         - colibri
+        - crush
         - dashbeam
         - daytona
         - deepchat
         - dyad
         - e2ecp
+        - ever-gauzy
         - faceswap
         - filebrowser
+        - game-cheats-manager
         - gfs
         - github-mcp-server
         - grepai
+        - himalaya
         - iam-policy-autopilot
         - jqp
         - kortix
@@ -41,8 +46,12 @@ body:
         - neohtop
         - nginx-ui
         - nub
+        - numbat-agent
         - octobot
         - onlook
+        - open-interpreter
+        - open-knowledge
+        - open-pdf-studio
         - openclaw-companion
         - opencodereview
         - openwork
@@ -53,7 +62,9 @@ body:
         - pkl
         - posthog-cli
         - qodo-cover
+        - qwen-audio-agent
         - qwen-code
+        - rescript-editor
         - servoshell
         - strix
         - t3-code
