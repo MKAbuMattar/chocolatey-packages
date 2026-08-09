@@ -13,7 +13,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   # LM Studio has no release API; the download page embeds the current version per platform
+  # The page streams its data in Next.js chunks, so the JSON is split across
+  # <script> boundaries. Drop the boundaries before matching, or the version and
+  # the build number end up in different pieces.
   $page = (Invoke-WebRequest -Uri $downloadPage -UseBasicParsing).Content -replace '\\', ''
+  $page = $page -replace '"\]\)</script><script>self\.__next_f\.push\(\[\d+,"', ''
   if ($page -notmatch '"win32":\{"x64":\{"version":"([\d.]+)","build":"(\d+)"') {
     throw "Could not find the win32/x64 version on $downloadPage"
   }
