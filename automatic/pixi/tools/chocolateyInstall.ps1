@@ -4,8 +4,8 @@ $toolsPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/prefix-dev/pixi/releases/download/v0.76.1/pixi-x86_64-pc-windows-msvc.exe'
-  checksum64     = '104da0bdf4e0565cfacd4c7538e321363f73a997a18c208cca18dafbbac5ef12'
+  url64          = 'https://github.com/prefix-dev/pixi/releases/download/v0.76.2/pixi-x86_64-pc-windows-msvc.exe'
+  checksum64     = 'd296e346a67ede274643a78c69a8e1068778fcc4213ab98dcc308dd4442f2e4a'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'pixi.exe'
 }
