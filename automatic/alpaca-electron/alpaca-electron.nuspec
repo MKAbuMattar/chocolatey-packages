@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>alpaca-electron</id>
-    <version>0.0.0</version>
+    <version>1.0.6</version>
     <title>Alpaca Electron</title>
     <authors>ItsPi3141</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/ItsPi3141/alpaca-electron</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/alpaca-electron.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install alpaca-electron
@@ -53,7 +52,7 @@ choco uninstall alpaca-electron
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 Alpaca Electron itself is distributed under its own [license](https://github.com/ItsPi3141/alpaca-electron/blob/main/LICENSE).
-    ]]></description>
+]]></description>
     <summary>The simplest way to run Alpaca (and other LLaMA-based local LLMs) on your own computer</summary>
     <releaseNotes>https://github.com/ItsPi3141/alpaca-electron/releases/tag/v1.0.6</releaseNotes>
     <tags>alpaca-electron ai alpaca app chat chatgpt dalai docker llm llama local desktop</tags>
