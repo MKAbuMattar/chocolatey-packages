@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>llrt</id>
-    <version>0.0.0</version>
+    <version>0.8.1-beta</version>
     <title>LLRT</title>
     <authors>awslabs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/awslabs/llrt</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/llrt.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install llrt
@@ -51,7 +50,7 @@ choco uninstall llrt
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 LLRT itself is distributed under its own [license](https://github.com/awslabs/llrt/blob/main/LICENSE).
-    ]]></description>
+]]></description>
     <summary>LLRT (Low Latency Runtime) is an experimental, lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications</summary>
     <releaseNotes>https://github.com/awslabs/llrt/releases/tag/v0.8.1-beta</releaseNotes>
     <tags>llrt javascript runtime lambda cli</tags>
