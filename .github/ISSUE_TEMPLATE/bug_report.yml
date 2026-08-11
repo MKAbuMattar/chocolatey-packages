@@ -12,31 +12,42 @@ body:
       options:
         - agent-orchestrator
         - alertmanager
+        - alpaca-electron
         - anythingllm
+        - arrow-flight-sql-odbc
         - bananas
         - boring-registry
+        - buzz
         - cdxgen
         - codenomad
         - colibri
         - crush
         - dashbeam
         - daytona
+        - debug-skill
         - deepchat
+        - dlman
         - dyad
         - e2ecp
         - ever-gauzy
         - faceswap
         - filebrowser
+        - flux-operator
+        - fort-firewall
         - game-cheats-manager
         - gfs
         - github-mcp-server
         - grepai
         - himalaya
         - iam-policy-autopilot
+        - iroh-dns-server
+        - iroh-relay
         - jqp
         - kortix
+        - kubectl-cnpg
         - litestream
         - llmfit
+        - llrt
         - lmstudio
         - lobehub
         - meetily
@@ -48,6 +59,7 @@ body:
         - nub
         - numbat-agent
         - octobot
+        - omnictl
         - onlook
         - open-interpreter
         - open-knowledge
@@ -57,7 +69,9 @@ body:
         - openwork
         - openworker
         - ouroboros
+        - pentesterflow
         - pi
+        - pilotdeck
         - pixi
         - pkl
         - posthog-cli
@@ -78,6 +92,7 @@ body:
         - whisper-cpp
         - whosthere
         - winapp
+        - wiretapper
         - witsy
         - worldmonitor
         - xleak

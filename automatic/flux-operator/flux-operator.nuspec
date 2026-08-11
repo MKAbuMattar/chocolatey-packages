@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>flux-operator</id>
+    <version>0.0.0</version>
+    <title>Flux Operator</title>
+    <authors>controlplaneio-fluxcd</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/controlplaneio-fluxcd/flux-operator/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://fluxoperator.dev</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/flux-operator.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install flux-operator
+```
+
+Chocolatey downloads the official Windows build from the [controlplaneio-fluxcd/flux-operator](https://github.com/controlplaneio-fluxcd/flux-operator/releases) releases and puts it on your PATH.
+This installs the Flux Operator command line tool. The operator itself runs in Kubernetes.
+
+## What is Flux Operator?
+
+GitOps on Autopilot Mode.
+
+Upstream describes it with these topics: continuous-delivery, flux-ui, fluxcd, gitops, mcp-server.
+
+## Upgrade
+
+```powershell
+choco upgrade flux-operator
+```
+
+## Uninstall
+
+```powershell
+choco uninstall flux-operator
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://fluxoperator.dev |
+| Source code | https://github.com/controlplaneio-fluxcd/flux-operator |
+| Releases | https://github.com/controlplaneio-fluxcd/flux-operator/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/flux-operator |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/flux-operator |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Flux Operator itself is distributed under its own [license](https://github.com/controlplaneio-fluxcd/flux-operator/blob/main/LICENSE).
+    ]]></description>
+    <summary>GitOps on Autopilot Mode</summary>
+    <releaseNotes>https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.58.0</releaseNotes>
+    <tags>flux-operator continuous-delivery flux-ui fluxcd gitops mcp-server kubernetes flux cli</tags>
+    <projectSourceUrl>https://github.com/controlplaneio-fluxcd/flux-operator</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/controlplaneio-fluxcd/flux-operator/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/flux-operator</packageSourceUrl>
+    <docsUrl>https://fluxoperator.dev</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
