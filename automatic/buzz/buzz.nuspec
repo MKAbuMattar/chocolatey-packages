@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>buzz</id>
+    <version>0.0.0</version>
+    <title>Buzz</title>
+    <authors>block</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/block/buzz/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/block/buzz</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/buzz.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install buzz
+```
+
+Chocolatey downloads the official installer from the [block/buzz](https://github.com/block/buzz/releases) releases and runs it silently.
+Upstream publishes this build unsigned and labelled alpha. Windows SmartScreen will warn about it, and it is pre-release software.
+
+## What is Buzz?
+
+A hive mind communication platform.
+
+## Upgrade
+
+```powershell
+choco upgrade buzz
+```
+
+## Uninstall
+
+```powershell
+choco uninstall buzz
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://github.com/block/buzz |
+| Source code | https://github.com/block/buzz |
+| Releases | https://github.com/block/buzz/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/buzz |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/buzz |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Buzz itself is distributed under its own [license](https://github.com/block/buzz/blob/main/LICENSE).
+    ]]></description>
+    <summary>A hive mind communication platform</summary>
+    <releaseNotes>https://github.com/block/buzz/releases/tag/desktop-v0.5.9</releaseNotes>
+    <tags>buzz chat communication desktop</tags>
+    <projectSourceUrl>https://github.com/block/buzz</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/block/buzz/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/buzz</packageSourceUrl>
+    <docsUrl>https://github.com/block/buzz</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

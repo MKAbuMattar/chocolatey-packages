@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>fort-firewall</id>
+    <version>0.0.0</version>
+    <title>Fort Firewall</title>
+    <authors>tnodir</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/tnodir/fort/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/tnodir/fort</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/fort-firewall.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install fort-firewall
+```
+
+Chocolatey downloads the official installer from the [tnodir/fort](https://github.com/tnodir/fort/releases) releases and runs it silently.
+
+## What is Fort Firewall?
+
+Fort Firewall for Windows.
+
+Upstream describes it with these topics: bandwidth-limiting, firewall, windows.
+
+## Upgrade
+
+```powershell
+choco upgrade fort-firewall
+```
+
+## Uninstall
+
+```powershell
+choco uninstall fort-firewall
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://github.com/tnodir/fort |
+| Source code | https://github.com/tnodir/fort |
+| Releases | https://github.com/tnodir/fort/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/fort-firewall |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/fort-firewall |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Fort Firewall itself is distributed under its own [license](https://github.com/tnodir/fort/blob/master/LICENSE).
+    ]]></description>
+    <summary>Fort Firewall for Windows</summary>
+    <releaseNotes>https://github.com/tnodir/fort/releases/tag/v3.19.9</releaseNotes>
+    <tags>fort-firewall bandwidth-limiting firewall windows security network</tags>
+    <projectSourceUrl>https://github.com/tnodir/fort</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/tnodir/fort/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/fort-firewall</packageSourceUrl>
+    <docsUrl>https://github.com/tnodir/fort</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
