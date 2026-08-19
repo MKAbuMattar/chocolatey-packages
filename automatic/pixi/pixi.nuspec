@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pixi</id>
-    <version>0.76.2</version>
+    <version>0.77.0</version>
     <title>Pixi</title>
     <authors>prefix.dev</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -64,7 +64,7 @@ The official documentation is at [pixi.sh](https://pixi.sh/). Releases are liste
 [GitHub repository](https://github.com/prefix-dev/pixi/releases).
 ]]></description>
     <summary>Pixi is a cross-platform, multi-language package manager and workflow tool built on the conda ecosystem.</summary>
-    <releaseNotes>https://github.com/prefix-dev/pixi/releases/tag/v0.76.2</releaseNotes>
+    <releaseNotes>https://github.com/prefix-dev/pixi/releases/tag/v0.77.0</releaseNotes>
     <tags>pixi package-manager conda rust python workflow developer-tools</tags>
     <projectSourceUrl>https://github.com/prefix-dev/pixi</projectSourceUrl>
     <bugTrackerUrl>https://github.com/prefix-dev/pixi/issues</bugTrackerUrl>
