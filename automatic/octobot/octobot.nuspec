@@ -61,6 +61,6 @@ OctoBot itself is distributed under its own [license](https://github.com/Drakkar
     <docsUrl>https://www.octobot.cloud</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

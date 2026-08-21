@@ -72,6 +72,6 @@ The official documentation is at [pixi.sh](https://pixi.sh/). Releases are liste
     <docsUrl>https://pixi.sh/</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

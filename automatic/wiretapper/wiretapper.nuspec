@@ -60,6 +60,6 @@ WireTapper itself is distributed under its own [license](https://github.com/h9zd
     <docsUrl>https://github.com/h9zdev/WireTapper</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

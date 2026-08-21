@@ -61,6 +61,6 @@ NeoHtop itself is distributed under its own [license](https://github.com/Abdenas
     <docsUrl>https://abdenasser.github.io/neohtop/</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

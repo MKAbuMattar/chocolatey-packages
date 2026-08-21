@@ -59,6 +59,6 @@ Native SDK itself is distributed under its own [license](https://github.com/verc
     <docsUrl>https://native-sdk.dev</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

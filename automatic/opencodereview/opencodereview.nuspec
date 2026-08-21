@@ -61,6 +61,6 @@ Open Code Review itself is distributed under its own [license](https://github.co
     <docsUrl>https://open-codereview.ai</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

@@ -59,6 +59,6 @@ omnictl itself is distributed under its own [license](https://github.com/siderol
     <docsUrl>https://github.com/siderolabs/omni</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

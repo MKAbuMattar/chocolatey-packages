@@ -61,6 +61,6 @@ cdxgen itself is distributed under its own [license](https://github.com/cdxgen/c
     <docsUrl>https://cdxgen.github.io/cdxgen/</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

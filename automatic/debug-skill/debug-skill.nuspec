@@ -60,6 +60,6 @@ Debug Skill itself is distributed under its own [license](https://github.com/Alm
     <docsUrl>https://github.com/AlmogBaku/debug-skill</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>
