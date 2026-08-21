@@ -48,16 +48,21 @@ foreach ($dir in $dirs) {
         continue
     }
 
+    $current = Get-Content $nuspec -Raw
+
+    # Match the nuspec's own line ending. Git hands CI a CRLF checkout and a developer
+    # on Linux an LF one, so a hard coded ending would report drift on every run.
+    $nl = if ($current -match "`r`n") { "`r`n" } else { "`n" }
+
     # Drop the H1. It titles the file in this repository, not the package page.
     $body = (Get-Content $readme -Raw) -replace '^\s*#\s+[^\r\n]*\r?\n\s*', ''
-    $body = $body.TrimEnd() -replace "`r`n", "`n"
+    $body = ($body.TrimEnd() -replace "`r`n", "`n") -replace "`n", $nl
 
     if ($body -match '\]\]>') {
         Write-Warning "$id README contains ']]>' which cannot go in a CDATA block, skipped"
         continue
     }
 
-    $current = Get-Content $nuspec -Raw
     $pattern = '(?s)<description><!\[CDATA\[.*?\]\]></description>'
 
     if ($current -notmatch $pattern) {
@@ -68,7 +73,7 @@ foreach ($dir in $dirs) {
     # A literal replacement, so '$' and '\' in the README are not treated as substitutions.
     $updated = [regex]::Replace(
         $current, $pattern,
-        { "<description><![CDATA[`n$body`n]]></description>" },
+        { "<description><![CDATA[$nl$body$nl]]></description>" },
         1)
 
     if ($updated -ne $current) {
