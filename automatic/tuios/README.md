@@ -6,13 +6,17 @@
 choco install tuios
 ```
 
-Chocolatey downloads the official Windows build from the [Gaurav-Gosain/tuios](https://github.com/Gaurav-Gosain/tuios/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install tuios --version=0.7.0
+```
 
 ## What is TuiOS?
 
 Terminal UI OS (Terminal Multiplexer).
-
-Upstream describes it with these topics: bubbletea, charm, go, multiplexer, pty, terminal.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall tuios
 | Website | https://tuios.gaurav.zip/ |
 | Source code | https://github.com/Gaurav-Gosain/tuios |
 | Releases | https://github.com/Gaurav-Gosain/tuios/releases |
+| Issues | https://github.com/Gaurav-Gosain/tuios/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/tuios |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/tuios |
 

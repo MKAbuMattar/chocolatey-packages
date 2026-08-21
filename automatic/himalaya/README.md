@@ -6,14 +6,17 @@
 choco install himalaya
 ```
 
-Chocolatey downloads the official Windows build from the [pimalaya/himalaya](https://github.com/pimalaya/himalaya/releases) releases and puts it on your PATH.
-Upstream ships the binary twice; only the copy at the root of the archive is used.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install himalaya --version=2.0.0
+```
 
 ## What is Himalaya?
 
 CLI to manage emails.
-
-Upstream describes it with these topics: cli, client, email, gpg, himalaya, imap, notmuch, pgp.
 
 ## Upgrade
 
@@ -34,6 +37,7 @@ choco uninstall himalaya
 | Website | https://pimalaya.org |
 | Source code | https://github.com/pimalaya/himalaya |
 | Releases | https://github.com/pimalaya/himalaya/releases |
+| Issues | https://github.com/pimalaya/himalaya/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/himalaya |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/himalaya |
 

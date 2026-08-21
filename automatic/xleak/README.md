@@ -6,13 +6,17 @@
 choco install xleak
 ```
 
-Chocolatey downloads the official installer from the [bgreenwell/xleak](https://github.com/bgreenwell/xleak/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install xleak --version=0.2.6
+```
 
 ## What is xleak?
 
 A fast terminal Excel viewer with an interactive TUI. Features full-text search, formula display, lazy loading for large files, clipboard support, and export to CSV/JSON. Built with Rust and ratatui.
-
-Upstream describes it with these topics: cli, excel, ratatui, rust, rust-lang, spreadsheet, spreadsheets, tui.
 
 ## Upgrade
 
@@ -31,8 +35,8 @@ choco uninstall xleak
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/bgreenwell/xleak |
-| Source code | https://github.com/bgreenwell/xleak |
 | Releases | https://github.com/bgreenwell/xleak/releases |
+| Issues | https://github.com/bgreenwell/xleak/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/xleak |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/xleak |
 

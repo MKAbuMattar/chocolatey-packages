@@ -6,14 +6,17 @@
 choco install rescript-editor
 ```
 
-Chocolatey downloads the official installer from the [wassgha/rescript](https://github.com/wassgha/rescript/releases) releases and runs it silently.
-The package id is `rescript-editor` rather than `rescript`, because ReScript is a widely used programming language and `choco install rescript` should not install a video editor.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install rescript-editor --version=1.1.7
+```
 
 ## What is Rescript?
 
 Open source, transcript-based video/audio editor that lives in the browser.
-
-Upstream describes it with these topics: audio, media, media-editing, media-editor, transcribe, transcription, video, video-editing.
 
 ## Upgrade
 
@@ -34,6 +37,7 @@ choco uninstall rescript-editor
 | Website | https://getrescript.com |
 | Source code | https://github.com/wassgha/rescript |
 | Releases | https://github.com/wassgha/rescript/releases |
+| Issues | https://github.com/wassgha/rescript/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/rescript-editor |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/rescript-editor |
 

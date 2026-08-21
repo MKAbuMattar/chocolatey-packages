@@ -6,7 +6,13 @@
 choco install game-cheats-manager
 ```
 
-Chocolatey downloads the official installer from the [dyang886/Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install game-cheats-manager --version=2.4.6
+```
 
 ## What is Game Cheats Manager?
 
@@ -31,6 +37,7 @@ choco uninstall game-cheats-manager
 | Website | https://gamezonelabs.com |
 | Source code | https://github.com/dyang886/Game-Cheats-Manager |
 | Releases | https://github.com/dyang886/Game-Cheats-Manager/releases |
+| Issues | https://github.com/dyang886/Game-Cheats-Manager/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/game-cheats-manager |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/game-cheats-manager |
 

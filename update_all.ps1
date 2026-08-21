@@ -35,6 +35,10 @@ if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
 $global:au_Root = "$PSScriptRoot\automatic"
 
+# The package page renders the nuspec <description>, but the text is written in the
+# package README. Sync before AU packs anything, or the two drift apart silently.
+& "$PSScriptRoot\sync_readme.ps1" -Name $Name
+
 # The first time AU calculates a checksum it copies Chocolatey's helpers into TEMP and
 # monkey patches them. Nothing locks that copy, so on a cold cache several threads build
 # it at once and trip over each other with "Container cannot be copied onto existing leaf

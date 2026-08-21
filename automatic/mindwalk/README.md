@@ -6,7 +6,13 @@
 choco install mindwalk
 ```
 
-Chocolatey downloads the official Windows build from the [cosmtrek/mindwalk](https://github.com/cosmtrek/mindwalk/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install mindwalk --version=0.3.0
+```
 
 ## What is Mindwalk?
 
@@ -29,8 +35,8 @@ choco uninstall mindwalk
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/cosmtrek/mindwalk |
-| Source code | https://github.com/cosmtrek/mindwalk |
 | Releases | https://github.com/cosmtrek/mindwalk/releases |
+| Issues | https://github.com/cosmtrek/mindwalk/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/mindwalk |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/mindwalk |
 

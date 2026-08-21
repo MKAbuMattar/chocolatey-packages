@@ -6,8 +6,13 @@
 choco install codenomad
 ```
 
-Chocolatey downloads the official Windows build from the [NeuralNomadsAI/CodeNomad](https://github.com/NeuralNomadsAI/CodeNomad/releases) releases and puts it on your PATH.
-The archive bundles its own Node.js runtime, which is kept off your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install codenomad --version=0.18.0
+```
 
 ## What is CodeNomad?
 
@@ -30,8 +35,8 @@ choco uninstall codenomad
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/NeuralNomadsAI/CodeNomad |
-| Source code | https://github.com/NeuralNomadsAI/CodeNomad |
 | Releases | https://github.com/NeuralNomadsAI/CodeNomad/releases |
+| Issues | https://github.com/NeuralNomadsAI/CodeNomad/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/codenomad |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/codenomad |
 

@@ -6,13 +6,17 @@
 choco install memos
 ```
 
-Chocolatey downloads the official Windows build from the [usememos/memos](https://github.com/usememos/memos/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install memos --version=0.30.0
+```
 
 ## What is Memos?
 
 Open-source, self-hosted note-taking tool built for quick capture. Markdown-native, lightweight, and fully yours.
-
-Upstream describes it with these topics: docker, foss, go, markdown, memo, microblog, note-taking, notecard.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall memos
 | Website | https://usememos.com |
 | Source code | https://github.com/usememos/memos |
 | Releases | https://github.com/usememos/memos/releases |
+| Issues | https://github.com/usememos/memos/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/memos |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/memos |
 

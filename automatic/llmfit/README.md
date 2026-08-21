@@ -6,13 +6,17 @@
 choco install llmfit
 ```
 
-Chocolatey downloads the official Windows build from the [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install llmfit --version=1.1.6
+```
 
 ## What is llmfit?
 
 Hundreds of models & providers. One command to find what runs on your hardware.
-
-Upstream describes it with these topics: gguf, llm, localai, mlx, skill, unsloth.
 
 ## Upgrade
 
@@ -31,8 +35,8 @@ choco uninstall llmfit
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/AlexsJones/llmfit |
-| Source code | https://github.com/AlexsJones/llmfit |
 | Releases | https://github.com/AlexsJones/llmfit/releases |
+| Issues | https://github.com/AlexsJones/llmfit/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/llmfit |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/llmfit |
 

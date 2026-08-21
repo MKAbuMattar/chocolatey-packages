@@ -19,6 +19,12 @@ jobs:
       - name: Install Chocolatey AU
         run: choco install chocolatey-au --yes --no-progress
 
+      # The nuspec description is generated from the package README. Fail here rather
+      # than let a pull request land a README the package page will never show.
+      - name: Check nuspec descriptions match their README
+        shell: powershell
+        run: .\sync_readme.ps1 -Check
+
       # Force runs every updater and packs every package without pushing anything,
       # so a broken update.ps1, a dead download URL or an invalid nuspec fails here.
       - name: Force update and pack all packages

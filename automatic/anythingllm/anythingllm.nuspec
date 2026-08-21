@@ -10,19 +10,24 @@
     <projectUrl>https://anythingllm.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/anythingllm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install anythingllm
 ```
 
-Chocolatey downloads the official installer from the [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install anythingllm --version=1.15.0
+```
 
 ## What is AnythingLLM Desktop?
 
 Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience.
-
-Upstream describes it with these topics: agent-computer, agent-harness, agent-orchestration, agentic-ai, ai-agents, computer-use, hermes-agent, llm.
 
 ## Upgrade
 
@@ -43,6 +48,7 @@ choco uninstall anythingllm
 | Website | https://anythingllm.com |
 | Source code | https://github.com/Mintplex-Labs/anything-llm |
 | Releases | https://github.com/Mintplex-Labs/anything-llm/releases |
+| Issues | https://github.com/Mintplex-Labs/anything-llm/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/anythingllm |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/anythingllm |
 

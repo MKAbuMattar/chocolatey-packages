@@ -6,7 +6,13 @@
 choco install openworker
 ```
 
-Chocolatey downloads the official installer from the [andrewyng/openworker](https://github.com/andrewyng/openworker/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install openworker --version=0.1.6
+```
 
 ## What is OpenWorker?
 
@@ -29,8 +35,8 @@ choco uninstall openworker
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/andrewyng/openworker |
-| Source code | https://github.com/andrewyng/openworker |
 | Releases | https://github.com/andrewyng/openworker/releases |
+| Issues | https://github.com/andrewyng/openworker/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/openworker |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/openworker |
 

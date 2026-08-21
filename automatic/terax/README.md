@@ -6,13 +6,17 @@
 choco install terax
 ```
 
-Chocolatey downloads the official installer from the [crynta/terax-ai](https://github.com/crynta/terax-ai/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install terax --version=0.8.6
+```
 
 ## What is Terax?
 
 Lightweight (7MB) Terminal-first AI-native dev workspace.
-
-Upstream describes it with these topics: agents, ai, code-editor, linux, macos, reactjs, rust, tauri.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall terax
 | Website | https://terax.app |
 | Source code | https://github.com/crynta/terax-ai |
 | Releases | https://github.com/crynta/terax-ai/releases |
+| Issues | https://github.com/crynta/terax-ai/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/terax |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/terax |
 

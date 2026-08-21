@@ -10,20 +10,24 @@
     <projectUrl>https://github.com/perplexityai/numbat</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/numbat-agent.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install numbat-agent
 ```
 
-Chocolatey downloads the official Windows build from the [perplexityai/numbat](https://github.com/perplexityai/numbat/releases) releases and puts it on your PATH.
-The package id is `numbat-agent` rather than `numbat`, to leave that name to the unit calculator of the same name. The command it installs is still `numbat`.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install numbat-agent --version=0.1.2
+```
 
 ## What is Numbat?
 
 Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction.
-
-Upstream describes it with these topics: agent-security, ai-agent-security, ai-agents.
 
 ## Upgrade
 
@@ -42,8 +46,8 @@ choco uninstall numbat-agent
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/perplexityai/numbat |
-| Source code | https://github.com/perplexityai/numbat |
 | Releases | https://github.com/perplexityai/numbat/releases |
+| Issues | https://github.com/perplexityai/numbat/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/numbat-agent |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/numbat-agent |
 

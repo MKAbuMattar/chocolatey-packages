@@ -6,13 +6,17 @@
 choco install litestream
 ```
 
-Chocolatey downloads the official Windows build from the [benbjohnson/litestream](https://github.com/benbjohnson/litestream/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install litestream --version=0.5.15
+```
 
 ## What is Litestream?
 
 Streaming replication for SQLite.
-
-Upstream describes it with these topics: replication, s3, sqlite.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall litestream
 | Website | https://litestream.io |
 | Source code | https://github.com/benbjohnson/litestream |
 | Releases | https://github.com/benbjohnson/litestream/releases |
+| Issues | https://github.com/benbjohnson/litestream/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/litestream |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/litestream |
 

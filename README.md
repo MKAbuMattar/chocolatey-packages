@@ -125,33 +125,59 @@ choco install agent-orchestrator alertmanager alpaca-electron anythingllm arrow-
 
 ```
 automatic/<id>/
-  <id>.nuspec               package metadata (version is maintained by the updater)
+  <id>.nuspec               package metadata (version and description are generated)
   update.ps1                how to find the latest version, URL and what to replace
   tools/chocolateyInstall.ps1
-  README.md                 package description, synced into the nuspec on every update
+  README.md                 the package description, and the source for the nuspec
 icons/                      package icons, served over jsDelivr instead of hotlinked
 update_all.ps1              the updater entry point used by CI and locally
+sync_readme.ps1             copies each README into its nuspec <description>
 ```
 
 Folder name, nuspec file name and package id must match, because that is how
 [Chocolatey AU](https://github.com/chocolatey-community/chocolatey-au) finds packages.
 
+No package carries a binary. Each one downloads the official upstream build at install
+time and checks it against a SHA256 recorded in `chocolateyInstall.ps1`.
+
+### Package README structure
+
+Every package README uses the same headings, in this order:
+
+```
+# <Name> Chocolatey Package
+## Install            the choco command, how the package gets the software, version pinning
+## What is <Name>?    what the software does, in the upstream project's own terms
+## Usage              only when the package installs a named command
+## Upgrade
+## Uninstall
+## Links              website, source, docs, releases, issues, Chocolatey page, package source
+## License            this package is MIT, the software keeps its own
+```
+
+A package may add its own sections after `What is <Name>?`, as `lmstudio`, `pixi` and
+`witsy` do.
+
+Write the description once, in `README.md`. `sync_readme.ps1` copies it into the nuspec,
+minus the H1, so the Chocolatey package page and this repository cannot disagree.
+
 ## How the automation works
 
 `update.yaml` runs hourly on a Windows runner:
 
-1. `update_all.ps1` calls the `update.ps1` of every package in `automatic/`.
-2. Each `update.ps1` reports the latest upstream version and download URL.
-3. AU skips the package when the version is unchanged or already on the community feed.
-4. Otherwise it downloads the installer, computes the SHA256 checksum, rewrites the
-   nuspec version, install script URL/checksum and release notes, then runs `choco pack`.
-5. The new `.nupkg` is pushed to the community feed, the changed files are committed back
+1. `sync_readme.ps1` refreshes every nuspec description from its README.
+2. `update_all.ps1` calls the `update.ps1` of every package in `automatic/`.
+3. Each `update.ps1` reports the latest upstream version and download URL.
+4. AU skips the package when its nuspec already records that version.
+5. Otherwise it downloads the installer, computes the SHA256, rewrites the nuspec version,
+   the install script URL and checksum and the release notes, then runs `choco pack`.
+6. The new `.nupkg` is pushed to the community feed, the changed files are committed back
    here (one commit per package) and a GitHub release is created with the `.nupkg` attached.
-6. The run report is published as the workflow summary.
+7. The run report is published as the workflow summary.
 
-`test.yaml` runs on every pull request and does the same thing with `-Force`, which
-rebuilds every package without pushing anything. A dead download URL, a broken
-`update.ps1` or an invalid nuspec fails the PR.
+`test.yaml` runs on every pull request. It checks that each nuspec description still
+matches its README, then rebuilds every package with `-Force` and pushes nothing. A dead
+download URL, a broken `update.ps1`, an invalid nuspec or a stale description fails the PR.
 
 ### Secrets
 
@@ -160,9 +186,38 @@ rebuilds every package without pushing anything. A dead download URL, a broken
 | `CHOCO_API_KEY` | pushing packages to the Chocolatey Community Repository |
 | `GITHUB_TOKEN` | commits, GitHub releases, GitHub API rate limit (provided automatically) |
 
-Only `CHOCO_API_KEY` has to be set, under **Settings → Secrets and variables → Actions**.
-Workflow permissions must allow pushing: **Settings → Actions → General → Workflow
-permissions → Read and write**.
+Only `CHOCO_API_KEY` has to be set, under **Settings > Secrets and variables > Actions**.
+Workflow permissions must allow pushing: **Settings > Actions > General > Workflow
+permissions > Read and write**.
+
+## After a push: moderation
+
+A successful push does not mean a package is live. Every version enters moderation on the
+community repository and passes two automated gates before a human reviewer sees it.
+
+| Gate | What it checks | Where the result is |
+| --- | --- | --- |
+| Validation | nuspec metadata, and whether the package ships binaries without a LICENSE.txt and VERIFICATION.txt | review comments on the package page |
+| Verification | a real `choco install` and `choco uninstall` in a clean VM | the linked choco-bot gist |
+
+Both results are public. To see what a version is doing:
+
+```
+https://community.chocolatey.org/packages/<id>/<version>
+```
+
+To list the approved versions of a package, with their status:
+
+```
+https://community.chocolatey.org/api/v2/Packages()?$filter=Id%20eq%20'<id>'
+```
+
+That feed only carries approved versions. A package that returns nothing has never had a
+version approved, and the review comments on the package page say why.
+
+A version that fails has to be fixed and pushed again **at the same version number**. The
+hourly workflow will not do that, because it only pushes when upstream ships something
+new. Republish it by hand from the package folder.
 
 ## Running it locally
 
@@ -174,6 +229,8 @@ copy update_vars_default.ps1 update_vars.ps1   # then fill in the keys
 .\update_all.ps1                # update everything that has a new version
 .\update_all.ps1 -Name pixi     # only one package
 .\update_all.ps1 -Force         # rebuild everything, push nothing
+.\sync_readme.ps1               # regenerate nuspec descriptions from the READMEs
+.\sync_readme.ps1 -Check        # report drift without writing, as CI does
 ```
 
 Publish a single package by hand from its folder:
@@ -189,8 +246,10 @@ choco push pixi.<version>.nupkg --source https://push.chocolatey.org/
 1. `mkdir automatic/<id>` with `<id>.nuspec`, `tools/chocolateyInstall.ps1`, `README.md`.
 2. Add the icon as `icons/<id>.png` (128px or larger) and point `iconUrl` at
    `https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/<id>.png`.
-3. Copy the closest existing `update.ps1` and adjust the upstream lookup.
-4. Test with `.\update_all.ps1 -Name <id> -Force`, then open a pull request.
+3. Copy the closest existing `README.md` and keep its headings. Copy the closest existing
+   `update.ps1` and adjust the upstream lookup.
+4. Run `.\sync_readme.ps1 -Name <id>` to fill in the nuspec description.
+5. Test with `.\update_all.ps1 -Name <id> -Force`, then open a pull request.
 
 Package requirements follow the
 [Chocolatey packaging documentation](https://docs.chocolatey.org/en-us/create/create-packages/):

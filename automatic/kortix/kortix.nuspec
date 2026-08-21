@@ -10,19 +10,24 @@
     <projectUrl>https://www.kortix.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/kortix.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install kortix
 ```
 
-Chocolatey downloads the official installer from the [kortix-ai/suna](https://github.com/kortix-ai/suna/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install kortix --version=0.11.0
+```
 
 ## What is Kortix?
 
 The Company AI Command Center.
-
-Upstream describes it with these topics: ai, ai-agents, llm.
 
 ## Upgrade
 
@@ -43,6 +48,7 @@ choco uninstall kortix
 | Website | https://www.kortix.com |
 | Source code | https://github.com/kortix-ai/suna |
 | Releases | https://github.com/kortix-ai/suna/releases |
+| Issues | https://github.com/kortix-ai/suna/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/kortix |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/kortix |
 

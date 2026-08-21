@@ -6,14 +6,17 @@
 choco install alpaca-electron
 ```
 
-Chocolatey downloads the official installer from the [ItsPi3141/alpaca-electron](https://github.com/ItsPi3141/alpaca-electron/releases) releases and runs it silently.
-Upstream has not published a release since December 2023.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install alpaca-electron --version=1.0.6
+```
 
 ## What is Alpaca Electron?
 
 The simplest way to run Alpaca (and other LLaMA-based local LLMs) on your own computer.
-
-Upstream describes it with these topics: ai, alpaca, alpaca-electron, app, chat, chatgpt, dalai, docker.
 
 ## Upgrade
 
@@ -32,8 +35,8 @@ choco uninstall alpaca-electron
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/ItsPi3141/alpaca-electron |
-| Source code | https://github.com/ItsPi3141/alpaca-electron |
 | Releases | https://github.com/ItsPi3141/alpaca-electron/releases |
+| Issues | https://github.com/ItsPi3141/alpaca-electron/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/alpaca-electron |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/alpaca-electron |
 

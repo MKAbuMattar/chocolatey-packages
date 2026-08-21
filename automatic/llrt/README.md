@@ -6,8 +6,13 @@
 choco install llrt
 ```
 
-Chocolatey downloads the official Windows build from the [awslabs/llrt](https://github.com/awslabs/llrt/releases) releases and puts it on your PATH.
-This is a beta build, published as a pre-release version.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install llrt --version=0.8.1-beta
+```
 
 ## What is LLRT?
 
@@ -30,8 +35,8 @@ choco uninstall llrt
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/awslabs/llrt |
-| Source code | https://github.com/awslabs/llrt |
 | Releases | https://github.com/awslabs/llrt/releases |
+| Issues | https://github.com/awslabs/llrt/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/llrt |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/llrt |
 

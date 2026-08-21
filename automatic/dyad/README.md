@@ -6,13 +6,17 @@
 choco install dyad
 ```
 
-Chocolatey downloads the official installer from the [dyad-sh/dyad](https://github.com/dyad-sh/dyad/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install dyad --version=1.9.0
+```
 
 ## What is Dyad?
 
 Local, open-source AI app builder for power users v0 / Lovable / Replit / Bolt alternative Star if you like it!.
-
-Upstream describes it with these topics: ai-app-builder, anthropic, artificial-intelligence, bolt, deepseek, gemini, generative-ai, github.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall dyad
 | Website | https://dyad.sh |
 | Source code | https://github.com/dyad-sh/dyad |
 | Releases | https://github.com/dyad-sh/dyad/releases |
+| Issues | https://github.com/dyad-sh/dyad/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/dyad |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/dyad |
 

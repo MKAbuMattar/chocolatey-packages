@@ -10,13 +10,20 @@
     <projectUrl>https://github.com/earendil-works/pi</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pi.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install pi
 ```
 
-Chocolatey downloads the official Windows build from the [earendil-works/pi](https://github.com/earendil-works/pi/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install pi --version=0.83.0
+```
 
 ## What is pi?
 
@@ -39,8 +46,8 @@ choco uninstall pi
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/earendil-works/pi |
-| Source code | https://github.com/earendil-works/pi |
 | Releases | https://github.com/earendil-works/pi/releases |
+| Issues | https://github.com/earendil-works/pi/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/pi |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/pi |
 

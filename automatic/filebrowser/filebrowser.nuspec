@@ -10,19 +10,24 @@
     <projectUrl>https://github.com/filebrowser/filebrowser</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/filebrowser.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install filebrowser
 ```
 
-Chocolatey downloads the official Windows build from the [filebrowser/filebrowser](https://github.com/filebrowser/filebrowser/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install filebrowser --version=2.63.23
+```
 
 ## What is File Browser?
 
 Web File Browser.
-
-Upstream describes it with these topics: file-browser, file-manager, file-sharing, go, material-design, self-hosted, vue.
 
 ## Upgrade
 
@@ -41,8 +46,8 @@ choco uninstall filebrowser
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/filebrowser/filebrowser |
-| Source code | https://github.com/filebrowser/filebrowser |
 | Releases | https://github.com/filebrowser/filebrowser/releases |
+| Issues | https://github.com/filebrowser/filebrowser/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/filebrowser |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/filebrowser |
 

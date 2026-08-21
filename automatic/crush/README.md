@@ -6,13 +6,17 @@
 choco install crush
 ```
 
-Chocolatey downloads the official Windows build from the [charmbracelet/crush](https://github.com/charmbracelet/crush/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install crush --version=0.88.1
+```
 
 ## What is Crush?
 
 Glamourous agentic coding for all.
-
-Upstream describes it with these topics: agentic-ai, ai, llms, ravishing.
 
 ## Upgrade
 
@@ -31,8 +35,8 @@ choco uninstall crush
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/charmbracelet/crush |
-| Source code | https://github.com/charmbracelet/crush |
 | Releases | https://github.com/charmbracelet/crush/releases |
+| Issues | https://github.com/charmbracelet/crush/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/crush |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/crush |
 

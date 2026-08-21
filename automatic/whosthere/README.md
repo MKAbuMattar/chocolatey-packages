@@ -6,13 +6,17 @@
 choco install whosthere
 ```
 
-Chocolatey downloads the official Windows build from the [ramonvermeulen/whosthere](https://github.com/ramonvermeulen/whosthere/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install whosthere --version=0.8.3
+```
 
 ## What is whosthere?
 
 Local Area Network discovery tool with an interactive Terminal User Interface (TUI) written in Go. Discover, explore, and understand your LAN in an intuitive way. Knock Knock.. who's there?.
-
-Upstream describes it with these topics: go, golang, lan, network, network-analysis, networking, scanner, tui.
 
 ## Upgrade
 
@@ -31,8 +35,8 @@ choco uninstall whosthere
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/ramonvermeulen/whosthere |
-| Source code | https://github.com/ramonvermeulen/whosthere |
 | Releases | https://github.com/ramonvermeulen/whosthere/releases |
+| Issues | https://github.com/ramonvermeulen/whosthere/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/whosthere |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/whosthere |
 

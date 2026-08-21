@@ -6,14 +6,21 @@
 choco install strix
 ```
 
-Chocolatey downloads the official Windows build from the [usestrix/strix](https://github.com/usestrix/strix/releases) releases and puts it on your PATH.
-Upstream names the executable after the version, so the package exposes it under the stable name `strix`.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install strix --version=1.4.1
+```
 
 ## What is Strix?
 
 Open-source AI penetration testing tool to find and fix your app's vulnerabilities.
 
-Upstream describes it with these topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, artificial-intelligence, bug-bounty, code-quality.
+## Usage
+
+The package installs the `strix` command. Open a new terminal after installing so the PATH change takes effect, then see the [Strix documentation](https://strix.ai) for the available options.
 
 ## Upgrade
 
@@ -34,6 +41,7 @@ choco uninstall strix
 | Website | https://strix.ai |
 | Source code | https://github.com/usestrix/strix |
 | Releases | https://github.com/usestrix/strix/releases |
+| Issues | https://github.com/usestrix/strix/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/strix |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/strix |
 

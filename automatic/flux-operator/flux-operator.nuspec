@@ -10,20 +10,24 @@
     <projectUrl>https://fluxoperator.dev</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/flux-operator.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install flux-operator
 ```
 
-Chocolatey downloads the official Windows build from the [controlplaneio-fluxcd/flux-operator](https://github.com/controlplaneio-fluxcd/flux-operator/releases) releases and puts it on your PATH.
-This installs the Flux Operator command line tool. The operator itself runs in Kubernetes.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install flux-operator --version=0.58.0
+```
 
 ## What is Flux Operator?
 
 GitOps on Autopilot Mode.
-
-Upstream describes it with these topics: continuous-delivery, flux-ui, fluxcd, gitops, mcp-server.
 
 ## Upgrade
 
@@ -44,6 +48,7 @@ choco uninstall flux-operator
 | Website | https://fluxoperator.dev |
 | Source code | https://github.com/controlplaneio-fluxcd/flux-operator |
 | Releases | https://github.com/controlplaneio-fluxcd/flux-operator/releases |
+| Issues | https://github.com/controlplaneio-fluxcd/flux-operator/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/flux-operator |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/flux-operator |
 
