@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>herdr</id>
+    <version>0.0.0</version>
+    <title>Herdr</title>
+    <authors>herdrdev</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/herdrdev/herdr/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://herdr.dev</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/herdr.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install herdr
+```
+
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install herdr --version=<version>
+```
+
+## What is Herdr?
+
+the runtime your coding agents live on
+
+## Upgrade
+
+```powershell
+choco upgrade herdr
+```
+
+## Uninstall
+
+```powershell
+choco uninstall herdr
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://herdr.dev |
+| Source code | https://github.com/herdrdev/herdr |
+| Releases | https://github.com/herdrdev/herdr/releases |
+| Issues | https://github.com/herdrdev/herdr/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/herdr |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/herdr |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Herdr itself is distributed under its own [license](https://github.com/herdrdev/herdr/blob/master/LICENSE).
+]]></description>
+    <summary>the runtime your coding agents live on</summary>
+    <releaseNotes>https://github.com/herdrdev/herdr/releases/tag/v0.8.2</releaseNotes>
+    <tags>herdr agent agent-orchestration ai ai-agents claude-code cli codex coding-agents</tags>
+    <projectSourceUrl>https://github.com/herdrdev/herdr</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/herdrdev/herdr/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/herdr</packageSourceUrl>
+    <docsUrl>https://herdr.dev</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

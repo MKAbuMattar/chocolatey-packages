@@ -1,0 +1,49 @@
+# SQL Studio Chocolatey Package
+
+## Install
+
+```powershell
+choco install sql-studio
+```
+
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install sql-studio --version=<version>
+```
+
+## What is SQL Studio?
+
+SQL Database Explorer [SQLite, libSQL, PostgreSQL, MySQL/MariaDB, ClickHouse, DuckDB, Microsoft SQL Server]
+
+## Upgrade
+
+```powershell
+choco upgrade sql-studio
+```
+
+## Uninstall
+
+```powershell
+choco uninstall sql-studio
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://sql-studio-docs.frectonz.et |
+| Source code | https://github.com/frectonz/sql-studio |
+| Documentation | https://sql-studio-docs.frectonz.exposed/ |
+| Releases | https://github.com/frectonz/sql-studio/releases |
+| Issues | https://github.com/frectonz/sql-studio/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/sql-studio |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/sql-studio |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+SQL Studio itself is distributed under its own [license](https://github.com/frectonz/sql-studio/blob/main/LICENSE).
