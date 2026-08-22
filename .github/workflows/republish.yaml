@@ -1,0 +1,42 @@
+name: Republish packages
+
+# For a version that is already published and stuck in moderation. Chocolatey asks for the
+# same version number to be uploaded again with the fix, which the hourly update workflow
+# cannot do, because it only pushes when upstream ships something new.
+
+on:
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: "Packages to repack and push, space separated. Required."
+        required: true
+      dry_run:
+        description: "Pack and check only, push nothing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: republish-packages
+  cancel-in-progress: false
+
+jobs:
+  republish:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out code
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Republish
+        shell: powershell
+        env:
+          api_key: ${{ secrets.CHOCO_API_KEY }}
+          PACKAGES: ${{ inputs.packages }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          $names = $Env:PACKAGES -split '\s+' -ne ''
+          if (!$names) { throw 'No packages given' }
+          .\republish.ps1 -Name $names -WhatIf:($Env:DRY_RUN -eq 'true')
