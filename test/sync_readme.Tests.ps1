@@ -38,10 +38,10 @@ old body
 
   function Invoke-Sync {
     param([switch]$Check, [string[]]$Name)
-    $args = @{}
-    if ($Check) { $args.Check = $true }
-    if ($Name) { $args.Name = $Name }
-    (& $syncScript @args) *>&1 | Out-String
+    $params = @{}
+    if ($Check) { $params.Check = $true }
+    if ($Name) { $params.Name = $Name }
+    (& $syncScript @params) *>&1 | Out-String
   }
 
   function Get-FileText {

@@ -2,8 +2,32 @@ BeforeAll {
   Add-Type -AssemblyName System.IO.Compression.FileSystem
   $republishScript = Join-Path $TestDrive 'republish.ps1'
   Copy-Item (Join-Path $PSScriptRoot '..' 'republish.ps1') $republishScript
-  $global:ChocoCalls = [Collections.Generic.List[object]]::new()
-  $global:PackMode = 'clean'
+  $chocoStub = Join-Path $PSScriptRoot 'fixtures/choco-stub.ps1'
+  $script:ChocoLogPath = Join-Path $TestDrive 'choco.log'
+  $script:OriginalChocoMode = [Environment]::GetEnvironmentVariable(
+    'CHOCO_STUB_MODE',
+    'Process'
+  )
+  $script:OriginalChocoFailingPackage = [Environment]::GetEnvironmentVariable(
+    'CHOCO_STUB_FAILING_PACKAGE',
+    'Process'
+  )
+  $script:OriginalChocoLogPath = [Environment]::GetEnvironmentVariable(
+    'CHOCO_STUB_LOG_PATH',
+    'Process'
+  )
+  $script:OriginalApiKey = [Environment]::GetEnvironmentVariable(
+    'api_key',
+    'Process'
+  )
+  . $chocoStub
+  function choco {
+    Invoke-FixtureChoco `
+      -Arguments $args `
+      -PackMode $env:CHOCO_STUB_MODE `
+      -FailingPackage $env:CHOCO_STUB_FAILING_PACKAGE `
+      -LogPath $env:CHOCO_STUB_LOG_PATH
+  }
 
   function New-RepublishPackage {
     param([string]$Name, [string]$Version = '1.2.3')
@@ -15,47 +39,12 @@ BeforeAll {
     $dir
   }
 
-  function choco {
-    $call = @($args)
-    $global:ChocoCalls.Add($call)
-    if ($args[0] -eq 'pack') {
-      if ($global:PackMode -eq 'pack-failure') {
-        $global:LASTEXITCODE = 7
-        return
-      }
-      $outputIndex = [Array]::IndexOf($args, '--outputdirectory') + 1
-      $out = $args[$outputIndex]
-      $id = Split-Path (Get-Location) -Leaf
-      $nuspec = [xml](Get-Content (Join-Path (Get-Location) "$id.nuspec") -Raw)
-      $nupkg = Join-Path $out "$id.$($nuspec.package.metadata.version).nupkg"
-      $zip = [IO.Compression.ZipFile]::Open($nupkg, [IO.Compression.ZipArchiveMode]::Create)
-      try {
-        $entryNames = if ($global:PackMode -eq 'binary') {
-          @('tools/payload.exe', 'tools/payload.msi', 'tools/payload.zip', 'tools/payload.dll')
-        } else {
-          @('tools/readme.txt')
-        }
-        foreach ($entryName in $entryNames) {
-          $entry = $zip.CreateEntry($entryName)
-          $writer = [IO.StreamWriter]::new($entry.Open())
-          $writer.Write('fixture')
-          $writer.Dispose()
-        }
-      }
-      finally {
-        $zip.Dispose()
-      }
-      $global:LASTEXITCODE = 0
-    }
-    elseif ($args[0] -eq 'push') {
-      $global:LASTEXITCODE = 0
-    }
-  }
-
   function Invoke-Republish {
     param([string[]]$Name, [switch]$WhatIf)
-    $global:ChocoCalls.Clear()
-    $global:PackMode = 'clean'
+    Set-Content -LiteralPath $script:ChocoLogPath -Value '' -NoNewline
+    $env:CHOCO_STUB_MODE = 'clean'
+    $env:CHOCO_STUB_FAILING_PACKAGE = ''
+    $env:CHOCO_STUB_LOG_PATH = $script:ChocoLogPath
     $env:api_key = 'fixture-api-key'
     $params = @{ Name = $Name }
     if ($WhatIf) { $params.WhatIf = $true }
@@ -63,38 +52,28 @@ BeforeAll {
   }
 
   function New-RepublishHarness {
-    param([ValidateSet('clean', 'binary', 'pack-failure')][string]$Mode)
+    param(
+      [ValidateSet('clean', 'binary')][string]$Mode,
+      [string]$FailingPackage
+    )
     $harness = Join-Path $TestDrive "republish-$Mode.ps1"
     @"
-param([string]`$ScriptPath, [string[]]`$Name, [string]`$Mode, [string]`$LogPath, [switch]`$WhatIf)
+param(
+  [string]`$ScriptPath,
+  [string]`$StubPath,
+  [string[]]`$Name,
+  [string]`$Mode,
+  [string]`$FailingPackage,
+  [string]`$LogPath,
+  [switch]`$WhatIf
+)
 `$Name = `$Name -split ','
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-function choco {
-  `$call = @(`$args)
-  if (`$LogPath) { Add-Content -LiteralPath `$LogPath -Value (`$call -join ' ') }
-  if (`$args[0] -eq 'pack') {
-    if (`$Mode -eq 'pack-failure') { `$global:LASTEXITCODE = 7; return }
-    `$out = `$args[[Array]::IndexOf(`$args, '--outputdirectory') + 1]
-    `$id = Split-Path (Get-Location) -Leaf
-    `$xml = [xml](Get-Content (Join-Path (Get-Location) "`$id.nuspec") -Raw)
-    `$path = Join-Path `$out "`$id.`$(`$xml.package.metadata.version).nupkg"
-    `$zip = [IO.Compression.ZipFile]::Open(`$path, [IO.Compression.ZipArchiveMode]::Create)
-    try {
-      `$entryNames = if (`$Mode -eq 'binary') {
-        @('tools/payload.exe', 'tools/payload.msi', 'tools/payload.zip', 'tools/payload.dll')
-      } else {
-        @('tools/readme.txt')
-      }
-      foreach (`$entryName in `$entryNames) {
-        `$entry = `$zip.CreateEntry(`$entryName)
-        `$writer = [IO.StreamWriter]::new(`$entry.Open())
-        `$writer.Write('fixture')
-        `$writer.Dispose()
-      }
-    } finally { `$zip.Dispose() }
-    `$global:LASTEXITCODE = 0
-  } elseif (`$args[0] -eq 'push') { `$global:LASTEXITCODE = 0 }
-}
+`$env:api_key = 'fixture-api-key'
+`$env:CHOCO_STUB_MODE = `$Mode
+`$env:CHOCO_STUB_FAILING_PACKAGE = `$FailingPackage
+`$env:CHOCO_STUB_LOG_PATH = `$LogPath
+. `$StubPath
 `$params = @{ Name = `$Name }
 if (`$WhatIf) { `$params.WhatIf = `$true }
 & `$ScriptPath @params
@@ -102,12 +81,31 @@ exit `$LASTEXITCODE
 "@ | Set-Content $harness
     $harness
   }
+
+function Restore-EnvironmentValue {
+    param([string]$Name, [AllowNull()][string]$Value)
+    if ($null -eq $Value) {
+      Remove-Item "Env:$Name" -ErrorAction SilentlyContinue
+    } else {
+      Set-Item "Env:$Name" $Value
+    }
+}
+}
+
+AfterAll {
+  Restore-EnvironmentValue -Name api_key -Value $script:OriginalApiKey
+  Restore-EnvironmentValue -Name CHOCO_STUB_MODE -Value $script:OriginalChocoMode
+  Restore-EnvironmentValue -Name CHOCO_STUB_FAILING_PACKAGE `
+    -Value $script:OriginalChocoFailingPackage
+  Restore-EnvironmentValue -Name CHOCO_STUB_LOG_PATH -Value $script:OriginalChocoLogPath
 }
 
 Describe 'republish.ps1' {
   BeforeEach {
-    $global:ChocoCalls.Clear()
-    $global:PackMode = 'clean'
+    Set-Content -LiteralPath $script:ChocoLogPath -Value '' -NoNewline
+    $env:CHOCO_STUB_MODE = 'clean'
+    $env:CHOCO_STUB_FAILING_PACKAGE = ''
+    $env:CHOCO_STUB_LOG_PATH = $script:ChocoLogPath
     $env:api_key = 'fixture-api-key'
   }
 
@@ -117,9 +115,10 @@ Describe 'republish.ps1' {
     $output = Invoke-Republish -Name alpha
 
     $output | Should -Match 'alpha 4.5.6'
-    $global:ChocoCalls.Count | Should -Be 2
-    $global:ChocoCalls[0][0] | Should -Be 'pack'
-    $global:ChocoCalls[1][0] | Should -Be 'push'
+    $logLines = @(Get-Content $script:ChocoLogPath)
+    $logLines.Count | Should -Be 2
+    $logLines[0] | Should -Match '^pack '
+    $logLines[1] | Should -Match '^push '
   }
 
   It 'packs but never pushes in WhatIf mode and does not require an api key' {
@@ -129,8 +128,9 @@ Describe 'republish.ps1' {
     $output = Invoke-Republish -Name dry-run -WhatIf
 
     $output | Should -Match 'WhatIf: would push dry-run'
-    @($global:ChocoCalls | Where-Object { $_[0] -eq 'pack' }).Count | Should -Be 1
-    @($global:ChocoCalls | Where-Object { $_[0] -eq 'push' }).Count | Should -Be 0
+    $logLines = @(Get-Content $script:ChocoLogPath)
+    @($logLines | Where-Object { $_ -match '^pack ' }).Count | Should -Be 1
+    @($logLines | Where-Object { $_ -match '^push ' }).Count | Should -Be 0
   }
 
   It 'throws when api_key is missing without WhatIf' {
@@ -144,23 +144,30 @@ Describe 'republish.ps1' {
     $harness = New-RepublishHarness -Mode clean
     $log = Join-Path $TestDrive 'unknown.log'
     $output = (& (Join-Path $PSHOME 'pwsh') -NoProfile -File $harness `
-      -ScriptPath $republishScript -Name unknown -Mode clean -LogPath $log) *>&1 | Out-String
+      -ScriptPath $republishScript -StubPath $chocoStub -Name unknown `
+      -Mode clean -LogPath $log) *>&1 | Out-String
 
     $LASTEXITCODE | Should -Be 1
     $output | Should -Match 'unknown is not a package'
     $output | Should -Match 'failed: unknown'
   }
 
-  It 'continues processing other packages after a pack failure' {
+  It 'continues after a pack failure and pushes healthy packages' {
     New-RepublishPackage -Name broken | Out-Null
     New-RepublishPackage -Name healthy | Out-Null
-    $harness = New-RepublishHarness -Mode pack-failure
+    $harness = New-RepublishHarness -Mode clean -FailingPackage broken
+    $log = Join-Path $TestDrive 'pack-failure.log'
     $output = (& (Join-Path $PSHOME 'pwsh') -NoProfile -File $harness `
-      -ScriptPath $republishScript -Name broken,healthy -Mode pack-failure) *>&1 | Out-String
+      -ScriptPath $republishScript -StubPath $chocoStub `
+      -Name broken,healthy -Mode clean -FailingPackage broken `
+      -LogPath $log) *>&1 | Out-String
 
     $LASTEXITCODE | Should -Be 1
     $output | Should -Match 'broken pack failed'
-    $output | Should -Match 'healthy pack failed'
+    $output | Should -Not -Match 'healthy pack failed'
+    $logLines = @(Get-Content $log)
+    @($logLines | Where-Object { $_ -match '^push .*healthy\.' }).Count |
+      Should -Be 1
   }
 
   It 'rejects binary entries without pushing' {
@@ -168,7 +175,8 @@ Describe 'republish.ps1' {
     $harness = New-RepublishHarness -Mode binary
     $log = Join-Path $TestDrive 'binary.log'
     $output = (& (Join-Path $PSHOME 'pwsh') -NoProfile -File $harness `
-      -ScriptPath $republishScript -Name binary -Mode binary -LogPath $log) *>&1 | Out-String
+      -ScriptPath $republishScript -StubPath $chocoStub -Name binary `
+      -Mode binary -LogPath $log) *>&1 | Out-String
 
     $LASTEXITCODE | Should -Be 1
     $output | Should -Match 'carries binaries'
@@ -184,16 +192,18 @@ Describe 'republish.ps1' {
 
     Invoke-Republish -Name clean | Out-Null
 
-    $push = @($global:ChocoCalls | Where-Object { $_[0] -eq 'push' })[0]
-    $push -join ' ' | Should -Match '--source https://push\.chocolatey\.org/'
-    $push -join ' ' | Should -Match '--api-key fixture-api-key'
+    $push = @(Get-Content $script:ChocoLogPath |
+      Where-Object { $_ -match '^push ' })[0]
+    $push | Should -Match '--source https://push\.chocolatey\.org/'
+    $push | Should -Match '--api-key fixture-api-key'
   }
 
   It 'returns a failing exit code and summary when any package fails' {
     New-RepublishPackage -Name failed | Out-Null
     $harness = New-RepublishHarness -Mode binary
     $output = (& (Join-Path $PSHOME 'pwsh') -NoProfile -File $harness `
-      -ScriptPath $republishScript -Name failed -Mode binary) *>&1 | Out-String
+      -ScriptPath $republishScript -StubPath $chocoStub -Name failed `
+      -Mode binary) *>&1 | Out-String
 
     $LASTEXITCODE | Should -Be 1
     $output | Should -Match '::error::failed: failed'

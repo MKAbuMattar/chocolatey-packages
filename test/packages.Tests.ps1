@@ -5,62 +5,101 @@ $packageCases = @(
 )
 # These upstreams do not publish a checksum, so their package scripts retain an
 # intentionally empty checksum placeholder.
-$global:PackagesWithoutChecksums = @('copilot-cli', 'httpie-desktop')
-# These packages predate the current writer and omit only the outer CDATA newlines.
-$global:LegacyDescriptionFormatting = @(
-  'flet', 'herdr', 'iwe', 'manta', 'ms-apm',
-  'ms-coreutils', 'openfootmanager', 'openship', 'pdf-brain', 'sql-studio'
-)
 
-Describe 'automatic package metadata' {
-  It '<Package.Name> has consistent metadata' -ForEach $packageCases {
+BeforeAll {
+  function Get-PackagePaths {
+    param([System.IO.DirectoryInfo]$Package)
+
+    [pscustomobject]@{
+      Id = $Package.Name
+      Nuspec = Join-Path $Package.FullName "$($Package.Name).nuspec"
+      Readme = Join-Path $Package.FullName 'README.md'
+      Install = Join-Path $Package.FullName 'tools/chocolateyInstall.ps1'
+      Update = Join-Path $Package.FullName 'update.ps1'
+    }
+  }
+
+  function Get-PackageNuspec {
+    param([string]$Path)
+
+    $text = [IO.File]::ReadAllText($Path)
+    [pscustomobject]@{
+      Text = $text
+      Xml = [xml]$text
+    }
+  }
+
+  function Get-InstallUrls {
+    param([string]$Text)
+
+    [regex]::Matches(
+      $Text,
+      '(?im)^\s*url\w*\s*=\s*[''"]([^''"]*)'
+    ) | ForEach-Object { $_.Groups[1].Value }
+  }
+}
+
+Describe 'automatic package identity and metadata' {
+  It '<Package.Name> has valid identity and metadata' -ForEach $packageCases {
     param($Package)
-    $id = $Package.Name
-    $nuspecPath = Join-Path $Package.FullName "$id.nuspec"
-    $readmePath = Join-Path $Package.FullName 'README.md'
-    $installPath = Join-Path $Package.FullName 'tools/chocolateyInstall.ps1'
-    $nuspecText = [IO.File]::ReadAllText($nuspecPath)
-    $nuspec = [xml]$nuspecText
-    $readmeText = [IO.File]::ReadAllText($readmePath)
+    $paths = Get-PackagePaths $Package
+    $nuspec = Get-PackageNuspec $paths.Nuspec
+    $metadata = $nuspec.Xml.package.metadata
 
-    $id | Should -Be $id.ToLowerInvariant()
-    ([string]$nuspec.package.metadata.id) | Should -Be $id
-    $version = [string]$nuspec.package.metadata.version
-    $version | Should -Not -BeNullOrEmpty
-    $version | Should -Match '^\d+(?:\.\d+){1,3}(?:[-.][0-9A-Za-z.-]+)?$'
-    $nuspecText | Should -Match '(?s)<description><!\[CDATA\[.*?\]\]></description>'
-    ([string]$nuspec.package.metadata.licenseUrl) | Should -Match '^https?://'
-    ([string]$nuspec.package.metadata.projectUrl) | Should -Match '^https?://'
-    ([string]$nuspec.package.metadata.releaseNotes) | Should -Not -BeNullOrEmpty
-    $readmeText | Should -Match '^\s*#\s+\S+'
-    Test-Path $installPath | Should -BeTrue
+    $paths.Id | Should -Be $paths.Id.ToLowerInvariant()
+    ([string]$metadata.id) | Should -Be $paths.Id
+    ([string]$metadata.version) | Should -Not -BeNullOrEmpty
+    ([string]$metadata.version) | Should -Match '^\d+(?:\.\d+){1,3}(?:[-.][0-9A-Za-z.-]+)?$'
+    $nuspec.Text | Should -Match '(?s)<description><!\[CDATA\[.*?\]\]></description>'
+    ([string]$metadata.licenseUrl) | Should -Match '^https?://'
+    ([string]$metadata.projectUrl) | Should -Match '^https?://'
+    ([string]$metadata.releaseNotes) | Should -Not -BeNullOrEmpty
+    Test-Path $paths.Readme | Should -BeTrue
+    [IO.File]::ReadAllText($paths.Readme) | Should -Match '^\s*#\s+\S+'
+    Test-Path $paths.Install | Should -BeTrue
+  }
+}
 
-    $body = $readmeText -replace '^\s*#\s+[^\r\n]*\r?\n\s*', ''
-    $nl = if ($nuspecText -match "`r`n") { "`r`n" } else { "`n" }
+Describe 'automatic package descriptions' {
+  It '<Package.Name> has a description matching its README' -ForEach $packageCases {
+    param($Package)
+    $paths = Get-PackagePaths $Package
+    $nuspec = Get-PackageNuspec $paths.Nuspec
+    $readme = [IO.File]::ReadAllText($paths.Readme)
+    $body = $readme -replace '^\s*#\s+[^\r\n]*\r?\n\s*', ''
+    $nl = if ($nuspec.Text -match "`r`n") { "`r`n" } else { "`n" }
     $body = ($body.TrimEnd() -replace "`r`n", "`n") -replace "`n", $nl
     $description = [regex]::Match(
-      $nuspecText,
+      $nuspec.Text,
       '(?s)<description><!\[CDATA\[(.*?)\]\]></description>'
     ).Groups[1].Value
-    if ($id -in $global:LegacyDescriptionFormatting) {
-      $description.Trim() | Should -Be $body.Trim()
-    } else {
-      $description | Should -Be "$nl$body$nl"
-    }
 
-    $installText = [IO.File]::ReadAllText($installPath)
-    $updateText = [IO.File]::ReadAllText((Join-Path $Package.FullName 'update.ps1'))
+    $description | Should -Be "$nl$body$nl"
+  }
+}
+
+Describe 'automatic package checksums' {
+  BeforeEach {
+    $script:PackagesWithoutChecksums = @('copilot-cli', 'httpie-desktop')
+  }
+
+  It '<Package.Name> has valid SHA-256 checksums' -ForEach $packageCases {
+    param($Package)
+    $paths = Get-PackagePaths $Package
+    $installText = [IO.File]::ReadAllText($paths.Install)
     $checksums = [regex]::Matches(
       $installText,
       '(?im)^\s*checksum(?!type)\w*\s*=\s*[''"]([^''"]*)'
     ) | ForEach-Object { $_.Groups[1].Value }
+
     foreach ($checksum in $checksums) {
       if ($checksum) {
         $checksum | Should -Match '^[0-9a-fA-F]{64}$'
       } else {
-        $id | Should -BeIn $global:PackagesWithoutChecksums
+        $paths.Id | Should -BeIn $script:PackagesWithoutChecksums
       }
     }
+
     $checksumTypes = [regex]::Matches(
       $installText,
       '(?im)^\s*checksumType\w*\s*=\s*[''"]([^''"]*)'
@@ -68,22 +107,37 @@ Describe 'automatic package metadata' {
     foreach ($checksumType in $checksumTypes) {
       $checksumType | Should -Be 'sha256'
     }
+  }
+}
 
-    $urls = [regex]::Matches(
-      $installText,
-      '(?im)^\s*url\w*\s*=\s*[''"]([^''"]*)'
-    ) | ForEach-Object { $_.Groups[1].Value }
+Describe 'automatic package download URLs' {
+  It '<Package.Name> uses HTTPS download URLs' -ForEach $packageCases {
+    param($Package)
+    $paths = Get-PackagePaths $Package
+    $urls = Get-InstallUrls ([IO.File]::ReadAllText($paths.Install))
+
     foreach ($url in $urls) {
       $url | Should -Match '^https://'
     }
+  }
+}
 
-    $versionTemplates = [regex]::Matches(
+Describe 'automatic package version URLs' {
+  It '<Package.Name> includes the package version in templated URLs' -ForEach $packageCases {
+    param($Package)
+    $paths = Get-PackagePaths $Package
+    $version = [string](Get-PackageNuspec $paths.Nuspec).Xml.package.metadata.version
+    $installText = [IO.File]::ReadAllText($paths.Install)
+    $updateText = [IO.File]::ReadAllText($paths.Update)
+    $urls = Get-InstallUrls $installText
+    $templates = [regex]::Matches(
       $updateText,
       '(?im)^\s*URL\w*\s*=\s*[''"]([^''"]*)'
     ) | ForEach-Object { $_.Groups[1].Value } | Where-Object {
       $_ -match '\$(?:version|build)'
     }
-    if ($versionTemplates) {
+
+    if ($templates) {
       $shortVersion = ($version -split '-')[0] -split '\.'
       $shortVersion = ($shortVersion | Select-Object -First 3) -join '.'
       ($urls -join "`n") | Should -Match ([regex]::Escape($shortVersion))
