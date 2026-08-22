@@ -43,7 +43,11 @@ jobs:
           au_Push: "true"
           github_api_key: ${{ secrets.GITHUB_TOKEN }}
           github_user_repo: ${{ github.repository }}
-        run: .\update_all.ps1 -Name ('${{ inputs.packages }}' -split ' ' -ne '') -Force:$${{ inputs.force || false }}
+          PACKAGES: ${{ inputs.packages }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          $names = $Env:PACKAGES -split '\s+' -ne ''
+          .\update_all.ps1 -Name $names -Force:($Env:FORCE -eq 'true')
 
       - name: Publish report
         if: always()
