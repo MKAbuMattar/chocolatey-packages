@@ -3,10 +3,12 @@ $packageCases = @(
   Get-ChildItem (Join-Path $repoRoot 'automatic') -Directory |
     ForEach-Object { @{ Package = $_ } }
 )
-# These upstreams do not publish a checksum, so their package scripts retain an
-# intentionally empty checksum placeholder.
 
 BeforeAll {
+  # These upstreams do not publish a checksum, so their install scripts keep an
+  # intentionally empty checksum placeholder.
+  $script:PackagesWithoutChecksums = @('copilot-cli', 'httpie-desktop')
+
   function Get-PackagePaths {
     param([System.IO.DirectoryInfo]$Package)
 
@@ -79,10 +81,6 @@ Describe 'automatic package descriptions' {
 }
 
 Describe 'automatic package checksums' {
-  BeforeEach {
-    $script:PackagesWithoutChecksums = @('copilot-cli', 'httpie-desktop')
-  }
-
   It '<Package.Name> has valid SHA-256 checksums' -ForEach $packageCases {
     param($Package)
     $paths = Get-PackagePaths $Package

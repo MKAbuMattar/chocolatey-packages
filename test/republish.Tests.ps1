@@ -21,13 +21,6 @@ BeforeAll {
     'Process'
   )
   . $chocoStub
-  function choco {
-    Invoke-FixtureChoco `
-      -Arguments $args `
-      -PackMode $env:CHOCO_STUB_MODE `
-      -FailingPackage $env:CHOCO_STUB_FAILING_PACKAGE `
-      -LogPath $env:CHOCO_STUB_LOG_PATH
-  }
 
   function New-RepublishPackage {
     param([string]$Name, [string]$Version = '1.2.3')

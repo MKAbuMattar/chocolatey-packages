@@ -79,7 +79,7 @@ fixture
     param([ValidateSet('failure', 'ignored-only')][string]$Mode)
     $harness = Join-Path $TestDrive "update-$Mode.ps1"
     @"
-param([string]`$ScriptPath, [string]`$SyncPath, [string]`$Mode)
+param([string]`$ScriptPath, [string]`$Mode)
 `$result = if (`$Mode -eq 'failure') {
   @(
     [pscustomobject]@{ Name = 'ignored'; Error = 'already exists'; Ignored = `$true }
@@ -179,7 +179,7 @@ Describe 'update_all.ps1' {
     $env:au_Push = 'false'
     $harness = New-UpdateHarness -Mode failure
     $output = (& (Join-Path $PSHOME 'pwsh') -NoProfile -File $harness `
-      -ScriptPath $updateScript -SyncPath $syncScript -Mode failure) *>&1 |
+      -ScriptPath $updateScript -Mode failure) *>&1 |
       Out-String
 
     $LASTEXITCODE | Should -Be 1
@@ -192,7 +192,7 @@ Describe 'update_all.ps1' {
     $env:au_Push = 'false'
     $harness = New-UpdateHarness -Mode ignored-only
     $output = (& (Join-Path $PSHOME 'pwsh') -NoProfile -File $harness `
-      -ScriptPath $updateScript -SyncPath $syncScript -Mode ignored-only) *>&1 |
+      -ScriptPath $updateScript -Mode ignored-only) *>&1 |
       Out-String
 
     $LASTEXITCODE | Should -Be 0
