@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install meetily --version=0.4.0
+choco install meetily --version=<version>
 ```
 
 ## What is Meetily?

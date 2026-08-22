@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install iam-policy-autopilot --version=0.2.3
+choco install iam-policy-autopilot --version=<version>
 ```
 
 ## What is IAM Policy Autopilot?

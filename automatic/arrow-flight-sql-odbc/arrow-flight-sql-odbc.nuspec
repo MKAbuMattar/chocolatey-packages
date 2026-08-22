@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install arrow-flight-sql-odbc --version=25.0.1
+choco install arrow-flight-sql-odbc --version=<version>
 ```
 
 ## What is Apache Arrow Flight SQL ODBC Driver?

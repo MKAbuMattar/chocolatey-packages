@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install agent-orchestrator --version=0.11.1
+choco install agent-orchestrator --version=<version>
 ```
 
 ## What is Agent Orchestrator?

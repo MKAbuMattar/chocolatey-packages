@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install openclaw-companion --version=2026.7.1
+choco install openclaw-companion --version=<version>
 ```
 
 ## What is OpenClaw Companion?

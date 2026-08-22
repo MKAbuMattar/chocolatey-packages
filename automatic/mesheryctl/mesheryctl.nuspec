@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install mesheryctl --version=1.0.63
+choco install mesheryctl --version=<version>
 ```
 
 ## What is mesheryctl?

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>flet</id>
+    <version>0.0.0</version>
+    <title>Flet</title>
+    <authors>flet-dev</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/flet-dev/flet/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://flet.dev</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/flet.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install flet
+```
+
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install flet --version=<version>
+```
+
+## What is Flet?
+
+Build realtime web, mobile and desktop apps in Python only. No frontend experience required.
+
+## Upgrade
+
+```powershell
+choco upgrade flet
+```
+
+## Uninstall
+
+```powershell
+choco uninstall flet
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://flet.dev |
+| Source code | https://github.com/flet-dev/flet |
+| Documentation | https://flet.dev/docs/ |
+| Releases | https://github.com/flet-dev/flet/releases |
+| Issues | https://github.com/flet-dev/flet/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/flet |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/flet |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Flet itself is distributed under its own [license](https://github.com/flet-dev/flet/blob/main/LICENSE).
+]]></description>
+    <summary>Build realtime web, mobile and desktop apps in Python only. No frontend experience required.</summary>
+    <releaseNotes>https://github.com/flet-dev/flet/releases/tag/v0.86.5</releaseNotes>
+    <tags>flet android cross-platform desktop flutter ios python server-driven-ui web</tags>
+    <projectSourceUrl>https://github.com/flet-dev/flet</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/flet-dev/flet/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/flet</packageSourceUrl>
+    <docsUrl>https://flet.dev/docs/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

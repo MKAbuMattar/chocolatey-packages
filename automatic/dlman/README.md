@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install dlman --version=1.11.1
+choco install dlman --version=<version>
 ```
 
 ## What is DLMan?

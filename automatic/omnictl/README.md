@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install omnictl --version=1.10.0
+choco install omnictl --version=<version>
 ```
 
 ## What is omnictl?

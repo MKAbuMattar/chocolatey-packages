@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install debug-skill --version=0.4.2
+choco install debug-skill --version=<version>
 ```
 
 ## What is Debug Skill?

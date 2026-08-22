@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install boring-registry --version=0.19.0
+choco install boring-registry --version=<version>
 ```
 
 ## What is Boring Registry?

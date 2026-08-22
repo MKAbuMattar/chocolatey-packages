@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install anythingllm --version=1.15.0
+choco install anythingllm --version=<version>
 ```
 
 ## What is AnythingLLM Desktop?

@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install bananas --version=0.0.22
+choco install bananas --version=<version>
 ```
 
 ## What is Bananas?

@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install numbat-agent --version=0.1.2
+choco install numbat-agent --version=<version>
 ```
 
 ## What is Numbat?

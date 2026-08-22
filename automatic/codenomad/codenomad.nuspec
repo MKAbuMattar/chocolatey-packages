@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install codenomad --version=0.18.0
+choco install codenomad --version=<version>
 ```
 
 ## What is CodeNomad?

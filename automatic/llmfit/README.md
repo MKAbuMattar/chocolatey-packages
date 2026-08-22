@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install llmfit --version=1.1.6
+choco install llmfit --version=<version>
 ```
 
 ## What is llmfit?

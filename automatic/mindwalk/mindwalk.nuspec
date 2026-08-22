@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install mindwalk --version=0.3.0
+choco install mindwalk --version=<version>
 ```
 
 ## What is Mindwalk?

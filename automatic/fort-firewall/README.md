@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install fort-firewall --version=3.19.9
+choco install fort-firewall --version=<version>
 ```
 
 ## What is Fort Firewall?

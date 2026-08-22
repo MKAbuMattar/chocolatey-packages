@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install opencodereview --version=1.8.1
+choco install opencodereview --version=<version>
 ```
 
 ## What is Open Code Review?

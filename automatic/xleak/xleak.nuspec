@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install xleak --version=0.2.6
+choco install xleak --version=<version>
 ```
 
 ## What is xleak?

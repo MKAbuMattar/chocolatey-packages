@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install neohtop --version=1.2.0
+choco install neohtop --version=<version>
 ```
 
 ## What is NeoHtop?

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>openship</id>
+    <version>0.0.0</version>
+    <title>Openship</title>
+    <authors>oblien</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/oblien/openship/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://openship.io</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openship.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install openship
+```
+
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install openship --version=<version>
+```
+
+## What is Openship?
+
+Self-hosted deployment platform
+
+## Upgrade
+
+```powershell
+choco upgrade openship
+```
+
+## Uninstall
+
+```powershell
+choco uninstall openship
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://openship.io |
+| Source code | https://github.com/oblien/openship |
+| Releases | https://github.com/oblien/openship/releases |
+| Issues | https://github.com/oblien/openship/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/openship |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/openship |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Openship itself is distributed under its own [license](https://github.com/oblien/openship/blob/main/LICENSE).
+]]></description>
+    <summary>Self-hosted deployment platform</summary>
+    <releaseNotes>https://github.com/oblien/openship/releases/tag/v0.6.7</releaseNotes>
+    <tags>openship agents ai deployments self-hosted</tags>
+    <projectSourceUrl>https://github.com/oblien/openship</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/oblien/openship/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/openship</packageSourceUrl>
+    <docsUrl>https://openship.io</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install openworker --version=0.1.6
+choco install openworker --version=<version>
 ```
 
 ## What is OpenWorker?

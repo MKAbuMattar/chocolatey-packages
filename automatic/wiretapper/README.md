@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install wiretapper --version=2026.1.30
+choco install wiretapper --version=<version>
 ```
 
 ## What is WireTapper?

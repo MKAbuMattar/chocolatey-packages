@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install memos --version=0.30.0
+choco install memos --version=<version>
 ```
 
 ## What is Memos?

@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install terax --version=0.8.6
+choco install terax --version=<version>
 ```
 
 ## What is Terax?

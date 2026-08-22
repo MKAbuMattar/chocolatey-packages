@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install nub --version=0.6.0
+choco install nub --version=<version>
 ```
 
 ## What is nub?

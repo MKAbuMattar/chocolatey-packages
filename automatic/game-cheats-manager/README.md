@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install game-cheats-manager --version=2.4.6
+choco install game-cheats-manager --version=<version>
 ```
 
 ## What is Game Cheats Manager?

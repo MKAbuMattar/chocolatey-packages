@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install grepai --version=0.35.0
+choco install grepai --version=<version>
 ```
 
 ## What is grepai?

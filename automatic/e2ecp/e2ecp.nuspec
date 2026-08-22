@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install e2ecp --version=3.2.0
+choco install e2ecp --version=<version>
 ```
 
 ## What is e2ecp?
