@@ -5,3 +5,4 @@ update_info.xml
 automatic/*/tools/*.exe
 automatic/*/tools/*.msi
 automatic/*/tools/*.zip
+.republish/
