@@ -1,29 +1,12 @@
 import-module Chocolatey-AU
+Import-Module (Join-Path $PSScriptRoot '../../au_shared.psm1') -Global
 
 $repo = 'prefix-dev/pixi'
 
-function global:au_SearchReplace {
-  @{
-    'tools\chocolateyInstall.ps1' = @{
-      "(^\s*url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-      "(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-    }
-    "$($Latest.PackageName).nuspec" = @{
-      "(<releaseNotes>).*(</releaseNotes>)" = "`${1}$($Latest.ReleaseNotes)`$2"
-    }
-  }
-}
+function global:au_SearchReplace { Get-AuSearchReplace }
 
 function global:au_GetLatest {
-  # /releases/latest never returns pre-releases, so no stable-version filtering needed
-  $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
-  $tag = (Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers).tag_name
-
-  @{
-    Version      = $tag -replace '^v', ''
-    URL64        = "https://github.com/$repo/releases/download/$tag/pixi-x86_64-pc-windows-msvc.exe"
-    ReleaseNotes = "https://github.com/$repo/releases/tag/$tag"
-  }
+  Get-GitHubLatest -Repo $repo -Asset 'pixi-x86_64-pc-windows-msvc.exe'
 }
 
 update -ChecksumFor 64
