@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install crush --version=0.88.1
+choco install crush --version=<version>
 ```
 
 ## What is Crush?

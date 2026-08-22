@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install pi --version=0.83.0
+choco install pi --version=<version>
 ```
 
 ## What is pi?

@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install daytona --version=0.190.0
+choco install daytona --version=<version>
 ```
 
 ## What is Daytona?

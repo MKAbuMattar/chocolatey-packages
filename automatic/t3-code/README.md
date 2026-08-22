@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install t3-code --version=0.0.33
+choco install t3-code --version=<version>
 ```
 
 ## What is T3 Code?

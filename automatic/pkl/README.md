@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install pkl --version=0.32.1
+choco install pkl --version=<version>
 ```
 
 ## What is Pkl?

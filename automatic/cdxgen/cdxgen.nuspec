@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install cdxgen --version=12.8.2
+choco install cdxgen --version=<version>
 ```
 
 ## What is cdxgen?

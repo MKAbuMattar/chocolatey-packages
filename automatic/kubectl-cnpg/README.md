@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install kubectl-cnpg --version=1.30.0
+choco install kubectl-cnpg --version=<version>
 ```
 
 ## What is kubectl-cnpg?

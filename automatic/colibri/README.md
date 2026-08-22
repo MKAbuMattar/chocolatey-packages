@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install colibri --version=1.3.0
+choco install colibri --version=<version>
 ```
 
 ## What is Colibri?

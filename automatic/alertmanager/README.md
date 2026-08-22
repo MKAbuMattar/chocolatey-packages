@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install alertmanager --version=0.33.1
+choco install alertmanager --version=<version>
 ```
 
 ## What is Prometheus Alertmanager?

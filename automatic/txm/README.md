@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install txm --version=0.1.5
+choco install txm --version=<version>
 ```
 
 ## What is txm?

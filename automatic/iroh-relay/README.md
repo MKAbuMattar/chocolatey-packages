@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install iroh-relay --version=1.0.3
+choco install iroh-relay --version=<version>
 ```
 
 ## What is iroh relay?

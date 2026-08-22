@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install octobot --version=2.1.1
+choco install octobot --version=<version>
 ```
 
 ## What is OctoBot?

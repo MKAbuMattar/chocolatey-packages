@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install qodo-cover --version=0.3.10
+choco install qodo-cover --version=<version>
 ```
 
 ## What is Qodo Cover?

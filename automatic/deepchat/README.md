@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install deepchat --version=1.0.9
+choco install deepchat --version=<version>
 ```
 
 ## What is DeepChat?

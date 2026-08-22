@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install nginx-ui --version=2.5.2
+choco install nginx-ui --version=<version>
 ```
 
 ## What is Nginx UI?

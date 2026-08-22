@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install github-mcp-server --version=1.7.0
+choco install github-mcp-server --version=<version>
 ```
 
 ## What is GitHub MCP Server?

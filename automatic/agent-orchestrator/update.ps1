@@ -1,6 +1,6 @@
 import-module Chocolatey-AU
 
-$repo = 'AgentWrapper/agent-orchestrator'
+$repo = 'Untrivial-ai/agent-orchestrator'
 
 function global:au_SearchReplace {
   @{

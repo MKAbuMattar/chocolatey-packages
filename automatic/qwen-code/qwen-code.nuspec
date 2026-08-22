@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install qwen-code --version=0.21.1
+choco install qwen-code --version=<version>
 ```
 
 ## What is Qwen Code?

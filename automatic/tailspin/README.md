@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install tailspin --version=7.0.0
+choco install tailspin --version=<version>
 ```
 
 ## What is tailspin?

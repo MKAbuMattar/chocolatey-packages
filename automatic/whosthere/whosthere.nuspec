@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install whosthere --version=0.8.3
+choco install whosthere --version=<version>
 ```
 
 ## What is whosthere?

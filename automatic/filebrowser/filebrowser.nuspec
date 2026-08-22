@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install filebrowser --version=2.63.23
+choco install filebrowser --version=<version>
 ```
 
 ## What is File Browser?

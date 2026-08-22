@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install witsy --version=3.5.2.20260728
+choco install witsy --version=<version>
 ```
 
 ## What is Witsy?

@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install lmstudio --version=0.4.21
+choco install lmstudio --version=<version>
 ```
 
 ## What is LM Studio?

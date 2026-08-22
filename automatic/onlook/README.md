@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install onlook --version=0.2.32
+choco install onlook --version=<version>
 ```
 
 ## What is Onlook?

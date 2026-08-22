@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install litestream --version=0.5.15
+choco install litestream --version=<version>
 ```
 
 ## What is Litestream?

@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install whisper-cpp --version=1.9.1
+choco install whisper-cpp --version=<version>
 ```
 
 ## What is whisper.cpp?

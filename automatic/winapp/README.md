@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install winapp --version=0.5.0
+choco install winapp --version=<version>
 ```
 
 ## What is winapp CLI?

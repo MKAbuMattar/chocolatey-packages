@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install tiny-rdm --version=1.2.7
+choco install tiny-rdm --version=<version>
 ```
 
 ## What is Tiny RDM?

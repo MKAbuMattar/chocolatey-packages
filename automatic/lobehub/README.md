@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install lobehub --version=2.2.12
+choco install lobehub --version=<version>
 ```
 
 ## What is LobeHub?

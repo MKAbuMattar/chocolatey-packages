@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install strix --version=1.4.1
+choco install strix --version=<version>
 ```
 
 ## What is Strix?

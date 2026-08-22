@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install servoshell --version=0.3.0
+choco install servoshell --version=<version>
 ```
 
 ## What is Servo?

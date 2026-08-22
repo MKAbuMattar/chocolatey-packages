@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit installer at install time and runs it s
 Install a specific version:
 
 ```powershell
-choco install dashbeam --version=0.6.0
+choco install dashbeam --version=<version>
 ```
 
 ## What is Dashbeam?

@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit archive at install time, unpacks it int
 Install a specific version:
 
 ```powershell
-choco install posthog-cli --version=0.9.2
+choco install posthog-cli --version=<version>
 ```
 
 ## What is PostHog CLI?

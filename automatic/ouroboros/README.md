@@ -11,7 +11,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install ouroboros --version=0.50.6
+choco install ouroboros --version=<version>
 ```
 
 ## What is Ouroboros?

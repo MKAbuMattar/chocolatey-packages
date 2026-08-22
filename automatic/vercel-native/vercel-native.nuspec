@@ -22,7 +22,7 @@ Chocolatey downloads the official 64-bit build at install time and puts it on yo
 Install a specific version:
 
 ```powershell
-choco install vercel-native --version=0.6.3
+choco install vercel-native --version=<version>
 ```
 
 ## What is Native SDK?
