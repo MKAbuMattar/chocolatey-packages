@@ -1,15 +1,11 @@
 import-module Chocolatey-AU
+Import-Module (Join-Path $PSScriptRoot '../../au_shared.psm1') -Global
 
 $downloadPage = 'https://lmstudio.ai/download'
 
-function global:au_SearchReplace {
-  @{
-    'tools\chocolateyInstall.ps1' = @{
-      "(^\s*url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-      "(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-    }
-  }
-}
+# The nuspec links LM Studio's blog rather than a per-release page, so nothing in
+# it changes with the version and AU has to leave it alone.
+function global:au_SearchReplace { Get-AuSearchReplace -NoReleaseNotes }
 
 function global:au_GetLatest {
   # LM Studio has no release API; the download page embeds the current version per platform

@@ -33,7 +33,7 @@ param(
 # Local runs read secrets from update_vars.ps1 (git ignored), CI sets them as env vars.
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
-$global:au_Root = "$PSScriptRoot\automatic"
+$global:au_Root = Join-Path $PSScriptRoot 'automatic'
 
 # The package page renders the nuspec <description>, but the text is written in the
 # package README. Sync before AU packs anything, or the two drift apart silently.

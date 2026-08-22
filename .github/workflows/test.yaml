@@ -10,6 +10,23 @@ permissions:
   contents: read
 
 jobs:
+  unit:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      # Offline checks over the scripts and every package's metadata. Runs in seconds,
+      # against roughly fifteen minutes for the job below, so most mistakes surface here.
+      - name: Install Pester
+        shell: pwsh
+        run: Install-Module Pester -Scope CurrentUser -Force -MinimumVersion 5.5.0 -MaximumVersion 6.99.99
+
+      - name: Run unit tests
+        shell: pwsh
+        run: Invoke-Pester ./test -CI
+
   test:
     runs-on: windows-latest
     steps:

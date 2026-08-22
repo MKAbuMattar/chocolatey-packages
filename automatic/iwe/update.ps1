@@ -1,36 +1,22 @@
 import-module Chocolatey-AU
+Import-Module (Join-Path $PSScriptRoot '../../au_shared.psm1') -Global
 
 $repo = 'iwe-org/iwe'
 
-# Matched against the names the release actually carries. Upstream file names do not
-# always track the tag, so the URL is never built by hand.
-$assetPattern = 'iwe-*-x86_64-pc-windows-msvc.zip'
-
-function global:au_SearchReplace {
-  @{
-    'tools\chocolateyInstall.ps1' = @{
-      "(^\s*url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-      "(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-    }
-    "$($Latest.PackageName).nuspec" = @{
-      "(<releaseNotes>).*(</releaseNotes>)" = "`${1}$($Latest.ReleaseNotes)`$2"
-    }
-  }
-}
+function global:au_SearchReplace { Get-AuSearchReplace }
 
 function global:au_GetLatest {
-  $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
-  $release = Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers
+  $release = Get-GitHubRelease -Repo $repo
   $tag = $release.tag_name
-  $version = $tag -replace '^iwe-v', ''
 
-  $asset = $release.assets | Where-Object { $_.name -like $assetPattern } | Select-Object -First 1
-  if (!$asset) { throw "No asset matching $assetPattern in release $tag" }
+  # Upstream tags as 'iwe-v<version>', and the asset name does not track the tag,
+  # so the URL comes from the names the release actually carries.
+  $asset = Get-GitHubMatchingAsset -Release $release -Pattern 'iwe-*-x86_64-pc-windows-msvc.zip'
 
   @{
-    Version      = $version
+    Version      = Get-VersionFromTag -Tag $tag -Prefix 'iwe-'
     URL64        = $asset.browser_download_url
-    ReleaseNotes = "https://github.com/$repo/releases/tag/$tag"
+    ReleaseNotes = Get-GitHubReleaseNotesUrl -Repo $repo -Tag $tag
   }
 }
 
