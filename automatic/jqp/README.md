@@ -6,13 +6,17 @@
 choco install jqp
 ```
 
-Chocolatey downloads the official Windows build from the [noahgorstein/jqp](https://github.com/noahgorstein/jqp/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install jqp --version=0.8.0
+```
 
 ## What is jqp?
 
 A TUI playground to experiment with jq.
-
-Upstream describes it with these topics: go, jq, tui.
 
 ## Upgrade
 
@@ -31,8 +35,8 @@ choco uninstall jqp
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/noahgorstein/jqp |
-| Source code | https://github.com/noahgorstein/jqp |
 | Releases | https://github.com/noahgorstein/jqp/releases |
+| Issues | https://github.com/noahgorstein/jqp/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/jqp |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/jqp |
 

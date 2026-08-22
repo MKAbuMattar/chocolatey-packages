@@ -6,13 +6,17 @@
 choco install deepchat
 ```
 
-Chocolatey downloads the official installer from the [ThinkInAIXYZ/deepchat](https://github.com/ThinkInAIXYZ/deepchat/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install deepchat --version=1.0.9
+```
 
 ## What is DeepChat?
 
 DeepChat - A smart assistant that connects powerful AI to your personal world.
-
-Upstream describes it with these topics: agent, agent-skills, ai, ai-assistant, ai-sdk, chatgpt, claude, cross-platform.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall deepchat
 | Website | https://deepchat.thinkinai.xyz/ |
 | Source code | https://github.com/ThinkInAIXYZ/deepchat |
 | Releases | https://github.com/ThinkInAIXYZ/deepchat/releases |
+| Issues | https://github.com/ThinkInAIXYZ/deepchat/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/deepchat |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/deepchat |
 

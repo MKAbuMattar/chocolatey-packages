@@ -6,13 +6,21 @@
 choco install ouroboros
 ```
 
-Chocolatey downloads the official Windows build from the [Q00/ouroboros](https://github.com/Q00/ouroboros/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit build at install time and puts it on your PATH. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install ouroboros --version=0.50.6
+```
 
 ## What is Ouroboros?
 
 Agent OS: Stop prompting. Start specifying.
 
-Upstream describes it with these topics: agent-os, ai-agent, llm-orchestration, llm-runtime, python.
+## Usage
+
+The package installs the `ouroboros` command. Open a new terminal after installing so the PATH change takes effect, then see the [Ouroboros documentation](https://ouroboros.page/) for the available options.
 
 ## Upgrade
 
@@ -33,6 +41,7 @@ choco uninstall ouroboros
 | Website | https://ouroboros.page/ |
 | Source code | https://github.com/Q00/ouroboros |
 | Releases | https://github.com/Q00/ouroboros/releases |
+| Issues | https://github.com/Q00/ouroboros/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/ouroboros |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/ouroboros |
 

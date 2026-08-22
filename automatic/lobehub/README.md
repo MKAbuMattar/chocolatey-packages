@@ -6,13 +6,17 @@
 choco install lobehub
 ```
 
-Chocolatey downloads the official installer from the [lobehub/lobehub](https://github.com/lobehub/lobehub/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install lobehub --version=2.2.12
+```
 
 ## What is LobeHub?
 
 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.
-
-Upstream describes it with these topics: agent, agent-collaboration, agent-harness, ai, cao, chatgpt, chief-agent-operator, claude.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall lobehub
 | Website | https://lobehub.com |
 | Source code | https://github.com/lobehub/lobehub |
 | Releases | https://github.com/lobehub/lobehub/releases |
+| Issues | https://github.com/lobehub/lobehub/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/lobehub |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/lobehub |
 

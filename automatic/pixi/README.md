@@ -1,4 +1,4 @@
-# pixi Chocolatey Package
+# Pixi Chocolatey Package
 
 ## Install
 
@@ -6,8 +6,13 @@
 choco install pixi
 ```
 
-To install by hand instead, follow the instructions at [pixi.sh](https://pixi.sh/) or in
-the [pixi repository](https://github.com/prefix-dev/pixi).
+Chocolatey downloads the official 64-bit build at install time and puts it on your PATH. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install pixi --version=0.77.0
+```
 
 ## What is Pixi?
 
@@ -52,3 +57,36 @@ pixi run test
 
 The official documentation is at [pixi.sh](https://pixi.sh/). Releases are listed in the
 [GitHub repository](https://github.com/prefix-dev/pixi/releases).
+
+## Usage
+
+The package installs the `pixi` command. Open a new terminal after installing so the PATH change takes effect, then see the [Pixi documentation](https://pixi.sh/) for the available options.
+
+## Upgrade
+
+```powershell
+choco upgrade pixi
+```
+
+## Uninstall
+
+```powershell
+choco uninstall pixi
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://pixi.sh/ |
+| Source code | https://github.com/prefix-dev/pixi |
+| Releases | https://github.com/prefix-dev/pixi/releases |
+| Issues | https://github.com/prefix-dev/pixi/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/pixi |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/pixi |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Pixi itself is distributed under its own [license](https://github.com/prefix-dev/pixi/blob/main/LICENSE).

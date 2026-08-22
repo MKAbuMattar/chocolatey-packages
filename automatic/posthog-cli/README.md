@@ -6,14 +6,17 @@
 choco install posthog-cli
 ```
 
-Chocolatey downloads the official Windows build from the [PostHog/posthog](https://github.com/PostHog/posthog/releases) releases and puts it on your PATH.
-PostHog is a monorepo that publishes releases for several components, so the updater tracks tags prefixed with `posthog-cli/` rather than the newest release.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install posthog-cli --version=0.9.2
+```
 
 ## What is PostHog CLI?
 
 :hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools - AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more - capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.
-
-Upstream describes it with these topics: ab-testing, ai-analytics, analytics, cdp, data-warehouse, experiments, feature-flags, javascript.
 
 ## Upgrade
 
@@ -34,6 +37,7 @@ choco uninstall posthog-cli
 | Website | https://posthog.com |
 | Source code | https://github.com/PostHog/posthog |
 | Releases | https://github.com/PostHog/posthog/releases |
+| Issues | https://github.com/PostHog/posthog/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/posthog-cli |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/posthog-cli |
 

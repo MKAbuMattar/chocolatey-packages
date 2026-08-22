@@ -6,13 +6,17 @@
 choco install agent-orchestrator
 ```
 
-Chocolatey downloads the official installer from the [AgentWrapper/agent-orchestrator](https://github.com/AgentWrapper/agent-orchestrator/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install agent-orchestrator --version=0.11.1
+```
 
 ## What is Agent Orchestrator?
 
 Agent IDE that enables you to manage fleets of coding agents. It comes with an agentic orchestrator that plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code reviews.
-
-Upstream describes it with these topics: agent-fleet, agent-swarm, claude-code, codex-cli, git-worktrees, multi-agent, orchestration, orchestrator.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall agent-orchestrator
 | Website | http://aoagents.dev/ |
 | Source code | https://github.com/AgentWrapper/agent-orchestrator |
 | Releases | https://github.com/AgentWrapper/agent-orchestrator/releases |
+| Issues | https://github.com/AgentWrapper/agent-orchestrator/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/agent-orchestrator |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/agent-orchestrator |
 

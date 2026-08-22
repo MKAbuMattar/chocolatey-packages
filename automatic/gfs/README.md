@@ -6,13 +6,17 @@
 choco install gfs
 ```
 
-Chocolatey downloads the official Windows build from the [Guepard-Corp/gfs](https://github.com/Guepard-Corp/gfs/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install gfs --version=0.4.0
+```
 
 ## What is GFS?
 
 Git For database Systems.
-
-Upstream describes it with these topics: agentic-ai, agents, clickhouse, database, mcp, mysql, postgresql, version-control.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall gfs
 | Website | https://gfs.guepard.run |
 | Source code | https://github.com/Guepard-Corp/gfs |
 | Releases | https://github.com/Guepard-Corp/gfs/releases |
+| Issues | https://github.com/Guepard-Corp/gfs/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/gfs |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/gfs |
 

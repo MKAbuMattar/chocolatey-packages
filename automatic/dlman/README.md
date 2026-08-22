@@ -6,13 +6,17 @@
 choco install dlman
 ```
 
-Chocolatey downloads the official installer from the [novincode/dlman](https://github.com/novincode/dlman/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install dlman --version=1.11.1
+```
 
 ## What is DLMan?
 
 Free & Fast Modern Download Manager for Windows / Mac / Linux.
-
-Upstream describes it with these topics: download-manager, downloader, downloadmanager, idm.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall dlman
 | Website | https://dlman.codeideal.com |
 | Source code | https://github.com/novincode/dlman |
 | Releases | https://github.com/novincode/dlman/releases |
+| Issues | https://github.com/novincode/dlman/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/dlman |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/dlman |
 

@@ -10,19 +10,24 @@
     <projectUrl>https://meshery.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/mesheryctl.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install mesheryctl
 ```
 
-Chocolatey downloads the official Windows build from the [meshery/meshery](https://github.com/meshery/meshery/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install mesheryctl --version=1.0.63
+```
 
 ## What is mesheryctl?
 
 Meshery, the cloud native manager.
-
-Upstream describes it with these topics: cloud-native, cncf, control-plane, docker, gitops, golang, gsoc, hacktoberfest.
 
 ## Upgrade
 
@@ -43,6 +48,7 @@ choco uninstall mesheryctl
 | Website | https://meshery.io |
 | Source code | https://github.com/meshery/meshery |
 | Releases | https://github.com/meshery/meshery/releases |
+| Issues | https://github.com/meshery/meshery/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/mesheryctl |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/mesheryctl |
 

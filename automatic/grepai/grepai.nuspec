@@ -10,19 +10,24 @@
     <projectUrl>https://yoanbernabeu.github.io/grepai/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/grepai.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install grepai
 ```
 
-Chocolatey downloads the official Windows build from the [yoanbernabeu/grepai](https://github.com/yoanbernabeu/grepai/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install grepai --version=0.35.0
+```
 
 ## What is grepai?
 
 Semantic Search & Call Graphs for AI Agents (100% Local).
-
-Upstream describes it with these topics: ai, claude-code, cli, code-search, cursor, developer-tools, embeddings, golang.
 
 ## Upgrade
 
@@ -43,6 +48,7 @@ choco uninstall grepai
 | Website | https://yoanbernabeu.github.io/grepai/ |
 | Source code | https://github.com/yoanbernabeu/grepai |
 | Releases | https://github.com/yoanbernabeu/grepai/releases |
+| Issues | https://github.com/yoanbernabeu/grepai/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/grepai |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/grepai |
 

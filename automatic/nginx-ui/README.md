@@ -6,13 +6,17 @@
 choco install nginx-ui
 ```
 
-Chocolatey downloads the official Windows build from the [0xJacky/nginx-ui](https://github.com/0xJacky/nginx-ui/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install nginx-ui --version=2.5.2
+```
 
 ## What is Nginx UI?
 
 Yet another WebUI for Nginx.
-
-Upstream describes it with these topics: code-completion, copilot, cron, docker, go, letsencrypt, linux, macos.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall nginx-ui
 | Website | https://nginxui.com |
 | Source code | https://github.com/0xJacky/nginx-ui |
 | Releases | https://github.com/0xJacky/nginx-ui/releases |
+| Issues | https://github.com/0xJacky/nginx-ui/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/nginx-ui |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/nginx-ui |
 

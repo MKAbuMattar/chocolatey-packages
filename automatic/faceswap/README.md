@@ -6,14 +6,17 @@
 choco install faceswap
 ```
 
-Chocolatey downloads the official installer from the [deepfakes/faceswap](https://github.com/deepfakes/faceswap/releases) releases and runs it silently.
-The published installer is a small bootstrapper, so it downloads the rest of Faceswap during setup and needs a working internet connection.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install faceswap --version=3.0.0
+```
 
 ## What is Faceswap?
 
 Deepfakes Software For All.
-
-Upstream describes it with these topics: deep-face-swap, deep-learning, deep-neural-networks, deepface, deepfakes, deeplearning, face-swap, faceswap.
 
 ## Upgrade
 
@@ -34,6 +37,7 @@ choco uninstall faceswap
 | Website | https://www.faceswap.dev |
 | Source code | https://github.com/deepfakes/faceswap |
 | Releases | https://github.com/deepfakes/faceswap/releases |
+| Issues | https://github.com/deepfakes/faceswap/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/faceswap |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/faceswap |
 

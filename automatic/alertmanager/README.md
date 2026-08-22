@@ -6,13 +6,17 @@
 choco install alertmanager
 ```
 
-Chocolatey downloads the official Windows build from the [prometheus/alertmanager](https://github.com/prometheus/alertmanager/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install alertmanager --version=0.33.1
+```
 
 ## What is Prometheus Alertmanager?
 
 Prometheus Alertmanager.
-
-Upstream describes it with these topics: alertmanager, deduplication, email, hacktoberfest, monitoring, notifications, opsgenie, pagerduty.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall alertmanager
 | Website | https://prometheus.io |
 | Source code | https://github.com/prometheus/alertmanager |
 | Releases | https://github.com/prometheus/alertmanager/releases |
+| Issues | https://github.com/prometheus/alertmanager/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/alertmanager |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/alertmanager |
 

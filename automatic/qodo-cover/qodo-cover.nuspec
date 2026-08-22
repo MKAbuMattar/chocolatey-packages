@@ -10,19 +10,28 @@
     <projectUrl>https://qodo.ai/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/qodo-cover.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install qodo-cover
 ```
 
-Chocolatey downloads the official Windows build from the [qodo-ai/qodo-cover](https://github.com/qodo-ai/qodo-cover/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit build at install time and puts it on your PATH. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install qodo-cover --version=0.3.10
+```
 
 ## What is Qodo Cover?
 
 Qodo-Cover: An AI-Powered Tool for Automated Test Generation and Code Coverage Enhancement!.
 
-Upstream describes it with these topics: agents, ai, test-automation, testing.
+## Usage
+
+The package installs the `cover-agent` command. Open a new terminal after installing so the PATH change takes effect, then see the [Qodo Cover documentation](https://qodo.ai/) for the available options.
 
 ## Upgrade
 
@@ -43,6 +52,7 @@ choco uninstall qodo-cover
 | Website | https://qodo.ai/ |
 | Source code | https://github.com/qodo-ai/qodo-cover |
 | Releases | https://github.com/qodo-ai/qodo-cover/releases |
+| Issues | https://github.com/qodo-ai/qodo-cover/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/qodo-cover |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/qodo-cover |
 
@@ -61,6 +71,6 @@ Qodo Cover itself is distributed under its own [license](https://github.com/qodo
     <docsUrl>https://qodo.ai/</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="**\*.exe" />
   </files>
 </package>

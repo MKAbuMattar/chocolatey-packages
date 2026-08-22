@@ -6,13 +6,17 @@
 choco install github-mcp-server
 ```
 
-Chocolatey downloads the official Windows build from the [github/github-mcp-server](https://github.com/github/github-mcp-server/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install github-mcp-server --version=1.7.0
+```
 
 ## What is GitHub MCP Server?
 
 GitHub's official MCP Server.
-
-Upstream describes it with these topics: github, mcp, mcp-server.
 
 ## Upgrade
 
@@ -31,8 +35,8 @@ choco uninstall github-mcp-server
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/github/github-mcp-server |
-| Source code | https://github.com/github/github-mcp-server |
 | Releases | https://github.com/github/github-mcp-server/releases |
+| Issues | https://github.com/github/github-mcp-server/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/github-mcp-server |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/github-mcp-server |
 

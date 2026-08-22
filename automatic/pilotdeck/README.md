@@ -6,8 +6,13 @@
 choco install pilotdeck
 ```
 
-Chocolatey downloads the official installer from the [OpenBMB/PilotDeck](https://github.com/OpenBMB/PilotDeck/releases) releases and runs it silently.
-Upstream tags releases by date, so `v260806` becomes version `2026.8.6` here. That keeps versions ordered, which a bare `260806` would not be.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install pilotdeck --version=2026.8.6
+```
 
 ## What is PilotDeck?
 
@@ -32,6 +37,7 @@ choco uninstall pilotdeck
 | Website | https://pilotdeck.openbmb.cn |
 | Source code | https://github.com/OpenBMB/PilotDeck |
 | Releases | https://github.com/OpenBMB/PilotDeck/releases |
+| Issues | https://github.com/OpenBMB/PilotDeck/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/pilotdeck |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/pilotdeck |
 

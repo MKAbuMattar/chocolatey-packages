@@ -6,13 +6,17 @@
 choco install openclaw-companion
 ```
 
-Chocolatey downloads the official installer from the [openclaw/openclaw](https://github.com/openclaw/openclaw/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install openclaw-companion --version=2026.7.1
+```
 
 ## What is OpenClaw Companion?
 
 Your own personal AI assistant. Any OS. Any Platform. The lobster way.
-
-Upstream describes it with these topics: ai, assistant, crustacean, molty, openclaw, own-your-data, personal.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall openclaw-companion
 | Website | https://openclaw.ai |
 | Source code | https://github.com/openclaw/openclaw |
 | Releases | https://github.com/openclaw/openclaw/releases |
+| Issues | https://github.com/openclaw/openclaw/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/openclaw-companion |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/openclaw-companion |
 

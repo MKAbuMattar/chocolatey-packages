@@ -6,8 +6,13 @@
 choco install buzz
 ```
 
-Chocolatey downloads the official installer from the [block/buzz](https://github.com/block/buzz/releases) releases and runs it silently.
-Upstream publishes this build unsigned and labelled alpha. Windows SmartScreen will warn about it, and it is pre-release software.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install buzz --version=0.5.9
+```
 
 ## What is Buzz?
 
@@ -30,8 +35,8 @@ choco uninstall buzz
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/block/buzz |
-| Source code | https://github.com/block/buzz |
 | Releases | https://github.com/block/buzz/releases |
+| Issues | https://github.com/block/buzz/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/buzz |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/buzz |
 

@@ -6,14 +6,17 @@
 choco install arrow-flight-sql-odbc
 ```
 
-Chocolatey downloads the official installer from the [apache/arrow](https://github.com/apache/arrow/releases) releases and runs it silently.
-Apache Arrow itself is a library, not a Windows application. This package installs only the Flight SQL ODBC driver, which is the one Windows installer Arrow ships.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install arrow-flight-sql-odbc --version=25.0.1
+```
 
 ## What is Apache Arrow Flight SQL ODBC Driver?
 
 Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics.
-
-Upstream describes it with these topics: arrow, parquet.
 
 ## Upgrade
 
@@ -34,6 +37,7 @@ choco uninstall arrow-flight-sql-odbc
 | Website | https://arrow.apache.org/ |
 | Source code | https://github.com/apache/arrow |
 | Releases | https://github.com/apache/arrow/releases |
+| Issues | https://github.com/apache/arrow/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/arrow-flight-sql-odbc |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/arrow-flight-sql-odbc |
 

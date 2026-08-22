@@ -6,7 +6,13 @@
 choco install e2ecp
 ```
 
-Chocolatey downloads the official Windows build from the [schollz/e2ecp](https://github.com/schollz/e2ecp/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install e2ecp --version=3.2.0
+```
 
 ## What is e2ecp?
 
@@ -31,6 +37,7 @@ choco uninstall e2ecp
 | Website | https://e2ecp.com |
 | Source code | https://github.com/schollz/e2ecp |
 | Releases | https://github.com/schollz/e2ecp/releases |
+| Issues | https://github.com/schollz/e2ecp/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/e2ecp |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/e2ecp |
 

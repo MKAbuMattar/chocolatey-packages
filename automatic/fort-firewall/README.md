@@ -6,13 +6,17 @@
 choco install fort-firewall
 ```
 
-Chocolatey downloads the official installer from the [tnodir/fort](https://github.com/tnodir/fort/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install fort-firewall --version=3.19.9
+```
 
 ## What is Fort Firewall?
 
 Fort Firewall for Windows.
-
-Upstream describes it with these topics: bandwidth-limiting, firewall, windows.
 
 ## Upgrade
 
@@ -31,8 +35,8 @@ choco uninstall fort-firewall
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/tnodir/fort |
-| Source code | https://github.com/tnodir/fort |
 | Releases | https://github.com/tnodir/fort/releases |
+| Issues | https://github.com/tnodir/fort/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/fort-firewall |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/fort-firewall |
 

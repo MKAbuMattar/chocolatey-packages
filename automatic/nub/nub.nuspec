@@ -10,20 +10,24 @@
     <projectUrl>https://nubjs.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/nub.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install nub
 ```
 
-Chocolatey downloads the official Windows build from the [nubjs/nub](https://github.com/nubjs/nub/releases) releases and puts it on your PATH.
-The archive also bundles helper executables. Those are left out of your PATH so they cannot shadow tools you already have installed.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install nub --version=0.6.0
+```
 
 ## What is nub?
 
 The fast all-in-one Node.js toolkit.
-
-Upstream describes it with these topics: javascript-runtime, node-version-manager, nodejs, package-manager, script-runner.
 
 ## Upgrade
 
@@ -44,6 +48,7 @@ choco uninstall nub
 | Website | https://nubjs.com |
 | Source code | https://github.com/nubjs/nub |
 | Releases | https://github.com/nubjs/nub/releases |
+| Issues | https://github.com/nubjs/nub/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/nub |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/nub |
 

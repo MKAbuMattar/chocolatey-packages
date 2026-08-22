@@ -6,14 +6,17 @@
 choco install kubectl-cnpg
 ```
 
-Chocolatey downloads the official Windows build from the [cloudnative-pg/cloudnative-pg](https://github.com/cloudnative-pg/cloudnative-pg/releases) releases and puts it on your PATH.
-This is the CloudNativePG plugin for kubectl, not the operator, which runs in Kubernetes rather than on Windows.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install kubectl-cnpg --version=1.30.0
+```
 
 ## What is kubectl-cnpg?
 
 The most popular Kubernetes Operator for PostgreSQL.
-
-Upstream describes it with these topics: automated-failover, business-continuity, database, database-management, devops, disaster-recovery, failover, high-availability.
 
 ## Upgrade
 
@@ -34,6 +37,7 @@ choco uninstall kubectl-cnpg
 | Website | https://cloudnative-pg.io |
 | Source code | https://github.com/cloudnative-pg/cloudnative-pg |
 | Releases | https://github.com/cloudnative-pg/cloudnative-pg/releases |
+| Issues | https://github.com/cloudnative-pg/cloudnative-pg/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/kubectl-cnpg |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/kubectl-cnpg |
 

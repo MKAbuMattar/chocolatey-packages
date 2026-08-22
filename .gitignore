@@ -2,3 +2,6 @@
 update_vars.ps1
 Update-AUPackages.md
 update_info.xml
+automatic/*/tools/*.exe
+automatic/*/tools/*.msi
+automatic/*/tools/*.zip

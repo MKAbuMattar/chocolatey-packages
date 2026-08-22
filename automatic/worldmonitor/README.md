@@ -6,13 +6,17 @@
 choco install worldmonitor
 ```
 
-Chocolatey downloads the official installer from the [koala73/worldmonitor](https://github.com/koala73/worldmonitor/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install worldmonitor --version=2.5.23
+```
 
 ## What is World Monitor?
 
 Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface.
-
-Upstream describes it with these topics: agent, ai, dashboard, geopolitics, mcp, mcp-server, monitoring, news.
 
 ## Upgrade
 
@@ -33,6 +37,7 @@ choco uninstall worldmonitor
 | Website | https://worldmonitor.app |
 | Source code | https://github.com/koala73/worldmonitor |
 | Releases | https://github.com/koala73/worldmonitor/releases |
+| Issues | https://github.com/koala73/worldmonitor/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/worldmonitor |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/worldmonitor |
 

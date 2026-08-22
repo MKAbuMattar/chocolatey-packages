@@ -10,19 +10,24 @@
     <projectUrl>https://github.com/microsoft/winappCli</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/winapp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install winapp
 ```
 
-Chocolatey downloads the official Windows build from the [microsoft/winappCli](https://github.com/microsoft/winappCli/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install winapp --version=0.5.0
+```
 
 ## What is winapp CLI?
 
 winapp, the Windows App Development CLI, is a single command-line interface for managing Windows SDKs, packaging, generating app identity, manifests, certificates, and using build tools with any app framework.
-
-Upstream describes it with these topics: cli, electron, identity, msix, winappsdk, windev, windows, windows-development.
 
 ## Upgrade
 
@@ -41,8 +46,8 @@ choco uninstall winapp
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/microsoft/winappCli |
-| Source code | https://github.com/microsoft/winappCli |
 | Releases | https://github.com/microsoft/winappCli/releases |
+| Issues | https://github.com/microsoft/winappCli/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/winapp |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/winapp |
 

@@ -6,7 +6,13 @@
 choco install openwork
 ```
 
-Chocolatey downloads the official installer from the [different-ai/openwork](https://github.com/different-ai/openwork/releases) releases and runs it silently.
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install openwork --version=0.18.10
+```
 
 ## What is Openwork?
 
@@ -31,6 +37,7 @@ choco uninstall openwork
 | Website | https://openworklabs.com |
 | Source code | https://github.com/different-ai/openwork |
 | Releases | https://github.com/different-ai/openwork/releases |
+| Issues | https://github.com/different-ai/openwork/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/openwork |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/openwork |
 

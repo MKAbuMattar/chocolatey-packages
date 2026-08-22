@@ -6,13 +6,21 @@
 choco install daytona
 ```
 
-Chocolatey downloads the official Windows build from the [daytonaio/daytona](https://github.com/daytonaio/daytona/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit build at install time and puts it on your PATH. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install daytona --version=0.190.0
+```
 
 ## What is Daytona?
 
 Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code.
 
-Upstream describes it with these topics: agentic-workflow, ai, ai-agents, ai-runtime, ai-sandboxes, code-execution, code-interpreter, developer-tools.
+## Usage
+
+The package installs the `daytona` command. Open a new terminal after installing so the PATH change takes effect, then see the [Daytona documentation](https://daytona.io) for the available options.
 
 ## Upgrade
 
@@ -33,6 +41,7 @@ choco uninstall daytona
 | Website | https://daytona.io |
 | Source code | https://github.com/daytonaio/daytona |
 | Releases | https://github.com/daytonaio/daytona/releases |
+| Issues | https://github.com/daytonaio/daytona/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/daytona |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/daytona |
 

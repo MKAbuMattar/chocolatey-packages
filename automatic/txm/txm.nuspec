@@ -10,13 +10,20 @@
     <projectUrl>https://github.com/thatmagicalcat/txm</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/txm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Install
+    <description><![CDATA[
+## Install
 
 ```powershell
 choco install txm
 ```
 
-Chocolatey downloads the official Windows build from the [thatmagicalcat/txm](https://github.com/thatmagicalcat/txm/releases) releases and puts it on your PATH.
+Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install txm --version=0.1.5
+```
 
 ## What is txm?
 
@@ -39,8 +46,8 @@ choco uninstall txm
 | Resource | URL |
 | --- | --- |
 | Website | https://github.com/thatmagicalcat/txm |
-| Source code | https://github.com/thatmagicalcat/txm |
 | Releases | https://github.com/thatmagicalcat/txm/releases |
+| Issues | https://github.com/thatmagicalcat/txm/issues |
 | Chocolatey page | https://community.chocolatey.org/packages/txm |
 | Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/txm |
 
