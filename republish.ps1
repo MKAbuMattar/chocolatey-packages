@@ -42,61 +42,72 @@ if (Test-Path $out) { Remove-Item $out -Recurse -Force }
 New-Item $out -ItemType Directory | Out-Null
 
 if (!$WhatIf -and !$Env:api_key) {
-    throw 'api_key is not set. Set it in update_vars.ps1 locally, or as the CHOCO_API_KEY secret in CI.'
+    Write-Host '::error::api_key is not set. Set it in update_vars.ps1 locally, or as the CHOCO_API_KEY secret in CI.'
+    exit 1
 }
 
 $failed = @()
 $pushed = @()
 
 foreach ($id in $Name) {
-    $dir = Join-Path $root $id
-    if (!(Test-Path $dir)) { Write-Host "::error::$id is not a package in automatic/"; $failed += $id; continue }
-
-    $nuspec  = Join-Path $dir "$id.nuspec"
-    $version = ([xml](Get-Content $nuspec -Raw)).package.metadata.version
-
-    Write-Host "`n=== $id $version ==="
-
-    Push-Location $dir
+    # One package that cannot be read or packed must not take the rest of the list, and
+    # the run has to reach the summary below, so nothing in here is left to escape.
     try {
-        choco pack --outputdirectory $out
-        if ($LASTEXITCODE -ne 0) { throw "choco pack failed with $LASTEXITCODE" }
-    }
-    catch { Write-Host "::error::$id pack failed: $_"; $failed += $id; Pop-Location; continue }
-    Pop-Location
+        $dir = Join-Path $root $id
+        if (!(Test-Path $dir)) { throw "not a package in automatic/" }
 
-    $nupkg = Join-Path $out "$id.$version.nupkg"
-    if (!(Test-Path $nupkg)) { Write-Host "::error::$id packed but $nupkg is missing"; $failed += $id; continue }
+        $nuspec = Join-Path $dir "$id.nuspec"
+        if (!(Test-Path $nuspec)) { throw "$id.nuspec is missing" }
 
-    # The binaries-in-the-package failure was invisible until someone opened a nupkg.
-    # Refuse to push one rather than spend another moderation round finding out.
-    $zip = [IO.Compression.ZipFile]::OpenRead($nupkg)
-    try {
-        $bad = @($zip.Entries | Where-Object { $_.FullName -match '\.(exe|msi|zip|7z|dll)$' } |
-                 Select-Object -ExpandProperty FullName)
+        $version = ([xml](Get-Content $nuspec -Raw)).package.metadata.version
+        if (!$version) { throw "$id.nuspec records no version" }
+
+        Write-Host "`n=== $id $version ==="
+
+        Push-Location $dir
+        try {
+            choco pack --outputdirectory $out
+            if ($LASTEXITCODE -ne 0) { throw "choco pack failed with $LASTEXITCODE" }
+        }
+        finally { Pop-Location }
+
+        $nupkg = Join-Path $out "$id.$version.nupkg"
+        if (!(Test-Path $nupkg)) { throw "packed but $nupkg is missing" }
+
+        # The binaries-in-the-package failure was invisible until someone opened a nupkg.
+        # Refuse to push one rather than spend another moderation round finding out.
+        $zip = [IO.Compression.ZipFile]::OpenRead($nupkg)
+        try {
+            $bad = @($zip.Entries | Where-Object { $_.FullName -match '\.(exe|msi|zip|7z|dll)$' } |
+                     Select-Object -ExpandProperty FullName)
+        }
+        finally { $zip.Dispose() }
+        if ($bad) { throw "carries binaries and would fail validation: $($bad -join ', ')" }
+
+        $size = '{0:N0}' -f (Get-Item $nupkg).Length
+        Write-Host "packed clean, $size bytes"
+
+        if ($WhatIf) { Write-Host "WhatIf: would push $id $version"; continue }
+
+        choco push $nupkg --source https://push.chocolatey.org/ --api-key $Env:api_key --force
+        if ($LASTEXITCODE -ne 0) { throw "push failed with $LASTEXITCODE" }
+
+        $pushed += "$id $version"
     }
-    finally { $zip.Dispose() }
-    if ($bad) {
-        Write-Host "::error::$id carries binaries and would fail validation: $($bad -join ', ')"
+    catch {
+        Write-Host "::error::$id`: $_"
         $failed += $id
-        continue
     }
-
-    $size = '{0:N0}' -f (Get-Item $nupkg).Length
-    Write-Host "packed clean, $size bytes"
-
-    if ($WhatIf) { Write-Host "WhatIf: would push $id $version"; continue }
-
-    choco push $nupkg --source https://push.chocolatey.org/ --api-key $Env:api_key --force
-    if ($LASTEXITCODE -ne 0) { Write-Host "::error::$id push failed with $LASTEXITCODE"; $failed += $id; continue }
-
-    $pushed += "$id $version"
 }
 
 Write-Host "`n================ summary ================"
 if ($pushed) { Write-Host "pushed:  $($pushed -join ', ')" }
 if ($failed) {
     Write-Host "::error::failed: $($failed -join ', ')"
+    exit 1
+}
+if (!$WhatIf -and !$pushed) {
+    Write-Host '::error::nothing was pushed'
     exit 1
 }
 Write-Host 'no failures'

@@ -34,6 +34,8 @@ jobs:
           github_user_repo: ${{ github.repository }}
         run: .\update_all.ps1 -Force
 
+      # Best effort: the report is missing when AU never got far enough to write one, and
+      # the step above has already failed the job in that case.
       - name: Publish report
         if: always()
         shell: powershell

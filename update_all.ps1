@@ -35,9 +35,29 @@ if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
 $global:au_Root = "$PSScriptRoot\automatic"
 
+# AU matches -Name against folder names and reports nothing for one that does not exist,
+# which used to end in a green run that checked no package at all.
+if ($Name) {
+    $known   = (Get-ChildItem $global:au_Root -Directory).Name
+    $unknown = @($Name | Where-Object { $_ -notin $known })
+    if ($unknown) {
+        Write-Host "::error::not a package in automatic/: $($unknown -join ', ')"
+        exit 1
+    }
+}
+
 # The package page renders the nuspec <description>, but the text is written in the
 # package README. Sync before AU packs anything, or the two drift apart silently.
-& "$PSScriptRoot\sync_readme.ps1" -Name $Name
+$global:LASTEXITCODE = 0    # so a stale code from an earlier command is not read as failure
+try { & "$PSScriptRoot\sync_readme.ps1" -Name $Name }
+catch {
+    Write-Host "::error::sync_readme.ps1 failed: $_"
+    exit 1
+}
+if ($LASTEXITCODE) {
+    Write-Host "::error::sync_readme.ps1 failed with $LASTEXITCODE, so the descriptions AU would pack are unknown"
+    exit 1
+}
 
 # The first time AU calculates a checksum it copies Chocolatey's helpers into TEMP and
 # monkey patches them. Nothing locks that copy, so on a cold cache several threads build
@@ -49,7 +69,9 @@ if (!(Test-Path "$Env:TEMP\chocolatey\au\chocolatey")) {
     if (Test-Path $warm) {
         $global:au_WhatIf = $true               # back up and restore, so no files change
         Push-Location $warm
-        try { .\update.ps1 | Out-Null } catch { Write-Host "Warm-up skipped: $_" }
+        # Best effort only: the run below reports this package on its own, so a failure
+        # here is worth printing but not worth stopping for.
+        try { .\update.ps1 | Out-Null } catch { Write-Host "::warning::AU warm-up failed, continuing: $_" }
         finally { Pop-Location; $global:au_WhatIf = $false }
     }
 }
@@ -114,7 +136,30 @@ $Options = [ordered]@{
     }
 }
 
-$global:info = updateall -Name $Name -Options $Options
+# Both keys reach AU as environment variables, so a missing one is only found out package
+# by package, halfway through a run that has already spent an hour downloading.
+if ($Options.Push -and !$Env:api_key) {
+    Write-Host '::error::au_Push is true but api_key is not set, so no package could be pushed'
+    exit 1
+}
+if (!$Env:github_api_key) {
+    Write-Host '::warning::github_api_key is not set: the GitHub API calls are rate limited as anonymous, and updated packages cannot be committed or released'
+}
+
+# An error out of AU itself - a bad option, a module that will not load - is a failed run
+# and has to be turned into an exit code, for the same reason as the failure count below.
+try { $global:info = updateall -Name $Name -Options $Options }
+catch {
+    Write-Host "::error::Update-AUPackages failed: $_"
+    exit 1
+}
+
+# No results at all means AU never ran a package, which is a failed run and not an
+# empty one. Left unchecked the count below is zero and the run reports success.
+if (!$global:info) {
+    Write-Host '::error::Update-AUPackages returned no packages, so nothing was checked'
+    exit 1
+}
 
 # Update-AUPackages returns the collection of packages, not the run summary, so
 # failures have to be counted from the packages themselves. Reading a summary
@@ -123,8 +168,5 @@ $failed = @($global:info | Where-Object { $_.Error -and -not $_.Ignored })
 if ($failed) {
     $failed | ForEach-Object { Write-Host "`nPackage: $($_.Name)`n$($_.Error)" }
     Write-Host "::error::$($failed.Count) package(s) failed: $($failed.Name -join ', ')"
-    # A bare throw is not enough: with `shell: powershell` an unhandled terminating
-    # error still leaves the exit code at 0, so the step would report success while
-    # packages were failing. Exit explicitly instead.
     exit 1
 }

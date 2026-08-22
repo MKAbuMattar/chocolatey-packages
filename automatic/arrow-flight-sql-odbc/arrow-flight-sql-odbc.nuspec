@@ -10,8 +10,7 @@
     <projectUrl>https://arrow.apache.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/arrow-flight-sql-odbc.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install arrow-flight-sql-odbc

@@ -18,6 +18,7 @@ function global:au_GetLatest {
   $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
   $release = Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers
   $tag = $release.tag_name
+  if (!$tag) { throw "The latest release of $repo carries no tag_name" }
   $version = $tag -replace '^v', ''
 
   # The asset name cannot be built from the tag. Upstream shipped v1.12.0 with every file

@@ -19,11 +19,18 @@ function global:au_GetLatest {
   # PostHog/posthog is a monorepo and its latest release is often another component,
   # so take the newest tag carrying this tool's prefix
   $releases = Invoke-RestMethod "https://api.github.com/repos/$repo/releases?per_page=100" -Headers $headers
-  $tag = ($releases | Where-Object { $_.tag_name -like 'posthog-cli/*' -and -not $_.prerelease } |
-          Select-Object -First 1).tag_name
-  if (!$tag) { throw 'No posthog-cli/ release found' }
+  $release = $releases | Where-Object { $_.tag_name -like 'posthog-cli/*' -and -not $_.prerelease } |
+             Select-Object -First 1
+  if (!$release) { throw 'No posthog-cli/ release found' }
+  $tag = $release.tag_name
   $version = ($tag -split '/')[-1] -replace '^v', ''
   $asset = 'posthog-cli-x86_64-pc-windows-msvc.zip'
+
+  # A release that never shipped this file otherwise only surfaces later as a checksum
+  # download failure naming no cause.
+  if ($release.assets.name -notcontains $asset) {
+    throw "Release $tag of $repo carries no asset named $asset. It carries: $($release.assets.name -join ', ')"
+  }
 
   @{
     Version      = $version

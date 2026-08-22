@@ -22,6 +22,12 @@
     .Example
         .\sync_readme.ps1 -Check
         # Report packages that are out of sync and exit 1. Changes nothing. Used by CI.
+
+    .Notes
+        A package this script cannot sync - no README.md, no CDATA <description>, a ']]>'
+        in the README - is a failure, not a warning. Warnings scroll past in a workflow
+        log and the package page keeps whatever description it had, so the script exits 1
+        for those too, in either mode.
 #>
 [CmdletBinding()]
 param(
@@ -32,11 +38,22 @@ param(
     [switch]$Check
 )
 
+$ErrorActionPreference = 'Stop'
+
 $root = Join-Path $PSScriptRoot 'automatic'
 $dirs = Get-ChildItem $root -Directory
-if ($Name) { $dirs = $dirs | Where-Object { $Name -contains $_.Name } }
+if ($Name) {
+    # A misspelled name used to sync nothing and still report success.
+    $unknown = @($Name | Where-Object { $_ -notin $dirs.Name })
+    if ($unknown) {
+        Write-Host "::error::not a package in automatic/: $($unknown -join ', ')"
+        exit 1
+    }
+    $dirs = $dirs | Where-Object { $Name -contains $_.Name }
+}
 
 $changed = @()
+$broken  = @()
 
 foreach ($dir in $dirs) {
     $id      = $dir.Name
@@ -44,7 +61,8 @@ foreach ($dir in $dirs) {
     $nuspec  = Join-Path $dir.FullName "$id.nuspec"
 
     if (!(Test-Path $readme) -or !(Test-Path $nuspec)) {
-        Write-Warning "$id is missing README.md or $id.nuspec, skipped"
+        Write-Host "::error::$id is missing README.md or $id.nuspec"
+        $broken += $id
         continue
     }
 
@@ -59,21 +77,27 @@ foreach ($dir in $dirs) {
     $body = ($body.TrimEnd() -replace "`r`n", "`n") -replace "`n", $nl
 
     if ($body -match '\]\]>') {
-        Write-Warning "$id README contains ']]>' which cannot go in a CDATA block, skipped"
+        Write-Host "::error::$id README contains ']]>' which cannot go in a CDATA block"
+        $broken += $id
         continue
     }
 
     $pattern = '(?s)<description><!\[CDATA\[.*?\]\]></description>'
 
     if ($current -notmatch $pattern) {
-        Write-Warning "$id nuspec has no CDATA <description>, skipped"
+        Write-Host "::error::$id nuspec has no CDATA <description> to write into"
+        $broken += $id
         continue
     }
 
+    # The body starts right after 'CDATA[' with no newline of its own. AU rewrites the
+    # nuspec through XmlDocument when it bumps the version, and that drops a newline in
+    # that position, so writing one here left every package out of sync again after its
+    # next update and failed -Check on the next pull request.
     # A literal replacement, so '$' and '\' in the README are not treated as substitutions.
     $updated = [regex]::Replace(
         $current, $pattern,
-        { "<description><![CDATA[$nl$body$nl]]></description>" },
+        { "<description><![CDATA[$body$nl]]></description>" },
         1)
 
     if ($updated -ne $current) {
@@ -82,15 +106,15 @@ foreach ($dir in $dirs) {
     }
 }
 
-if ($Check) {
-    if ($changed) {
-        Write-Host "::error::$($changed.Count) nuspec description(s) out of sync with README.md: $($changed -join ', ')"
-        Write-Host 'Run .\sync_readme.ps1 and commit the result.'
-        exit 1
-    }
-    Write-Host 'All nuspec descriptions match their README.'
-    return
+if ($Check -and $changed) {
+    Write-Host "::error::$($changed.Count) nuspec description(s) out of sync with README.md: $($changed -join ', ')"
+    Write-Host 'Run .\sync_readme.ps1 and commit the result.'
+}
+elseif ($changed) { Write-Host "Synced $($changed.Count) nuspec description(s): $($changed -join ', ')" }
+else { Write-Host 'All nuspec descriptions match their README.' }
+
+if ($broken) {
+    Write-Host "::error::$($broken.Count) package(s) could not be synced: $($broken -join ', ')"
 }
 
-if ($changed) { Write-Host "Synced $($changed.Count) nuspec description(s): $($changed -join ', ')" }
-else { Write-Host 'All nuspec descriptions already match their README.' }
+if ($broken -or ($Check -and $changed)) { exit 1 }

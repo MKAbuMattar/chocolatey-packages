@@ -19,11 +19,18 @@ function global:au_GetLatest {
   # apache/arrow publishes several components, and tags this one as 'apache-arrow-<version>',
   # so take the newest release carrying that prefix rather than whatever is latest.
   $releases = Invoke-RestMethod "https://api.github.com/repos/$repo/releases?per_page=100" -Headers $headers
-  $tag = ($releases | Where-Object { $_.tag_name -like 'apache-arrow-*' -and -not $_.prerelease } |
-          Select-Object -First 1).tag_name
-  if (!$tag) { throw 'No apache-arrow- release found' }
+  $release = $releases | Where-Object { $_.tag_name -like 'apache-arrow-*' -and -not $_.prerelease } |
+             Select-Object -First 1
+  if (!$release) { throw 'No apache-arrow- release found' }
+  $tag = $release.tag_name
   $version = $tag -replace '^apache-arrow-', '' -replace '^v', ''
   $asset = "Apache-Arrow-Flight-SQL-ODBC-${version}-win64.msi"
+
+  # A release that never shipped this file otherwise only surfaces later as a checksum
+  # download failure naming no cause.
+  if ($release.assets.name -notcontains $asset) {
+    throw "Release $tag of $repo carries no asset named $asset. It carries: $($release.assets.name -join ', ')"
+  }
 
   @{
     Version      = $version

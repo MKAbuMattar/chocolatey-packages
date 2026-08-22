@@ -19,11 +19,18 @@ function global:au_GetLatest {
   # block/buzz publishes several components, and tags this one as 'desktop-v<version>',
   # so take the newest release carrying that prefix rather than whatever is latest.
   $releases = Invoke-RestMethod "https://api.github.com/repos/$repo/releases?per_page=100" -Headers $headers
-  $tag = ($releases | Where-Object { $_.tag_name -like 'desktop-v*' -and -not $_.prerelease } |
-          Select-Object -First 1).tag_name
-  if (!$tag) { throw 'No desktop-v release found' }
+  $release = $releases | Where-Object { $_.tag_name -like 'desktop-v*' -and -not $_.prerelease } |
+             Select-Object -First 1
+  if (!$release) { throw 'No desktop-v release found' }
+  $tag = $release.tag_name
   $version = $tag -replace '^desktop-v', '' -replace '^v', ''
   $asset = "Buzz_${version}_x64-setup_alpha-unsigned.exe"
+
+  # A release that never shipped this file otherwise only surfaces later as a checksum
+  # download failure naming no cause.
+  if ($release.assets.name -notcontains $asset) {
+    throw "Release $tag of $repo carries no asset named $asset. It carries: $($release.assets.name -join ', ')"
+  }
 
   @{
     Version      = $version

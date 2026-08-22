@@ -17,11 +17,20 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   # /releases/latest never returns pre-releases, so no stable-version filtering needed
   $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
-  $tag = (Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers).tag_name
+  $release = Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers
+  $tag = $release.tag_name
+  if (!$tag) { throw "The latest release of $repo carries no tag_name" }
+  $asset = 'pixi-x86_64-pc-windows-msvc.exe'
+
+  # /releases/latest also returns a release that never shipped this file, and a URL built
+  # for a missing asset only surfaces later as a checksum download failure naming no cause.
+  if ($release.assets.name -notcontains $asset) {
+    throw "Release $tag of $repo carries no asset named $asset. It carries: $($release.assets.name -join ', ')"
+  }
 
   @{
     Version      = $tag -replace '^v', ''
-    URL64        = "https://github.com/$repo/releases/download/$tag/pixi-x86_64-pc-windows-msvc.exe"
+    URL64        = "https://github.com/$repo/releases/download/$tag/$asset"
     ReleaseNotes = "https://github.com/$repo/releases/tag/$tag"
   }
 }

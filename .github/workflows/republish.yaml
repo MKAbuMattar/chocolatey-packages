@@ -38,5 +38,6 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
           $names = $Env:PACKAGES -split '\s+' -ne ''
-          if (!$names) { throw 'No packages given' }
+          # ::error:: annotates the run, unlike a raw exception dump.
+          if (!$names) { Write-Host '::error::No packages given'; exit 1 }
           .\republish.ps1 -Name $names -WhatIf:($Env:DRY_RUN -eq 'true')
