@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openship</id>
-    <version>0.0.0</version>
+    <version>0.6.7</version>
     <title>Openship</title>
     <authors>oblien</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://openship.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openship.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install openship
