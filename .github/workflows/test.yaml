@@ -10,6 +10,19 @@ permissions:
   contents: read
 
 jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Install Pester 5
+        shell: pwsh
+        run: |
+          Install-Module Pester -Scope CurrentUser -Force -MinimumVersion 5.5.0 -MaximumVersion 5.99.99
+          Import-Module Pester -MinimumVersion 5.5.0 -MaximumVersion 5.99.99
+          Invoke-Pester ./test -CI
+
   test:
     runs-on: windows-latest
     steps:

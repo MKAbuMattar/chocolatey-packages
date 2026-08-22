@@ -27,7 +27,8 @@ Thanks for helping out with these Chocolatey packages.
    ```
 
    This re-runs the updater and packs the package without pushing anything. The same
-   check runs on every pull request.
+   check runs on every pull request. On Linux, run the offline unit suite with
+   `pwsh -Command "Invoke-Pester ./test -CI"` as well.
 
 5. Commit, push and open a pull request describing what changed and why.
 
