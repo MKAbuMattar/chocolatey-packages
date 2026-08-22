@@ -132,6 +132,7 @@ automatic/<id>/
   tools/chocolateyInstall.ps1
   README.md                 the package description, and the source for the nuspec
 icons/                      package icons, served over jsDelivr instead of hotlinked
+au_shared.psm1              the GitHub release lookup every update.ps1 shares
 update_all.ps1              the updater entry point used by CI and locally
 sync_readme.ps1             copies each README into its nuspec <description>
 ```
@@ -176,6 +177,29 @@ minus the H1, so the Chocolatey package page and this repository cannot disagree
 6. The new `.nupkg` is pushed to the community feed, the changed files are committed back
    here (one commit per package) and a GitHub release is created with the `.nupkg` attached.
 7. The run report is published as the workflow summary.
+
+### Updaters
+
+Every `update.ps1` imports `au_shared.psm1`, so a package states only what is specific
+to it. The common case is one call:
+
+```powershell
+function global:au_SearchReplace { Get-AuSearchReplace }
+
+function global:au_GetLatest {
+  Get-GitHubLatest -Repo $repo -Asset 'crush_{version}_Windows_x86_64.zip'
+}
+```
+
+`{version}` and `{tag}` in `-Asset` are filled in from the release that was found. Where
+upstream is more awkward, the same call takes `-AssetPattern` (file names that do not
+track the tag), `-TagPrefix` (monorepos that tag several components), `-TagPattern` and
+`-RequireAsset` (releases published without the Windows build). The few packages that
+need something else, such as a version built from the release date, assemble the hashtable
+from the smaller helpers in the module: `Get-GitHubRelease`, `Get-VersionFromTag`,
+`Get-GitHubMatchingAsset`, `Get-GitHubAssetUrl` and `Get-GitHubReleaseNotesUrl`.
+
+Get-Help works on all of them: `Import-Module .\au_shared.psm1; Get-Help Get-GitHubLatest -Full`.
 
 `test.yaml` runs on every pull request. It checks that each nuspec description still
 matches its README, then rebuilds every package with `-Force` and pushes nothing. A dead
@@ -249,7 +273,8 @@ choco push pixi.<version>.nupkg --source https://push.chocolatey.org/
 2. Add the icon as `icons/<id>.png` (128px or larger) and point `iconUrl` at
    `https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/<id>.png`.
 3. Copy the closest existing `README.md` and keep its headings. Copy the closest existing
-   `update.ps1` and adjust the upstream lookup.
+   `update.ps1` and adjust the upstream lookup, which for a GitHub release is a single
+   `Get-GitHubLatest` call (see [Updaters](#updaters)).
 4. Run `.\sync_readme.ps1 -Name <id>` to fill in the nuspec description.
 5. Test with `.\update_all.ps1 -Name <id> -Force`, then open a pull request.
 

@@ -1,30 +1,12 @@
 import-module Chocolatey-AU
+Import-Module (Join-Path $PSScriptRoot '../../au_shared.psm1') -Global
 
 $repo = 'Q00/ouroboros'
 
-function global:au_SearchReplace {
-  @{
-    'tools\chocolateyInstall.ps1' = @{
-      "(^\s*url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-      "(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-    }
-    "$($Latest.PackageName).nuspec" = @{
-      "(<releaseNotes>).*(</releaseNotes>)" = "`${1}$($Latest.ReleaseNotes)`$2"
-    }
-  }
-}
+function global:au_SearchReplace { Get-AuSearchReplace }
 
 function global:au_GetLatest {
-  $headers = if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
-  $tag = (Invoke-RestMethod "https://api.github.com/repos/$repo/releases/latest" -Headers $headers).tag_name
-  $version = $tag -replace '^v', ''
-  $asset = 'ouroboros-tui-x86_64-pc-windows-msvc.exe'
-
-  @{
-    Version      = $version
-    URL64        = "https://github.com/$repo/releases/download/$tag/$asset"
-    ReleaseNotes = "https://github.com/$repo/releases/tag/$tag"
-  }
+  Get-GitHubLatest -Repo $repo -Asset 'ouroboros-tui-x86_64-pc-windows-msvc.exe'
 }
 
 update -ChecksumFor 64
