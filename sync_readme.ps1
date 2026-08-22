@@ -63,17 +63,28 @@ foreach ($dir in $dirs) {
         continue
     }
 
-    $pattern = '(?s)<description><!\[CDATA\[.*?\]\]></description>'
+    $pattern = '(?s)<description><!\[CDATA\[(.*?)\]\]></description>'
+    $match = [regex]::Match($current, $pattern)
 
-    if ($current -notmatch $pattern) {
+    if (!$match.Success) {
         Write-Warning "$id nuspec has no CDATA <description>, skipped"
         continue
     }
 
-    # A literal replacement, so '$' and '\' in the README are not treated as substitutions.
+    # Compare what the description says, not how it is laid out. AU rewrites the nuspec
+    # when it bumps a version and drops the newline after <![CDATA[, so a byte comparison
+    # reported all 10 packages it had touched as out of sync and would have failed the
+    # next pull request over a change nobody made.
+    $existing = ($match.Groups[1].Value -replace "`r`n", "`n").Trim()
+    $wanted   = ($body -replace "`r`n", "`n").Trim()
+    if ($existing -eq $wanted) { continue }
+
+    # Write the shape AU leaves behind, so a later version bump is not also a
+    # formatting change. A literal replacement, so '$' and '\' in the README are not
+    # treated as substitutions.
     $updated = [regex]::Replace(
         $current, $pattern,
-        { "<description><![CDATA[$nl$body$nl]]></description>" },
+        { "<description><![CDATA[$body$nl]]></description>" },
         1)
 
     if ($updated -ne $current) {

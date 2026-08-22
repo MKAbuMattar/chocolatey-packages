@@ -6,3 +6,4 @@ automatic/*/tools/*.exe
 automatic/*/tools/*.msi
 automatic/*/tools/*.zip
 .republish/
+testResults.xml
