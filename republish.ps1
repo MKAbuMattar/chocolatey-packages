@@ -30,6 +30,9 @@ param(
     [switch]$WhatIf
 )
 
+# Local runs read secrets from update_vars.ps1 (git ignored), CI sets them as env vars.
+if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
+
 $ErrorActionPreference = 'Stop'
 
 # Windows PowerShell 5.1, which is what `shell: powershell` gives the runner, does not
@@ -68,16 +71,27 @@ foreach ($id in $Name) {
     $nupkg = Join-Path $out "$id.$version.nupkg"
     if (!(Test-Path $nupkg)) { Write-Host "::error::$id packed but $nupkg is missing"; $failed += $id; continue }
 
-    # The binaries-in-the-package failure was invisible until someone opened a nupkg.
-    # Refuse to push one rather than spend another moderation round finding out.
+    # Files that would fail moderation are caught by an allowlist, not a banned
+    # extension list: banned lists keep growing (.exe, .msi, .zip, .7z, .dll, .msix,
+    # .appx, .tar.gz, ...) and a miss costs a moderation round. What a package here may
+    # ship is fixed anyway - its nuspec, PowerShell scripts in tools\, and the legal
+    # files Chocolatey auto-includes. $plumbing is the package metadata choco pack
+    # (NuGet packaging) writes into every nupkg it builds - metadata, not content.
+    $plumbing =
+        '^(\[Content_Types\]\.xml|_rels/\.rels|package/services/metadata/core-properties/[^/]+\.psmdcp)$'
     $zip = [IO.Compression.ZipFile]::OpenRead($nupkg)
     try {
-        $bad = @($zip.Entries | Where-Object { $_.FullName -match '\.(exe|msi|zip|7z|dll)$' } |
-                 Select-Object -ExpandProperty FullName)
+        $bad = @($zip.Entries | Where-Object {
+            -not $_.FullName.EndsWith('/') -and
+            $_.FullName -ne "$id.nuspec" -and
+            $_.FullName -notmatch $plumbing -and
+            $_.FullName -notmatch '^tools/[^/]+\.(ps1|psm1|txt)$' -and
+            $_.FullName -notmatch '^(tools/)?(license|verification|legal)(\.txt|\.md)?$'
+        } | Select-Object -ExpandProperty FullName)
     }
     finally { $zip.Dispose() }
     if ($bad) {
-        Write-Host "::error::$id carries binaries and would fail validation: $($bad -join ', ')"
+        Write-Host "::error::$id carries files that are not install scripts or legal files and would fail validation: $($bad -join ', ')"
         $failed += $id
         continue
     }

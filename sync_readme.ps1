@@ -89,7 +89,18 @@ foreach ($dir in $dirs) {
 
     if ($updated -ne $current) {
         $changed += $id
-        if (!$Check) { Set-Content $nuspec $updated -NoNewline -Encoding UTF8 }
+        if (!$Check) {
+            # Write back with the BOM state the file came in with. 'UTF8' in
+            # Set-Content means with-BOM on Windows PowerShell 5.1 and without on
+            # pwsh, so the encoding enum would flip the file's BOM depending on
+            # which shell ran the sync.
+            $raw = [IO.File]::ReadAllBytes($nuspec)
+            $utf8 = [Text.UTF8Encoding]::new(
+                $raw.Length -ge 3 -and
+                $raw[0] -eq 0xEF -and $raw[1] -eq 0xBB -and $raw[2] -eq 0xBF
+            )
+            [IO.File]::WriteAllText($nuspec, $updated, $utf8)
+        }
     }
 }
 

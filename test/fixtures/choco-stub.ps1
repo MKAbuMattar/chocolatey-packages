@@ -30,6 +30,13 @@ function Invoke-FixtureChoco {
       [IO.Compression.ZipArchiveMode]::Create
     )
     try {
+      # choco pack (NuGet packaging) writes these into every real nupkg; keep the
+      # fixture honest so the allowlist in republish.ps1 has to accept them.
+      $plumbing = @(
+        '[Content_Types].xml'
+        '_rels/.rels'
+        'package/services/metadata/core-properties/fixture.psmdcp'
+      )
       $entryNames = if ($PackMode -eq 'binary') {
         @(
           'tools/payload.exe'
@@ -37,10 +44,15 @@ function Invoke-FixtureChoco {
           'tools/payload.zip'
           'tools/payload.dll'
         )
+      } elseif ($PackMode -eq 'tarball') {
+        @(
+          'tools/archive.tar.gz'
+          'docs/manual.pdf'
+        )
       } else {
         @('tools/readme.txt')
       }
-      foreach ($entryName in $entryNames) {
+      foreach ($entryName in ($plumbing + $entryNames)) {
         $entry = $zip.CreateEntry($entryName)
         $writer = [IO.StreamWriter]::new($entry.Open())
         $writer.Write('fixture')

@@ -86,6 +86,27 @@ Line two.
     (Get-FileText (Join-Path $lfDir 'lf.nuspec')) | Should -Be "<package>`n  <description><![CDATA[body`n]]></description>`n</package>`n"
   }
 
+  It 'does not introduce a BOM when the nuspec has none' {
+    $dir = New-SyncPackage -Name bomless
+    $nuspecPath = Join-Path $dir 'bomless.nuspec'
+
+    Invoke-Sync | Out-Null
+
+    $bytes = [IO.File]::ReadAllBytes($nuspecPath)
+    $bytes[0] | Should -Not -Be 0xEF
+  }
+
+  It 'preserves a BOM the nuspec already carries' {
+    $nuspec = "<package><metadata><id>bom</id><description><![CDATA[`nold`n]]></description></metadata></package>"
+    $dir = New-SyncPackage -Name bom -Nuspec $nuspec
+    $nuspecPath = Join-Path $dir 'bom.nuspec'
+    [IO.File]::WriteAllText($nuspecPath, $nuspec, [Text.UTF8Encoding]::new($true))
+
+    Invoke-Sync | Out-Null
+
+    [IO.File]::ReadAllBytes($nuspecPath)[0..2] | Should -Be 0xEF, 0xBB, 0xBF
+  }
+
   It 'inserts regex replacement characters literally' {
     $readme = @'
 # Literal Chocolatey Package

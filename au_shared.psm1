@@ -206,6 +206,11 @@ function Get-GitHubLatest {
             Leave ReleaseNotes out, for packages whose nuspec does not link the
             release page.
 
+        .Parameter PerPage
+            How many releases to look through, passed to Get-GitHubRelease. Raise it
+            for repositories that publish more releases than the default before the
+            one being tracked falls off the first page.
+
         .Example
             Get-GitHubLatest -Repo 'charmbracelet/crush' -Asset 'crush_{version}_Windows_x86_64.zip'
 
@@ -220,7 +225,8 @@ function Get-GitHubLatest {
         [switch]$RequireAsset,
         [string]$TagPrefix,
         [string]$TagPattern,
-        [switch]$NoReleaseNotes
+        [switch]$NoReleaseNotes,
+        [int]$PerPage = 100
     )
 
     if (!$Asset -and !$AssetPattern) { throw 'Get-GitHubLatest needs -Asset or -AssetPattern' }
@@ -230,7 +236,7 @@ function Get-GitHubLatest {
         throw 'Get-GitHubLatest -RequireAsset needs a literal -Asset; use -AssetPattern instead'
     }
 
-    $find = @{ Repo = $Repo }
+    $find = @{ Repo = $Repo; PerPage = $PerPage }
     if ($TagPrefix) { $find.TagPrefix = $TagPrefix }
     if ($TagPattern) { $find.TagPattern = $TagPattern }
     if ($RequireAsset) { $find.WithAsset = $Asset }

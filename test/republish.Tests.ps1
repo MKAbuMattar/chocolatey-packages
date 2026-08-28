@@ -46,7 +46,7 @@ BeforeAll {
 
   function New-RepublishHarness {
     param(
-      [ValidateSet('clean', 'binary')][string]$Mode,
+      [ValidateSet('clean', 'binary', 'tarball')][string]$Mode,
       [string]$FailingPackage
     )
     $harness = Join-Path $TestDrive "republish-$Mode.ps1"
@@ -133,6 +133,24 @@ Describe 'republish.ps1' {
     { & $republishScript -Name protected } | Should -Throw '*api_key is not set*'
   }
 
+  It 'reads api_key from update_vars.ps1 when it exists' {
+    New-RepublishPackage -Name local-secrets | Out-Null
+    Remove-Item Env:api_key -ErrorAction SilentlyContinue
+    $varsPath = Join-Path $TestDrive 'update_vars.ps1'
+    Set-Content -LiteralPath $varsPath -Value '$Env:api_key = "local-secret"' -NoNewline
+
+    try {
+      Invoke-Republish -Name local-secrets
+
+      $push = @(Get-Content $script:ChocoLogPath |
+        Where-Object { $_ -match '^push ' })[0]
+      $push | Should -Match '--api-key local-secret'
+    }
+    finally {
+      Remove-Item $varsPath -ErrorAction SilentlyContinue
+    }
+  }
+
   It 'reports an unknown package as failed' {
     $harness = New-RepublishHarness -Mode clean
     $log = Join-Path $TestDrive 'unknown.log'
@@ -172,11 +190,29 @@ Describe 'republish.ps1' {
       -Mode binary -LogPath $log) *>&1 | Out-String
 
     $LASTEXITCODE | Should -Be 1
-    $output | Should -Match 'carries binaries'
+    $output | Should -Match 'carries files'
     $output | Should -Match 'payload.exe'
     $output | Should -Match 'payload.msi'
     $output | Should -Match 'payload.zip'
     $output | Should -Match 'payload.dll'
+    (Get-Content $log -Raw) | Should -Not -Match ' push '
+  }
+
+  It 'rejects files a banned-extension list would miss, without pushing' {
+    New-RepublishPackage -Name tarball | Out-Null
+    $harness = New-RepublishHarness -Mode tarball
+    $log = Join-Path $TestDrive 'tarball.log'
+    $output = (& (Join-Path $PSHOME 'pwsh') -NoProfile -File $harness `
+      -ScriptPath $republishScript -StubPath $chocoStub -Name tarball `
+      -Mode tarball -LogPath $log) *>&1 | Out-String
+
+    $LASTEXITCODE | Should -Be 1
+    $output | Should -Match 'archive\.tar\.gz'
+    $output | Should -Match 'manual\.pdf'
+    # The stub also packs choco's own package plumbing; only the stray files above
+    # may be flagged.
+    $output | Should -Not -Match 'psmdcp'
+    $output | Should -Not -Match 'Content_Types'
     (Get-Content $log -Raw) | Should -Not -Match ' push '
   }
 
