@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>lmstudio</id>
-    <version>0.4.22</version>
+    <version>0.4.23</version>
     <title>LM Studio</title>
     <authors>LM Studio</authors>
     <owners>Mohammad Abu Mattar</owners>
