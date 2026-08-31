@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openclaw-companion</id>
-    <version>2026.7.1</version>
+    <version>2026.8.1</version>
     <title>OpenClaw Companion</title>
     <authors>openclaw</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://openclaw.ai</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openclaw-companion.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install openclaw-companion
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 OpenClaw Companion itself is distributed under its own [license](https://github.com/openclaw/openclaw/blob/main/LICENSE).
 ]]></description>
     <summary>Your own personal AI assistant. Any OS. Any Platform. The lobster way</summary>
-    <releaseNotes>https://github.com/openclaw/openclaw/releases/tag/v2026.7.1</releaseNotes>
+    <releaseNotes>https://github.com/openclaw/openclaw/releases/tag/v2026.8.1</releaseNotes>
     <tags>openclaw-companion ai assistant crustacean molty openclaw own-your-data personal</tags>
     <projectSourceUrl>https://github.com/openclaw/openclaw</projectSourceUrl>
     <bugTrackerUrl>https://github.com/openclaw/openclaw/issues</bugTrackerUrl>
