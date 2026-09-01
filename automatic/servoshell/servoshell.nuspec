@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>servoshell</id>
-    <version>0.3.0</version>
+    <version>0.5.0</version>
     <title>Servo</title>
     <authors>servo</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://servo.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/servoshell.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install servoshell
@@ -63,7 +62,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Servo itself is distributed under its own [license](https://github.com/servo/servo/blob/main/LICENSE).
 ]]></description>
     <summary>Servo aims to empower developers with a lightweight, high-performance alternative for embedding web technologies in applications</summary>
-    <releaseNotes>https://github.com/servo/servo/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/servo/servo/releases/tag/v0.5.0</releaseNotes>
     <tags>servo browser rust web webbrowser webengine webplatform browser-engine</tags>
     <projectSourceUrl>https://github.com/servo/servo</projectSourceUrl>
     <bugTrackerUrl>https://github.com/servo/servo/issues</bugTrackerUrl>
