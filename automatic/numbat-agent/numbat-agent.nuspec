@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>numbat-agent</id>
-    <version>0.1.2</version>
+    <version>0.2.0</version>
     <title>Numbat</title>
     <authors>perplexityai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/perplexityai/numbat</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/numbat-agent.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install numbat-agent
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Numbat itself is distributed under its own [license](https://github.com/perplexityai/numbat/blob/main/LICENSE).
 ]]></description>
     <summary>Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction</summary>
-    <releaseNotes>https://github.com/perplexityai/numbat/releases/tag/v0.1.2</releaseNotes>
+    <releaseNotes>https://github.com/perplexityai/numbat/releases/tag/v0.2.0</releaseNotes>
     <tags>numbat-agent agent-security ai-agent-security ai-agents ai-security endpoint monitoring cli</tags>
     <projectSourceUrl>https://github.com/perplexityai/numbat</projectSourceUrl>
     <bugTrackerUrl>https://github.com/perplexityai/numbat/issues</bugTrackerUrl>

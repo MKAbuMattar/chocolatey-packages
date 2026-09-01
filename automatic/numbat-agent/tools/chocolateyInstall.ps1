@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/perplexityai/numbat/releases/download/v0.1.2/numbat_0.1.2_windows_amd64.zip'
-  checksum64     = '175f5e69b7eb316c81a07380802e72e2ddb246e0628caa7bf24c5dfef9200668'
+  url64          = 'https://github.com/perplexityai/numbat/releases/download/v0.2.0/numbat_0.2.0_windows_amd64.zip'
+  checksum64     = '71a62680248a8c03596e1cc52626a042fd46374215af7b76c9e05059ba3fce31'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
