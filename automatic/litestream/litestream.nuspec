@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>litestream</id>
-    <version>0.5.15</version>
+    <version>0.5.17</version>
     <title>Litestream</title>
     <authors>benbjohnson</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://litestream.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/litestream.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install litestream
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Litestream itself is distributed under its own [license](https://github.com/benbjohnson/litestream/blob/main/LICENSE).
 ]]></description>
     <summary>Streaming replication for SQLite</summary>
-    <releaseNotes>https://github.com/benbjohnson/litestream/releases/tag/v0.5.15</releaseNotes>
+    <releaseNotes>https://github.com/benbjohnson/litestream/releases/tag/v0.5.17</releaseNotes>
     <tags>litestream replication s3 sqlite backup server</tags>
     <projectSourceUrl>https://github.com/benbjohnson/litestream</projectSourceUrl>
     <bugTrackerUrl>https://github.com/benbjohnson/litestream/issues</bugTrackerUrl>
