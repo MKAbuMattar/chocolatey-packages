@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>open-knowledge</id>
-    <version>0.49.2</version>
+    <version>0.68.3</version>
     <title>Open Knowledge</title>
     <authors>inkeep</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://openknowledge.ai</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/open-knowledge.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install open-knowledge
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Open Knowledge itself is distributed under its own [license](https://github.com/inkeep/open-knowledge/blob/main/LICENSE).
 ]]></description>
     <summary>Beautiful, AI-native markdown IDE and LLM wiki</summary>
-    <releaseNotes>https://github.com/inkeep/open-knowledge/releases/tag/v0.49.2</releaseNotes>
+    <releaseNotes>https://github.com/inkeep/open-knowledge/releases/tag/v0.68.3</releaseNotes>
     <tags>open-knowledge 2nd-brain agent-skills claude codex company-brain docs knowledge- knowledge-base markdown ide wiki</tags>
     <projectSourceUrl>https://github.com/inkeep/open-knowledge</projectSourceUrl>
     <bugTrackerUrl>https://github.com/inkeep/open-knowledge/issues</bugTrackerUrl>
