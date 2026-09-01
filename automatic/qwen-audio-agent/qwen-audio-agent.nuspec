@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>qwen-audio-agent</id>
-    <version>1.7.0</version>
+    <version>1.11.0</version>
     <title>Qwen Audio Agent</title>
     <authors>QwenAudio</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/QwenAudio/qwen-audio-agent</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/qwen-audio-agent.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install qwen-audio-agent
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Qwen Audio Agent itself is distributed under its own [license](https://github.com/QwenAudio/qwen-audio-agent/blob/main/LICENSE).
 ]]></description>
     <summary>A realtime voice runtime that keeps Agents talking, working, and present. Real-time Voice Runtime for AI Agents</summary>
-    <releaseNotes>https://github.com/QwenAudio/qwen-audio-agent/releases/tag/v1.7.0</releaseNotes>
+    <releaseNotes>https://github.com/QwenAudio/qwen-audio-agent/releases/tag/v1.11.0</releaseNotes>
     <tags>qwen-audio-agent acp agent agentic-ai ai-coding claude-code codex developer-tools opencode ai voice realtime</tags>
     <projectSourceUrl>https://github.com/QwenAudio/qwen-audio-agent</projectSourceUrl>
     <bugTrackerUrl>https://github.com/QwenAudio/qwen-audio-agent/issues</bugTrackerUrl>
