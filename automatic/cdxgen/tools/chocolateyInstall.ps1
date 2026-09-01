@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/cdxgen/cdxgen/releases/download/v12.8.2/cdxgen-windows-amd64.exe'
-  checksum64     = '318cde28194b6977e291e97c2b8600a91fc1185f41ed6cc658fb9846a7fcfc8b'
+  url64          = 'https://github.com/cdxgen/cdxgen/releases/download/v13.0.1/cdxgen-windows-amd64.exe'
+  checksum64     = 'd9767898d1076438cab497e2c74c68f2ca76751db6a3f69627cbbc87e189f458'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'cdxgen.exe'
 }
