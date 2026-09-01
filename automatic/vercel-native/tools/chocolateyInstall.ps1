@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/vercel-labs/native/releases/download/v0.6.3/native-sdk-win32-x64.exe'
-  checksum64     = 'b84e6a311404b8a673c966b4aec7537d883a2e8680ceabd1a0bf4b42670193b2'
+  url64          = 'https://github.com/vercel-labs/native/releases/download/v0.10.1/native-sdk-win32-x64.exe'
+  checksum64     = 'd493db3edab4e1a405484c34881a63f70864c9ac7ff71ad026ab36ff99a6fd30'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'native.exe'
 }
