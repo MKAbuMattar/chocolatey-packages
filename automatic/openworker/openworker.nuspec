@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openworker</id>
-    <version>0.1.6</version>
+    <version>0.2.1</version>
     <title>OpenWorker</title>
     <authors>andrewyng</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/andrewyng/openworker</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openworker.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install openworker
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 OpenWorker itself is distributed under its own [license](https://github.com/andrewyng/openworker/blob/main/LICENSE).
 ]]></description>
     <summary>OpenWorker</summary>
-    <releaseNotes>https://github.com/andrewyng/openworker/releases/tag/v0.1.6</releaseNotes>
+    <releaseNotes>https://github.com/andrewyng/openworker/releases/tag/v0.2.1</releaseNotes>
     <tags>openworker</tags>
     <projectSourceUrl>https://github.com/andrewyng/openworker</projectSourceUrl>
     <bugTrackerUrl>https://github.com/andrewyng/openworker/issues</bugTrackerUrl>

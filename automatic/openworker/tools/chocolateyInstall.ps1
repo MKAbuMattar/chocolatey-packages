@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/andrewyng/openworker/releases/download/v0.1.6/OpenWorker_0.1.6_x64_en-US.msi'
-  checksum64     = 'a00f7f022f9f86180f4502635949594a8c93fe101e6403b08151ad30857dc83d'
+  url64          = 'https://github.com/andrewyng/openworker/releases/download/v0.2.1/OpenWorker_0.2.1_x64_en-US.msi'
+  checksum64     = 'd925e39280c78dc9b0aa64545e51aadaeb341b3db6199a7401372494369691ee'
   checksumType64 = 'sha256'
   softwareName   = 'OpenWorker*'
   silentArgs     = '/qn /norestart'
