@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>colibri</id>
-    <version>1.3.0</version>
+    <version>1.10.1</version>
     <title>Colibri</title>
     <authors>JustVugg</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://justvugg.github.io/colibri</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/colibri.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install colibri
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Colibri itself is distributed under its own [license](https://github.com/JustVugg/colibri/blob/main/LICENSE).
 ]]></description>
     <summary>Run frontier MoE models on hardware you already own , pure C, zero deps, experts streamed from disk. Tiny engine, immense model</summary>
-    <releaseNotes>https://github.com/JustVugg/colibri/releases/tag/v1.3.0</releaseNotes>
+    <releaseNotes>https://github.com/JustVugg/colibri/releases/tag/v1.10.1</releaseNotes>
     <tags>colibri llm inference moe cli</tags>
     <projectSourceUrl>https://github.com/JustVugg/colibri</projectSourceUrl>
     <bugTrackerUrl>https://github.com/JustVugg/colibri/issues</bugTrackerUrl>
