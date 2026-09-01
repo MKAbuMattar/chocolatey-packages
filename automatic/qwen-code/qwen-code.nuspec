@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>qwen-code</id>
-    <version>0.21.1</version>
+    <version>0.22.3</version>
     <title>Qwen Code</title>
     <authors>QwenLM</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://qwenlm.github.io/qwen-code-docs/en/users/overview</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/qwen-code.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install qwen-code
@@ -63,7 +62,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Qwen Code itself is distributed under its own [license](https://github.com/QwenLM/qwen-code/blob/main/LICENSE).
 ]]></description>
     <summary>An open-source AI coding agent that lives in your terminal</summary>
-    <releaseNotes>https://github.com/QwenLM/qwen-code/releases/tag/v0.21.1</releaseNotes>
+    <releaseNotes>https://github.com/QwenLM/qwen-code/releases/tag/v0.22.3</releaseNotes>
     <tags>qwen-code ai coding-agent cli qwen</tags>
     <projectSourceUrl>https://github.com/QwenLM/qwen-code</projectSourceUrl>
     <bugTrackerUrl>https://github.com/QwenLM/qwen-code/issues</bugTrackerUrl>
