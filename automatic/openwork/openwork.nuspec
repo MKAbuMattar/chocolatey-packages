@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openwork</id>
-    <version>0.18.10</version>
+    <version>0.18.40</version>
     <title>Openwork</title>
     <authors>different-ai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://openworklabs.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openwork.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install openwork
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Openwork itself is distributed under its own [license](https://github.com/different-ai/openwork/blob/dev/LICENSE).
 ]]></description>
     <summary>The open-source alternative to Claude Cowork (powered by opencode)</summary>
-    <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.10</releaseNotes>
+    <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.40</releaseNotes>
     <tags>openwork</tags>
     <projectSourceUrl>https://github.com/different-ai/openwork</projectSourceUrl>
     <bugTrackerUrl>https://github.com/different-ai/openwork/issues</bugTrackerUrl>
