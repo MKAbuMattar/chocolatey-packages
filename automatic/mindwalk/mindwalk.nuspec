@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mindwalk</id>
-    <version>0.3.0</version>
+    <version>0.5.0</version>
     <title>Mindwalk</title>
     <authors>cosmtrek</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/cosmtrek/mindwalk</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/mindwalk.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install mindwalk
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Mindwalk itself is distributed under its own [license](https://github.com/cosmtrek/mindwalk/blob/master/LICENSE).
 ]]></description>
     <summary>A visualization tool that replays coding-agent sessions on a 3D map of your codebase</summary>
-    <releaseNotes>https://github.com/cosmtrek/mindwalk/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/cosmtrek/mindwalk/releases/tag/v0.5.0</releaseNotes>
     <tags>mindwalk visualization coding-agent cli</tags>
     <projectSourceUrl>https://github.com/cosmtrek/mindwalk</projectSourceUrl>
     <bugTrackerUrl>https://github.com/cosmtrek/mindwalk/issues</bugTrackerUrl>
