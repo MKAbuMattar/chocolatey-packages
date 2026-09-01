@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>alertmanager</id>
-    <version>0.33.1</version>
+    <version>0.34.0</version>
     <title>Prometheus Alertmanager</title>
     <authors>prometheus</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://prometheus.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/alertmanager.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install alertmanager
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Prometheus Alertmanager itself is distributed under its own [license](https://github.com/prometheus/alertmanager/blob/main/LICENSE).
 ]]></description>
     <summary>Prometheus Alertmanager</summary>
-    <releaseNotes>https://github.com/prometheus/alertmanager/releases/tag/v0.33.1</releaseNotes>
+    <releaseNotes>https://github.com/prometheus/alertmanager/releases/tag/v0.34.0</releaseNotes>
     <tags>alertmanager deduplication email hacktoberfest monitoring notifications opsgenie pagerduty prometheus alerting server</tags>
     <projectSourceUrl>https://github.com/prometheus/alertmanager</projectSourceUrl>
     <bugTrackerUrl>https://github.com/prometheus/alertmanager/issues</bugTrackerUrl>
