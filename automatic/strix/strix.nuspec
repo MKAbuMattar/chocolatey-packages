@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>strix</id>
-    <version>1.5.3</version>
+    <version>1.6.0</version>
     <title>Strix</title>
     <authors>usestrix</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -62,7 +62,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Strix itself is distributed under its own [license](https://github.com/usestrix/strix/blob/main/LICENSE).
 ]]></description>
     <summary>Open-source AI penetration testing tool to find and fix your app's vulnerabilities</summary>
-    <releaseNotes>https://github.com/usestrix/strix/releases/tag/v1.5.3</releaseNotes>
+    <releaseNotes>https://github.com/usestrix/strix/releases/tag/v1.6.0</releaseNotes>
     <tags>strix agents ai-hacking ai-pentesting ai-security bug-bounty code-quality security pentest ai cli</tags>
     <projectSourceUrl>https://github.com/usestrix/strix</projectSourceUrl>
     <bugTrackerUrl>https://github.com/usestrix/strix/issues</bugTrackerUrl>
