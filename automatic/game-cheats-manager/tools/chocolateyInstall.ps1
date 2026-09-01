@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/dyang886/Game-Cheats-Manager/releases/download/v2.4.6/Game.Cheats.Manager.Setup.2.4.6.exe'
-  checksum64     = 'd6229ec299b001c277327e78256cb7bcc471a5bb90a86fbd6aeebcb76bc6a129'
+  url64          = 'https://github.com/dyang886/Game-Cheats-Manager/releases/download/v2.5.0/Game.Cheats.Manager.Setup.2.5.0.exe'
+  checksum64     = 'efa6ac43337f29b39e1a23aa722746237db0e8a1253715d9ec42c84f5e2b46aa'
   checksumType64 = 'sha256'
   softwareName   = 'Game Cheats Manager*'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
