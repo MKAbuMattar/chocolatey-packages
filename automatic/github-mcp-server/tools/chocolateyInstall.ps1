@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/github/github-mcp-server/releases/download/v1.7.0/github-mcp-server_Windows_x86_64.zip'
-  checksum64     = '14882ca059cd2eccc037388d586b552b60a891b126050f8cefff8beab3c9157f'
+  url64          = 'https://github.com/github/github-mcp-server/releases/download/v1.11.0/github-mcp-server_Windows_x86_64.zip'
+  checksum64     = 'd16a3b2bbf775365541aa18729c0c3ff5e1b26dfb5dc190928895ba482211268'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
