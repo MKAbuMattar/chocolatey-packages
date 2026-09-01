@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>iam-policy-autopilot</id>
-    <version>0.2.3</version>
+    <version>0.3.0</version>
     <title>IAM Policy Autopilot</title>
     <authors>awslabs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/awslabs/iam-policy-autopilot</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/iam-policy-autopilot.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install iam-policy-autopilot
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 IAM Policy Autopilot itself is distributed under its own [license](https://github.com/awslabs/iam-policy-autopilot/blob/main/LICENSE).
 ]]></description>
     <summary>IAM Policy Autopilot is an open source static code analysis tool that helps you quickly create baseline AWS IAM policies that you can refine as your application evolves. This tool is available as a command-line utility and MCP server for use within AI coding assistants for quickly building IAM policies</summary>
-    <releaseNotes>https://github.com/awslabs/iam-policy-autopilot/releases/tag/0.2.3</releaseNotes>
+    <releaseNotes>https://github.com/awslabs/iam-policy-autopilot/releases/tag/0.3.0</releaseNotes>
     <tags>iam-policy-autopilot aws aws-iam aws-iam-policies aws-security cli cloud-security code-analysis iam security static-analysis</tags>
     <projectSourceUrl>https://github.com/awslabs/iam-policy-autopilot</projectSourceUrl>
     <bugTrackerUrl>https://github.com/awslabs/iam-policy-autopilot/issues</bugTrackerUrl>
