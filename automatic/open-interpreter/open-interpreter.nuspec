@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>open-interpreter</id>
-    <version>0.0.34</version>
+    <version>0.0.40</version>
     <title>Open Interpreter</title>
     <authors>openinterpreter</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>http://openinterpreter.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/open-interpreter.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install open-interpreter
@@ -63,7 +62,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Open Interpreter itself is distributed under its own [license](https://github.com/openinterpreter/openinterpreter/blob/main/LICENSE).
 ]]></description>
     <summary>A coding agent for open models like Kimi K3</summary>
-    <releaseNotes>https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.34</releaseNotes>
+    <releaseNotes>https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.40</releaseNotes>
     <tags>open-interpreter acp coding-agent deepseek kimi qwen rust ai llm cli</tags>
     <projectSourceUrl>https://github.com/openinterpreter/openinterpreter</projectSourceUrl>
     <bugTrackerUrl>https://github.com/openinterpreter/openinterpreter/issues</bugTrackerUrl>
