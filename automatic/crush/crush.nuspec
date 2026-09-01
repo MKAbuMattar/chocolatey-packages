@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>crush</id>
-    <version>0.88.1</version>
+    <version>0.92.0</version>
     <title>Crush</title>
     <authors>charmbracelet</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/charmbracelet/crush</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/crush.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install crush
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Crush itself is distributed under its own [license](https://github.com/charmbracelet/crush/blob/main/LICENSE.md).
 ]]></description>
     <summary>Glamourous agentic coding for all</summary>
-    <releaseNotes>https://github.com/charmbracelet/crush/releases/tag/v0.88.1</releaseNotes>
+    <releaseNotes>https://github.com/charmbracelet/crush/releases/tag/v0.92.0</releaseNotes>
     <tags>crush agentic-ai ai llms ravishing coding-agent terminal cli charm</tags>
     <projectSourceUrl>https://github.com/charmbracelet/crush</projectSourceUrl>
     <bugTrackerUrl>https://github.com/charmbracelet/crush/issues</bugTrackerUrl>
