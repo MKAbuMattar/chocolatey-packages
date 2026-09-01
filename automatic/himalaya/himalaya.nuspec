@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>himalaya</id>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
     <title>Himalaya</title>
     <authors>pimalaya</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://pimalaya.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/himalaya.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install himalaya
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Himalaya itself is distributed under its own [license](https://github.com/pimalaya/himalaya/blob/master/LICENSE-APACHE).
 ]]></description>
     <summary>CLI to manage emails</summary>
-    <releaseNotes>https://github.com/pimalaya/himalaya/releases/tag/v2.0.0</releaseNotes>
+    <releaseNotes>https://github.com/pimalaya/himalaya/releases/tag/v2.1.0</releaseNotes>
     <tags>himalaya cli client email gpg imap notmuch pgp smtp</tags>
     <projectSourceUrl>https://github.com/pimalaya/himalaya</projectSourceUrl>
     <bugTrackerUrl>https://github.com/pimalaya/himalaya/issues</bugTrackerUrl>
