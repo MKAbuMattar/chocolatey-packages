@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>terralist</id>
-    <version>0.10.6</version>
+    <version>0.10.8</version>
     <title>Terralist</title>
     <authors>terralist</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>http://www.terralist.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/terralist.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install terralist
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Terralist itself is distributed under its own [license](https://github.com/terralist/terralist/blob/master/LICENSE).
 ]]></description>
     <summary>Terraform Private Registry for modules and providers manageable from a REST API</summary>
-    <releaseNotes>https://github.com/terralist/terralist/releases/tag/v0.10.6</releaseNotes>
+    <releaseNotes>https://github.com/terralist/terralist/releases/tag/v0.10.8</releaseNotes>
     <tags>terralist private-registry registry terraform terraform-login terraform-module terraform-provider self-hosted server</tags>
     <projectSourceUrl>https://github.com/terralist/terralist</projectSourceUrl>
     <bugTrackerUrl>https://github.com/terralist/terralist/issues</bugTrackerUrl>
