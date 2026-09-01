@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>winapp</id>
-    <version>0.5.0</version>
+    <version>0.6.0</version>
     <title>winapp CLI</title>
     <authors>microsoft</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/microsoft/winappCli</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/winapp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install winapp
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 winapp CLI itself is distributed under its own [license](https://github.com/microsoft/winappCli/blob/main/LICENSE).
 ]]></description>
     <summary>winapp, the Windows App Development CLI, is a single command-line interface for managing Windows SDKs, packaging, generating app identity, manifests, certificates, and using build tools with any app framework</summary>
-    <releaseNotes>https://github.com/microsoft/winappCli/releases/tag/v0.5.0</releaseNotes>
+    <releaseNotes>https://github.com/microsoft/winappCli/releases/tag/v0.6.0</releaseNotes>
     <tags>winapp cli electron identity msix winappsdk windev windows windows-development sdk microsoft</tags>
     <projectSourceUrl>https://github.com/microsoft/winappCli</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/winappCli/issues</bugTrackerUrl>
