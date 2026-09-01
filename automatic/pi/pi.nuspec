@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pi</id>
-    <version>0.83.0</version>
+    <version>0.84.4</version>
     <title>pi</title>
     <authors>earendil-works</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/earendil-works/pi</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pi.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install pi
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 pi itself is distributed under its own [license](https://github.com/earendil-works/pi/blob/main/LICENSE).
 ]]></description>
     <summary>AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI</summary>
-    <releaseNotes>https://github.com/earendil-works/pi/releases/tag/v0.83.0</releaseNotes>
+    <releaseNotes>https://github.com/earendil-works/pi/releases/tag/v0.84.4</releaseNotes>
     <tags>pi ai agent llm cli tui</tags>
     <projectSourceUrl>https://github.com/earendil-works/pi</projectSourceUrl>
     <bugTrackerUrl>https://github.com/earendil-works/pi/issues</bugTrackerUrl>
