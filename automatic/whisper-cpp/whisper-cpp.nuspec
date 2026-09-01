@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>whisper-cpp</id>
-    <version>1.9.1</version>
+    <version>1.9.2</version>
     <title>whisper.cpp</title>
     <authors>ggml-org</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/ggml-org/whisper.cpp</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/whisper-cpp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install whisper-cpp
@@ -62,7 +61,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 whisper.cpp itself is distributed under its own [license](https://github.com/ggml-org/whisper.cpp/blob/master/LICENSE).
 ]]></description>
     <summary>Port of OpenAI's Whisper model in C/C++</summary>
-    <releaseNotes>https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.1</releaseNotes>
+    <releaseNotes>https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.2</releaseNotes>
     <tags>whisper-cpp inference openai speech-recognition speech-to-text transformer whisper transcription cli</tags>
     <projectSourceUrl>https://github.com/ggml-org/whisper.cpp</projectSourceUrl>
     <bugTrackerUrl>https://github.com/ggml-org/whisper.cpp/issues</bugTrackerUrl>
