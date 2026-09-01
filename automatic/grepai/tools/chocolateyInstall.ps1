@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/yoanbernabeu/grepai/releases/download/v0.35.0/grepai_0.35.0_windows_amd64.zip'
-  checksum64     = 'f03d23e156ba0d5121c702e9f7dda9e483ff77e1a68f6e87d7563a2679dddd71'
+  url64          = 'https://github.com/yoanbernabeu/grepai/releases/download/v0.36.1/grepai_0.36.1_windows_amd64.zip'
+  checksum64     = '7019af538b33a87985d9f07f89198f46072f874e4f751385d5bef9061addd0fe'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
