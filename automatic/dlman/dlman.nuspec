@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>dlman</id>
-    <version>1.11.1</version>
+    <version>1.12.0</version>
     <title>DLMan</title>
     <authors>novincode</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://dlman.codeideal.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/dlman.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install dlman
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 DLMan itself is distributed under its own [license](https://github.com/novincode/dlman/blob/main/LICENSE).
 ]]></description>
     <summary>Free &amp; Fast Modern Download Manager for Windows / Mac / Linux</summary>
-    <releaseNotes>https://github.com/novincode/dlman/releases/tag/v1.11.1</releaseNotes>
+    <releaseNotes>https://github.com/novincode/dlman/releases/tag/v1.12.0</releaseNotes>
     <tags>dlman download-manager downloader downloadmanager idm desktop utility</tags>
     <projectSourceUrl>https://github.com/novincode/dlman</projectSourceUrl>
     <bugTrackerUrl>https://github.com/novincode/dlman/issues</bugTrackerUrl>
