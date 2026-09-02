@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>codenomad</id>
-    <version>0.18.0</version>
+    <version>0.19.0</version>
     <title>CodeNomad</title>
     <authors>NeuralNomadsAI</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://github.com/NeuralNomadsAI/CodeNomad</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/codenomad.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install codenomad
@@ -58,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 CodeNomad itself is distributed under its own [license](https://github.com/NeuralNomadsAI/CodeNomad/blob/dev/LICENSE).
 ]]></description>
     <summary>CodeNomad: The command center that puts AI coding on steroids</summary>
-    <releaseNotes>https://github.com/NeuralNomadsAI/CodeNomad/releases/tag/v0.18.0</releaseNotes>
+    <releaseNotes>https://github.com/NeuralNomadsAI/CodeNomad/releases/tag/v0.19.0</releaseNotes>
     <tags>codenomad ai coding-agent electron desktop</tags>
     <projectSourceUrl>https://github.com/NeuralNomadsAI/CodeNomad</projectSourceUrl>
     <bugTrackerUrl>https://github.com/NeuralNomadsAI/CodeNomad/issues</bugTrackerUrl>

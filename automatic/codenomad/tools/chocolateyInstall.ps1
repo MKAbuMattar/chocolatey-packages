@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v0.18.0/CodeNomad-Electron-windows-x64-0.18.0.zip'
-  checksum64     = 'd2039fcf2c937564e39c0b10022f3ff601c09ab5dde4cd3abfd3c29db528aad3'
+  url64          = 'https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v0.19.0/CodeNomad-Electron-windows-x64-0.19.0.zip'
+  checksum64     = '07b8894e82c468788deadbf09cc72b548d1022370b994598da69e83eff9e1214'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
