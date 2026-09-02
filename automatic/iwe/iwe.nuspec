@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>iwe</id>
-    <version>0.19.1</version>
+    <version>0.23.0</version>
     <title>IWE</title>
     <authors>iwe-org</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://iwe.md</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/iwe.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install iwe
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 IWE itself is distributed under its own [license](https://github.com/iwe-org/iwe/blob/master/LICENSE-APACHE).
 ]]></description>
     <summary>Markdown knowledge graph — LSP for your editor, CLI + MCP memory for your AI agents</summary>
-    <releaseNotes>https://github.com/iwe-org/iwe/releases/tag/iwe-v0.19.1</releaseNotes>
+    <releaseNotes>https://github.com/iwe-org/iwe/releases/tag/iwe-v0.23.0</releaseNotes>
     <tags>iwe ai-agents ai-memory cli helix knowledge-graph knowledge-management language-server local-first</tags>
     <projectSourceUrl>https://github.com/iwe-org/iwe</projectSourceUrl>
     <bugTrackerUrl>https://github.com/iwe-org/iwe/issues</bugTrackerUrl>
