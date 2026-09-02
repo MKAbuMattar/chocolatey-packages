@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>posthog-cli</id>
-    <version>0.16.2</version>
+    <version>0.18.0</version>
     <title>PostHog CLI</title>
     <authors>PostHog</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -58,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 PostHog CLI itself is distributed under its own [license](https://github.com/PostHog/posthog/blob/master/LICENSE).
 ]]></description>
     <summary>:hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools - AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more - capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP</summary>
-    <releaseNotes>https://github.com/PostHog/posthog/releases/tag/posthog-cli/v0.16.2</releaseNotes>
+    <releaseNotes>https://github.com/PostHog/posthog/releases/tag/posthog-cli/v0.18.0</releaseNotes>
     <tags>posthog-cli ab-testing ai-analytics analytics cdp data-warehouse experiments feature-flags javascript posthog cli</tags>
     <projectSourceUrl>https://github.com/PostHog/posthog</projectSourceUrl>
     <bugTrackerUrl>https://github.com/PostHog/posthog/issues</bugTrackerUrl>
