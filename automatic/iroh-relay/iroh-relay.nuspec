@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>iroh-relay</id>
-    <version>1.0.3</version>
+    <version>1.1.0</version>
     <title>iroh relay</title>
     <authors>n0-computer</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://iroh.computer</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/iroh-relay.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install iroh-relay
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 iroh relay itself is distributed under its own [license](https://github.com/n0-computer/iroh/blob/main/LICENSE-APACHE).
 ]]></description>
     <summary>IP addresses break, dial keys instead. A library that adds QUIC + NAT Traversal to your apps</summary>
-    <releaseNotes>https://github.com/n0-computer/iroh/releases/tag/v1.0.3</releaseNotes>
+    <releaseNotes>https://github.com/n0-computer/iroh/releases/tag/v1.1.0</releaseNotes>
     <tags>iroh-relay holepunching memes multipath p2p quic realtime rust networking relay server</tags>
     <projectSourceUrl>https://github.com/n0-computer/iroh</projectSourceUrl>
     <bugTrackerUrl>https://github.com/n0-computer/iroh/issues</bugTrackerUrl>
