@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ms-apm</id>
-    <version>0.28.0</version>
+    <version>0.29.0</version>
     <title>Agent Package Manager</title>
     <authors>microsoft</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://microsoft.github.io/apm/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/ms-apm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install ms-apm
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Agent Package Manager itself is distributed under its own [license](https://github.com/microsoft/apm/blob/main/LICENSE).
 ]]></description>
     <summary>Agent Package Manager</summary>
-    <releaseNotes>https://github.com/microsoft/apm/releases/tag/v0.28.0</releaseNotes>
+    <releaseNotes>https://github.com/microsoft/apm/releases/tag/v0.29.0</releaseNotes>
     <tags>ms-apm ai-agents claude-code codex-cli context-engineering github-copilot package-manager prompt-engineering</tags>
     <projectSourceUrl>https://github.com/microsoft/apm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/apm/issues</bugTrackerUrl>
