@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kortix</id>
-    <version>0.13.9</version>
+    <version>0.13.10</version>
     <title>Kortix</title>
     <authors>kortix-ai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -58,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Kortix itself is distributed under its own [license](https://github.com/kortix-ai/suna/blob/main/LICENSE).
 ]]></description>
     <summary>The Company AI Command Center</summary>
-    <releaseNotes>https://github.com/kortix-ai/suna/releases/tag/v0.13.9</releaseNotes>
+    <releaseNotes>https://github.com/kortix-ai/suna/releases/tag/v0.13.10</releaseNotes>
     <tags>kortix ai ai-agents llm</tags>
     <projectSourceUrl>https://github.com/kortix-ai/suna</projectSourceUrl>
     <bugTrackerUrl>https://github.com/kortix-ai/suna/issues</bugTrackerUrl>
