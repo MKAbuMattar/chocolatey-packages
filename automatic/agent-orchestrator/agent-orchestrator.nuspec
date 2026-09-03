@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>agent-orchestrator</id>
-    <version>0.11.1</version>
+    <version>0.12.10</version>
     <title>Agent Orchestrator</title>
     <authors>Untrivial-ai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>http://aoagents.dev/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/agent-orchestrator.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install agent-orchestrator
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Agent Orchestrator itself is distributed under its own [license](https://github.com/Untrivial-ai/agent-orchestrator/blob/main/LICENSE).
 ]]></description>
     <summary>Agent IDE that enables you to manage fleets of coding agents. It comes with an agentic orchestrator that plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code reviews</summary>
-    <releaseNotes>https://github.com/Untrivial-ai/agent-orchestrator/releases/tag/v0.11.1</releaseNotes>
+    <releaseNotes>https://github.com/Untrivial-ai/agent-orchestrator/releases/tag/v0.12.10</releaseNotes>
     <tags>agent-orchestrator agent-fleet agent-swarm claude-code codex-cli git-worktrees multi-agent orchestration orchestrator</tags>
     <projectSourceUrl>https://github.com/Untrivial-ai/agent-orchestrator</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Untrivial-ai/agent-orchestrator/issues</bugTrackerUrl>
