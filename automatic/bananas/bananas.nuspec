@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>bananas</id>
-    <version>0.2.1</version>
+    <version>1.0.0</version>
     <title>Bananas</title>
     <authors>mistweaverco</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -67,7 +67,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Bananas itself is distributed under its own [license](https://github.com/mistweaverco/bananas/blob/main/LICENSE).
 ]]></description>
     <summary>Bananas, Cross-Platform screen sharing made simple</summary>
-    <releaseNotes>https://github.com/mistweaverco/bananas/releases/tag/v0.2.1</releaseNotes>
+    <releaseNotes>https://github.com/mistweaverco/bananas/releases/tag/v1.0.0</releaseNotes>
     <tags>bananas cross-platform multi-cursor p2p pair-programming pairing peer-to-peer screensharing</tags>
     <projectSourceUrl>https://github.com/mistweaverco/bananas</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mistweaverco/bananas/issues</bugTrackerUrl>
