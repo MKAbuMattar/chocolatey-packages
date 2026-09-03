@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mesheryctl</id>
-    <version>1.0.68</version>
+    <version>1.0.69</version>
     <title>mesheryctl</title>
     <authors>meshery</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -58,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 mesheryctl itself is distributed under its own [license](https://github.com/meshery/meshery/blob/master/LICENSE).
 ]]></description>
     <summary>Meshery, the cloud native manager</summary>
-    <releaseNotes>https://github.com/meshery/meshery/releases/tag/v1.0.68</releaseNotes>
+    <releaseNotes>https://github.com/meshery/meshery/releases/tag/v1.0.69</releaseNotes>
     <tags>mesheryctl cloud-native cncf control-plane docker gitops golang gsoc hacktoberfest kubernetes service-mesh cli</tags>
     <projectSourceUrl>https://github.com/meshery/meshery</projectSourceUrl>
     <bugTrackerUrl>https://github.com/meshery/meshery/issues</bugTrackerUrl>
