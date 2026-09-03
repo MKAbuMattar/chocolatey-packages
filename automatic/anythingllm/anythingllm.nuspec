@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>anythingllm</id>
-    <version>1.15.0</version>
+    <version>1.16.1</version>
     <title>AnythingLLM Desktop</title>
     <authors>Mintplex-Labs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://anythingllm.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/anythingllm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install anythingllm
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 AnythingLLM Desktop itself is distributed under its own [license](https://github.com/Mintplex-Labs/anything-llm/blob/master/LICENSE).
 ]]></description>
     <summary>Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience</summary>
-    <releaseNotes>https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.15.0</releaseNotes>
+    <releaseNotes>https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.16.1</releaseNotes>
     <tags>anythingllm agent-computer agent-harness agent-orchestration agentic-ai ai-agents computer-use hermes-agent llm</tags>
     <projectSourceUrl>https://github.com/Mintplex-Labs/anything-llm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Mintplex-Labs/anything-llm/issues</bugTrackerUrl>
