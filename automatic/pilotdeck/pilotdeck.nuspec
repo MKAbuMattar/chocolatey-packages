@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pilotdeck</id>
-    <version>2026.8.6</version>
+    <version>2026.9.2</version>
     <title>PilotDeck</title>
     <authors>OpenBMB</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://pilotdeck.openbmb.cn</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pilotdeck.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install pilotdeck
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 PilotDeck itself is distributed under its own [license](https://github.com/OpenBMB/PilotDeck/blob/main/LICENSE).
 ]]></description>
     <summary>Task-oriented AI Agent productivity platform</summary>
-    <releaseNotes>https://github.com/OpenBMB/PilotDeck/releases/tag/v260806</releaseNotes>
+    <releaseNotes>https://github.com/OpenBMB/PilotDeck/releases/tag/desktop-v2026.09.02</releaseNotes>
     <tags>pilotdeck ai agent productivity desktop</tags>
     <projectSourceUrl>https://github.com/OpenBMB/PilotDeck</projectSourceUrl>
     <bugTrackerUrl>https://github.com/OpenBMB/PilotDeck/issues</bugTrackerUrl>
