@@ -10,14 +10,17 @@
     <projectUrl>https://github.com/block/buzz</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/buzz.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
-choco install buzz
+choco install buzz --pre
 ```
 
 Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Upstream ships only an alpha build for Windows, so every version of this package is
+marked as a prerelease. `--pre` is required, because `choco install buzz` on its own
+installs the newest stable version and there is none.
 
 Install a specific version:
 
@@ -28,6 +31,19 @@ choco install buzz --version=<version>
 ## What is Buzz?
 
 A hive mind communication platform.
+
+## Prerelease and unsigned
+
+The only Windows build upstream publishes is named `Buzz_<version>_x64-setup_alpha-unsigned.exe`,
+and has been for every desktop release. Two things follow from that.
+
+It is an alpha. Upstream has not called a Windows build stable, so treat it as
+unfinished software.
+
+It is unsigned. Windows SmartScreen will warn on it, and the installer carries no
+Authenticode signature to check the publisher against. The package verifies the download
+against a SHA256 checksum recorded in the install script, which confirms the file is the
+one upstream published and says nothing about who wrote it.
 
 ## Upgrade
 
