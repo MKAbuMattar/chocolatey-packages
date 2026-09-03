@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>llmfit</id>
-    <version>1.1.12</version>
+    <version>1.1.14</version>
     <title>llmfit</title>
     <authors>AlexsJones</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -57,7 +57,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 llmfit itself is distributed under its own [license](https://github.com/AlexsJones/llmfit/blob/main/LICENSE).
 ]]></description>
     <summary>Hundreds of models &amp; providers. One command to find what runs on your hardware</summary>
-    <releaseNotes>https://github.com/AlexsJones/llmfit/releases/tag/v1.1.12</releaseNotes>
+    <releaseNotes>https://github.com/AlexsJones/llmfit/releases/tag/v1.1.14</releaseNotes>
     <tags>llmfit gguf llm localai mlx skill unsloth hardware benchmark cli</tags>
     <projectSourceUrl>https://github.com/AlexsJones/llmfit</projectSourceUrl>
     <bugTrackerUrl>https://github.com/AlexsJones/llmfit/issues</bugTrackerUrl>
