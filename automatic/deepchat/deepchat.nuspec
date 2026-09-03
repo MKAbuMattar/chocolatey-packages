@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>deepchat</id>
-    <version>1.0.9</version>
+    <version>1.1.1</version>
     <title>DeepChat</title>
     <authors>ThinkInAIXYZ</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://deepchat.thinkinai.xyz/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/deepchat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install deepchat
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 DeepChat itself is distributed under its own [license](https://github.com/ThinkInAIXYZ/deepchat/blob/dev/LICENSE).
 ]]></description>
     <summary>DeepChat - A smart assistant that connects powerful AI to your personal world</summary>
-    <releaseNotes>https://github.com/ThinkInAIXYZ/deepchat/releases/tag/v1.0.9</releaseNotes>
+    <releaseNotes>https://github.com/ThinkInAIXYZ/deepchat/releases/tag/v1.1.1</releaseNotes>
     <tags>deepchat agent agent-skills ai ai-assistant ai-sdk chatgpt claude cross-platform</tags>
     <projectSourceUrl>https://github.com/ThinkInAIXYZ/deepchat</projectSourceUrl>
     <bugTrackerUrl>https://github.com/ThinkInAIXYZ/deepchat/issues</bugTrackerUrl>
