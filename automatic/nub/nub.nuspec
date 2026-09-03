@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>nub</id>
-    <version>0.7.5</version>
+    <version>0.8.3</version>
     <title>nub</title>
     <authors>nubjs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -58,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 nub itself is distributed under its own [license](https://github.com/nubjs/nub/blob/main/LICENSE).
 ]]></description>
     <summary>The fast all-in-one Node.js toolkit</summary>
-    <releaseNotes>https://github.com/nubjs/nub/releases/tag/v0.7.5</releaseNotes>
+    <releaseNotes>https://github.com/nubjs/nub/releases/tag/v0.8.3</releaseNotes>
     <tags>nub javascript-runtime nodejs package-manager script-runner toolkit javascript cli</tags>
     <projectSourceUrl>https://github.com/nubjs/nub</projectSourceUrl>
     <bugTrackerUrl>https://github.com/nubjs/nub/issues</bugTrackerUrl>
