@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sql-studio</id>
-    <version>0.1.51</version>
+    <version>0.1.53</version>
     <title>SQL Studio</title>
     <authors>frectonz</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://sql-studio-docs.frectonz.et</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/sql-studio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install sql-studio
@@ -60,7 +59,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 SQL Studio itself is distributed under its own [license](https://github.com/frectonz/sql-studio/blob/main/LICENSE).
 ]]></description>
     <summary>SQL Database Explorer [SQLite, libSQL, PostgreSQL, MySQL/MariaDB, ClickHouse, DuckDB, Microsoft SQL Server]</summary>
-    <releaseNotes>https://github.com/frectonz/sql-studio/releases/tag/0.1.51</releaseNotes>
+    <releaseNotes>https://github.com/frectonz/sql-studio/releases/tag/0.1.53</releaseNotes>
     <tags>sql-studio duckdb libsql mariadb microsoft-sql-server mssql mysql postgresql rust</tags>
     <projectSourceUrl>https://github.com/frectonz/sql-studio</projectSourceUrl>
     <bugTrackerUrl>https://github.com/frectonz/sql-studio/issues</bugTrackerUrl>
