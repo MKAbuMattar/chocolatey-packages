@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>lobehub</id>
-    <version>2.2.15</version>
+    <version>2.2.16</version>
     <title>LobeHub</title>
     <authors>lobehub</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -58,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 LobeHub itself is distributed under its own [license](https://github.com/lobehub/lobehub/blob/canary/LICENSE).
 ]]></description>
     <summary>LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team</summary>
-    <releaseNotes>https://github.com/lobehub/lobehub/releases/tag/v2.2.15</releaseNotes>
+    <releaseNotes>https://github.com/lobehub/lobehub/releases/tag/v2.2.16</releaseNotes>
     <tags>lobehub agent agent-collaboration agent-harness ai cao chatgpt claude deepseek</tags>
     <projectSourceUrl>https://github.com/lobehub/lobehub</projectSourceUrl>
     <bugTrackerUrl>https://github.com/lobehub/lobehub/issues</bugTrackerUrl>
