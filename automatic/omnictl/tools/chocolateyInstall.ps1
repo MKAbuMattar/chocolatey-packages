@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/siderolabs/omni/releases/download/v1.10.5/omnictl-windows-amd64.exe'
-  checksum64     = 'bd2ab7bb30a99e7b75eb9c4d328b1e50064b933cae81f17c8041a88b56dbda70'
+  url64          = 'https://github.com/siderolabs/omni/releases/download/v1.10.6/omnictl-windows-amd64.exe'
+  checksum64     = '64b42e327fa52c0537f9d8269751773095c86081a9e0473ab18e821fa01cad64'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'omnictl.exe'
 }

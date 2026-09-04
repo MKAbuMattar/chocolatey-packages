@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>omnictl</id>
-    <version>1.10.5</version>
+    <version>1.10.6</version>
     <title>omnictl</title>
     <authors>siderolabs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -61,7 +61,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 omnictl itself is distributed under its own [license](https://github.com/siderolabs/omni/blob/main/LICENSE).
 ]]></description>
     <summary>SaaS-simple deployment of Kubernetes - on your own hardware</summary>
-    <releaseNotes>https://github.com/siderolabs/omni/releases/tag/v1.10.5</releaseNotes>
+    <releaseNotes>https://github.com/siderolabs/omni/releases/tag/v1.10.6</releaseNotes>
     <tags>omnictl kubernetes talos cli sidero</tags>
     <projectSourceUrl>https://github.com/siderolabs/omni</projectSourceUrl>
     <bugTrackerUrl>https://github.com/siderolabs/omni/issues</bugTrackerUrl>
