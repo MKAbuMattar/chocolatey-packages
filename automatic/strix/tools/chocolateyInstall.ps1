@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/usestrix/strix/releases/download/v1.6.1/strix-1.6.1-windows-x86_64.zip'
-  checksum64     = '660945a9afe4e881cf22866cf1412a4fbfc78ce97aa238dcda1062b530e90656'
+  url64          = 'https://github.com/usestrix/strix/releases/download/v1.6.2/strix-1.6.2-windows-x86_64.zip'
+  checksum64     = '1f656bc10442bef270ad85e331d74ccaa5355c8c61803dd561861bd391648d35'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
