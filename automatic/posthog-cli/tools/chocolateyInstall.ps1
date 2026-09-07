@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/PostHog/posthog/releases/download/posthog-cli/v0.18.0/posthog-cli-x86_64-pc-windows-msvc.zip'
-  checksum64     = '63cc969e23bf3b55514c3376628c4d4c66323d4c8f77aa702581ad2e16fc7141'
+  url64          = 'https://github.com/PostHog/posthog/releases/download/posthog-cli/v0.18.1/posthog-cli-x86_64-pc-windows-msvc.zip'
+  checksum64     = '9ca20f24474a45ffb4bbfc606e37b1a1952e2c1a2a5e0cb153ab27aaddaf2960'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
