@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>buzz</id>
-    <version>0.5.9</version>
+    <version>0.5.23-alpha</version>
     <title>Buzz</title>
     <authors>block</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -74,7 +74,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Buzz itself is distributed under its own [license](https://github.com/block/buzz/blob/main/LICENSE).
 ]]></description>
     <summary>A hive mind communication platform</summary>
-    <releaseNotes>https://github.com/block/buzz/releases/tag/desktop-v0.5.9</releaseNotes>
+    <releaseNotes>https://github.com/block/buzz/releases/tag/desktop-v0.5.23</releaseNotes>
     <tags>buzz chat communication desktop</tags>
     <projectSourceUrl>https://github.com/block/buzz</projectSourceUrl>
     <bugTrackerUrl>https://github.com/block/buzz/issues</bugTrackerUrl>
