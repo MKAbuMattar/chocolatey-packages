@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>worldmonitor</id>
-    <version>2.5.23</version>
+    <version>2.10.0</version>
     <title>World Monitor</title>
     <authors>koala73</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://worldmonitor.app</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/worldmonitor.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install worldmonitor
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 World Monitor itself is distributed under its own [license](https://github.com/koala73/worldmonitor/blob/main/LICENSE).
 ]]></description>
     <summary>Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface</summary>
-    <releaseNotes>https://github.com/koala73/worldmonitor/releases/tag/v2.5.23</releaseNotes>
+    <releaseNotes>https://github.com/koala73/worldmonitor/releases/tag/v2.10.0</releaseNotes>
     <tags>worldmonitor agent ai dashboard geopolitics mcp mcp-server monitoring news</tags>
     <projectSourceUrl>https://github.com/koala73/worldmonitor</projectSourceUrl>
     <bugTrackerUrl>https://github.com/koala73/worldmonitor/issues</bugTrackerUrl>
