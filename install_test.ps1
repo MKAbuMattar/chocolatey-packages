@@ -52,7 +52,9 @@ foreach ($pkg in $Name) {
     }
 
     Write-Host "`n=== $pkg : install ===" -ForegroundColor Cyan
-    choco install $pkg --source $dir --yes --no-progress --limit-output --verbosity=error
+    # --pre or choco cannot see a prerelease version at all, and reports the package
+    # as not found rather than as skipped. buzz, llrt and octobot all ship prereleases.
+    choco install $pkg --source $dir --yes --no-progress --limit-output --verbosity=error --pre
     $installExit = $LASTEXITCODE
 
     if ($installExit -ne 0) {

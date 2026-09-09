@@ -47,10 +47,20 @@ if (!(Test-Path "$Env:TEMP\chocolatey\au\chocolatey")) {
     Write-Host 'Warming the AU chocolatey copy'
     $warm = "$PSScriptRoot\automatic\tailspin"   # smallest download in the repo
     if (Test-Path $warm) {
+        # Force is what makes this work. Without it AU stops at "No new version found"
+        # for a package already at its latest version, never computes a checksum, and so
+        # never builds the copy this whole block exists to build. It printed the warming
+        # message and did nothing on every run until now.
         $global:au_WhatIf = $true               # back up and restore, so no files change
+        $global:au_Force  = $true               # and go past the version check to the checksum
         Push-Location $warm
         try { .\update.ps1 | Out-Null } catch { Write-Host "Warm-up skipped: $_" }
-        finally { Pop-Location; $global:au_WhatIf = $false }
+        finally { Pop-Location; $global:au_WhatIf = $false; $global:au_Force = $false }
+    }
+
+    # Say so rather than leaving the next six threads to race for it.
+    if (!(Test-Path "$Env:TEMP\chocolatey\au\chocolatey")) {
+        Write-Warning 'Warm-up did not create the AU chocolatey copy. The first packages may fail with "Install-ChocolateyPackage is not recognized".'
     }
 }
 
