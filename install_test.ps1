@@ -37,6 +37,19 @@ if (!$Name) {
     Write-Host "Testing all $($Name.Count) packages"
 }
 
+# A pull request that deletes a package still lists it in the diff, so the caller can
+# hand us a name with no directory behind it. There is nothing to install, and throwing
+# on it makes a removal-only pull request unmergeable.
+$gone = @($Name | Where-Object { !(Test-Path (Join-Path $PSScriptRoot "automatic\$_")) })
+if ($gone) {
+    Write-Host "Skipping removed package(s): $($gone -join ', ')"
+    $Name = @($Name | Where-Object { Test-Path (Join-Path $PSScriptRoot "automatic\$_") })
+}
+if (!$Name) {
+    Write-Host 'Nothing left to test'
+    return
+}
+
 if (!$NoPack) {
     & "$PSScriptRoot\update_all.ps1" -Name $Name -Force
 }
@@ -44,7 +57,7 @@ if (!$NoPack) {
 $failed = @()
 foreach ($pkg in $Name) {
     $dir = Join-Path $PSScriptRoot "automatic\$pkg"
-    $nupkg = Get-ChildItem $dir -Filter *.nupkg | Select-Object -First 1
+    $nupkg = Get-ChildItem $dir -Filter *.nupkg -ErrorAction SilentlyContinue | Select-Object -First 1
     if (!$nupkg) {
         Write-Host "::error::$pkg packed no nupkg"
         $failed += $pkg
