@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/genspark-ai/genoffice/releases/download/v0.8.1039/GenOfficeSetup-v0.8.1039.exe'
-  checksum64     = 'c3d5c82b1844ea8a9052b9e2e10948ec6a39f3ac6b62ab5fee367e0798b082b0'
+  url64          = 'https://github.com/genspark-ai/genoffice/releases/download/v0.9.431/GenOfficeSetup-v0.9.431-x64.exe'
+  checksum64     = 'ef22e62ea83b7fe18447f4966ca1b2cc2d570d58013c7163d375a2dcea90b187'
   checksumType64 = 'sha256'
   softwareName   = 'GenOffice*'
   silentArgs     = '/S'
