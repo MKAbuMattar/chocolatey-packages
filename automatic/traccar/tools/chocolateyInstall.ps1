@@ -12,7 +12,11 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-# Traccar ships its installer inside the archive, so run that too
+# Traccar ships its installer inside the archive, so run that too. It is Inno Setup
+# 6.7.0, confirmed by the "Inno Setup Setup Data (6.7.0)" marker in the binary, not
+# NSIS. Inno ignores /S, so the installer opened its GUI and sat there until Chocolatey
+# gave up at its 2700 second timeout. These are the switches Inno actually reads.
 Install-ChocolateyInstallPackage -PackageName $env:ChocolateyPackageName `
   -FileType 'EXE' -File (Join-Path $toolsPath 'traccar-setup.exe') `
-  -SilentArgs '/S' -ValidExitCodes @(0)
+  -SilentArgs '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' `
+  -ValidExitCodes @(0, 3010, 1641)
