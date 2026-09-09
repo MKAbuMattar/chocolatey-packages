@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kilocode</id>
-    <version>0.0.0</version>
+    <version>7.5.16</version>
     <title>Kilo Code</title>
     <authors>Kilo-Org</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://kilo.ai/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/kilocode.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install kilocode
@@ -53,9 +52,9 @@ choco uninstall kilocode
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 Kilo Code itself is distributed under its own [license](https://github.com/Kilo-Org/kilocode/blob/main/LICENSE).
-    ]]></description>
+]]></description>
     <summary>Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent</summary>
-    <releaseNotes>https://github.com/Kilo-Org/kilocode/releases/tag/v7.5.15</releaseNotes>
+    <releaseNotes>https://github.com/Kilo-Org/kilocode/releases/tag/v7.5.16</releaseNotes>
     <tags>kilocode ai ai-age ai-coding ai-developer-tools chatgpt claude cli gemini coding ide vscode</tags>
     <projectSourceUrl>https://github.com/Kilo-Org/kilocode</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Kilo-Org/kilocode/issues</bugTrackerUrl>
