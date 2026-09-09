@@ -61,7 +61,11 @@ function Get-GitHubRelease {
             Only consider releases that actually carry an asset with this name.
 
         .Parameter PerPage
-            How many releases to look through.
+            How many releases to read per request. 100 is the GitHub maximum.
+
+        .Parameter MaxPages
+            How many pages to read before giving up. Raise it for a monorepo that
+            releases fast enough to push the wanted component past the first page.
     #>
     [CmdletBinding()]
     param(
@@ -69,7 +73,8 @@ function Get-GitHubRelease {
         [string]$TagPrefix,
         [string]$TagPattern,
         [string]$WithAsset,
-        [int]$PerPage = 100
+        [int]$PerPage = 100,
+        [int]$MaxPages = 1
     )
 
     $headers = Get-GitHubHeaders
@@ -78,13 +83,21 @@ function Get-GitHubRelease {
         return Invoke-RestMethod "https://api.github.com/repos/$Repo/releases/latest" -Headers $headers
     }
 
-    $releases = Invoke-RestMethod "https://api.github.com/repos/$Repo/releases?per_page=$PerPage" -Headers $headers
-    $release = $releases | Where-Object {
-        -not $_.prerelease -and
-        (!$TagPrefix -or $_.tag_name -like "$TagPrefix*") -and
-        (!$TagPattern -or $_.tag_name -match $TagPattern) -and
-        (!$WithAsset -or ($_.assets.name -contains $WithAsset))
-    } | Select-Object -First 1
+    # A busy monorepo can push one component's newest release past the first page.
+    # PostHog did exactly that, and posthog-cli started failing with "not in the last
+    # 100 releases" while the release it wanted sat on page two.
+    $release = $null
+    for ($page = 1; $page -le $MaxPages -and !$release; $page++) {
+        $releases = Invoke-RestMethod `
+            "https://api.github.com/repos/$Repo/releases?per_page=$PerPage&page=$page" -Headers $headers
+        if (!$releases) { break }
+        $release = $releases | Where-Object {
+            -not $_.prerelease -and
+            (!$TagPrefix -or $_.tag_name -like "$TagPrefix*") -and
+            (!$TagPattern -or $_.tag_name -match $TagPattern) -and
+            (!$WithAsset -or ($_.assets.name -contains $WithAsset))
+        } | Select-Object -First 1
+    }
 
     if (!$release) {
         $wanted = @(
@@ -92,7 +105,7 @@ function Get-GitHubRelease {
             if ($TagPattern) { "tag matching '$TagPattern'" }
             if ($WithAsset) { "asset '$WithAsset'" }
         ) -join ', '
-        throw "No stable release of $Repo with $wanted in the last $PerPage releases"
+        throw "No stable release of $Repo with $wanted in the last $($PerPage * $MaxPages) releases"
     }
 
     $release
@@ -226,7 +239,8 @@ function Get-GitHubLatest {
         [string]$TagPrefix,
         [string]$TagPattern,
         [switch]$NoReleaseNotes,
-        [int]$PerPage = 100
+        [int]$PerPage = 100,
+        [int]$MaxPages = 1
     )
 
     if (!$Asset -and !$AssetPattern) { throw 'Get-GitHubLatest needs -Asset or -AssetPattern' }
@@ -236,7 +250,7 @@ function Get-GitHubLatest {
         throw 'Get-GitHubLatest -RequireAsset needs a literal -Asset; use -AssetPattern instead'
     }
 
-    $find = @{ Repo = $Repo; PerPage = $PerPage }
+    $find = @{ Repo = $Repo; PerPage = $PerPage; MaxPages = $MaxPages }
     if ($TagPrefix) { $find.TagPrefix = $TagPrefix }
     if ($TagPattern) { $find.TagPattern = $TagPattern }
     if ($RequireAsset) { $find.WithAsset = $Asset }
