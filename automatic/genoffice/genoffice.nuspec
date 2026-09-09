@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>genoffice</id>
+    <version>0.0.0</version>
+    <title>GenOffice</title>
+    <authors>genspark-ai</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/genspark-ai/genoffice/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://genoffice.ai/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/genoffice.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+## Install
+
+```powershell
+choco install genoffice
+```
+
+Chocolatey downloads the official installer from the [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice/releases) releases and runs it silently.
+
+## What is GenOffice?
+
+Free, open-source alternative to Microsoft Office with built-in AI agents , Word (.docx), Excel (.xlsx), PowerPoint (.pptx), PDF and Markdown editing for macOS, Windows & Linux.
+
+Upstream describes it with these topics: agent, agentic, ai, ai-agent, ai-agents, ai-office, docx, excel.
+
+## Upgrade
+
+```powershell
+choco upgrade genoffice
+```
+
+## Uninstall
+
+```powershell
+choco uninstall genoffice
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://genoffice.ai/ |
+| Source code | https://github.com/genspark-ai/genoffice |
+| Releases | https://github.com/genspark-ai/genoffice/releases |
+| Chocolatey page | https://community.chocolatey.org/packages/genoffice |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/genoffice |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+GenOffice itself is distributed under its own [license](https://github.com/genspark-ai/genoffice/blob/main/LICENSE).
+    ]]></description>
+    <summary>Free, open-source alternative to Microsoft Office with built-in AI agents , Word (.docx), Excel (.xlsx), PowerPoint (.pptx), PDF and Markdown editing for macOS, Windows &amp; Linux</summary>
+    <releaseNotes>https://github.com/genspark-ai/genoffice/releases/tag/v0.8.1039</releaseNotes>
+    <tags>genoffice agent agentic ai ai-agent ai-agents ai-office docx excel office word documents</tags>
+    <projectSourceUrl>https://github.com/genspark-ai/genoffice</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/genspark-ai/genoffice/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/genoffice</packageSourceUrl>
+    <docsUrl>https://genoffice.ai/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

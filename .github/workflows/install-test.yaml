@@ -1,0 +1,54 @@
+name: Install test
+
+on:
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: "Space separated packages to install and uninstall. Blank means all, which is slow."
+        required: false
+        default: ""
+  pull_request:
+    paths:
+      - "automatic/*/tools/**"
+      - "automatic/*/*.nuspec"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  install:
+    runs-on: windows-latest
+    timeout-minutes: 90
+    steps:
+      # fetch-depth 0 so origin/<base ref> exists and the diff below is real; with the
+      # default shallow checkout the diff silently comes back empty and the test
+      # passes without having run
+      - name: Check out code
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          fetch-depth: 0
+
+      - name: Install Chocolatey AU
+        run: choco install chocolatey-au --yes --no-progress
+
+      # A real install and uninstall of each package from the nupkg AU just packed,
+      # so the install script's silent arguments and shims are exercised, not just
+      # the pack. Only the packages the PR touched, to keep the run short.
+      - name: Install and uninstall the packages this PR changed
+        shell: powershell
+        env:
+          github_api_key: ${{ secrets.GITHUB_TOKEN }}
+          github_user_repo: ${{ github.repository }}
+        run: |
+          $names = @()
+          if ('${{ github.event_name }}' -eq 'pull_request') {
+            $files = git diff --name-only origin/${{ github.base_ref }}...HEAD
+            $names = $files | Where-Object { $_ -match '^automatic/([^/]+)/' } |
+                     ForEach-Object { $Matches[1] } | Sort-Object -Unique
+            if (!$names) { Write-Host 'No package files changed'; exit 0 }
+          }
+          .\install_test.ps1 -Name $names
