@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 

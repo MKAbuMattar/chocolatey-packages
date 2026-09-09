@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/Kodiqa-Solutions/VaultS3/releases/download/v4.4.69/vaults3-windows-amd64.tar.gz'
-  checksum64     = '9e9ba0a163c76040dc8e7092d9fac7e5b05343634e9fb971b6ff692a800c2b0c'
+  url64          = 'https://github.com/Kodiqa-Solutions/VaultS3/releases/download/v4.4.71/vaults3-windows-amd64.tar.gz'
+  checksum64     = '560bc041893764d1051839f04983623dd360ea1fe0fc2659ec8f8923111903cf'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vaults3</id>
-    <version>0.0.0</version>
+    <version>4.4.71</version>
     <title>VaultS3</title>
     <authors>Kodiqa-Solutions</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://www.vaults3.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/vaults3.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install vaults3
@@ -50,9 +49,9 @@ choco uninstall vaults3
 This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
 
 VaultS3 itself is distributed under its own [license](https://github.com/Kodiqa-Solutions/VaultS3/blob/main/LICENSE).
-    ]]></description>
+]]></description>
     <summary>Lightweight, S3-compatible object storage server with built-in web dashboard. Single binary, low memory, encryption at rest</summary>
-    <releaseNotes>https://github.com/Kodiqa-Solutions/VaultS3/releases/tag/v4.4.69</releaseNotes>
+    <releaseNotes>https://github.com/Kodiqa-Solutions/VaultS3/releases/tag/v4.4.71</releaseNotes>
     <tags>vaults3 s3 storage server self-hosted</tags>
     <projectSourceUrl>https://github.com/Kodiqa-Solutions/VaultS3</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Kodiqa-Solutions/VaultS3/issues</bugTrackerUrl>
