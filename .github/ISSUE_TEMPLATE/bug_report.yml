@@ -19,10 +19,14 @@ body:
         - boring-registry
         - buzz
         - cdxgen
+        - claude-code-router
         - codenomad
         - colibri
+        - concat
+        - copilot-cli
         - crush
         - dashbeam
+        - data-formulator
         - daytona
         - debug-skill
         - deepchat
@@ -32,17 +36,23 @@ body:
         - ever-gauzy
         - faceswap
         - filebrowser
+        - flet
         - flux-operator
         - fort-firewall
         - game-cheats-manager
+        - genoffice
         - gfs
         - github-mcp-server
         - grepai
+        - herdr
         - himalaya
+        - httpie-desktop
         - iam-policy-autopilot
         - iroh-dns-server
         - iroh-relay
+        - iwe
         - jqp
+        - kilocode
         - kortix
         - kubectl-cnpg
         - litestream
@@ -50,10 +60,13 @@ body:
         - llrt
         - lmstudio
         - lobehub
+        - manta
         - meetily
         - memos
         - mesheryctl
         - mindwalk
+        - ms-apm
+        - ms-coreutils
         - neohtop
         - nginx-ui
         - nub
@@ -66,9 +79,14 @@ body:
         - open-pdf-studio
         - openclaw-companion
         - opencodereview
+        - openfootmanager
+        - openship
+        - opensre
         - openwork
         - openworker
         - ouroboros
+        - p2p-kiwi
+        - pdf-brain
         - pentesterflow
         - pi
         - pilotdeck
@@ -80,19 +98,22 @@ body:
         - qwen-code
         - rescript-editor
         - servoshell
+        - sql-studio
+        - squad
         - strix
         - t3-code
         - tailspin
         - terax
         - terralist
         - tiny-rdm
+        - traccar
         - tuios
         - txm
+        - vaults3
         - vercel-native
         - whisper-cpp
         - whosthere
         - winapp
-        - wiretapper
         - witsy
         - worldmonitor
         - xleak
