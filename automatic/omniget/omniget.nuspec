@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>omniget</id>
-    <version>0.0.0</version>
+    <version>0.9.1</version>
     <title>omniget</title>
     <authors>tonhowtf</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -63,7 +63,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 omniget itself is distributed under its own [license](https://github.com/tonhowtf/omniget/blob/main/LICENSE).
 ]]></description>
     <summary>omniget is a desktop downloader for course platforms, video, music and books, covering more than 1,800 sites.</summary>
-    <releaseNotes>https://github.com/tonhowtf/omniget/releases</releaseNotes>
+    <releaseNotes>https://github.com/tonhowtf/omniget/releases/tag/v0.9.1</releaseNotes>
     <tags>omniget downloader download-manager media-downloader video youtube courses</tags>
     <projectSourceUrl>https://github.com/tonhowtf/omniget</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tonhowtf/omniget/issues</bugTrackerUrl>
