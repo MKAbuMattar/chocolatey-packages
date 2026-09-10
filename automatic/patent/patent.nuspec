@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>patent</id>
-    <version>0.0.0</version>
+    <version>0.14.0</version>
     <title>patent</title>
     <authors>r14dd</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -63,7 +63,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 patent itself is distributed under its own [license](https://github.com/r14dd/patent/blob/main/LICENSE-APACHE).
 ]]></description>
     <summary>patent is a prior-art search for developer tool ideas, checking whether something you plan to build already exists.</summary>
-    <releaseNotes>https://github.com/r14dd/patent/releases</releaseNotes>
+    <releaseNotes>https://github.com/r14dd/patent/releases/tag/v0.14.0</releaseNotes>
     <tags>patent cli developer-tools search embeddings rust</tags>
     <projectSourceUrl>https://github.com/r14dd/patent</projectSourceUrl>
     <bugTrackerUrl>https://github.com/r14dd/patent/issues</bugTrackerUrl>
