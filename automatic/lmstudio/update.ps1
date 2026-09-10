@@ -1,30 +1,37 @@
 import-module Chocolatey-AU
 Import-Module (Join-Path $PSScriptRoot '../../au_shared.psm1') -Global
 
-$downloadPage = 'https://lmstudio.ai/download'
+# LM Studio serves a redirect to the current installer. This used to scrape
+# lmstudio.ai/download instead, stitching Next.js streaming chunks back together with
+# two regexes to recover the version and build number, then rebuilding the URL by hand.
+# That is how 0.4.20 shipped a URL upstream was not serving and failed verification with
+# a 404. The redirect returns the exact file upstream is serving, so a URL it does not
+# serve cannot be produced.
+$latestUrl = 'https://lmstudio.ai/download/latest/win32/x64'
 
-# The nuspec links LM Studio's blog rather than a per-release page, so nothing in
-# it changes with the version and AU has to leave it alone.
+# The nuspec links LM Studio's blog rather than a per-release page, so nothing in it
+# changes with the version and AU has to leave it alone.
 function global:au_SearchReplace { Get-AuSearchReplace -NoReleaseNotes }
 
 function global:au_GetLatest {
-  # LM Studio has no release API; the download page embeds the current version per platform
-  # The page streams its data in Next.js chunks, so the JSON is split across
-  # <script> boundaries. Drop the boundaries before matching, or the version and
-  # the build number end up in different pieces.
-  $page = (Invoke-WebRequest -Uri $downloadPage -UseBasicParsing).Content -replace '\\', ''
-  $page = $page -replace '"\]\)</script><script>self\.__next_f\.push\(\[\d+,"', ''
-  if ($page -notmatch '"win32":\{"x64":\{"version":"([\d.]+)","build":"(\d+)"') {
-    throw "Could not find the win32/x64 version on $downloadPage"
-  }
-  $version, $build = $Matches[1], $Matches[2]
+  $request = [System.Net.WebRequest]::Create($latestUrl)
+  $request.AllowAutoRedirect = $false
+  $request.UserAgent = 'chocolatey-packages'
+  $response = $request.GetResponse()
+  try { $url = $response.Headers['Location'] } finally { $response.Dispose() }
 
-  # ponytail: package version ignores LM Studio's build number, matching how this
-  # package has always been versioned. If a build-only respin ever needs shipping,
-  # use Chocolatey fix notation (update.ps1 -Force) for that one release.
+  if (!$url) { throw "$latestUrl did not redirect to an installer" }
+
+  # .../win32/x64/0.4.24-1/LM-Studio-0.4.24-1-x64.exe, a version and a build number.
+  if ($url -notmatch '/win32/x64/([\d.]+)-(\d+)/') {
+    throw "Unexpected LM Studio download URL: $url"
+  }
+
+  # The package version ignores the build number, matching how this package has always
+  # been versioned. A build-only respin can ship through Chocolatey fix notation.
   @{
-    Version = $version
-    URL64   = "https://installers.lmstudio.ai/win32/x64/$version-$build/LM-Studio-$version-$build-x64.exe"
+    Version = $Matches[1]
+    URL64   = $url
   }
 }
 
