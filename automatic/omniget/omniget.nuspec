@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>omniget</id>
+    <version>0.0.0</version>
+    <title>omniget</title>
+    <authors>tonhowtf</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/tonhowtf/omniget/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://tonho.wtf</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/omniget.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## Install
+
+```powershell
+choco install omniget
+```
+
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install omniget --version=<version>
+```
+
+## What is omniget?
+
+A desktop downloader for course platforms, video, music and books, covering more than
+1,800 sites. It is free and open source, and it runs as a window rather than a command
+line, so there is nothing to type to fetch something.
+
+Upstream also publishes a separate command line build, `omniget-cli`. This package
+installs the desktop application.
+
+## Upgrade
+
+```powershell
+choco upgrade omniget
+```
+
+## Uninstall
+
+```powershell
+choco uninstall omniget
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://tonho.wtf |
+| Source code | https://github.com/tonhowtf/omniget |
+| Releases | https://github.com/tonhowtf/omniget/releases |
+| Issues | https://github.com/tonhowtf/omniget/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/omniget |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/omniget |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+omniget itself is distributed under its own [license](https://github.com/tonhowtf/omniget/blob/main/LICENSE).
+]]></description>
+    <summary>omniget is a desktop downloader for course platforms, video, music and books, covering more than 1,800 sites.</summary>
+    <releaseNotes>https://github.com/tonhowtf/omniget/releases</releaseNotes>
+    <tags>omniget downloader download-manager media-downloader video youtube courses</tags>
+    <projectSourceUrl>https://github.com/tonhowtf/omniget</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/tonhowtf/omniget/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/omniget</packageSourceUrl>
+    <docsUrl>https://github.com/tonhowtf/omniget#readme</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
