@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>cc-switch</id>
-    <version>0.0.0</version>
+    <version>3.20.2</version>
     <title>CC Switch</title>
     <authors>farion1231</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -62,7 +62,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 CC Switch itself is distributed under its own [license](https://github.com/farion1231/cc-switch/blob/main/LICENSE).
 ]]></description>
     <summary>CC Switch is a desktop assistant for switching between coding agents such as Claude Code, Codex and OpenCode.</summary>
-    <releaseNotes>https://github.com/farion1231/cc-switch/releases</releaseNotes>
+    <releaseNotes>https://github.com/farion1231/cc-switch/releases/tag/v3.20.2</releaseNotes>
     <tags>cc-switch claude-code codex desktop-app ai-tools</tags>
     <projectSourceUrl>https://github.com/farion1231/cc-switch</projectSourceUrl>
     <bugTrackerUrl>https://github.com/farion1231/cc-switch/issues</bugTrackerUrl>
