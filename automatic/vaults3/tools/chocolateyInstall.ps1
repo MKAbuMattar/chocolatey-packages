@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/Kodiqa-Solutions/VaultS3/releases/download/v4.4.71/vaults3-windows-amd64.tar.gz'
-  checksum64     = '560bc041893764d1051839f04983623dd360ea1fe0fc2659ec8f8923111903cf'
+  url64          = 'https://github.com/Kodiqa-Solutions/VaultS3/releases/download/v4.4.73/vaults3-windows-amd64.tar.gz'
+  checksum64     = '60ae25b33d8b17d48b41f5ec001c147dedde3cfa5dc5c3bdb22eed2b22cd30a8'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
