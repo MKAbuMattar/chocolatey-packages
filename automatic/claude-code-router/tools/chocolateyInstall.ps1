@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/musistudio/claude-code-router/releases/download/v3.0.22/Claude-Code-Router_3.0.22.exe'
-  checksum64     = '4e4b6c2a52d3459ea86ec7009299b826ecf723f23c0b448c3f9dab99537c7a15'
+  url64          = 'https://github.com/musistudio/claude-code-router/releases/download/v3.1.0/Claude-Code-Router_3.1.0.exe'
+  checksum64     = 'fafe69d5daa7847135636de5e6fbbcf1cccb0de37948a187e96143aed0118f23'
   checksumType64 = 'sha256'
   softwareName   = 'Claude Code Router*'
   silentArgs     = '/S'
