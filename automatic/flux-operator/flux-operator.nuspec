@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>flux-operator</id>
-    <version>0.59.0</version>
+    <version>0.60.0</version>
     <title>Flux Operator</title>
     <authors>controlplaneio-fluxcd</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -58,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Flux Operator itself is distributed under its own [license](https://github.com/controlplaneio-fluxcd/flux-operator/blob/main/LICENSE).
 ]]></description>
     <summary>GitOps on Autopilot Mode</summary>
-    <releaseNotes>https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.59.0</releaseNotes>
+    <releaseNotes>https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.60.0</releaseNotes>
     <tags>flux-operator continuous-delivery flux-ui fluxcd gitops mcp-server kubernetes flux cli</tags>
     <projectSourceUrl>https://github.com/controlplaneio-fluxcd/flux-operator</projectSourceUrl>
     <bugTrackerUrl>https://github.com/controlplaneio-fluxcd/flux-operator/issues</bugTrackerUrl>
