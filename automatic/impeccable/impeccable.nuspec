@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>impeccable</id>
-    <version>0.0.0</version>
+    <version>0.1.5</version>
     <title>Impeccable</title>
     <authors>pbakaus</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -67,7 +67,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Impeccable itself is distributed under its own [license](https://github.com/pbakaus/impeccable/blob/main/LICENSE).
 ]]></description>
     <summary>Impeccable is a design language for AI coding harnesses; this package installs its engine binary.</summary>
-    <releaseNotes>https://github.com/pbakaus/impeccable/releases</releaseNotes>
+    <releaseNotes>https://github.com/pbakaus/impeccable/releases/tag/engine-v0.1.5</releaseNotes>
     <tags>impeccable design ai cli developer-tools</tags>
     <projectSourceUrl>https://github.com/pbakaus/impeccable</projectSourceUrl>
     <bugTrackerUrl>https://github.com/pbakaus/impeccable/issues</bugTrackerUrl>
