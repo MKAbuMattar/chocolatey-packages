@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>cc-switch</id>
+    <version>0.0.0</version>
+    <title>CC Switch</title>
+    <authors>farion1231</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/farion1231/cc-switch/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://ccswitch.io</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/cc-switch.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## Install
+
+```powershell
+choco install cc-switch
+```
+
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install cc-switch --version=<version>
+```
+
+## What is CC Switch?
+
+A desktop application for managing and switching between coding agents, covering Claude
+Code, Codex, OpenCode and others from one window.
+
+Upstream also publishes a portable zip. This package installs the MSI, so Windows records
+the install and Chocolatey can uninstall it cleanly.
+
+## Upgrade
+
+```powershell
+choco upgrade cc-switch
+```
+
+## Uninstall
+
+```powershell
+choco uninstall cc-switch
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://ccswitch.io |
+| Source code | https://github.com/farion1231/cc-switch |
+| Releases | https://github.com/farion1231/cc-switch/releases |
+| Issues | https://github.com/farion1231/cc-switch/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/cc-switch |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/cc-switch |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+CC Switch itself is distributed under its own [license](https://github.com/farion1231/cc-switch/blob/main/LICENSE).
+]]></description>
+    <summary>CC Switch is a desktop assistant for switching between coding agents such as Claude Code, Codex and OpenCode.</summary>
+    <releaseNotes>https://github.com/farion1231/cc-switch/releases</releaseNotes>
+    <tags>cc-switch claude-code codex desktop-app ai-tools</tags>
+    <projectSourceUrl>https://github.com/farion1231/cc-switch</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/farion1231/cc-switch/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/cc-switch</packageSourceUrl>
+    <docsUrl>https://ccswitch.io</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
