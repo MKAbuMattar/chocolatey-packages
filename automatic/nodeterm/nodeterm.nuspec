@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>nodeterm</id>
-    <version>0.0.0</version>
+    <version>0.3.5</version>
     <title>NodeTerm</title>
     <authors>eneskirca</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -65,7 +65,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 NodeTerm itself is distributed under its own [license](https://github.com/eneskirca/nodeterm/blob/main/LICENSE).
 ]]></description>
     <summary>NodeTerm is a terminal manager that lays tmux-backed terminals out as draggable nodes on an infinite canvas, for running coding agents in parallel.</summary>
-    <releaseNotes>https://github.com/eneskirca/nodeterm/releases</releaseNotes>
+    <releaseNotes>https://github.com/eneskirca/nodeterm/releases/tag/v0.3.5</releaseNotes>
     <tags>nodeterm terminal tmux terminal-manager ai-agents developer-tools</tags>
     <projectSourceUrl>https://github.com/eneskirca/nodeterm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/eneskirca/nodeterm/issues</bugTrackerUrl>
