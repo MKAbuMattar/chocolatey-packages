@@ -15,6 +15,7 @@ body:
         - alpaca-electron
         - anythingllm
         - arrow-flight-sql-odbc
+        - autoclaw
         - bananas
         - boring-registry
         - buzz
