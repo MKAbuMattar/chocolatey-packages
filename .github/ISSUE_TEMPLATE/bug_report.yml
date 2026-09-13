@@ -18,12 +18,12 @@ body:
         - bananas
         - boring-registry
         - buzz
+        - cc-switch
         - cdxgen
         - claude-code-router
         - codenomad
         - colibri
         - concat
-        - copilot-cli
         - crush
         - dashbeam
         - data-formulator
@@ -46,19 +46,19 @@ body:
         - grepai
         - herdr
         - himalaya
-        - httpie-desktop
         - iam-policy-autopilot
+        - impeccable
         - iroh-dns-server
         - iroh-relay
         - iwe
         - jqp
-        - kilocode
         - kortix
         - kubectl-cnpg
         - litestream
         - llmfit
         - llrt
         - lmstudio
+        - lmstudio-bionic
         - lobehub
         - manta
         - meetily
@@ -69,10 +69,12 @@ body:
         - ms-coreutils
         - neohtop
         - nginx-ui
+        - nodeterm
         - nub
         - numbat-agent
         - octobot
         - omnictl
+        - omniget
         - onlook
         - open-interpreter
         - open-knowledge
@@ -80,12 +82,14 @@ body:
         - openclaw-companion
         - opencodereview
         - openfootmanager
+        - openhuman
         - openship
         - opensre
         - openwork
         - openworker
         - ouroboros
         - p2p-kiwi
+        - patent
         - pdf-brain
         - pentesterflow
         - pi
@@ -97,6 +101,7 @@ body:
         - qwen-audio-agent
         - qwen-code
         - rescript-editor
+        - rtk
         - servoshell
         - sql-studio
         - squad
