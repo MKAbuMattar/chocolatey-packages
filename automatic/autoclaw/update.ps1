@@ -11,7 +11,14 @@ $feed = 'https://autoglm-public-oss.z.ai/autoclaw/updates/latest.yml'
 function global:au_SearchReplace { Get-AuSearchReplace -NoReleaseNotes }
 
 function global:au_GetLatest {
-  $yml = (Invoke-WebRequest -Uri $feed -UseBasicParsing).Content
+  # The feed is served as application/octet-stream, and for a non-text content type
+  # Invoke-WebRequest hands back .Content as a byte array rather than a string, which
+  # no regex will ever match. Decode it before looking at it.
+  $response = Invoke-WebRequest -Uri $feed -UseBasicParsing
+  $yml = if ($response.Content -is [byte[]]) {
+    [System.Text.Encoding]::UTF8.GetString($response.Content)
+  }
+  else { $response.Content }
 
   # A three key subset of YAML, not a parser: version, and the setup file under path.
   if ($yml -notmatch '(?m)^version:\s*(\S+)\s*$') { throw "No version in $feed" }
