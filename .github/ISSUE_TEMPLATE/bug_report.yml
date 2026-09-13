@@ -52,6 +52,7 @@ body:
         - iroh-relay
         - iwe
         - jqp
+        - kilocode
         - kortix
         - kubectl-cnpg
         - litestream
