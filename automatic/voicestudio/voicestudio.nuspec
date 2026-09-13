@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>voicestudio</id>
-    <version>0.0.0</version>
+    <version>0.5.2</version>
     <title>VoiceStudio</title>
     <authors>debpalash</authors>
     <owners>Mohammad Abu Mattar</owners>
