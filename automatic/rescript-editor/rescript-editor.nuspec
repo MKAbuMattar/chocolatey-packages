@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>rescript-editor</id>
-    <version>1.1.7</version>
+    <version>1.1.13</version>
     <title>Rescript</title>
     <authors>wassgha</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://getrescript.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/rescript-editor.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
-## Install
+    <description><![CDATA[## Install
 
 ```powershell
 choco install rescript-editor
@@ -59,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Rescript itself is distributed under its own [license](https://github.com/wassgha/rescript/blob/main/LICENSE).
 ]]></description>
     <summary>Open source, transcript-based video/audio editor that lives in the browser</summary>
-    <releaseNotes>https://github.com/wassgha/rescript/releases/tag/v1.1.7</releaseNotes>
+    <releaseNotes>https://github.com/wassgha/rescript/releases/tag/v1.1.13</releaseNotes>
     <tags>rescript-editor audio media media-editing media-editor transcribe transcription video video-editing editor transcript desktop</tags>
     <projectSourceUrl>https://github.com/wassgha/rescript</projectSourceUrl>
     <bugTrackerUrl>https://github.com/wassgha/rescript/issues</bugTrackerUrl>
