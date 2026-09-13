@@ -116,6 +116,7 @@ body:
         - txm
         - vaults3
         - vercel-native
+        - voicestudio
         - whisper-cpp
         - whosthere
         - winapp
