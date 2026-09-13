@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openhuman</id>
-    <version>0.0.0</version>
+    <version>0.63.12</version>
     <title>OpenHuman</title>
     <authors>tinyhumansai</authors>
     <owners>Mohammad Abu Mattar</owners>
