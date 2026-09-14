@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>dr-claw</id>
+    <version>0.0.0</version>
+    <title>Dr.Claw</title>
+    <authors>OpenLAIR</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/OpenLAIR/dr-claw/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://openlair.github.io/dr-claw/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/dr-claw.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## Install
+
+```powershell
+choco install dr-claw
+```
+
+Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install dr-claw --version=<version>
+```
+
+## What is Dr.Claw?
+
+Dr.Claw, from OpenLAIR, is an open source AI science lab: a desktop application of AI researcher agents that plan experiments, run code and write up results.
+
+## Upgrade
+
+```powershell
+choco upgrade dr-claw
+```
+
+## Uninstall
+
+```powershell
+choco uninstall dr-claw
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://openlair.github.io/dr-claw/ |
+| Source code | https://github.com/OpenLAIR/dr-claw |
+| Releases | https://github.com/OpenLAIR/dr-claw/releases |
+| Issues | https://github.com/OpenLAIR/dr-claw/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/dr-claw |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/dr-claw |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+Dr.Claw itself is distributed under its own [license](https://github.com/OpenLAIR/dr-claw/blob/main/LICENSE).
+]]></description>
+    <summary>Dr.Claw, from OpenLAIR, is an open source AI science lab: AI researcher agents that plan experiments, run code and write up results.</summary>
+    <releaseNotes>https://github.com/OpenLAIR/dr-claw/releases/tag/v1.1.4</releaseNotes>
+    <tags>dr-claw ai-agent research science desktop electron</tags>
+    <projectSourceUrl>https://github.com/OpenLAIR/dr-claw</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/OpenLAIR/dr-claw/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/dr-claw</packageSourceUrl>
+    <docsUrl>https://openlair.github.io/dr-claw/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
