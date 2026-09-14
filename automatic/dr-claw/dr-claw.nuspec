@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>dr-claw</id>
-    <version>0.0.0</version>
+    <version>1.1.4</version>
     <title>Dr.Claw</title>
     <authors>OpenLAIR</authors>
     <owners>Mohammad Abu Mattar</owners>
