@@ -1,19 +1,5 @@
 # whisper.cpp Chocolatey Package
 
-## Install
-
-```powershell
-choco install whisper-cpp
-```
-
-Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
-
-Install a specific version:
-
-```powershell
-choco install whisper-cpp --version=<version>
-```
-
 ## What is whisper.cpp?
 
 Port of OpenAI's Whisper model in C/C++.
@@ -21,31 +7,3 @@ Port of OpenAI's Whisper model in C/C++.
 ## Usage
 
 The package installs the `whisper-cli`, `whisper-server` commands. Open a new terminal after installing so the PATH change takes effect, then see the [whisper.cpp documentation](https://github.com/ggml-org/whisper.cpp) for the available options.
-
-## Upgrade
-
-```powershell
-choco upgrade whisper-cpp
-```
-
-## Uninstall
-
-```powershell
-choco uninstall whisper-cpp
-```
-
-## Links
-
-| Resource | URL |
-| --- | --- |
-| Website | https://github.com/ggml-org/whisper.cpp |
-| Releases | https://github.com/ggml-org/whisper.cpp/releases |
-| Issues | https://github.com/ggml-org/whisper.cpp/issues |
-| Chocolatey page | https://community.chocolatey.org/packages/whisper-cpp |
-| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/whisper-cpp |
-
-## License
-
-This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
-
-whisper.cpp itself is distributed under its own [license](https://github.com/ggml-org/whisper.cpp/blob/master/LICENSE).

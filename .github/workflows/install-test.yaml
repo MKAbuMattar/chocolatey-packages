@@ -9,8 +9,10 @@ on:
         default: ""
   pull_request:
     paths:
+      # Only install-script changes need a real install. A nuspec-only change is
+      # metadata (description, release notes), and a PR touching all nuspecs, such as
+      # a description rewrite, would otherwise install-test every package for hours.
       - "automatic/*/tools/**"
-      - "automatic/*/*.nuspec"
 
 permissions:
   contents: read

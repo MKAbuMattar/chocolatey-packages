@@ -1,19 +1,5 @@
 # Witsy Chocolatey Package
 
-## Install
-
-```powershell
-choco install witsy
-```
-
-Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
-
-Install a specific version:
-
-```powershell
-choco install witsy --version=<version>
-```
-
 ## What is Witsy?
 
 Witsy is a BYOK (bring your own keys) AI application, so you need API keys for the LLM
@@ -100,33 +86,3 @@ whichever application was running before you started dictating.
 
 There is a demo of Computer Use support on
 [YouTube](https://www.youtube.com/watch?v=vixl7I07hBk).
-
-## Upgrade
-
-```powershell
-choco upgrade witsy
-```
-
-## Uninstall
-
-```powershell
-choco uninstall witsy
-```
-
-## Links
-
-| Resource | URL |
-| --- | --- |
-| Website | https://witsyai.com/ |
-| Source code | https://github.com/Kochava-Studios/witsy |
-| Documentation | https://github.com/Kochava-Studios/witsy/blob/main/README.md |
-| Releases | https://github.com/Kochava-Studios/witsy/releases |
-| Issues | https://github.com/Kochava-Studios/witsy/issues |
-| Chocolatey page | https://community.chocolatey.org/packages/witsy |
-| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/witsy |
-
-## License
-
-This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
-
-Witsy itself is distributed under its own [license](https://github.com/Kochava-Studios/witsy/blob/main/LICENSE).
