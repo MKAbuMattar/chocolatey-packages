@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>lean-ctx</id>
+    <version>0.0.0</version>
+    <title>LeanCTX</title>
+    <authors>yvgude</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/yvgude/lean-ctx/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://leanctx.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/lean-ctx.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## Install
+
+```powershell
+choco install lean-ctx
+```
+
+Chocolatey downloads the official 64-bit build at install time and puts it on your PATH. The package itself carries no binaries.
+
+Install a specific version:
+
+```powershell
+choco install lean-ctx --version=<version>
+```
+
+## What is LeanCTX?
+
+LeanCTX is context intelligence for AI systems: it compresses and curates what an AI coding agent sees, so large repositories fit the context window without losing what matters.
+
+## Usage
+
+The package installs the `lean-ctx` command. Open a new terminal after installing so the PATH change takes effect.
+
+## Upgrade
+
+```powershell
+choco upgrade lean-ctx
+```
+
+## Uninstall
+
+```powershell
+choco uninstall lean-ctx
+```
+
+## Links
+
+| Resource | URL |
+| --- | --- |
+| Website | https://leanctx.com |
+| Source code | https://github.com/yvgude/lean-ctx |
+| Releases | https://github.com/yvgude/lean-ctx/releases |
+| Issues | https://github.com/yvgude/lean-ctx/issues |
+| Chocolatey page | https://community.chocolatey.org/packages/lean-ctx |
+| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/lean-ctx |
+
+## License
+
+This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
+
+LeanCTX itself is distributed under its own [license](https://github.com/yvgude/lean-ctx/blob/main/LICENSE).
+]]></description>
+    <summary>LeanCTX is context intelligence for AI systems: it compresses and curates what an AI coding agent sees.</summary>
+    <releaseNotes>https://github.com/yvgude/lean-ctx/releases/tag/v3.10.1</releaseNotes>
+    <tags>lean-ctx context ai coding-agent cli compression</tags>
+    <projectSourceUrl>https://github.com/yvgude/lean-ctx</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/yvgude/lean-ctx/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/lean-ctx</packageSourceUrl>
+    <docsUrl>https://leanctx.com</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -32,6 +32,7 @@ body:
         - debug-skill
         - deepchat
         - dlman
+        - dr-claw
         - dyad
         - e2ecp
         - ever-gauzy
@@ -56,6 +57,7 @@ body:
         - kilocode
         - kortix
         - kubectl-cnpg
+        - lean-ctx
         - litestream
         - llmfit
         - llrt
@@ -85,6 +87,7 @@ body:
         - opencodereview
         - openfootmanager
         - openhuman
+        - openresearch
         - openship
         - opensre
         - openwork
