@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>nginx-ui</id>
-    <version>2.5.10</version>
+    <version>2.6.0</version>
     <title>Nginx UI</title>
     <authors>0xJacky</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -58,7 +58,7 @@ This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbu
 Nginx UI itself is distributed under its own [license](https://github.com/0xJacky/nginx-ui/blob/dev/LICENSE).
 ]]></description>
     <summary>Yet another WebUI for Nginx</summary>
-    <releaseNotes>https://github.com/0xJacky/nginx-ui/releases/tag/v2.5.10</releaseNotes>
+    <releaseNotes>https://github.com/0xJacky/nginx-ui/releases/tag/v2.6.0</releaseNotes>
     <tags>nginx-ui code-completion copilot cron docker go letsencrypt linux macos nginx web-ui self-hosted</tags>
     <projectSourceUrl>https://github.com/0xJacky/nginx-ui</projectSourceUrl>
     <bugTrackerUrl>https://github.com/0xJacky/nginx-ui/issues</bugTrackerUrl>
