@@ -1,19 +1,5 @@
 # LM Studio Chocolatey Package
 
-## Install
-
-```powershell
-choco install lmstudio
-```
-
-Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
-
-Install a specific version:
-
-```powershell
-choco install lmstudio --version=<version>
-```
-
 ## What is LM Studio?
 
 LM Studio is a desktop application for running large language models on your own machine,
@@ -51,31 +37,3 @@ No. Running a model locally is the point, so your data stays on your machine. Se
 
 The [System Requirements](https://lmstudio.ai/docs/system-requirements) page has the
 current list.
-
-## Upgrade
-
-```powershell
-choco upgrade lmstudio
-```
-
-## Uninstall
-
-```powershell
-choco uninstall lmstudio
-```
-
-## Links
-
-| Resource | URL |
-| --- | --- |
-| Website | https://lmstudio.ai/ |
-| Documentation | https://lmstudio.ai/docs/app |
-| Issues | https://github.com/lmstudio-ai/lmstudio-bug-tracker/issues |
-| Chocolatey page | https://community.chocolatey.org/packages/lmstudio |
-| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/lmstudio |
-
-## License
-
-This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
-
-LM Studio itself is distributed under its own [license](https://lmstudio.ai/terms).

@@ -1,19 +1,5 @@
 # Servo Chocolatey Package
 
-## Install
-
-```powershell
-choco install servoshell
-```
-
-Chocolatey downloads the official 64-bit archive at install time, unpacks it into the package tools directory and shims the executables it contains. The package itself carries no binaries.
-
-Install a specific version:
-
-```powershell
-choco install servoshell --version=<version>
-```
-
 ## What is Servo?
 
 Servo aims to empower developers with a lightweight, high-performance alternative for embedding web technologies in applications.
@@ -21,32 +7,3 @@ Servo aims to empower developers with a lightweight, high-performance alternativ
 ## Usage
 
 The package installs the `servo` command. Open a new terminal after installing so the PATH change takes effect, then see the [Servo documentation](https://servo.org) for the available options.
-
-## Upgrade
-
-```powershell
-choco upgrade servoshell
-```
-
-## Uninstall
-
-```powershell
-choco uninstall servoshell
-```
-
-## Links
-
-| Resource | URL |
-| --- | --- |
-| Website | https://servo.org |
-| Source code | https://github.com/servo/servo |
-| Releases | https://github.com/servo/servo/releases |
-| Issues | https://github.com/servo/servo/issues |
-| Chocolatey page | https://community.chocolatey.org/packages/servoshell |
-| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/servoshell |
-
-## License
-
-This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
-
-Servo itself is distributed under its own [license](https://github.com/servo/servo/blob/main/LICENSE).

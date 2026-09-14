@@ -1,19 +1,5 @@
 # T3 Code Chocolatey Package
 
-## Install
-
-```powershell
-choco install t3-code
-```
-
-Chocolatey downloads the official 64-bit installer at install time and runs it silently. The package itself carries no binaries.
-
-Install a specific version:
-
-```powershell
-choco install t3-code --version=<version>
-```
-
 ## What is T3 Code?
 
 T3 Code is a minimal web GUI for coding agents. It works with Codex today, and Claude Code
@@ -55,32 +41,3 @@ You need Codex CLI installed and authenticated before T3 Code will do anything u
    ```
 
 Without an authenticated Codex CLI, T3 Code still launches, but sessions fail.
-
-## Upgrade
-
-```powershell
-choco upgrade t3-code
-```
-
-## Uninstall
-
-```powershell
-choco uninstall t3-code
-```
-
-## Links
-
-| Resource | URL |
-| --- | --- |
-| Website | https://t3.codes/ |
-| Source code | https://github.com/pingdotgg/t3code |
-| Releases | https://github.com/pingdotgg/t3code/releases |
-| Issues | https://github.com/pingdotgg/t3code/issues |
-| Chocolatey page | https://community.chocolatey.org/packages/t3-code |
-| Package source | https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/t3-code |
-
-## License
-
-This Chocolatey package is maintained by [@MKAbuMattar](https://github.com/MKAbuMattar) and licensed under the [MIT License](https://github.com/MKAbuMattar/chocolatey-packages/blob/main/LICENSE).
-
-T3 Code itself is distributed under its own [license](https://github.com/pingdotgg/t3code/blob/main/LICENSE).
