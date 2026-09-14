@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mesheryctl</id>
-    <version>1.0.69</version>
+    <version>1.0.70</version>
     <title>mesheryctl</title>
     <authors>meshery</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Meshery, the cloud native manager.
 ]]></description>
     <summary>Meshery, the cloud native manager</summary>
-    <releaseNotes>https://github.com/meshery/meshery/releases/tag/v1.0.69</releaseNotes>
+    <releaseNotes>https://github.com/meshery/meshery/releases/tag/v1.0.70</releaseNotes>
     <tags>mesheryctl cloud-native cncf control-plane docker gitops golang gsoc hacktoberfest kubernetes service-mesh cli</tags>
     <projectSourceUrl>https://github.com/meshery/meshery</projectSourceUrl>
     <bugTrackerUrl>https://github.com/meshery/meshery/issues</bugTrackerUrl>
