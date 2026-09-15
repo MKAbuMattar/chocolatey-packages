@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/inkeep/open-knowledge/releases/download/v0.73.1/OpenKnowledge-Setup-x64.exe'
-  checksum64     = 'f9855ee2dbbf672a6c8391e48117f9f730a8a24a453686d673468f0f533ee229'
+  url64          = 'https://github.com/inkeep/open-knowledge/releases/download/v0.74.1/OpenKnowledge-Setup-x64.exe'
+  checksum64     = '87afb84e03918be08729c6b40e1043d6dab90b80773c0e7a5f9f84255fba4590'
   checksumType64 = 'sha256'
   softwareName   = 'OpenKnowledge*'
   silentArgs     = '/S'
