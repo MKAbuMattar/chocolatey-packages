@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>omnictl</id>
-    <version>1.12.0</version>
+    <version>1.12.1</version>
     <title>omnictl</title>
     <authors>siderolabs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ SaaS-simple deployment of Kubernetes - on your own hardware.
 The package installs the `omnictl` command. Open a new terminal after installing so the PATH change takes effect, then see the [omnictl documentation](https://github.com/siderolabs/omni) for the available options.
 ]]></description>
     <summary>SaaS-simple deployment of Kubernetes - on your own hardware</summary>
-    <releaseNotes>https://github.com/siderolabs/omni/releases/tag/v1.12.0</releaseNotes>
+    <releaseNotes>https://github.com/siderolabs/omni/releases/tag/v1.12.1</releaseNotes>
     <tags>omnictl kubernetes talos cli sidero</tags>
     <projectSourceUrl>https://github.com/siderolabs/omni</projectSourceUrl>
     <bugTrackerUrl>https://github.com/siderolabs/omni/issues</bugTrackerUrl>
