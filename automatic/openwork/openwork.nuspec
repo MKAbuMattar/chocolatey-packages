@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openwork</id>
-    <version>0.18.47</version>
+    <version>0.18.48</version>
     <title>Openwork</title>
     <authors>different-ai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 The open-source alternative to Claude Cowork (powered by opencode).
 ]]></description>
     <summary>The open-source alternative to Claude Cowork (powered by opencode)</summary>
-    <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.47</releaseNotes>
+    <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.48</releaseNotes>
     <tags>openwork</tags>
     <projectSourceUrl>https://github.com/different-ai/openwork</projectSourceUrl>
     <bugTrackerUrl>https://github.com/different-ai/openwork/issues</bugTrackerUrl>
