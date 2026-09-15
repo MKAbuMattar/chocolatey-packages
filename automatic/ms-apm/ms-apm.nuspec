@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ms-apm</id>
-    <version>0.30.0</version>
+    <version>0.31.0</version>
     <title>Agent Package Manager</title>
     <authors>microsoft</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Agent Package Manager
 ]]></description>
     <summary>Agent Package Manager</summary>
-    <releaseNotes>https://github.com/microsoft/apm/releases/tag/v0.30.0</releaseNotes>
+    <releaseNotes>https://github.com/microsoft/apm/releases/tag/v0.31.0</releaseNotes>
     <tags>ms-apm ai-agents claude-code codex-cli context-engineering github-copilot package-manager prompt-engineering</tags>
     <projectSourceUrl>https://github.com/microsoft/apm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/apm/issues</bugTrackerUrl>
