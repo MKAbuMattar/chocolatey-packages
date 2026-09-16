@@ -60,6 +60,11 @@ foreach ($id in $Name) {
 
     Write-Host "`n=== $id $version ==="
 
+    # NuGet normalises the version in the file name, so a nuspec saying 0.8-b1 packs to
+    # data-formulator.0.8.0-b1.nupkg. Building the name from the nuspec missed that file
+    # and reported a clean pack as missing, so clear the slot and take whatever landed.
+    Get-ChildItem $out -Filter "$id.*.nupkg" -ErrorAction Ignore | Remove-Item -Force
+
     Push-Location $dir
     try {
         choco pack --outputdirectory $out
@@ -68,8 +73,12 @@ foreach ($id in $Name) {
     catch { Write-Host "::error::$id pack failed: $_"; $failed += $id; Pop-Location; continue }
     Pop-Location
 
-    $nupkg = Join-Path $out "$id.$version.nupkg"
-    if (!(Test-Path $nupkg)) { Write-Host "::error::$id packed but $nupkg is missing"; $failed += $id; continue }
+    $built = @(Get-ChildItem $out -Filter "$id.*.nupkg" -ErrorAction Ignore)
+    if ($built.Count -ne 1) {
+        Write-Host "::error::$id packed but produced $($built.Count) nupkg files, expected 1"
+        $failed += $id; continue
+    }
+    $nupkg = $built[0].FullName
 
     # Files that would fail moderation are caught by an allowlist, not a banned
     # extension list: banned lists keep growing (.exe, .msi, .zip, .7z, .dll, .msix,
