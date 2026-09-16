@@ -56,6 +56,11 @@ jobs:
         shell: powershell
         run: .\sync_readme.ps1 -Check
 
+      # An icon on @main can change under a version a moderator already approved.
+      - name: Check icon URLs are pinned to a commit
+        shell: powershell
+        run: .\pin_icons.ps1 -Check
+
       # Force runs every updater and packs every package without pushing anything,
       # so a broken update.ps1, a dead download URL or an invalid nuspec fails here.
       - name: Force update and pack all packages

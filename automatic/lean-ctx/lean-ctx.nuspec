@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/yvgude/lean-ctx/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://leanctx.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/lean-ctx.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@7bbc8e873e771c2a4e6c4e1f13d42631bdbdc8f4/icons/lean-ctx.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is LeanCTX?
 

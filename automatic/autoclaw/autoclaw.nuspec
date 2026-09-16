@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://autoclaw.z.ai/privacy/md2html/?md=autoclaw_agreement&amp;favicon=autoglm</licenseUrl>
     <projectUrl>https://autoclaw.z.ai/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/autoclaw.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@84cb4b41aa717016b9f3c72c95a515c0970e7a59/icons/autoclaw.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is AutoClaw?
 

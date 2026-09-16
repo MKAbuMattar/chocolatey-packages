@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/OpenLAIR/dr-claw/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://openlair.github.io/dr-claw/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/dr-claw.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@7bbc8e873e771c2a4e6c4e1f13d42631bdbdc8f4/icons/dr-claw.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Dr.Claw?
 

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://lmstudio.ai/terms</licenseUrl>
     <projectUrl>https://lmstudio.ai/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/lmstudio-bionic.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@e8dbc813f2768f4c7b7d85e03e05e0c8ce6a4b46/icons/lmstudio-bionic.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is LM Studio Bionic?
 

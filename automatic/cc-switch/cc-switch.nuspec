@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/farion1231/cc-switch/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://ccswitch.io</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/cc-switch.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@454cf4bc45c9937afab310953f01ef5e3dbbf0a3/icons/cc-switch.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is CC Switch?
 

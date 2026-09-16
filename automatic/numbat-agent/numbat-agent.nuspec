@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/perplexityai/numbat/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/perplexityai/numbat</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/numbat-agent.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@0faecb4c371a5df080a9e8f04687586c503b31cb/icons/numbat-agent.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Numbat?
 

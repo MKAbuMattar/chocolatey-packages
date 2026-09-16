@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/debpalash/VoiceStudio/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://voicestudio.sh</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/voicestudio.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@73f0e086f40ee54601521f1ac515e4d8376df96c/icons/voicestudio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is VoiceStudio?
 

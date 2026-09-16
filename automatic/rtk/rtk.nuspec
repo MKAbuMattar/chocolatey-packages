@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/rtk-ai/rtk/blob/develop/LICENSE</licenseUrl>
     <projectUrl>https://www.rtk-ai.app</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/rtk.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@454cf4bc45c9937afab310953f01ef5e3dbbf0a3/icons/rtk.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is rtk?
 
