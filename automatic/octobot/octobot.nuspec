@@ -20,6 +20,7 @@ The package installs the `OctoBot` command. Open a new terminal after installing
 ]]></description>
     <summary>Free open source crypto trading bot to automate AI, Grid, DCA and TradingView strategies on Binance, Hyperliquid and 15+ exchanges, with a simple interface</summary>
     <releaseNotes>https://github.com/Drakkar-Software/OctoBot/releases/tag/3.0.0-beta2</releaseNotes>
+    <copyright>Copyright Drakkar-Software</copyright>
     <tags>octobot ai-trading backtest binance-api bitcoin coinbase-bot cryptocurrencies free paper-trading</tags>
     <projectSourceUrl>https://github.com/Drakkar-Software/OctoBot</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Drakkar-Software/OctoBot/issues</bugTrackerUrl>

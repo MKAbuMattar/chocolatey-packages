@@ -16,6 +16,7 @@ SQL Database Explorer [SQLite, libSQL, PostgreSQL, MySQL/MariaDB, ClickHouse, Du
 ]]></description>
     <summary>SQL Database Explorer [SQLite, libSQL, PostgreSQL, MySQL/MariaDB, ClickHouse, DuckDB, Microsoft SQL Server]</summary>
     <releaseNotes>https://github.com/frectonz/sql-studio/releases/tag/0.1.53</releaseNotes>
+    <copyright>Copyright 2024 frectonz</copyright>
     <tags>sql-studio duckdb libsql mariadb microsoft-sql-server mssql mysql postgresql rust</tags>
     <projectSourceUrl>https://github.com/frectonz/sql-studio</projectSourceUrl>
     <bugTrackerUrl>https://github.com/frectonz/sql-studio/issues</bugTrackerUrl>

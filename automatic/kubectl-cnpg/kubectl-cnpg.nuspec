@@ -16,6 +16,7 @@ The most popular Kubernetes Operator for PostgreSQL.
 ]]></description>
     <summary>The most popular Kubernetes Operator for PostgreSQL</summary>
     <releaseNotes>https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.0</releaseNotes>
+    <copyright>Copyright cloudnative-pg</copyright>
     <tags>kubectl-cnpg automated-failover business-continuity database database-management devops disaster-recovery failover high-availability kubernetes postgres kubectl-plugin</tags>
     <projectSourceUrl>https://github.com/cloudnative-pg/cloudnative-pg</projectSourceUrl>
     <bugTrackerUrl>https://github.com/cloudnative-pg/cloudnative-pg/issues</bugTrackerUrl>

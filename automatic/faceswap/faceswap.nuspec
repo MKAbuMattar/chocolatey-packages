@@ -16,6 +16,7 @@ Deepfakes Software For All.
 ]]></description>
     <summary>Deepfakes Software For All</summary>
     <releaseNotes>https://github.com/deepfakes/faceswap/releases/tag/v3.0.0</releaseNotes>
+    <copyright>Copyright deepfakes</copyright>
     <tags>faceswap deep-face-swap deep-learning deepface deepfakes deeplearning face-swap fakeapp</tags>
     <projectSourceUrl>https://github.com/deepfakes/faceswap</projectSourceUrl>
     <bugTrackerUrl>https://github.com/deepfakes/faceswap/issues</bugTrackerUrl>

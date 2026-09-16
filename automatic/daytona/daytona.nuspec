@@ -20,6 +20,7 @@ The package installs the `daytona` command. Open a new terminal after installing
 ]]></description>
     <summary>Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code</summary>
     <releaseNotes>https://github.com/daytonaio/daytona/releases/tag/v0.190.0</releaseNotes>
+    <copyright>Copyright daytonaio</copyright>
     <tags>daytona agentic-workflow ai ai-agents ai-runtime ai-sandboxes code-execution code-interpreter developer-tools development-environment devcontainer cli</tags>
     <projectSourceUrl>https://github.com/daytonaio/daytona</projectSourceUrl>
     <bugTrackerUrl>https://github.com/daytonaio/daytona/issues</bugTrackerUrl>

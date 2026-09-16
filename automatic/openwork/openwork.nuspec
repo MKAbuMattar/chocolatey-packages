@@ -16,6 +16,7 @@ The open-source alternative to Claude Cowork (powered by opencode).
 ]]></description>
     <summary>The open-source alternative to Claude Cowork (powered by opencode)</summary>
     <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.48</releaseNotes>
+    <copyright>Copyright different-ai</copyright>
     <tags>openwork</tags>
     <projectSourceUrl>https://github.com/different-ai/openwork</projectSourceUrl>
     <bugTrackerUrl>https://github.com/different-ai/openwork/issues</bugTrackerUrl>

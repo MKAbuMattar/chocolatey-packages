@@ -16,6 +16,7 @@ Dr.Claw, from OpenLAIR, is an open source AI science lab: a desktop application 
 ]]></description>
     <summary>Dr.Claw, from OpenLAIR, is an open source AI science lab: AI researcher agents that plan experiments, run code and write up results.</summary>
     <releaseNotes>https://github.com/OpenLAIR/dr-claw/releases/tag/v1.1.4</releaseNotes>
+    <copyright>Copyright OpenLAIR</copyright>
     <tags>dr-claw ai-agent research science desktop electron</tags>
     <projectSourceUrl>https://github.com/OpenLAIR/dr-claw</projectSourceUrl>
     <bugTrackerUrl>https://github.com/OpenLAIR/dr-claw/issues</bugTrackerUrl>

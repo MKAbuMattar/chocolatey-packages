@@ -20,6 +20,7 @@ The package installs the `interpreter` command. Open a new terminal after instal
 ]]></description>
     <summary>A coding agent for open models like Kimi K3</summary>
     <releaseNotes>https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.43</releaseNotes>
+    <copyright>Copyright openinterpreter</copyright>
     <tags>open-interpreter acp coding-agent deepseek kimi qwen rust ai llm cli</tags>
     <projectSourceUrl>https://github.com/openinterpreter/openinterpreter</projectSourceUrl>
     <bugTrackerUrl>https://github.com/openinterpreter/openinterpreter/issues</bugTrackerUrl>

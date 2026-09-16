@@ -16,6 +16,7 @@ OpenHuman is an open source agent harness with local-first memory, agent orchest
 ]]></description>
     <summary>OpenHuman is an open source agent harness with local-first memory, agent orchestration, and workflows.</summary>
     <releaseNotes>https://github.com/tinyhumansai/openhuman/releases/tag/v0.63.12</releaseNotes>
+    <copyright>Copyright tinyhumansai</copyright>
     <tags>openhuman ai-agents agent-orchestration llm local-first mcp personal-ai privacy desktop tauri rust</tags>
     <projectSourceUrl>https://github.com/tinyhumansai/openhuman</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tinyhumansai/openhuman/issues</bugTrackerUrl>

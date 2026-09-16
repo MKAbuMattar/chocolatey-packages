@@ -16,6 +16,7 @@ Open-source, self-hosted note-taking tool built for quick capture. Markdown-nati
 ]]></description>
     <summary>Open-source, self-hosted note-taking tool built for quick capture. Markdown-native, lightweight, and fully yours</summary>
     <releaseNotes>https://github.com/usememos/memos/releases/tag/v0.30.0</releaseNotes>
+    <copyright>Copyright 2025 Memos</copyright>
     <tags>memos docker foss go markdown memo microblog note-taking notecard notes self-hosted server</tags>
     <projectSourceUrl>https://github.com/usememos/memos</projectSourceUrl>
     <bugTrackerUrl>https://github.com/usememos/memos/issues</bugTrackerUrl>

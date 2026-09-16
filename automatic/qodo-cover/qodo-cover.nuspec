@@ -20,6 +20,7 @@ The package installs the `cover-agent` command. Open a new terminal after instal
 ]]></description>
     <summary>Qodo-Cover: An AI-Powered Tool for Automated Test Generation and Code Coverage Enhancement!</summary>
     <releaseNotes>https://github.com/qodo-ai/qodo-cover/releases/tag/0.3.10</releaseNotes>
+    <copyright>Copyright qodo-ai</copyright>
     <tags>qodo-cover agents ai test-automation testing coverage cli</tags>
     <projectSourceUrl>https://github.com/qodo-ai/qodo-cover</projectSourceUrl>
     <bugTrackerUrl>https://github.com/qodo-ai/qodo-cover/issues</bugTrackerUrl>

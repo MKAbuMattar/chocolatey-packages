@@ -20,6 +20,7 @@ The package installs the `pkl` command. Open a new terminal after installing so 
 ]]></description>
     <summary>A configuration as code language with rich validation and tooling</summary>
     <releaseNotes>https://github.com/apple/pkl/releases/tag/0.32.1</releaseNotes>
+    <copyright>Copyright apple</copyright>
     <tags>pkl config configuration data functional java json kotlin language cli apple</tags>
     <projectSourceUrl>https://github.com/apple/pkl</projectSourceUrl>
     <bugTrackerUrl>https://github.com/apple/pkl/issues</bugTrackerUrl>

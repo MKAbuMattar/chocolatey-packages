@@ -16,6 +16,7 @@ A visualization tool that replays coding-agent sessions on a 3D map of your code
 ]]></description>
     <summary>A visualization tool that replays coding-agent sessions on a 3D map of your codebase</summary>
     <releaseNotes>https://github.com/cosmtrek/mindwalk/releases/tag/v0.5.0</releaseNotes>
+    <copyright>Copyright 2026 Ricko Yu</copyright>
     <tags>mindwalk visualization coding-agent cli</tags>
     <projectSourceUrl>https://github.com/cosmtrek/mindwalk</projectSourceUrl>
     <bugTrackerUrl>https://github.com/cosmtrek/mindwalk/issues</bugTrackerUrl>

@@ -16,6 +16,7 @@ A realtime voice runtime that keeps Agents talking, working, and present. Real-t
 ]]></description>
     <summary>A realtime voice runtime that keeps Agents talking, working, and present. Real-time Voice Runtime for AI Agents</summary>
     <releaseNotes>https://github.com/QwenAudio/qwen-audio-agent/releases/tag/v1.11.0</releaseNotes>
+    <copyright>Copyright QwenAudio</copyright>
     <tags>qwen-audio-agent acp agent agentic-ai ai-coding claude-code codex developer-tools opencode ai voice realtime</tags>
     <projectSourceUrl>https://github.com/QwenAudio/qwen-audio-agent</projectSourceUrl>
     <bugTrackerUrl>https://github.com/QwenAudio/qwen-audio-agent/issues</bugTrackerUrl>

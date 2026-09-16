@@ -20,6 +20,7 @@ The package installs the `servo` command. Open a new terminal after installing s
 ]]></description>
     <summary>Servo aims to empower developers with a lightweight, high-performance alternative for embedding web technologies in applications</summary>
     <releaseNotes>https://github.com/servo/servo/releases/tag/v0.5.0</releaseNotes>
+    <copyright>Copyright servo</copyright>
     <tags>servo browser rust web webbrowser webengine webplatform browser-engine</tags>
     <projectSourceUrl>https://github.com/servo/servo</projectSourceUrl>
     <bugTrackerUrl>https://github.com/servo/servo/issues</bugTrackerUrl>

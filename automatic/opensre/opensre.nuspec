@@ -18,6 +18,7 @@ Upstream describes it with these topics: ai-sre, alerting, datadog, grafana, inc
 ]]></description>
     <summary>Build your own AI SRE agents. The open source toolkit for the AI era</summary>
     <releaseNotes>https://github.com/Tracer-Cloud/opensre/releases/tag/v0.1.2026.9.16</releaseNotes>
+    <copyright>Copyright Tracer-Cloud</copyright>
     <tags>opensre ai-sre alerting datadog grafana incident-management observability remediation root-cause-analysis ai sre reliability</tags>
     <projectSourceUrl>https://github.com/Tracer-Cloud/opensre</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Tracer-Cloud/opensre/issues</bugTrackerUrl>

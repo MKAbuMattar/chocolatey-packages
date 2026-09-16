@@ -16,6 +16,7 @@ Tiny RDM (Tiny Redis Desktop Manager) - A modern, colorful, super lightweight Re
 ]]></description>
     <summary>Tiny RDM (Tiny Redis Desktop Manager) - A modern, colorful, super lightweight Redis GUI client for Mac, Windows, and Linux. It also provides a web version that can be deployed via Docker</summary>
     <releaseNotes>https://github.com/tiny-craft/tiny-rdm/releases/tag/v1.2.7</releaseNotes>
+    <copyright>Copyright tiny-craft</copyright>
     <tags>tiny-rdm go golang icon-pack naive-ui redis redis-client redis-desktop redis-gui</tags>
     <projectSourceUrl>https://github.com/tiny-craft/tiny-rdm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tiny-craft/tiny-rdm/issues</bugTrackerUrl>

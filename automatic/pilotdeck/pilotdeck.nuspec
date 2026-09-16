@@ -16,6 +16,7 @@ Task-oriented AI Agent productivity platform.
 ]]></description>
     <summary>Task-oriented AI Agent productivity platform</summary>
     <releaseNotes>https://github.com/OpenBMB/PilotDeck/releases/tag/v2026.09.14</releaseNotes>
+    <copyright>Copyright OpenBMB</copyright>
     <tags>pilotdeck ai agent productivity desktop</tags>
     <projectSourceUrl>https://github.com/OpenBMB/PilotDeck</projectSourceUrl>
     <bugTrackerUrl>https://github.com/OpenBMB/PilotDeck/issues</bugTrackerUrl>

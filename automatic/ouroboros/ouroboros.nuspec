@@ -20,6 +20,7 @@ The package installs the `ouroboros` command. Open a new terminal after installi
 ]]></description>
     <summary>Agent OS: Stop prompting. Start specifying</summary>
     <releaseNotes>https://github.com/Q00/ouroboros/releases/tag/v0.54.4</releaseNotes>
+    <copyright>Copyright 2025 Q00</copyright>
     <tags>ouroboros agent-os ai-agent llm-orchestration llm-runtime python ai agent spec cli tui</tags>
     <projectSourceUrl>https://github.com/Q00/ouroboros</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Q00/ouroboros/issues</bugTrackerUrl>

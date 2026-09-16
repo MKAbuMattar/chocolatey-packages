@@ -16,6 +16,7 @@ IP addresses break, dial keys instead. A library that adds QUIC + NAT Traversal 
 ]]></description>
     <summary>IP addresses break, dial keys instead. A library that adds QUIC + NAT Traversal to your apps</summary>
     <releaseNotes>https://github.com/n0-computer/iroh/releases/tag/v1.2.0</releaseNotes>
+    <copyright>Copyright n0-computer</copyright>
     <tags>iroh-relay holepunching memes multipath p2p quic realtime rust networking relay server</tags>
     <projectSourceUrl>https://github.com/n0-computer/iroh</projectSourceUrl>
     <bugTrackerUrl>https://github.com/n0-computer/iroh/issues</bugTrackerUrl>

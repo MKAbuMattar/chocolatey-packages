@@ -16,6 +16,7 @@ Fort Firewall for Windows.
 ]]></description>
     <summary>Fort Firewall for Windows</summary>
     <releaseNotes>https://github.com/tnodir/fort/releases/tag/v3.19.9</releaseNotes>
+    <copyright>Copyright tnodir</copyright>
     <tags>fort-firewall bandwidth-limiting firewall windows security network</tags>
     <projectSourceUrl>https://github.com/tnodir/fort</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tnodir/fort/issues</bugTrackerUrl>

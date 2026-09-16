@@ -20,6 +20,7 @@ The package installs the `qwen` command. Open a new terminal after installing so
 ]]></description>
     <summary>An open-source AI coding agent that lives in your terminal</summary>
     <releaseNotes>https://github.com/QwenLM/qwen-code/releases/tag/v0.24.0</releaseNotes>
+    <copyright>Copyright QwenLM</copyright>
     <tags>qwen-code ai coding-agent cli qwen</tags>
     <projectSourceUrl>https://github.com/QwenLM/qwen-code</projectSourceUrl>
     <bugTrackerUrl>https://github.com/QwenLM/qwen-code/issues</bugTrackerUrl>

@@ -16,6 +16,7 @@ Git For database Systems.
 ]]></description>
     <summary>Git For database Systems</summary>
     <releaseNotes>https://github.com/Guepard-Corp/gfs/releases/tag/v0.4.0</releaseNotes>
+    <copyright>Copyright 2026 Guepard, Inc</copyright>
     <tags>gfs agentic-ai agents clickhouse database mcp mysql postgresql version-control git versioning cli</tags>
     <projectSourceUrl>https://github.com/Guepard-Corp/gfs</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Guepard-Corp/gfs/issues</bugTrackerUrl>

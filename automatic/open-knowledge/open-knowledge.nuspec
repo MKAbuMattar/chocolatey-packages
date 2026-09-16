@@ -16,6 +16,7 @@ Beautiful, AI-native markdown IDE and LLM wiki.
 ]]></description>
     <summary>Beautiful, AI-native markdown IDE and LLM wiki</summary>
     <releaseNotes>https://github.com/inkeep/open-knowledge/releases/tag/v0.74.1</releaseNotes>
+    <copyright>Copyright inkeep</copyright>
     <tags>open-knowledge 2nd-brain agent-skills claude codex company-brain docs knowledge- knowledge-base markdown ide wiki</tags>
     <projectSourceUrl>https://github.com/inkeep/open-knowledge</projectSourceUrl>
     <bugTrackerUrl>https://github.com/inkeep/open-knowledge/issues</bugTrackerUrl>

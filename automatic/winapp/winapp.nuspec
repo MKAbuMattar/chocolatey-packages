@@ -16,6 +16,7 @@ winapp, the Windows App Development CLI, is a single command-line interface for 
 ]]></description>
     <summary>winapp, the Windows App Development CLI, is a single command-line interface for managing Windows SDKs, packaging, generating app identity, manifests, certificates, and using build tools with any app framework</summary>
     <releaseNotes>https://github.com/microsoft/winappCli/releases/tag/v0.6.0</releaseNotes>
+    <copyright>Copyright Microsoft Corporation and Contributors</copyright>
     <tags>winapp cli electron identity msix winappsdk windev windows windows-development sdk microsoft</tags>
     <projectSourceUrl>https://github.com/microsoft/winappCli</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/winappCli/issues</bugTrackerUrl>

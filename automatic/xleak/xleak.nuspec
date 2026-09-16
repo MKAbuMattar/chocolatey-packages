@@ -16,6 +16,7 @@ A fast terminal Excel viewer with an interactive TUI. Features full-text search,
 ]]></description>
     <summary>A fast terminal Excel viewer with an interactive TUI. Features full-text search, formula display, lazy loading for large files, clipboard support, and export to CSV/JSON. Built with Rust and ratatui</summary>
     <releaseNotes>https://github.com/bgreenwell/xleak/releases/tag/v0.2.6</releaseNotes>
+    <copyright>Copyright 2025 Ben Greenwell</copyright>
     <tags>xleak cli excel ratatui rust rust-lang spreadsheet spreadsheets tui viewer</tags>
     <projectSourceUrl>https://github.com/bgreenwell/xleak</projectSourceUrl>
     <bugTrackerUrl>https://github.com/bgreenwell/xleak/issues</bugTrackerUrl>

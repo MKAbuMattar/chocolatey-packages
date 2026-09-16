@@ -20,6 +20,7 @@ The package installs the `omnictl` command. Open a new terminal after installing
 ]]></description>
     <summary>SaaS-simple deployment of Kubernetes - on your own hardware</summary>
     <releaseNotes>https://github.com/siderolabs/omni/releases/tag/v1.12.1</releaseNotes>
+    <copyright>Copyright siderolabs</copyright>
     <tags>omnictl kubernetes talos cli sidero</tags>
     <projectSourceUrl>https://github.com/siderolabs/omni</projectSourceUrl>
     <bugTrackerUrl>https://github.com/siderolabs/omni/issues</bugTrackerUrl>

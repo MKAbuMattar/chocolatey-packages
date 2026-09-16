@@ -16,6 +16,7 @@ Lightweight (7MB) Terminal-first AI-native dev workspace.
 ]]></description>
     <summary>Lightweight (7MB) Terminal-first AI-native dev workspace</summary>
     <releaseNotes>https://github.com/crynta/terax-ai/releases/tag/v0.8.6</releaseNotes>
+    <copyright>Copyright crynta</copyright>
     <tags>terax agents ai code-editor linux macos reactjs rust tauri</tags>
     <projectSourceUrl>https://github.com/crynta/terax-ai</projectSourceUrl>
     <bugTrackerUrl>https://github.com/crynta/terax-ai/issues</bugTrackerUrl>

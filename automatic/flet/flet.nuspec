@@ -16,6 +16,7 @@ Build realtime web, mobile and desktop apps in Python only. No frontend experien
 ]]></description>
     <summary>Build realtime web, mobile and desktop apps in Python only. No frontend experience required.</summary>
     <releaseNotes>https://github.com/flet-dev/flet/releases/tag/v1.0.0</releaseNotes>
+    <copyright>Copyright (C) 2023-2026 Appveyor Systems Inc.</copyright>
     <tags>flet android cross-platform desktop flutter ios python server-driven-ui web</tags>
     <projectSourceUrl>https://github.com/flet-dev/flet</projectSourceUrl>
     <bugTrackerUrl>https://github.com/flet-dev/flet/issues</bugTrackerUrl>

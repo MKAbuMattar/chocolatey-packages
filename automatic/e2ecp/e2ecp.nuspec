@@ -16,6 +16,7 @@ End-to-end encrypted copy file tool.
 ]]></description>
     <summary>End-to-end encrypted copy file tool</summary>
     <releaseNotes>https://github.com/schollz/e2ecp/releases/tag/v3.2.0</releaseNotes>
+    <copyright>Copyright 2025 Zack</copyright>
     <tags>e2ecp file-transfer encryption cli</tags>
     <projectSourceUrl>https://github.com/schollz/e2ecp</projectSourceUrl>
     <bugTrackerUrl>https://github.com/schollz/e2ecp/issues</bugTrackerUrl>

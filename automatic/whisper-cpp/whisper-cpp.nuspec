@@ -20,6 +20,7 @@ The package installs the `whisper-cli`, `whisper-server` commands. Open a new te
 ]]></description>
     <summary>Port of OpenAI's Whisper model in C/C++</summary>
     <releaseNotes>https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.2</releaseNotes>
+    <copyright>Copyright 2023-2026 The ggml authors</copyright>
     <tags>whisper-cpp inference openai speech-recognition speech-to-text transformer whisper transcription cli</tags>
     <projectSourceUrl>https://github.com/ggml-org/whisper.cpp</projectSourceUrl>
     <bugTrackerUrl>https://github.com/ggml-org/whisper.cpp/issues</bugTrackerUrl>

@@ -16,6 +16,7 @@ CLI to manage emails.
 ]]></description>
     <summary>CLI to manage emails</summary>
     <releaseNotes>https://github.com/pimalaya/himalaya/releases/tag/v2.1.0</releaseNotes>
+    <copyright>Copyright pimalaya</copyright>
     <tags>himalaya cli client email gpg imap notmuch pgp smtp</tags>
     <projectSourceUrl>https://github.com/pimalaya/himalaya</projectSourceUrl>
     <bugTrackerUrl>https://github.com/pimalaya/himalaya/issues</bugTrackerUrl>

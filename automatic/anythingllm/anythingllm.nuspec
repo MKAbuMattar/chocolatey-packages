@@ -16,6 +16,7 @@ Stop renting your intelligence. Own it with AnythingLLM. Everything you need for
 ]]></description>
     <summary>Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience</summary>
     <releaseNotes>https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.16.1</releaseNotes>
+    <copyright>Copyright Mintplex Labs Inc</copyright>
     <tags>anythingllm agent-computer agent-harness agent-orchestration agentic-ai ai-agents computer-use hermes-agent llm</tags>
     <projectSourceUrl>https://github.com/Mintplex-Labs/anything-llm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Mintplex-Labs/anything-llm/issues</bugTrackerUrl>

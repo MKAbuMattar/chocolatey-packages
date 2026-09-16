@@ -16,6 +16,7 @@ A log file highlighter.
 ]]></description>
     <summary>A log file highlighter</summary>
     <releaseNotes>https://github.com/bensadeh/tailspin/releases/tag/7.0.0</releaseNotes>
+    <copyright>Copyright 2022 Ben Sadeh</copyright>
     <tags>tailspin ccze colorizer colors file follow grc highlighter less log-viewer cli rust</tags>
     <projectSourceUrl>https://github.com/bensadeh/tailspin</projectSourceUrl>
     <bugTrackerUrl>https://github.com/bensadeh/tailspin/issues</bugTrackerUrl>

@@ -16,6 +16,7 @@ Yet another WebUI for Nginx.
 ]]></description>
     <summary>Yet another WebUI for Nginx</summary>
     <releaseNotes>https://github.com/0xJacky/nginx-ui/releases/tag/v2.6.1</releaseNotes>
+    <copyright>Copyright 0xJacky</copyright>
     <tags>nginx-ui code-completion copilot cron docker go letsencrypt linux macos nginx web-ui self-hosted</tags>
     <projectSourceUrl>https://github.com/0xJacky/nginx-ui</projectSourceUrl>
     <bugTrackerUrl>https://github.com/0xJacky/nginx-ui/issues</bugTrackerUrl>

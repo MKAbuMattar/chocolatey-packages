@@ -16,6 +16,7 @@ Meshery, the cloud native manager.
 ]]></description>
     <summary>Meshery, the cloud native manager</summary>
     <releaseNotes>https://github.com/meshery/meshery/releases/tag/v1.0.70</releaseNotes>
+    <copyright>Copyright Meshery Authors</copyright>
     <tags>mesheryctl cloud-native cncf control-plane docker gitops golang gsoc hacktoberfest kubernetes service-mesh cli</tags>
     <projectSourceUrl>https://github.com/meshery/meshery</projectSourceUrl>
     <bugTrackerUrl>https://github.com/meshery/meshery/issues</bugTrackerUrl>

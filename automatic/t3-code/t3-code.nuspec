@@ -54,6 +54,7 @@ Without an authenticated Codex CLI, T3 Code still launches, but sessions fail.
 ]]></description>
     <summary>T3 Code is a minimal web GUI for coding agents. It works with Codex today, and Claude Code support is planned.</summary>
     <releaseNotes>https://github.com/pingdotgg/t3code/releases/tag/v0.0.42</releaseNotes>
+    <copyright>Copyright 2026 T3 Tools Inc</copyright>
     <tags>t3-code t3 ai coding-agent codex openai electron desktop gui chat developer-tools</tags>
     <projectSourceUrl>https://github.com/pingdotgg/t3code</projectSourceUrl>
     <bugTrackerUrl>https://github.com/pingdotgg/t3code/issues</bugTrackerUrl>

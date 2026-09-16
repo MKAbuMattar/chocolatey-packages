@@ -16,6 +16,7 @@ Flexible invoicing desktop app with beautiful & customizable templates.
 ]]></description>
     <summary>Flexible invoicing desktop app with beautiful &amp; customizable templates.</summary>
     <releaseNotes>https://github.com/hql287/Manta/releases/tag/v1.1.4</releaseNotes>
+    <copyright>Copyright hql287</copyright>
     <tags>manta customizable-templates electron electron-app electron-react electronjs freelancer freelancing invoice</tags>
     <projectSourceUrl>https://github.com/hql287/Manta</projectSourceUrl>
     <bugTrackerUrl>https://github.com/hql287/Manta/issues</bugTrackerUrl>

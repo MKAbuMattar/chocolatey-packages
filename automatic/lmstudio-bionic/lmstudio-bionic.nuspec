@@ -23,6 +23,7 @@ package.
 ]]></description>
     <summary>LM Studio Bionic is an agent for open models, running them locally, in LM Studio's cloud, or on a remote machine over LM Link.</summary>
     <releaseNotes>https://lmstudio.ai/blog</releaseNotes>
+    <copyright>Copyright LM Studio</copyright>
     <tags>lmstudio-bionic lm-studio bionic ai llm agent</tags>
     <bugTrackerUrl>https://github.com/lmstudio-ai/lmstudio-bug-tracker/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/lmstudio-bionic</packageSourceUrl>

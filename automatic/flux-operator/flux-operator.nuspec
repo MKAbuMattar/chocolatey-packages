@@ -16,6 +16,7 @@ GitOps on Autopilot Mode.
 ]]></description>
     <summary>GitOps on Autopilot Mode</summary>
     <releaseNotes>https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.60.0</releaseNotes>
+    <copyright>Copyright controlplaneio-fluxcd</copyright>
     <tags>flux-operator continuous-delivery flux-ui fluxcd gitops mcp-server kubernetes flux cli</tags>
     <projectSourceUrl>https://github.com/controlplaneio-fluxcd/flux-operator</projectSourceUrl>
     <bugTrackerUrl>https://github.com/controlplaneio-fluxcd/flux-operator/issues</bugTrackerUrl>

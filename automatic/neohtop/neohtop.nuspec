@@ -20,6 +20,7 @@ The package installs the `NeoHtop` command. Open a new terminal after installing
 ]]></description>
     <summary>Blazing-fast system monitoring for your desktop (built with Rust, Tauri &amp; Svelte)</summary>
     <releaseNotes>https://github.com/Abdenasser/neohtop/releases/tag/v1.2.0</releaseNotes>
+    <copyright>Copyright 2024 Abdenasser</copyright>
     <tags>neohtop activity btop cross-platform htop monitoring rust svelte system</tags>
     <projectSourceUrl>https://github.com/Abdenasser/neohtop</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Abdenasser/neohtop/issues</bugTrackerUrl>

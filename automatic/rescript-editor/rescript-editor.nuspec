@@ -16,6 +16,7 @@ Open source, transcript-based video/audio editor that lives in the browser.
 ]]></description>
     <summary>Open source, transcript-based video/audio editor that lives in the browser</summary>
     <releaseNotes>https://github.com/wassgha/rescript/releases/tag/v1.1.13</releaseNotes>
+    <copyright>Copyright wassgha</copyright>
     <tags>rescript-editor audio media media-editing media-editor transcribe transcription video video-editing editor transcript desktop</tags>
     <projectSourceUrl>https://github.com/wassgha/rescript</projectSourceUrl>
     <bugTrackerUrl>https://github.com/wassgha/rescript/issues</bugTrackerUrl>

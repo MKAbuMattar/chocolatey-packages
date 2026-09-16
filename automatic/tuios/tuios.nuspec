@@ -16,6 +16,7 @@ Terminal UI OS (Terminal Multiplexer).
 ]]></description>
     <summary>Terminal UI OS (Terminal Multiplexer)</summary>
     <releaseNotes>https://github.com/Gaurav-Gosain/tuios/releases/tag/v0.7.0</releaseNotes>
+    <copyright>Copyright 2025 Gaurav Gosain</copyright>
     <tags>tuios bubbletea charm go multiplexer pty terminal tui cli</tags>
     <projectSourceUrl>https://github.com/Gaurav-Gosain/tuios</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Gaurav-Gosain/tuios/issues</bugTrackerUrl>

@@ -16,6 +16,7 @@ Terraform Private Registry for modules and providers manageable from a REST API.
 ]]></description>
     <summary>Terraform Private Registry for modules and providers manageable from a REST API</summary>
     <releaseNotes>https://github.com/terralist/terralist/releases/tag/v0.10.8</releaseNotes>
+    <copyright>Copyright terralist</copyright>
     <tags>terralist private-registry registry terraform terraform-login terraform-module terraform-provider self-hosted server</tags>
     <projectSourceUrl>https://github.com/terralist/terralist</projectSourceUrl>
     <bugTrackerUrl>https://github.com/terralist/terralist/issues</bugTrackerUrl>

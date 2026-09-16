@@ -16,6 +16,7 @@ OpenWorker.
 ]]></description>
     <summary>OpenWorker</summary>
     <releaseNotes>https://github.com/andrewyng/openworker/releases/tag/v0.2.1</releaseNotes>
+    <copyright>Copyright 2024 Andrew Ng</copyright>
     <tags>openworker</tags>
     <projectSourceUrl>https://github.com/andrewyng/openworker</projectSourceUrl>
     <bugTrackerUrl>https://github.com/andrewyng/openworker/issues</bugTrackerUrl>

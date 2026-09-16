@@ -16,6 +16,7 @@ Multi-AI agent terminal collaboration tool.
 ]]></description>
     <summary>Multi-AI agent terminal collaboration tool</summary>
     <releaseNotes>https://github.com/mco-org/squad/releases/tag/v0.7.6</releaseNotes>
+    <copyright>Copyright 2024 mco-org</copyright>
     <tags>squad ai agents terminal collaboration tui</tags>
     <projectSourceUrl>https://github.com/mco-org/squad</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mco-org/squad/issues</bugTrackerUrl>

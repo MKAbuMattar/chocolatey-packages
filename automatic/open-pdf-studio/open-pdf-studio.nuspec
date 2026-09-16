@@ -16,6 +16,7 @@ Open PDF Studio.
 ]]></description>
     <summary>Open PDF Studio</summary>
     <releaseNotes>https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2.0.1</releaseNotes>
+    <copyright>Copyright OpenAEC-Foundation</copyright>
     <tags>open-pdf-studio pdf editor viewer desktop</tags>
     <projectSourceUrl>https://github.com/OpenAEC-Foundation/open-pdf-studio</projectSourceUrl>
     <bugTrackerUrl>https://github.com/OpenAEC-Foundation/open-pdf-studio/issues</bugTrackerUrl>

@@ -18,6 +18,7 @@ An account is needed to use it. The application is free to download, and it is c
 ]]></description>
     <summary>AutoClaw is Z.ai's AI agent for desktop, with built-in skills for documents, data analysis, browser automation and instant messaging workflows.</summary>
     <releaseNotes>https://autoclaw.z.ai/</releaseNotes>
+    <copyright>Copyright Z.ai</copyright>
     <tags>autoclaw z-ai glm ai-agent assistant automation desktop</tags>
     <docsUrl>https://autoclaw.z.ai/</docsUrl>
   </metadata>

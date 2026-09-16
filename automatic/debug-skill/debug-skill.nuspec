@@ -20,6 +20,7 @@ The package installs the `dap` command. Open a new terminal after installing so 
 ]]></description>
     <summary>Debug Skill</summary>
     <releaseNotes>https://github.com/AlmogBaku/debug-skill/releases/tag/v0.4.2</releaseNotes>
+    <copyright>Copyright 2025 Almog Baku</copyright>
     <tags>debug-skill debugging dap agent cli</tags>
     <projectSourceUrl>https://github.com/AlmogBaku/debug-skill</projectSourceUrl>
     <bugTrackerUrl>https://github.com/AlmogBaku/debug-skill/issues</bugTrackerUrl>

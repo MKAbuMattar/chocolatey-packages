@@ -16,6 +16,7 @@ Hundreds of models & providers. One command to find what runs on your hardware.
 ]]></description>
     <summary>Hundreds of models &amp; providers. One command to find what runs on your hardware</summary>
     <releaseNotes>https://github.com/AlexsJones/llmfit/releases/tag/v1.1.15</releaseNotes>
+    <copyright>Copyright 2026 Alex Jones</copyright>
     <tags>llmfit gguf llm localai mlx skill unsloth hardware benchmark cli</tags>
     <projectSourceUrl>https://github.com/AlexsJones/llmfit</projectSourceUrl>
     <bugTrackerUrl>https://github.com/AlexsJones/llmfit/issues</bugTrackerUrl>

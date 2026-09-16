@@ -153,3 +153,49 @@ Describe 'automatic package version URLs' {
     }
   }
 }
+
+Describe 'automatic package copyright' {
+  # A Chocolatey reviewer rejected several packages for a missing <copyright>. It has to
+  # credit the upstream author, not this repository, so the value is read from the
+  # project's own LICENSE where that licence family carries a notice, and from the
+  # upstream author name otherwise. GPL and Apache LICENSE files carry no project notice,
+  # only the licence text's own, which is why this is a rule and not a copied string.
+  It '<Package.Name> credits the upstream author in <copyright>' -ForEach $packageCases {
+    param($Package)
+    $paths = Get-PackagePaths $Package
+    $nuspec = Get-PackageNuspec $paths.Nuspec
+    $copyright = [string]$nuspec.Xml.package.metadata.copyright
+
+    $copyright | Should -Not -BeNullOrEmpty
+    $copyright.Trim() | Should -Not -BeNullOrEmpty
+
+    # Licence prose that earlier extraction attempts produced, never a real notice.
+    $copyright | Should -Not -Match '(?i)free software foundation'
+    $copyright | Should -Not -Match '(?i)copyright (licen[sc]e|statement|owner|notice)'
+    $copyright | Should -Not -Match '(?i)derivative works|reproduce, prepare'
+  }
+}
+
+Describe 'automatic package description sections' {
+  # A Chocolatey reviewer asked for the install, upgrade, uninstall, links and license
+  # sections to be removed from every description. The package page renders the nuspec
+  # description, and Chocolatey already shows install commands and links in its own UI,
+  # so repeating them is duplication. The description comes from the package README, so
+  # this guards the README too.
+  It '<Package.Name> description omits the sections Chocolatey renders itself' -ForEach $packageCases {
+    param($Package)
+    $paths = Get-PackagePaths $Package
+    $nuspec = Get-PackageNuspec $paths.Nuspec
+    $description = [regex]::Match(
+      $nuspec.Text,
+      '(?s)<description><!\[CDATA\[(.*?)\]\]></description>'
+    ).Groups[1].Value
+
+    foreach ($heading in 'Install', 'Upgrade', 'Uninstall', 'Links', 'License') {
+      $description | Should -Not -Match "(?m)^##\s+$heading\s*$" -Because `
+        "$($paths.Id) still has a '## $heading' section in its description"
+    }
+
+    [IO.File]::ReadAllText($paths.Readme) | Should -Not -Match '(?m)^##\s+(Install|Upgrade|Uninstall|Links|License)\s*$'
+  }
+}

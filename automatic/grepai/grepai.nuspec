@@ -16,6 +16,7 @@ Semantic Search & Call Graphs for AI Agents (100% Local).
 ]]></description>
     <summary>Semantic Search &amp; Call Graphs for AI Agents (100% Local)</summary>
     <releaseNotes>https://github.com/yoanbernabeu/grepai/releases/tag/v0.37.0</releaseNotes>
+    <copyright>Copyright 2026 Yoan Bernabeu</copyright>
     <tags>grepai ai claude-code cli code-search cursor developer-tools embeddings golang search semantic code</tags>
     <projectSourceUrl>https://github.com/yoanbernabeu/grepai</projectSourceUrl>
     <bugTrackerUrl>https://github.com/yoanbernabeu/grepai/issues</bugTrackerUrl>

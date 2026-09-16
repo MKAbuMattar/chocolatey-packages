@@ -16,6 +16,7 @@ Streaming replication for SQLite.
 ]]></description>
     <summary>Streaming replication for SQLite</summary>
     <releaseNotes>https://github.com/benbjohnson/litestream/releases/tag/v0.5.17</releaseNotes>
+    <copyright>Copyright benbjohnson</copyright>
     <tags>litestream replication s3 sqlite backup server</tags>
     <projectSourceUrl>https://github.com/benbjohnson/litestream</projectSourceUrl>
     <bugTrackerUrl>https://github.com/benbjohnson/litestream/issues</bugTrackerUrl>

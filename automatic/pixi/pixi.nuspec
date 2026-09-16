@@ -60,6 +60,7 @@ The package installs the `pixi` command. Open a new terminal after installing so
 ]]></description>
     <summary>Pixi is a cross-platform, multi-language package manager and workflow tool built on the conda ecosystem.</summary>
     <releaseNotes>https://github.com/prefix-dev/pixi/releases/tag/v0.81.0</releaseNotes>
+    <copyright>Copyright 2023, prefix.dev GmbH</copyright>
     <tags>pixi package-manager conda rust python workflow developer-tools</tags>
     <projectSourceUrl>https://github.com/prefix-dev/pixi</projectSourceUrl>
     <bugTrackerUrl>https://github.com/prefix-dev/pixi/issues</bugTrackerUrl>

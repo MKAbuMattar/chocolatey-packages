@@ -20,6 +20,7 @@ The package installs the `lean-ctx` command. Open a new terminal after installin
 ]]></description>
     <summary>LeanCTX is context intelligence for AI systems: it compresses and curates what an AI coding agent sees.</summary>
     <releaseNotes>https://github.com/yvgude/lean-ctx/releases/tag/v3.10.1</releaseNotes>
+    <copyright>Copyright yvgude</copyright>
     <tags>lean-ctx context ai coding-agent cli compression</tags>
     <projectSourceUrl>https://github.com/yvgude/lean-ctx</projectSourceUrl>
     <bugTrackerUrl>https://github.com/yvgude/lean-ctx/issues</bugTrackerUrl>

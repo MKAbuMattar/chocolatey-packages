@@ -16,6 +16,7 @@ AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI.
 ]]></description>
     <summary>AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI</summary>
     <releaseNotes>https://github.com/earendil-works/pi/releases/tag/v0.85.1</releaseNotes>
+    <copyright>Copyright 2025 Mario Zechner</copyright>
     <tags>pi ai agent llm cli tui</tags>
     <projectSourceUrl>https://github.com/earendil-works/pi</projectSourceUrl>
     <bugTrackerUrl>https://github.com/earendil-works/pi/issues</bugTrackerUrl>

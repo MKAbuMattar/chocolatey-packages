@@ -20,6 +20,7 @@ The package installs the `pdf-brain` command. Open a new terminal after installi
 ]]></description>
     <summary>Local PDF knowledge base with vector search using libsql w/vectors</summary>
     <releaseNotes>https://github.com/joelhooks/pdf-brain/releases/tag/v2.0.0</releaseNotes>
+    <copyright>Copyright 2024 Joel Hooks</copyright>
     <tags>pdf-brain</tags>
     <projectSourceUrl>https://github.com/joelhooks/pdf-brain</projectSourceUrl>
     <bugTrackerUrl>https://github.com/joelhooks/pdf-brain/issues</bugTrackerUrl>

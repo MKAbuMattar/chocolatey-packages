@@ -16,6 +16,7 @@ Visibility into AI agent activity on endpoints, with on-device detection, option
 ]]></description>
     <summary>Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction</summary>
     <releaseNotes>https://github.com/perplexityai/numbat/releases/tag/v0.2.0</releaseNotes>
+    <copyright>Copyright perplexityai</copyright>
     <tags>numbat-agent agent-security ai-agent-security ai-agents ai-security endpoint monitoring cli</tags>
     <projectSourceUrl>https://github.com/perplexityai/numbat</projectSourceUrl>
     <bugTrackerUrl>https://github.com/perplexityai/numbat/issues</bugTrackerUrl>

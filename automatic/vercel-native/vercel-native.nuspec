@@ -20,6 +20,7 @@ The package installs the `native` command. Open a new terminal after installing 
 ]]></description>
     <summary>Toolkit for building native desktop apps</summary>
     <releaseNotes>https://github.com/vercel-labs/native/releases/tag/v0.10.1</releaseNotes>
+    <copyright>Copyright vercel-labs</copyright>
     <tags>vercel-native desktop sdk vercel cli</tags>
     <projectSourceUrl>https://github.com/vercel-labs/native</projectSourceUrl>
     <bugTrackerUrl>https://github.com/vercel-labs/native/issues</bugTrackerUrl>

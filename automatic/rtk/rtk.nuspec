@@ -18,6 +18,7 @@ binary with no dependencies.
 ]]></description>
     <summary>rtk is a command line proxy that cuts LLM token use on common development commands.</summary>
     <releaseNotes>https://github.com/rtk-ai/rtk/releases/tag/v0.49.0</releaseNotes>
+    <copyright>Copyright rtk-ai</copyright>
     <tags>rtk cli llm tokens proxy developer-tools rust</tags>
     <projectSourceUrl>https://github.com/rtk-ai/rtk</projectSourceUrl>
     <bugTrackerUrl>https://github.com/rtk-ai/rtk/issues</bugTrackerUrl>

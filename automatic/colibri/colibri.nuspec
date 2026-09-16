@@ -16,6 +16,7 @@ Run frontier MoE models on hardware you already own , pure C, zero deps, experts
 ]]></description>
     <summary>Run frontier MoE models on hardware you already own , pure C, zero deps, experts streamed from disk. Tiny engine, immense model</summary>
     <releaseNotes>https://github.com/JustVugg/colibri/releases/tag/v1.11.0</releaseNotes>
+    <copyright>Copyright JustVugg</copyright>
     <tags>colibri llm inference moe cli</tags>
     <projectSourceUrl>https://github.com/JustVugg/colibri</projectSourceUrl>
     <bugTrackerUrl>https://github.com/JustVugg/colibri/issues</bugTrackerUrl>

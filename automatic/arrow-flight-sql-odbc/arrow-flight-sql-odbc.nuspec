@@ -16,6 +16,7 @@ Apache Arrow is the universal columnar format and multi-language toolbox for fas
 ]]></description>
     <summary>Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics</summary>
     <releaseNotes>https://github.com/apache/arrow/releases/tag/apache-arrow-25.0.1</releaseNotes>
+    <copyright>Copyright apache</copyright>
     <tags>arrow-flight-sql-odbc arrow parquet odbc driver sql data</tags>
     <projectSourceUrl>https://github.com/apache/arrow</projectSourceUrl>
     <bugTrackerUrl>https://github.com/apache/arrow/issues</bugTrackerUrl>

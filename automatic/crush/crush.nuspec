@@ -16,6 +16,7 @@ Glamourous agentic coding for all.
 ]]></description>
     <summary>Glamourous agentic coding for all</summary>
     <releaseNotes>https://github.com/charmbracelet/crush/releases/tag/v0.95.0</releaseNotes>
+    <copyright>Copyright charmbracelet</copyright>
     <tags>crush agentic-ai ai llms ravishing coding-agent terminal cli charm</tags>
     <projectSourceUrl>https://github.com/charmbracelet/crush</projectSourceUrl>
     <bugTrackerUrl>https://github.com/charmbracelet/crush/issues</bugTrackerUrl>

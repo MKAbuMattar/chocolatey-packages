@@ -16,6 +16,7 @@ Self-hosted deployment platform
 ]]></description>
     <summary>Self-hosted deployment platform</summary>
     <releaseNotes>https://github.com/oblien/openship/releases/tag/v0.7.2</releaseNotes>
+    <copyright>Copyright oblien</copyright>
     <tags>openship agents ai deployments self-hosted</tags>
     <projectSourceUrl>https://github.com/oblien/openship</projectSourceUrl>
     <bugTrackerUrl>https://github.com/oblien/openship/issues</bugTrackerUrl>

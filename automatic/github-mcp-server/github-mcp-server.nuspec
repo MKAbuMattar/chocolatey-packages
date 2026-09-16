@@ -16,6 +16,7 @@ GitHub's official MCP Server.
 ]]></description>
     <summary>GitHub's official MCP Server</summary>
     <releaseNotes>https://github.com/github/github-mcp-server/releases/tag/v1.12.2</releaseNotes>
+    <copyright>Copyright 2025 GitHub</copyright>
     <tags>github-mcp-server github mcp mcp-server ai cli</tags>
     <projectSourceUrl>https://github.com/github/github-mcp-server</projectSourceUrl>
     <bugTrackerUrl>https://github.com/github/github-mcp-server/issues</bugTrackerUrl>

@@ -18,6 +18,7 @@ The models run on your own machine, so the first run downloads them and a capabl
 ]]></description>
     <summary>VoiceStudio is the open-source, fully-local ElevenLabs alternative: voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation in 646 languages.</summary>
     <releaseNotes>https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.2</releaseNotes>
+    <copyright>Copyright debpalash</copyright>
     <tags>voicestudio tts text-to-speech speech-to-text voice-cloning transcription dubbing local-first ai tauri</tags>
     <projectSourceUrl>https://github.com/debpalash/VoiceStudio</projectSourceUrl>
     <bugTrackerUrl>https://github.com/debpalash/VoiceStudio/issues</bugTrackerUrl>

@@ -16,6 +16,7 @@
 ]]></description>
     <summary>:hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools - AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more - capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP</summary>
     <releaseNotes>https://github.com/PostHog/posthog/releases/tag/posthog-cli/v0.18.3</releaseNotes>
+    <copyright>Copyright PostHog</copyright>
     <tags>posthog-cli ab-testing ai-analytics analytics cdp data-warehouse experiments feature-flags javascript posthog cli</tags>
     <projectSourceUrl>https://github.com/PostHog/posthog</projectSourceUrl>
     <bugTrackerUrl>https://github.com/PostHog/posthog/issues</bugTrackerUrl>

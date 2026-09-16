@@ -16,6 +16,7 @@ The Cursor for Designers • An Open-Source AI-First Design tool • Visually bu
 ]]></description>
     <summary>The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, and edit your React App with AI</summary>
     <releaseNotes>https://github.com/onlook-dev/onlook/releases/tag/v0.2.32</releaseNotes>
+    <copyright>Copyright onlook-dev</copyright>
     <tags>onlook ai cursor cursor-ai design design-to-code drizzle editor figma</tags>
     <projectSourceUrl>https://github.com/onlook-dev/onlook</projectSourceUrl>
     <bugTrackerUrl>https://github.com/onlook-dev/onlook/issues</bugTrackerUrl>

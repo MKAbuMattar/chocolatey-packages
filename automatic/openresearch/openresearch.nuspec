@@ -20,6 +20,7 @@ The package installs the `orx` command. Open a new terminal after installing so 
 ]]></description>
     <summary>OpenResearch, from alphaXiv, turns coding agents into research agents.</summary>
     <releaseNotes>https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.1</releaseNotes>
+    <copyright>Copyright 2026 alphaXiv</copyright>
     <tags>openresearch research arxiv papers ai-agent cli</tags>
     <projectSourceUrl>https://github.com/alphaXiv/OpenResearch</projectSourceUrl>
     <bugTrackerUrl>https://github.com/alphaXiv/OpenResearch/issues</bugTrackerUrl>

@@ -16,6 +16,7 @@ Terminal Math rendering engine.
 ]]></description>
     <summary>Terminal Math rendering engine</summary>
     <releaseNotes>https://github.com/thatmagicalcat/txm/releases/tag/v0.1.5</releaseNotes>
+    <copyright>Copyright thatmagicalcat</copyright>
     <tags>txm math terminal rendering cli</tags>
     <projectSourceUrl>https://github.com/thatmagicalcat/txm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/thatmagicalcat/txm/issues</bugTrackerUrl>

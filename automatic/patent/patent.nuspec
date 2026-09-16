@@ -21,6 +21,7 @@ hosted model.
 ]]></description>
     <summary>patent is a prior-art search for developer tool ideas, checking whether something you plan to build already exists.</summary>
     <releaseNotes>https://github.com/r14dd/patent/releases/tag/v0.14.0</releaseNotes>
+    <copyright>Copyright r14dd</copyright>
     <tags>patent cli developer-tools search embeddings rust</tags>
     <projectSourceUrl>https://github.com/r14dd/patent</projectSourceUrl>
     <bugTrackerUrl>https://github.com/r14dd/patent/issues</bugTrackerUrl>

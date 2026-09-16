@@ -16,6 +16,7 @@ Data Formulator is an interactive AI-powered data analysis system makes it easy 
 ]]></description>
     <summary>Data Formulator is an interactive AI-powered data analysis system makes it easy to connect, explore and visualize data</summary>
     <releaseNotes>https://github.com/microsoft/data-formulator/releases/tag/0.8b1</releaseNotes>
+    <copyright>Copyright Microsoft Corporation</copyright>
     <tags>data-formulator ai data visualization desktop</tags>
     <projectSourceUrl>https://github.com/microsoft/data-formulator</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/data-formulator/issues</bugTrackerUrl>

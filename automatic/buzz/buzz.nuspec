@@ -29,6 +29,7 @@ one upstream published and says nothing about who wrote it.
 ]]></description>
     <summary>A hive mind communication platform</summary>
     <releaseNotes>https://github.com/block/buzz/releases/tag/desktop-v0.5.23</releaseNotes>
+    <copyright>Copyright block</copyright>
     <tags>buzz chat communication desktop</tags>
     <projectSourceUrl>https://github.com/block/buzz</projectSourceUrl>
     <bugTrackerUrl>https://github.com/block/buzz/issues</bugTrackerUrl>

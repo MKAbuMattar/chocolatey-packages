@@ -20,6 +20,7 @@ The package installs the `cdxgen` command. Open a new terminal after installing 
 ]]></description>
     <summary>Creates CycloneDX Bill of Materials (BOM) for your projects from source and container images. Supports many languages and package managers. Integrate in your CI/CD pipeline with automatic submission to Dependency Track server</summary>
     <releaseNotes>https://github.com/cdxgen/cdxgen/releases/tag/v13.1.0</releaseNotes>
+    <copyright>Copyright cdxgen</copyright>
     <tags>cdxgen bom cbom containers cyclonedx docker oci owasp package-url sbom security cli</tags>
     <projectSourceUrl>https://github.com/cdxgen/cdxgen</projectSourceUrl>
     <bugTrackerUrl>https://github.com/cdxgen/cdxgen/issues</bugTrackerUrl>

@@ -25,6 +25,7 @@ The package installs the `impeccable` command. Open a new terminal after install
 ]]></description>
     <summary>Impeccable is a design language for AI coding harnesses; this package installs its engine binary.</summary>
     <releaseNotes>https://github.com/pbakaus/impeccable/releases/tag/engine-v0.1.5</releaseNotes>
+    <copyright>Copyright pbakaus</copyright>
     <tags>impeccable design ai cli developer-tools</tags>
     <projectSourceUrl>https://github.com/pbakaus/impeccable</projectSourceUrl>
     <bugTrackerUrl>https://github.com/pbakaus/impeccable/issues</bugTrackerUrl>

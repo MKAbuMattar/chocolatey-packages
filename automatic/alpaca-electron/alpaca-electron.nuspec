@@ -16,6 +16,7 @@ The simplest way to run Alpaca (and other LLaMA-based local LLMs) on your own co
 ]]></description>
     <summary>The simplest way to run Alpaca (and other LLaMA-based local LLMs) on your own computer</summary>
     <releaseNotes>https://github.com/ItsPi3141/alpaca-electron/releases/tag/v1.0.6</releaseNotes>
+    <copyright>Copyright 2023 Pi</copyright>
     <tags>alpaca-electron ai alpaca app chat chatgpt dalai docker llm llama local desktop</tags>
     <projectSourceUrl>https://github.com/ItsPi3141/alpaca-electron</projectSourceUrl>
     <bugTrackerUrl>https://github.com/ItsPi3141/alpaca-electron/issues</bugTrackerUrl>
