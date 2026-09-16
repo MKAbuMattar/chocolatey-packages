@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>bananas</id>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
     <title>Bananas</title>
     <authors>mistweaverco</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -24,7 +24,7 @@ This package keeps the id `bananas`, because a published Chocolatey id cannot be
 in place. From 1.0.0 onward it installs p2p.kiwi.
 ]]></description>
     <summary>Bananas, Cross-Platform screen sharing made simple</summary>
-    <releaseNotes>https://github.com/mistweaverco/bananas/releases/tag/v2.0.1</releaseNotes>
+    <releaseNotes>https://github.com/mistweaverco/bananas/releases/tag/v2.0.2</releaseNotes>
     <tags>bananas cross-platform multi-cursor p2p pair-programming pairing peer-to-peer screensharing</tags>
     <projectSourceUrl>https://github.com/mistweaverco/bananas</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mistweaverco/bananas/issues</bugTrackerUrl>
