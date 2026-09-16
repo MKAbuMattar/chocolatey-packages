@@ -77,6 +77,26 @@ foreach ($pkg in $Name) {
         continue
     }
 
+    # A package can install cleanly and still ship nothing runnable: colibri shimmed
+    # eight engines and not its launcher, and choco exited 0 throughout (#33). Take the
+    # entry points the package names for itself and prove each one landed, so the
+    # expectation cannot drift from the install script.
+    $binRoot = Join-Path $Env:ChocolateyInstall 'bin'
+    $script = Join-Path $dir 'tools\chocolateyInstall.ps1'
+    $declared = @()
+    if (Test-Path $script) {
+        $declared = @([regex]::Matches((Get-Content $script -Raw), "Install-BinFile\s+-Name\s+'([^']+)'") |
+            ForEach-Object { $_.Groups[1].Value })
+    }
+    $missing = @($declared | Where-Object { !(Get-ChildItem $binRoot -Filter "$_.*" -ErrorAction Ignore) })
+    if ($missing) {
+        Write-Host "::error::$pkg installed but no shim was created for: $($missing -join ', ')"
+        $failed += $pkg
+    }
+    elseif ($declared) {
+        Write-Host "$pkg shimmed: $($declared -join ', ')"
+    }
+
     Write-Host "`n=== $pkg : uninstall ===" -ForegroundColor Cyan
     choco uninstall $pkg --yes --no-progress --limit-output --verbosity=error
     if ($LASTEXITCODE -ne 0) {
@@ -84,7 +104,16 @@ foreach ($pkg in $Name) {
         $failed += $pkg
     }
     else {
-        Write-Host "$pkg installed and uninstalled cleanly"
+        # A shim left behind keeps answering for a package that is gone, so the
+        # uninstall script has to remove what the install script added.
+        $orphan = @($declared | Where-Object { Get-ChildItem $binRoot -Filter "$_.*" -ErrorAction Ignore })
+        if ($orphan) {
+            Write-Host "::error::$pkg uninstalled but left shims behind: $($orphan -join ', ')"
+            $failed += $pkg
+        }
+        else {
+            Write-Host "$pkg installed and uninstalled cleanly"
+        }
     }
 }
 
