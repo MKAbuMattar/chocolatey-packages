@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>herdr</id>
-    <version>0.9.0</version>
+    <version>0.9.1</version>
     <title>Herdr</title>
     <authors>herdrdev</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 the runtime your coding agents live on
 ]]></description>
     <summary>the runtime your coding agents live on</summary>
-    <releaseNotes>https://github.com/herdrdev/herdr/releases/tag/v0.9.0</releaseNotes>
+    <releaseNotes>https://github.com/herdrdev/herdr/releases/tag/v0.9.1</releaseNotes>
     <copyright>Copyright herdrdev</copyright>
     <tags>herdr agent agent-orchestration ai ai-agents claude-code cli codex coding-agents</tags>
     <projectSourceUrl>https://github.com/herdrdev/herdr</projectSourceUrl>
