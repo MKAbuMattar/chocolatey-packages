@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kortix</id>
-    <version>0.13.19</version>
+    <version>0.13.20</version>
     <title>Kortix</title>
     <authors>kortix-ai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 The Company AI Command Center.
 ]]></description>
     <summary>The Company AI Command Center</summary>
-    <releaseNotes>https://github.com/kortix-ai/suna/releases/tag/v0.13.19</releaseNotes>
+    <releaseNotes>https://github.com/kortix-ai/suna/releases/tag/v0.13.20</releaseNotes>
     <copyright>Copyright kortix-ai</copyright>
     <tags>kortix ai ai-agents llm</tags>
     <projectSourceUrl>https://github.com/kortix-ai/suna</projectSourceUrl>
