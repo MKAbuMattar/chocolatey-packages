@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>github-mcp-server</id>
-    <version>1.12.1</version>
+    <version>1.12.2</version>
     <title>GitHub MCP Server</title>
     <authors>github</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 GitHub's official MCP Server.
 ]]></description>
     <summary>GitHub's official MCP Server</summary>
-    <releaseNotes>https://github.com/github/github-mcp-server/releases/tag/v1.12.1</releaseNotes>
+    <releaseNotes>https://github.com/github/github-mcp-server/releases/tag/v1.12.2</releaseNotes>
     <tags>github-mcp-server github mcp mcp-server ai cli</tags>
     <projectSourceUrl>https://github.com/github/github-mcp-server</projectSourceUrl>
     <bugTrackerUrl>https://github.com/github/github-mcp-server/issues</bugTrackerUrl>
