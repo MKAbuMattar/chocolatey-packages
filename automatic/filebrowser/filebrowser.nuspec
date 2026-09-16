@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/filebrowser/filebrowser/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/filebrowser/filebrowser</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/filebrowser.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@1a3e368e5a3bcabf82d63786534c76524e9e9193/icons/filebrowser.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is File Browser?
 
@@ -16,6 +16,7 @@ Web File Browser.
 ]]></description>
     <summary>Web File Browser</summary>
     <releaseNotes>https://github.com/filebrowser/filebrowser/releases/tag/v2.63.23</releaseNotes>
+    <copyright>Copyright filebrowser</copyright>
     <tags>filebrowser file-browser file-manager file-sharing go material-design self-hosted vue files web-ui server</tags>
     <projectSourceUrl>https://github.com/filebrowser/filebrowser</projectSourceUrl>
     <bugTrackerUrl>https://github.com/filebrowser/filebrowser/issues</bugTrackerUrl>

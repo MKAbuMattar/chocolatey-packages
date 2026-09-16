@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/awslabs/iam-policy-autopilot/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/awslabs/iam-policy-autopilot</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/iam-policy-autopilot.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5dcabcdb21b6a5c9f706bf1fe462aa5d866f5021/icons/iam-policy-autopilot.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is IAM Policy Autopilot?
 
@@ -16,6 +16,7 @@ IAM Policy Autopilot is an open source static code analysis tool that helps you 
 ]]></description>
     <summary>IAM Policy Autopilot is an open source static code analysis tool that helps you quickly create baseline AWS IAM policies that you can refine as your application evolves. This tool is available as a command-line utility and MCP server for use within AI coding assistants for quickly building IAM policies</summary>
     <releaseNotes>https://github.com/awslabs/iam-policy-autopilot/releases/tag/0.3.0</releaseNotes>
+    <copyright>Copyright awslabs</copyright>
     <tags>iam-policy-autopilot aws aws-iam aws-iam-policies aws-security cli cloud-security code-analysis iam security static-analysis</tags>
     <projectSourceUrl>https://github.com/awslabs/iam-policy-autopilot</projectSourceUrl>
     <bugTrackerUrl>https://github.com/awslabs/iam-policy-autopilot/issues</bugTrackerUrl>

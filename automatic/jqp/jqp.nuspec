@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/noahgorstein/jqp/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/noahgorstein/jqp</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/jqp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/jqp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is jqp?
 
@@ -16,6 +16,7 @@ A TUI playground to experiment with jq.
 ]]></description>
     <summary>A TUI playground to experiment with jq</summary>
     <releaseNotes>https://github.com/noahgorstein/jqp/releases/tag/v0.8.0</releaseNotes>
+    <copyright>Copyright 2022 Noah Gorstein</copyright>
     <tags>jqp go jq tui json cli</tags>
     <projectSourceUrl>https://github.com/noahgorstein/jqp</projectSourceUrl>
     <bugTrackerUrl>https://github.com/noahgorstein/jqp/issues</bugTrackerUrl>

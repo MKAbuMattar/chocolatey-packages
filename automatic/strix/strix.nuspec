@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/usestrix/strix/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://strix.ai</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/strix.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5dcabcdb21b6a5c9f706bf1fe462aa5d866f5021/icons/strix.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Strix?
 
@@ -20,6 +20,7 @@ The package installs the `strix` command. Open a new terminal after installing s
 ]]></description>
     <summary>Open-source AI penetration testing tool to find and fix your app's vulnerabilities</summary>
     <releaseNotes>https://github.com/usestrix/strix/releases/tag/v1.6.2</releaseNotes>
+    <copyright>Copyright usestrix</copyright>
     <tags>strix agents ai-hacking ai-pentesting ai-security bug-bounty code-quality security pentest ai cli</tags>
     <projectSourceUrl>https://github.com/usestrix/strix</projectSourceUrl>
     <bugTrackerUrl>https://github.com/usestrix/strix/issues</bugTrackerUrl>

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/ramonvermeulen/whosthere/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ramonvermeulen/whosthere</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/whosthere.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5dcabcdb21b6a5c9f706bf1fe462aa5d866f5021/icons/whosthere.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is whosthere?
 
@@ -16,6 +16,7 @@ Local Area Network discovery tool with an interactive Terminal User Interface (T
 ]]></description>
     <summary>Local Area Network discovery tool with an interactive Terminal User Interface (TUI) written in Go. Discover, explore, and understand your LAN in an intuitive way. Knock Knock.. who's there?</summary>
     <releaseNotes>https://github.com/ramonvermeulen/whosthere/releases/tag/v0.8.3</releaseNotes>
+    <copyright>Copyright ramonvermeulen</copyright>
     <tags>whosthere go golang lan network network-analysis networking scanner tui discovery cli</tags>
     <projectSourceUrl>https://github.com/ramonvermeulen/whosthere</projectSourceUrl>
     <bugTrackerUrl>https://github.com/ramonvermeulen/whosthere/issues</bugTrackerUrl>

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/awslabs/llrt/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/awslabs/llrt</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/llrt.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@f97e023ab8dd96b1b4fa6c25e00f514bfa2937da/icons/llrt.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is LLRT?
 
@@ -16,6 +16,7 @@ LLRT (Low Latency Runtime) is an experimental, lightweight JavaScript runtime de
 ]]></description>
     <summary>LLRT (Low Latency Runtime) is an experimental, lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications</summary>
     <releaseNotes>https://github.com/awslabs/llrt/releases/tag/v0.9.0-beta</releaseNotes>
+    <copyright>Copyright awslabs</copyright>
     <tags>llrt javascript runtime lambda cli</tags>
     <projectSourceUrl>https://github.com/awslabs/llrt</projectSourceUrl>
     <bugTrackerUrl>https://github.com/awslabs/llrt/issues</bugTrackerUrl>

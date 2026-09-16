@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/meshery/meshery/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://meshery.io</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/mesheryctl.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@1a3e368e5a3bcabf82d63786534c76524e9e9193/icons/mesheryctl.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is mesheryctl?
 
@@ -16,6 +16,7 @@ Meshery, the cloud native manager.
 ]]></description>
     <summary>Meshery, the cloud native manager</summary>
     <releaseNotes>https://github.com/meshery/meshery/releases/tag/v1.0.70</releaseNotes>
+    <copyright>Copyright Meshery Authors</copyright>
     <tags>mesheryctl cloud-native cncf control-plane docker gitops golang gsoc hacktoberfest kubernetes service-mesh cli</tags>
     <projectSourceUrl>https://github.com/meshery/meshery</projectSourceUrl>
     <bugTrackerUrl>https://github.com/meshery/meshery/issues</bugTrackerUrl>

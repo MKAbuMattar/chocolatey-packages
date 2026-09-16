@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/microsoft/coreutils/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/microsoft/coreutils</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/ms-coreutils.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@3b4828624c0a6928874ffe4fcaf4a157214231a8/icons/ms-coreutils.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Coreutils for Windows?
 
@@ -16,6 +16,7 @@ Coreutils for Windows: Installer & Packaging
 ]]></description>
     <summary>Coreutils for Windows: Installer &amp; Packaging</summary>
     <releaseNotes>https://github.com/microsoft/coreutils/releases/tag/v2026.6.16</releaseNotes>
+    <copyright>Copyright Microsoft Corporation</copyright>
     <tags>ms-coreutils command-line-tool coreutils gnu-coreutils</tags>
     <projectSourceUrl>https://github.com/microsoft/coreutils</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/coreutils/issues</bugTrackerUrl>

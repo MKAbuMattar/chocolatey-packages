@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/iwe-org/iwe/blob/master/LICENSE-APACHE</licenseUrl>
     <projectUrl>https://iwe.md</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/iwe.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@3b4828624c0a6928874ffe4fcaf4a157214231a8/icons/iwe.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is IWE?
 
@@ -16,6 +16,7 @@ Markdown knowledge graph — LSP for your editor, CLI + MCP memory for your AI a
 ]]></description>
     <summary>Markdown knowledge graph — LSP for your editor, CLI + MCP memory for your AI agents</summary>
     <releaseNotes>https://github.com/iwe-org/iwe/releases/tag/iwe-v0.24.0</releaseNotes>
+    <copyright>Copyright iwe-org</copyright>
     <tags>iwe ai-agents ai-memory cli helix knowledge-graph knowledge-management language-server local-first</tags>
     <projectSourceUrl>https://github.com/iwe-org/iwe</projectSourceUrl>
     <bugTrackerUrl>https://github.com/iwe-org/iwe/issues</bugTrackerUrl>

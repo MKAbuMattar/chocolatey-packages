@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/perplexityai/numbat/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/perplexityai/numbat</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/numbat-agent.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@0faecb4c371a5df080a9e8f04687586c503b31cb/icons/numbat-agent.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Numbat?
 
@@ -16,6 +16,7 @@ Visibility into AI agent activity on endpoints, with on-device detection, option
 ]]></description>
     <summary>Visibility into AI agent activity on endpoints, with on-device detection, optional pre-action blocking, and forensic reconstruction</summary>
     <releaseNotes>https://github.com/perplexityai/numbat/releases/tag/v0.2.0</releaseNotes>
+    <copyright>Copyright perplexityai</copyright>
     <tags>numbat-agent agent-security ai-agent-security ai-agents ai-security endpoint monitoring cli</tags>
     <projectSourceUrl>https://github.com/perplexityai/numbat</projectSourceUrl>
     <bugTrackerUrl>https://github.com/perplexityai/numbat/issues</bugTrackerUrl>

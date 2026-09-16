@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/cloudnative-pg/cloudnative-pg/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://cloudnative-pg.io</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/kubectl-cnpg.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@f97e023ab8dd96b1b4fa6c25e00f514bfa2937da/icons/kubectl-cnpg.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is kubectl-cnpg?
 
@@ -16,6 +16,7 @@ The most popular Kubernetes Operator for PostgreSQL.
 ]]></description>
     <summary>The most popular Kubernetes Operator for PostgreSQL</summary>
     <releaseNotes>https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.0</releaseNotes>
+    <copyright>Copyright cloudnative-pg</copyright>
     <tags>kubectl-cnpg automated-failover business-continuity database database-management devops disaster-recovery failover high-availability kubernetes postgres kubectl-plugin</tags>
     <projectSourceUrl>https://github.com/cloudnative-pg/cloudnative-pg</projectSourceUrl>
     <bugTrackerUrl>https://github.com/cloudnative-pg/cloudnative-pg/issues</bugTrackerUrl>

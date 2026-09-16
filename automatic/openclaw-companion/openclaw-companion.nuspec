@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/openclaw/openclaw/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://openclaw.ai</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openclaw-companion.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/openclaw-companion.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is OpenClaw Companion?
 
@@ -16,6 +16,7 @@ Your own personal AI assistant. Any OS. Any Platform. The lobster way.
 ]]></description>
     <summary>Your own personal AI assistant. Any OS. Any Platform. The lobster way</summary>
     <releaseNotes>https://github.com/openclaw/openclaw/releases/tag/v2026.9.1</releaseNotes>
+    <copyright>Copyright openclaw</copyright>
     <tags>openclaw-companion ai assistant crustacean molty openclaw own-your-data personal</tags>
     <projectSourceUrl>https://github.com/openclaw/openclaw</projectSourceUrl>
     <bugTrackerUrl>https://github.com/openclaw/openclaw/issues</bugTrackerUrl>

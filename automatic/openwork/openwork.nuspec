@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/different-ai/openwork/blob/dev/LICENSE</licenseUrl>
     <projectUrl>https://openworklabs.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openwork.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/openwork.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Openwork?
 
@@ -16,6 +16,7 @@ The open-source alternative to Claude Cowork (powered by opencode).
 ]]></description>
     <summary>The open-source alternative to Claude Cowork (powered by opencode)</summary>
     <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.48</releaseNotes>
+    <copyright>Copyright different-ai</copyright>
     <tags>openwork</tags>
     <projectSourceUrl>https://github.com/different-ai/openwork</projectSourceUrl>
     <bugTrackerUrl>https://github.com/different-ai/openwork/issues</bugTrackerUrl>

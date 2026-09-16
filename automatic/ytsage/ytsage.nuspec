@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/oop7/YTSage/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/oop7/YTSage</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/ytsage.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/ytsage.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is YTSage?
 
@@ -16,6 +16,7 @@ Modern YouTube downloader with a clean PySide6 interface. Download videos in any
 ]]></description>
     <summary>Modern YouTube downloader with a clean PySide6 interface. Download videos in any quality, extract audio, fetch subtitles, sponsorBlock, and view video metadata. Built with yt-dlp for reliable performance</summary>
     <releaseNotes>https://github.com/oop7/YTSage/releases/tag/v5.5.0</releaseNotes>
+    <copyright>Copyright 2024 oop7</copyright>
     <tags>ytsage pyside6 python youtube-dl youtube-downloader yt-dlp yt-dlp-gui</tags>
     <projectSourceUrl>https://github.com/oop7/YTSage</projectSourceUrl>
     <bugTrackerUrl>https://github.com/oop7/YTSage/issues</bugTrackerUrl>

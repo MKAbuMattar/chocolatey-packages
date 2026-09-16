@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/prometheus/alertmanager/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://prometheus.io</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/alertmanager.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@1a3e368e5a3bcabf82d63786534c76524e9e9193/icons/alertmanager.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Prometheus Alertmanager?
 
@@ -16,6 +16,7 @@ Prometheus Alertmanager.
 ]]></description>
     <summary>Prometheus Alertmanager</summary>
     <releaseNotes>https://github.com/prometheus/alertmanager/releases/tag/v0.34.0</releaseNotes>
+    <copyright>Copyright prometheus</copyright>
     <tags>alertmanager deduplication email hacktoberfest monitoring notifications opsgenie pagerduty prometheus alerting server</tags>
     <projectSourceUrl>https://github.com/prometheus/alertmanager</projectSourceUrl>
     <bugTrackerUrl>https://github.com/prometheus/alertmanager/issues</bugTrackerUrl>

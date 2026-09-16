@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://lmstudio.ai/terms</licenseUrl>
     <projectUrl>https://lmstudio.ai/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/lmstudio-bionic.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@e8dbc813f2768f4c7b7d85e03e05e0c8ce6a4b46/icons/lmstudio-bionic.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is LM Studio Bionic?
 
@@ -23,6 +23,7 @@ package.
 ]]></description>
     <summary>LM Studio Bionic is an agent for open models, running them locally, in LM Studio's cloud, or on a remote machine over LM Link.</summary>
     <releaseNotes>https://lmstudio.ai/blog</releaseNotes>
+    <copyright>Copyright LM Studio</copyright>
     <tags>lmstudio-bionic lm-studio bionic ai llm agent</tags>
     <bugTrackerUrl>https://github.com/lmstudio-ai/lmstudio-bug-tracker/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/lmstudio-bionic</packageSourceUrl>

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/herdrdev/herdr/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://herdr.dev</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/herdr.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@3b4828624c0a6928874ffe4fcaf4a157214231a8/icons/herdr.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Herdr?
 
@@ -16,6 +16,7 @@ the runtime your coding agents live on
 ]]></description>
     <summary>the runtime your coding agents live on</summary>
     <releaseNotes>https://github.com/herdrdev/herdr/releases/tag/v0.9.0</releaseNotes>
+    <copyright>Copyright herdrdev</copyright>
     <tags>herdr agent agent-orchestration ai ai-agents claude-code cli codex coding-agents</tags>
     <projectSourceUrl>https://github.com/herdrdev/herdr</projectSourceUrl>
     <bugTrackerUrl>https://github.com/herdrdev/herdr/issues</bugTrackerUrl>

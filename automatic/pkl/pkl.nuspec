@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/apple/pkl/blob/main/LICENSE.txt</licenseUrl>
     <projectUrl>https://pkl-lang.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pkl.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/pkl.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Pkl?
 
@@ -20,6 +20,7 @@ The package installs the `pkl` command. Open a new terminal after installing so 
 ]]></description>
     <summary>A configuration as code language with rich validation and tooling</summary>
     <releaseNotes>https://github.com/apple/pkl/releases/tag/0.32.1</releaseNotes>
+    <copyright>Copyright apple</copyright>
     <tags>pkl config configuration data functional java json kotlin language cli apple</tags>
     <projectSourceUrl>https://github.com/apple/pkl</projectSourceUrl>
     <bugTrackerUrl>https://github.com/apple/pkl/issues</bugTrackerUrl>

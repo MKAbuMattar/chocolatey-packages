@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/yoanbernabeu/grepai/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://yoanbernabeu.github.io/grepai/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/grepai.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5dcabcdb21b6a5c9f706bf1fe462aa5d866f5021/icons/grepai.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is grepai?
 
@@ -16,6 +16,7 @@ Semantic Search & Call Graphs for AI Agents (100% Local).
 ]]></description>
     <summary>Semantic Search &amp; Call Graphs for AI Agents (100% Local)</summary>
     <releaseNotes>https://github.com/yoanbernabeu/grepai/releases/tag/v0.37.0</releaseNotes>
+    <copyright>Copyright 2026 Yoan Bernabeu</copyright>
     <tags>grepai ai claude-code cli code-search cursor developer-tools embeddings golang search semantic code</tags>
     <projectSourceUrl>https://github.com/yoanbernabeu/grepai</projectSourceUrl>
     <bugTrackerUrl>https://github.com/yoanbernabeu/grepai/issues</bugTrackerUrl>

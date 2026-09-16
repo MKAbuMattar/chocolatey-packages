@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/microsoft/apm/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://microsoft.github.io/apm/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/ms-apm.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@3b4828624c0a6928874ffe4fcaf4a157214231a8/icons/ms-apm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Agent Package Manager?
 
@@ -16,6 +16,7 @@ Agent Package Manager
 ]]></description>
     <summary>Agent Package Manager</summary>
     <releaseNotes>https://github.com/microsoft/apm/releases/tag/v0.31.0</releaseNotes>
+    <copyright>Copyright Microsoft Corporation</copyright>
     <tags>ms-apm ai-agents claude-code codex-cli context-engineering github-copilot package-manager prompt-engineering</tags>
     <projectSourceUrl>https://github.com/microsoft/apm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/apm/issues</bugTrackerUrl>

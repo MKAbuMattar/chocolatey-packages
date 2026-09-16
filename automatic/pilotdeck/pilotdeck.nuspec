@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/OpenBMB/PilotDeck/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://pilotdeck.openbmb.cn</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pilotdeck.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@f97e023ab8dd96b1b4fa6c25e00f514bfa2937da/icons/pilotdeck.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is PilotDeck?
 
@@ -16,6 +16,7 @@ Task-oriented AI Agent productivity platform.
 ]]></description>
     <summary>Task-oriented AI Agent productivity platform</summary>
     <releaseNotes>https://github.com/OpenBMB/PilotDeck/releases/tag/v2026.09.14</releaseNotes>
+    <copyright>Copyright OpenBMB</copyright>
     <tags>pilotdeck ai agent productivity desktop</tags>
     <projectSourceUrl>https://github.com/OpenBMB/PilotDeck</projectSourceUrl>
     <bugTrackerUrl>https://github.com/OpenBMB/PilotDeck/issues</bugTrackerUrl>

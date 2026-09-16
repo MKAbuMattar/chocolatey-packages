@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/tinyhumansai/openhuman/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://tinyhumans.ai/openhuman</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openhuman.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@78cbd3708ca159ae71c47781d840fcbe51082cf7/icons/openhuman.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is OpenHuman?
 
@@ -16,6 +16,7 @@ OpenHuman is an open source agent harness with local-first memory, agent orchest
 ]]></description>
     <summary>OpenHuman is an open source agent harness with local-first memory, agent orchestration, and workflows.</summary>
     <releaseNotes>https://github.com/tinyhumansai/openhuman/releases/tag/v0.63.12</releaseNotes>
+    <copyright>Copyright tinyhumansai</copyright>
     <tags>openhuman ai-agents agent-orchestration llm local-first mcp personal-ai privacy desktop tauri rust</tags>
     <projectSourceUrl>https://github.com/tinyhumansai/openhuman</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tinyhumansai/openhuman/issues</bugTrackerUrl>

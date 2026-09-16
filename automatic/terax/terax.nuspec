@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/crynta/terax-ai/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://terax.app</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/terax.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/terax.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Terax?
 
@@ -16,6 +16,7 @@ Lightweight (7MB) Terminal-first AI-native dev workspace.
 ]]></description>
     <summary>Lightweight (7MB) Terminal-first AI-native dev workspace</summary>
     <releaseNotes>https://github.com/crynta/terax-ai/releases/tag/v0.8.6</releaseNotes>
+    <copyright>Copyright crynta</copyright>
     <tags>terax agents ai code-editor linux macos reactjs rust tauri</tags>
     <projectSourceUrl>https://github.com/crynta/terax-ai</projectSourceUrl>
     <bugTrackerUrl>https://github.com/crynta/terax-ai/issues</bugTrackerUrl>

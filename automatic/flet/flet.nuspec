@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/flet-dev/flet/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://flet.dev</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/flet.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@3b4828624c0a6928874ffe4fcaf4a157214231a8/icons/flet.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Flet?
 
@@ -16,6 +16,7 @@ Build realtime web, mobile and desktop apps in Python only. No frontend experien
 ]]></description>
     <summary>Build realtime web, mobile and desktop apps in Python only. No frontend experience required.</summary>
     <releaseNotes>https://github.com/flet-dev/flet/releases/tag/v1.0.0</releaseNotes>
+    <copyright>Copyright (C) 2023-2026 Appveyor Systems Inc.</copyright>
     <tags>flet android cross-platform desktop flutter ios python server-driven-ui web</tags>
     <projectSourceUrl>https://github.com/flet-dev/flet</projectSourceUrl>
     <bugTrackerUrl>https://github.com/flet-dev/flet/issues</bugTrackerUrl>

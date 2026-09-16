@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/microsoft/data-formulator/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://data-formulator.ai/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/data-formulator.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@74d7b28cd069761e1283d5c22a519789535733e7/icons/data-formulator.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Data Formulator?
 
@@ -16,6 +16,7 @@ Data Formulator is an interactive AI-powered data analysis system makes it easy 
 ]]></description>
     <summary>Data Formulator is an interactive AI-powered data analysis system makes it easy to connect, explore and visualize data</summary>
     <releaseNotes>https://github.com/microsoft/data-formulator/releases/tag/0.8b1</releaseNotes>
+    <copyright>Copyright Microsoft Corporation</copyright>
     <tags>data-formulator ai data visualization desktop</tags>
     <projectSourceUrl>https://github.com/microsoft/data-formulator</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/data-formulator/issues</bugTrackerUrl>

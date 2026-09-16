@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/QwenLM/qwen-code/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://qwenlm.github.io/qwen-code-docs/en/users/overview</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/qwen-code.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/qwen-code.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Qwen Code?
 
@@ -20,6 +20,7 @@ The package installs the `qwen` command. Open a new terminal after installing so
 ]]></description>
     <summary>An open-source AI coding agent that lives in your terminal</summary>
     <releaseNotes>https://github.com/QwenLM/qwen-code/releases/tag/v0.24.0</releaseNotes>
+    <copyright>Copyright QwenLM</copyright>
     <tags>qwen-code ai coding-agent cli qwen</tags>
     <projectSourceUrl>https://github.com/QwenLM/qwen-code</projectSourceUrl>
     <bugTrackerUrl>https://github.com/QwenLM/qwen-code/issues</bugTrackerUrl>

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/schollz/e2ecp/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://e2ecp.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/e2ecp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5dcabcdb21b6a5c9f706bf1fe462aa5d866f5021/icons/e2ecp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is e2ecp?
 
@@ -16,6 +16,7 @@ End-to-end encrypted copy file tool.
 ]]></description>
     <summary>End-to-end encrypted copy file tool</summary>
     <releaseNotes>https://github.com/schollz/e2ecp/releases/tag/v3.2.0</releaseNotes>
+    <copyright>Copyright 2025 Zack</copyright>
     <tags>e2ecp file-transfer encryption cli</tags>
     <projectSourceUrl>https://github.com/schollz/e2ecp</projectSourceUrl>
     <bugTrackerUrl>https://github.com/schollz/e2ecp/issues</bugTrackerUrl>

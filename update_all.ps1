@@ -39,6 +39,11 @@ $global:au_Root = Join-Path $PSScriptRoot 'automatic'
 # package README. Sync before AU packs anything, or the two drift apart silently.
 & "$PSScriptRoot\sync_readme.ps1" -Name $Name
 
+# A Chocolatey reviewer asked for the icon URL to reference a commit rather than @main,
+# so the image cannot change under an approved version. Pin before packing, so a package
+# added since the last run is pinned too rather than relying on anyone remembering.
+& "$PSScriptRoot\pin_icons.ps1" -Name $Name
+
 # The first time AU calculates a checksum it copies Chocolatey's helpers into TEMP and
 # monkey patches them. Nothing locks that copy, so on a cold cache several threads build
 # it at once and trip over each other with "Container cannot be copied onto existing leaf

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/genspark-ai/genoffice/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://genoffice.ai/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/genoffice.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@74d7b28cd069761e1283d5c22a519789535733e7/icons/genoffice.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is GenOffice?
 
@@ -18,6 +18,7 @@ Upstream describes it with these topics: agent, agentic, ai, ai-agent, ai-agents
 ]]></description>
     <summary>Free, open-source alternative to Microsoft Office with built-in AI agents , Word (.docx), Excel (.xlsx), PowerPoint (.pptx), PDF and Markdown editing for macOS, Windows &amp; Linux</summary>
     <releaseNotes>https://github.com/genspark-ai/genoffice/releases/tag/v0.10.488</releaseNotes>
+    <copyright>Copyright genspark-ai</copyright>
     <tags>genoffice agent agentic ai ai-agent ai-agents ai-office docx excel office word documents</tags>
     <projectSourceUrl>https://github.com/genspark-ai/genoffice</projectSourceUrl>
     <bugTrackerUrl>https://github.com/genspark-ai/genoffice/issues</bugTrackerUrl>

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/Zackriya-Solutions/meetily/blob/main/LICENSE.md</licenseUrl>
     <projectUrl>https://meetily.ai</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/meetily.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/meetily.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Meetily?
 
@@ -16,6 +16,7 @@ Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcr
 ]]></description>
     <summary>Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS &amp; Windows. Understand How to write meeting minutes</summary>
     <releaseNotes>https://github.com/Zackriya-Solutions/meetily/releases/tag/v0.4.1</releaseNotes>
+    <copyright>Copyright 2024 Zackriya Solutions</copyright>
     <tags>meetily ai llm local-ai mac meeting-minutes meeting-notes offline-first ollama</tags>
     <projectSourceUrl>https://github.com/Zackriya-Solutions/meetily</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Zackriya-Solutions/meetily/issues</bugTrackerUrl>

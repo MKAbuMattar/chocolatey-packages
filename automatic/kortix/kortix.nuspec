@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/kortix-ai/suna/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://www.kortix.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/kortix.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/kortix.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Kortix?
 
@@ -16,6 +16,7 @@ The Company AI Command Center.
 ]]></description>
     <summary>The Company AI Command Center</summary>
     <releaseNotes>https://github.com/kortix-ai/suna/releases/tag/v0.13.19</releaseNotes>
+    <copyright>Copyright kortix-ai</copyright>
     <tags>kortix ai ai-agents llm</tags>
     <projectSourceUrl>https://github.com/kortix-ai/suna</projectSourceUrl>
     <bugTrackerUrl>https://github.com/kortix-ai/suna/issues</bugTrackerUrl>

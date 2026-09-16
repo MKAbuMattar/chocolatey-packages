@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/eneskirca/nodeterm/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://nodeterm.dev</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/nodeterm.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@8aff6d7924fd2284e4035b1ed99f31410602cd8b/icons/nodeterm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is NodeTerm?
 
@@ -21,6 +21,7 @@ package installs the Windows desktop application.
 ]]></description>
     <summary>NodeTerm is a terminal manager that lays tmux-backed terminals out as draggable nodes on an infinite canvas, for running coding agents in parallel.</summary>
     <releaseNotes>https://github.com/eneskirca/nodeterm/releases/tag/v0.3.5</releaseNotes>
+    <copyright>Copyright eneskirca</copyright>
     <tags>nodeterm terminal tmux terminal-manager ai-agents developer-tools</tags>
     <projectSourceUrl>https://github.com/eneskirca/nodeterm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/eneskirca/nodeterm/issues</bugTrackerUrl>

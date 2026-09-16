@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/siderolabs/omni/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/siderolabs/omni</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/omnictl.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@f97e023ab8dd96b1b4fa6c25e00f514bfa2937da/icons/omnictl.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is omnictl?
 
@@ -20,6 +20,7 @@ The package installs the `omnictl` command. Open a new terminal after installing
 ]]></description>
     <summary>SaaS-simple deployment of Kubernetes - on your own hardware</summary>
     <releaseNotes>https://github.com/siderolabs/omni/releases/tag/v1.12.1</releaseNotes>
+    <copyright>Copyright siderolabs</copyright>
     <tags>omnictl kubernetes talos cli sidero</tags>
     <projectSourceUrl>https://github.com/siderolabs/omni</projectSourceUrl>
     <bugTrackerUrl>https://github.com/siderolabs/omni/issues</bugTrackerUrl>

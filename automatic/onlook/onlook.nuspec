@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/onlook-dev/onlook/blob/main/LICENSE.md</licenseUrl>
     <projectUrl>https://onlook.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/onlook.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/onlook.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Onlook?
 
@@ -16,6 +16,7 @@ The Cursor for Designers • An Open-Source AI-First Design tool • Visually bu
 ]]></description>
     <summary>The Cursor for Designers • An Open-Source AI-First Design tool • Visually build, style, and edit your React App with AI</summary>
     <releaseNotes>https://github.com/onlook-dev/onlook/releases/tag/v0.2.32</releaseNotes>
+    <copyright>Copyright onlook-dev</copyright>
     <tags>onlook ai cursor cursor-ai design design-to-code drizzle editor figma</tags>
     <projectSourceUrl>https://github.com/onlook-dev/onlook</projectSourceUrl>
     <bugTrackerUrl>https://github.com/onlook-dev/onlook/issues</bugTrackerUrl>

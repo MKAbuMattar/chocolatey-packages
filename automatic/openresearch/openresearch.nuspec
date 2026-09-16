@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/alphaXiv/OpenResearch/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://openresearch.sh/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openresearch.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@7bbc8e873e771c2a4e6c4e1f13d42631bdbdc8f4/icons/openresearch.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is OpenResearch?
 
@@ -20,6 +20,7 @@ The package installs the `orx` command. Open a new terminal after installing so 
 ]]></description>
     <summary>OpenResearch, from alphaXiv, turns coding agents into research agents.</summary>
     <releaseNotes>https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.1</releaseNotes>
+    <copyright>Copyright 2026 alphaXiv</copyright>
     <tags>openresearch research arxiv papers ai-agent cli</tags>
     <projectSourceUrl>https://github.com/alphaXiv/OpenResearch</projectSourceUrl>
     <bugTrackerUrl>https://github.com/alphaXiv/OpenResearch/issues</bugTrackerUrl>

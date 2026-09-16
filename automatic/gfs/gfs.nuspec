@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/Guepard-Corp/gfs/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://gfs.guepard.run</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/gfs.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@1a3e368e5a3bcabf82d63786534c76524e9e9193/icons/gfs.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is GFS?
 
@@ -16,6 +16,7 @@ Git For database Systems.
 ]]></description>
     <summary>Git For database Systems</summary>
     <releaseNotes>https://github.com/Guepard-Corp/gfs/releases/tag/v0.4.0</releaseNotes>
+    <copyright>Copyright 2026 Guepard, Inc</copyright>
     <tags>gfs agentic-ai agents clickhouse database mcp mysql postgresql version-control git versioning cli</tags>
     <projectSourceUrl>https://github.com/Guepard-Corp/gfs</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Guepard-Corp/gfs/issues</bugTrackerUrl>

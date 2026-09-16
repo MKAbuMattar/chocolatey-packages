@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/controlplaneio-fluxcd/flux-operator/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://fluxoperator.dev</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/flux-operator.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@f97e023ab8dd96b1b4fa6c25e00f514bfa2937da/icons/flux-operator.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Flux Operator?
 
@@ -16,6 +16,7 @@ GitOps on Autopilot Mode.
 ]]></description>
     <summary>GitOps on Autopilot Mode</summary>
     <releaseNotes>https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.60.0</releaseNotes>
+    <copyright>Copyright controlplaneio-fluxcd</copyright>
     <tags>flux-operator continuous-delivery flux-ui fluxcd gitops mcp-server kubernetes flux cli</tags>
     <projectSourceUrl>https://github.com/controlplaneio-fluxcd/flux-operator</projectSourceUrl>
     <bugTrackerUrl>https://github.com/controlplaneio-fluxcd/flux-operator/issues</bugTrackerUrl>

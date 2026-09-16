@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/musistudio/claude-code-router/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://ccrdesk.top/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/claude-code-router.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@74d7b28cd069761e1283d5c22a519789535733e7/icons/claude-code-router.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Claude Code Router?
 
@@ -16,6 +16,7 @@ One local control plane for every AI agent: route across models, fuse new capabi
 ]]></description>
     <summary>One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control</summary>
     <releaseNotes>https://github.com/musistudio/claude-code-router/releases/tag/v3.1.1</releaseNotes>
+    <copyright>Copyright 2025 musistudio</copyright>
     <tags>claude-code-router ai routing llm proxy cli</tags>
     <projectSourceUrl>https://github.com/musistudio/claude-code-router</projectSourceUrl>
     <bugTrackerUrl>https://github.com/musistudio/claude-code-router/issues</bugTrackerUrl>

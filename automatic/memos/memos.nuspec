@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/usememos/memos/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://usememos.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/memos.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@1a3e368e5a3bcabf82d63786534c76524e9e9193/icons/memos.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Memos?
 
@@ -16,6 +16,7 @@ Open-source, self-hosted note-taking tool built for quick capture. Markdown-nati
 ]]></description>
     <summary>Open-source, self-hosted note-taking tool built for quick capture. Markdown-native, lightweight, and fully yours</summary>
     <releaseNotes>https://github.com/usememos/memos/releases/tag/v0.30.0</releaseNotes>
+    <copyright>Copyright 2025 Memos</copyright>
     <tags>memos docker foss go markdown memo microblog note-taking notecard notes self-hosted server</tags>
     <projectSourceUrl>https://github.com/usememos/memos</projectSourceUrl>
     <bugTrackerUrl>https://github.com/usememos/memos/issues</bugTrackerUrl>

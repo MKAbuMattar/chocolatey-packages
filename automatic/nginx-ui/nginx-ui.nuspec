@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/0xJacky/nginx-ui/blob/dev/LICENSE</licenseUrl>
     <projectUrl>https://nginxui.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/nginx-ui.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@1a3e368e5a3bcabf82d63786534c76524e9e9193/icons/nginx-ui.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Nginx UI?
 
@@ -16,6 +16,7 @@ Yet another WebUI for Nginx.
 ]]></description>
     <summary>Yet another WebUI for Nginx</summary>
     <releaseNotes>https://github.com/0xJacky/nginx-ui/releases/tag/v2.6.1</releaseNotes>
+    <copyright>Copyright 0xJacky</copyright>
     <tags>nginx-ui code-completion copilot cron docker go letsencrypt linux macos nginx web-ui self-hosted</tags>
     <projectSourceUrl>https://github.com/0xJacky/nginx-ui</projectSourceUrl>
     <bugTrackerUrl>https://github.com/0xJacky/nginx-ui/issues</bugTrackerUrl>

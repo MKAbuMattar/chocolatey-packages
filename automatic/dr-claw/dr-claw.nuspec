@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/OpenLAIR/dr-claw/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://openlair.github.io/dr-claw/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/dr-claw.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@7bbc8e873e771c2a4e6c4e1f13d42631bdbdc8f4/icons/dr-claw.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Dr.Claw?
 
@@ -16,6 +16,7 @@ Dr.Claw, from OpenLAIR, is an open source AI science lab: a desktop application 
 ]]></description>
     <summary>Dr.Claw, from OpenLAIR, is an open source AI science lab: AI researcher agents that plan experiments, run code and write up results.</summary>
     <releaseNotes>https://github.com/OpenLAIR/dr-claw/releases/tag/v1.1.4</releaseNotes>
+    <copyright>Copyright OpenLAIR</copyright>
     <tags>dr-claw ai-agent research science desktop electron</tags>
     <projectSourceUrl>https://github.com/OpenLAIR/dr-claw</projectSourceUrl>
     <bugTrackerUrl>https://github.com/OpenLAIR/dr-claw/issues</bugTrackerUrl>

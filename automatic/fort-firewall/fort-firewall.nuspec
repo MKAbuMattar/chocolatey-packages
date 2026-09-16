@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/tnodir/fort/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/tnodir/fort</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/fort-firewall.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@f97e023ab8dd96b1b4fa6c25e00f514bfa2937da/icons/fort-firewall.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Fort Firewall?
 
@@ -16,6 +16,7 @@ Fort Firewall for Windows.
 ]]></description>
     <summary>Fort Firewall for Windows</summary>
     <releaseNotes>https://github.com/tnodir/fort/releases/tag/v3.19.9</releaseNotes>
+    <copyright>Copyright tnodir</copyright>
     <tags>fort-firewall bandwidth-limiting firewall windows security network</tags>
     <projectSourceUrl>https://github.com/tnodir/fort</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tnodir/fort/issues</bugTrackerUrl>

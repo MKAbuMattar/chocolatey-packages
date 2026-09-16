@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/tiny-craft/tiny-rdm/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://tinyrdm.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/tiny-rdm.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/tiny-rdm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Tiny RDM?
 
@@ -16,6 +16,7 @@ Tiny RDM (Tiny Redis Desktop Manager) - A modern, colorful, super lightweight Re
 ]]></description>
     <summary>Tiny RDM (Tiny Redis Desktop Manager) - A modern, colorful, super lightweight Redis GUI client for Mac, Windows, and Linux. It also provides a web version that can be deployed via Docker</summary>
     <releaseNotes>https://github.com/tiny-craft/tiny-rdm/releases/tag/v1.2.7</releaseNotes>
+    <copyright>Copyright tiny-craft</copyright>
     <tags>tiny-rdm go golang icon-pack naive-ui redis redis-client redis-desktop redis-gui</tags>
     <projectSourceUrl>https://github.com/tiny-craft/tiny-rdm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tiny-craft/tiny-rdm/issues</bugTrackerUrl>

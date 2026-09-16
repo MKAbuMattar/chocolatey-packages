@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/openfootmanager/openfootmanager/blob/develop/LICENSE.md</licenseUrl>
     <projectUrl>https://openfootmanager.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/openfootmanager.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@3b4828624c0a6928874ffe4fcaf4a157214231a8/icons/openfootmanager.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is OpenFoot Manager?
 
@@ -16,6 +16,7 @@ An open source soccer/football manager game
 ]]></description>
     <summary>An open source soccer/football manager game</summary>
     <releaseNotes>https://github.com/openfootmanager/openfootmanager/releases/tag/v0.2.0</releaseNotes>
+    <copyright>Copyright openfootmanager</copyright>
     <tags>openfootmanager engine football football-manager footballmanager game games javascript manager</tags>
     <projectSourceUrl>https://github.com/openfootmanager/openfootmanager</projectSourceUrl>
     <bugTrackerUrl>https://github.com/openfootmanager/openfootmanager/issues</bugTrackerUrl>

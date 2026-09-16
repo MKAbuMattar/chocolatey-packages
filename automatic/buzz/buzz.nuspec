@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/block/buzz/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/block/buzz</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/buzz.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@f97e023ab8dd96b1b4fa6c25e00f514bfa2937da/icons/buzz.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Buzz?
 
@@ -29,6 +29,7 @@ one upstream published and says nothing about who wrote it.
 ]]></description>
     <summary>A hive mind communication platform</summary>
     <releaseNotes>https://github.com/block/buzz/releases/tag/desktop-v0.5.23</releaseNotes>
+    <copyright>Copyright block</copyright>
     <tags>buzz chat communication desktop</tags>
     <projectSourceUrl>https://github.com/block/buzz</projectSourceUrl>
     <bugTrackerUrl>https://github.com/block/buzz/issues</bugTrackerUrl>

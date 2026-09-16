@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/tonhowtf/omniget/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://tonho.wtf</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/omniget.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@e4f663cfefe907dab1d8f61e85e05de17cc4ea94/icons/omniget.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is omniget?
 
@@ -21,6 +21,7 @@ installs the desktop application.
 ]]></description>
     <summary>omniget is a desktop downloader for course platforms, video, music and books, covering more than 1,800 sites.</summary>
     <releaseNotes>https://github.com/tonhowtf/omniget/releases/tag/v0.9.1</releaseNotes>
+    <copyright>Copyright tonhowtf</copyright>
     <tags>omniget downloader download-manager media-downloader video youtube courses</tags>
     <projectSourceUrl>https://github.com/tonhowtf/omniget</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tonhowtf/omniget/issues</bugTrackerUrl>

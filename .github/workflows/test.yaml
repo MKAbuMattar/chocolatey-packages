@@ -46,6 +46,10 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          # pin_icons.ps1 resolves each icon's last commit from git history, which the
+          # default single-commit checkout does not have.
+          fetch-depth: 0
 
       - name: Install Chocolatey AU
         run: choco install chocolatey-au --yes --no-progress
@@ -55,6 +59,11 @@ jobs:
       - name: Check nuspec descriptions match their README
         shell: powershell
         run: .\sync_readme.ps1 -Check
+
+      # An icon on @main can change under a version a moderator already approved.
+      - name: Check icon URLs are pinned to a commit
+        shell: powershell
+        run: .\pin_icons.ps1 -Check
 
       # Force runs every updater and packs every package without pushing anything,
       # so a broken update.ps1, a dead download URL or an invalid nuspec fails here.

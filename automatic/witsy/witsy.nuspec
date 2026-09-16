@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/Kochava-Studios/witsy/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://witsyai.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/witsy.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@17d06fde0c8d625b928b0370697e1611f4f4b472/icons/witsy.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Witsy?
 
@@ -99,6 +99,7 @@ There is a demo of Computer Use support on
 ]]></description>
     <summary>Witsy is a bring-your-own-keys AI application. It talks to hosted LLM providers, or to models you run locally with Ollama.</summary>
     <releaseNotes>https://github.com/Kochava-Studios/witsy/releases/tag/v3.5.2</releaseNotes>
+    <copyright>Copyright Nicolas Bonamy</copyright>
     <tags>witsy ai byok llm ollama</tags>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/witsy</packageSourceUrl>
     <docsUrl>https://github.com/Kochava-Studios/witsy/blob/main/README.md</docsUrl>

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/frectonz/sql-studio/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://sql-studio-docs.frectonz.et</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/sql-studio.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@3b4828624c0a6928874ffe4fcaf4a157214231a8/icons/sql-studio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is SQL Studio?
 
@@ -16,6 +16,7 @@ SQL Database Explorer [SQLite, libSQL, PostgreSQL, MySQL/MariaDB, ClickHouse, Du
 ]]></description>
     <summary>SQL Database Explorer [SQLite, libSQL, PostgreSQL, MySQL/MariaDB, ClickHouse, DuckDB, Microsoft SQL Server]</summary>
     <releaseNotes>https://github.com/frectonz/sql-studio/releases/tag/0.1.53</releaseNotes>
+    <copyright>Copyright 2024 frectonz</copyright>
     <tags>sql-studio duckdb libsql mariadb microsoft-sql-server mssql mysql postgresql rust</tags>
     <projectSourceUrl>https://github.com/frectonz/sql-studio</projectSourceUrl>
     <bugTrackerUrl>https://github.com/frectonz/sql-studio/issues</bugTrackerUrl>

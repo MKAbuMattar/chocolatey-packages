@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://lmstudio.ai/terms</licenseUrl>
     <projectUrl>https://lmstudio.ai/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/lmstudio.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@17d06fde0c8d625b928b0370697e1611f4f4b472/icons/lmstudio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is LM Studio?
 
@@ -50,6 +50,7 @@ current list.
 ]]></description>
     <summary>LM Studio is a desktop application for discovering, downloading and running large language models on your own machine, offline.</summary>
     <releaseNotes>https://lmstudio.ai/blog</releaseNotes>
+    <copyright>Copyright LM Studio</copyright>
     <tags>lm-studio ai llm ollama</tags>
     <bugTrackerUrl>https://github.com/lmstudio-ai/lmstudio-bug-tracker/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/lmstudio</packageSourceUrl>

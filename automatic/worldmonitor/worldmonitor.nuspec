@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/koala73/worldmonitor/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://worldmonitor.app</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/worldmonitor.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@100bad8acbc2fbc8fa12c5a19156b865ce40a79b/icons/worldmonitor.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is World Monitor?
 
@@ -16,6 +16,7 @@ Real-time global intelligence dashboard. AI-powered news aggregation, geopolitic
 ]]></description>
     <summary>Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface</summary>
     <releaseNotes>https://github.com/koala73/worldmonitor/releases/tag/v2.10.0</releaseNotes>
+    <copyright>Copyright koala73</copyright>
     <tags>worldmonitor agent ai dashboard geopolitics mcp mcp-server monitoring news</tags>
     <projectSourceUrl>https://github.com/koala73/worldmonitor</projectSourceUrl>
     <bugTrackerUrl>https://github.com/koala73/worldmonitor/issues</bugTrackerUrl>

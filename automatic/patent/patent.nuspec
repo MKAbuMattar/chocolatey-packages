@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/r14dd/patent/blob/main/LICENSE-APACHE</licenseUrl>
     <projectUrl>https://crates.io/crates/patent</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/patent.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@e4f663cfefe907dab1d8f61e85e05de17cc4ea94/icons/patent.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is patent?
 
@@ -21,6 +21,7 @@ hosted model.
 ]]></description>
     <summary>patent is a prior-art search for developer tool ideas, checking whether something you plan to build already exists.</summary>
     <releaseNotes>https://github.com/r14dd/patent/releases/tag/v0.14.0</releaseNotes>
+    <copyright>Copyright r14dd</copyright>
     <tags>patent cli developer-tools search embeddings rust</tags>
     <projectSourceUrl>https://github.com/r14dd/patent</projectSourceUrl>
     <bugTrackerUrl>https://github.com/r14dd/patent/issues</bugTrackerUrl>

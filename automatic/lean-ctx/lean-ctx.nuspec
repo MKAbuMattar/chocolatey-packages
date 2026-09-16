@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/yvgude/lean-ctx/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://leanctx.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/lean-ctx.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@7bbc8e873e771c2a4e6c4e1f13d42631bdbdc8f4/icons/lean-ctx.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is LeanCTX?
 
@@ -20,6 +20,7 @@ The package installs the `lean-ctx` command. Open a new terminal after installin
 ]]></description>
     <summary>LeanCTX is context intelligence for AI systems: it compresses and curates what an AI coding agent sees.</summary>
     <releaseNotes>https://github.com/yvgude/lean-ctx/releases/tag/v3.10.1</releaseNotes>
+    <copyright>Copyright yvgude</copyright>
     <tags>lean-ctx context ai coding-agent cli compression</tags>
     <projectSourceUrl>https://github.com/yvgude/lean-ctx</projectSourceUrl>
     <bugTrackerUrl>https://github.com/yvgude/lean-ctx/issues</bugTrackerUrl>

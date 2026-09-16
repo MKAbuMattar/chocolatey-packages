@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/github/github-mcp-server/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/github/github-mcp-server</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/github-mcp-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5dcabcdb21b6a5c9f706bf1fe462aa5d866f5021/icons/github-mcp-server.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is GitHub MCP Server?
 
@@ -16,6 +16,7 @@ GitHub's official MCP Server.
 ]]></description>
     <summary>GitHub's official MCP Server</summary>
     <releaseNotes>https://github.com/github/github-mcp-server/releases/tag/v1.12.2</releaseNotes>
+    <copyright>Copyright 2025 GitHub</copyright>
     <tags>github-mcp-server github mcp mcp-server ai cli</tags>
     <projectSourceUrl>https://github.com/github/github-mcp-server</projectSourceUrl>
     <bugTrackerUrl>https://github.com/github/github-mcp-server/issues</bugTrackerUrl>

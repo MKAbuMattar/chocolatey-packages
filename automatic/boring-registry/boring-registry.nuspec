@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/boring-registry/boring-registry/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://boring-registry.github.io/boring-registry/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/boring-registry.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@1a3e368e5a3bcabf82d63786534c76524e9e9193/icons/boring-registry.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Boring Registry?
 
@@ -16,6 +16,7 @@ A Simple Terraform Provider and Module Registry.
 ]]></description>
     <summary>A Simple Terraform Provider and Module Registry</summary>
     <releaseNotes>https://github.com/boring-registry/boring-registry/releases/tag/v0.19.0</releaseNotes>
+    <copyright>Copyright 2023-2024 The boring-registry Authors</copyright>
     <tags>boring-registry aws azure gcs minio registry s3 terraform modules providers server</tags>
     <projectSourceUrl>https://github.com/boring-registry/boring-registry</projectSourceUrl>
     <bugTrackerUrl>https://github.com/boring-registry/boring-registry/issues</bugTrackerUrl>

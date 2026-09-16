@@ -1,8 +1,11 @@
 BeforeAll {
   $updateScript = Join-Path $TestDrive 'update_all.ps1'
   $syncScript = Join-Path $TestDrive 'sync_readme.ps1'
+  $pinScript = Join-Path $TestDrive 'pin_icons.ps1'
   Copy-Item (Join-Path $PSScriptRoot '..' 'update_all.ps1') $updateScript
   Copy-Item (Join-Path $PSScriptRoot '..' 'sync_readme.ps1') $syncScript
+  # update_all.ps1 calls this before AU, so the fixture needs it or the script aborts.
+  Copy-Item (Join-Path $PSScriptRoot '..' 'pin_icons.ps1') $pinScript
   $script:OriginalAuPush = [Environment]::GetEnvironmentVariable(
     'au_Push',
     'Process'

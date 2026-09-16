@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/JustVugg/colibri/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://justvugg.github.io/colibri</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/colibri.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5dcabcdb21b6a5c9f706bf1fe462aa5d866f5021/icons/colibri.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Colibri?
 
@@ -16,6 +16,7 @@ Run frontier MoE models on hardware you already own , pure C, zero deps, experts
 ]]></description>
     <summary>Run frontier MoE models on hardware you already own , pure C, zero deps, experts streamed from disk. Tiny engine, immense model</summary>
     <releaseNotes>https://github.com/JustVugg/colibri/releases/tag/v1.11.0</releaseNotes>
+    <copyright>Copyright JustVugg</copyright>
     <tags>colibri llm inference moe cli</tags>
     <projectSourceUrl>https://github.com/JustVugg/colibri</projectSourceUrl>
     <bugTrackerUrl>https://github.com/JustVugg/colibri/issues</bugTrackerUrl>

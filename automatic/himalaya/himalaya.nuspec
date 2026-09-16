@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/pimalaya/himalaya/blob/master/LICENSE-APACHE</licenseUrl>
     <projectUrl>https://pimalaya.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/himalaya.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@0faecb4c371a5df080a9e8f04687586c503b31cb/icons/himalaya.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Himalaya?
 
@@ -16,6 +16,7 @@ CLI to manage emails.
 ]]></description>
     <summary>CLI to manage emails</summary>
     <releaseNotes>https://github.com/pimalaya/himalaya/releases/tag/v2.1.0</releaseNotes>
+    <copyright>Copyright pimalaya</copyright>
     <tags>himalaya cli client email gpg imap notmuch pgp smtp</tags>
     <projectSourceUrl>https://github.com/pimalaya/himalaya</projectSourceUrl>
     <bugTrackerUrl>https://github.com/pimalaya/himalaya/issues</bugTrackerUrl>

@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/Kodiqa-Solutions/VaultS3/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://www.vaults3.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/vaults3.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@74d7b28cd069761e1283d5c22a519789535733e7/icons/vaults3.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is VaultS3?
 
@@ -16,6 +16,7 @@ Lightweight, S3-compatible object storage server with built-in web dashboard. Si
 ]]></description>
     <summary>Lightweight, S3-compatible object storage server with built-in web dashboard. Single binary, low memory, encryption at rest</summary>
     <releaseNotes>https://github.com/Kodiqa-Solutions/VaultS3/releases/tag/v4.4.75</releaseNotes>
+    <copyright>Copyright Kodiqa-Solutions</copyright>
     <tags>vaults3 s3 storage server self-hosted</tags>
     <projectSourceUrl>https://github.com/Kodiqa-Solutions/VaultS3</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Kodiqa-Solutions/VaultS3/issues</bugTrackerUrl>

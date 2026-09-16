@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/wassgha/rescript/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://getrescript.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/rescript-editor.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@0faecb4c371a5df080a9e8f04687586c503b31cb/icons/rescript-editor.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Rescript?
 
@@ -16,6 +16,7 @@ Open source, transcript-based video/audio editor that lives in the browser.
 ]]></description>
     <summary>Open source, transcript-based video/audio editor that lives in the browser</summary>
     <releaseNotes>https://github.com/wassgha/rescript/releases/tag/v1.1.13</releaseNotes>
+    <copyright>Copyright wassgha</copyright>
     <tags>rescript-editor audio media media-editing media-editor transcribe transcription video video-editing editor transcript desktop</tags>
     <projectSourceUrl>https://github.com/wassgha/rescript</projectSourceUrl>
     <bugTrackerUrl>https://github.com/wassgha/rescript/issues</bugTrackerUrl>
