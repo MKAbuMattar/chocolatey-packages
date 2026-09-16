@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>claude-code-router</id>
-    <version>3.1.0</version>
+    <version>3.1.1</version>
     <title>Claude Code Router</title>
     <authors>musistudio</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control.
 ]]></description>
     <summary>One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control</summary>
-    <releaseNotes>https://github.com/musistudio/claude-code-router/releases/tag/v3.1.0</releaseNotes>
+    <releaseNotes>https://github.com/musistudio/claude-code-router/releases/tag/v3.1.1</releaseNotes>
     <tags>claude-code-router ai routing llm proxy cli</tags>
     <projectSourceUrl>https://github.com/musistudio/claude-code-router</projectSourceUrl>
     <bugTrackerUrl>https://github.com/musistudio/claude-code-router/issues</bugTrackerUrl>
