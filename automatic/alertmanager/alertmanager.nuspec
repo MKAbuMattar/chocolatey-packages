@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>alertmanager</id>
-    <version>0.34.0</version>
+    <version>0.34.1</version>
     <title>Prometheus Alertmanager</title>
     <authors>prometheus</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Prometheus Alertmanager.
 ]]></description>
     <summary>Prometheus Alertmanager</summary>
-    <releaseNotes>https://github.com/prometheus/alertmanager/releases/tag/v0.34.0</releaseNotes>
+    <releaseNotes>https://github.com/prometheus/alertmanager/releases/tag/v0.34.1</releaseNotes>
     <copyright>Copyright prometheus</copyright>
     <tags>alertmanager deduplication email hacktoberfest monitoring notifications opsgenie pagerduty prometheus alerting server</tags>
     <projectSourceUrl>https://github.com/prometheus/alertmanager</projectSourceUrl>
