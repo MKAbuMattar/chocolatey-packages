@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>game-cheats-manager</id>
-    <version>2.5.0</version>
+    <version>2.5.1</version>
     <title>Game Cheats Manager</title>
     <authors>dyang886</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Easily download and manage single-player game cheats for your convenience.
 ]]></description>
     <summary>Easily download and manage single-player game cheats for your convenience</summary>
-    <releaseNotes>https://github.com/dyang886/Game-Cheats-Manager/releases/tag/v2.5.0</releaseNotes>
+    <releaseNotes>https://github.com/dyang886/Game-Cheats-Manager/releases/tag/v2.5.1</releaseNotes>
     <copyright>Copyright dyang886</copyright>
     <tags>game-cheats-manager games cheats trainer desktop</tags>
     <projectSourceUrl>https://github.com/dyang886/Game-Cheats-Manager</projectSourceUrl>
