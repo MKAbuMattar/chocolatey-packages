@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>memos</id>
-    <version>0.30.0</version>
+    <version>0.31.0</version>
     <title>Memos</title>
     <authors>usememos</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Open-source, self-hosted note-taking tool built for quick capture. Markdown-native, lightweight, and fully yours.
 ]]></description>
     <summary>Open-source, self-hosted note-taking tool built for quick capture. Markdown-native, lightweight, and fully yours</summary>
-    <releaseNotes>https://github.com/usememos/memos/releases/tag/v0.30.0</releaseNotes>
+    <releaseNotes>https://github.com/usememos/memos/releases/tag/v0.31.0</releaseNotes>
     <copyright>Copyright 2025 Memos</copyright>
     <tags>memos docker foss go markdown memo microblog note-taking notecard notes self-hosted server</tags>
     <projectSourceUrl>https://github.com/usememos/memos</projectSourceUrl>
