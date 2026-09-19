@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>concat</id>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
     <title>Concat</title>
     <authors>jub0t</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -17,7 +17,7 @@ Free & Open-Source CapCut replacement.
 Upstream describes it with these topics: audio-processor, auto-caption, automation, capcut, capcut-alternative, content-creation, cross-platform, desktop-app.
 ]]></description>
     <summary>Free &amp; Open-Source CapCut replacement</summary>
-    <releaseNotes>https://github.com/jub0t/Concat/releases/tag/v0.2.2</releaseNotes>
+    <releaseNotes>https://github.com/jub0t/Concat/releases/tag/v0.2.3</releaseNotes>
     <copyright>Copyright jub0t</copyright>
     <tags>concat audio-processor auto-caption automation capcut capcut-alternative content-creation cross-platform desktop-app video editor desktop</tags>
     <projectSourceUrl>https://github.com/jub0t/Concat</projectSourceUrl>
