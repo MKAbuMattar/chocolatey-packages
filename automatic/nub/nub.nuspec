@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>nub</id>
-    <version>0.9.2</version>
+    <version>0.9.3</version>
     <title>nub</title>
     <authors>nubjs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 The fast all-in-one Node.js toolkit.
 ]]></description>
     <summary>The fast all-in-one Node.js toolkit</summary>
-    <releaseNotes>https://github.com/nubjs/nub/releases/tag/v0.9.2</releaseNotes>
+    <releaseNotes>https://github.com/nubjs/nub/releases/tag/v0.9.3</releaseNotes>
     <copyright>Copyright 2026 nub contributors</copyright>
     <tags>nub javascript-runtime nodejs package-manager script-runner toolkit javascript cli</tags>
     <projectSourceUrl>https://github.com/nubjs/nub</projectSourceUrl>
