@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/dont-be-evil-company/p2p.kiwi/releases/download/v2.0.2/p2p-kiwi-setup_x64.exe'
-  checksum64     = '7ea92d30a8401441e486a4295e8d15e5ef8769ddd078dcb0e8978ea1905f970a'
+  url64          = 'https://github.com/dont-be-evil-company/p2p.kiwi/releases/download/v3.0.1/p2p-kiwi-setup_x64.exe'
+  checksum64     = '8067e6a5cd482abc822e8b221673f57e5126328213e05b7d9250a94302d993cc'
   checksumType64 = 'sha256'
   softwareName   = 'Bananas*'
   silentArgs     = '/S'
