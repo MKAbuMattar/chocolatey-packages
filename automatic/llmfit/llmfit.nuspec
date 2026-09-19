@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>llmfit</id>
-    <version>1.1.15</version>
+    <version>1.1.16</version>
     <title>llmfit</title>
     <authors>AlexsJones</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Hundreds of models & providers. One command to find what runs on your hardware.
 ]]></description>
     <summary>Hundreds of models &amp; providers. One command to find what runs on your hardware</summary>
-    <releaseNotes>https://github.com/AlexsJones/llmfit/releases/tag/v1.1.15</releaseNotes>
+    <releaseNotes>https://github.com/AlexsJones/llmfit/releases/tag/v1.1.16</releaseNotes>
     <copyright>Copyright 2026 Alex Jones</copyright>
     <tags>llmfit gguf llm localai mlx skill unsloth hardware benchmark cli</tags>
     <projectSourceUrl>https://github.com/AlexsJones/llmfit</projectSourceUrl>

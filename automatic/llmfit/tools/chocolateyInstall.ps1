@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/AlexsJones/llmfit/releases/download/v1.1.15/llmfit-v1.1.15-x86_64-pc-windows-msvc.zip'
-  checksum64     = '6a18f8b4f8aca361fd5a979818d6122ad5cc305a1d4d02f9073db982b5911b46'
+  url64          = 'https://github.com/AlexsJones/llmfit/releases/download/v1.1.16/llmfit-v1.1.16-x86_64-pc-windows-msvc.zip'
+  checksum64     = 'bd95bc78e65a15f4d7b62431c082e0d55c9505739f63f6fdf6f9d69605c270ba'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
