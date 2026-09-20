@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>nginx-ui</id>
-    <version>2.6.2</version>
+    <version>2.6.3</version>
     <title>Nginx UI</title>
     <authors>0xJacky</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Yet another WebUI for Nginx.
 ]]></description>
     <summary>Yet another WebUI for Nginx</summary>
-    <releaseNotes>https://github.com/0xJacky/nginx-ui/releases/tag/v2.6.2</releaseNotes>
+    <releaseNotes>https://github.com/0xJacky/nginx-ui/releases/tag/v2.6.3</releaseNotes>
     <copyright>Copyright 0xJacky</copyright>
     <tags>nginx-ui code-completion copilot cron docker go letsencrypt linux macos nginx web-ui self-hosted</tags>
     <projectSourceUrl>https://github.com/0xJacky/nginx-ui</projectSourceUrl>
