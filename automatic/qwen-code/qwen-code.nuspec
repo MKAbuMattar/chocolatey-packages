@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>qwen-code</id>
-    <version>0.24.1</version>
+    <version>0.24.2</version>
     <title>Qwen Code</title>
     <authors>QwenLM</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ An open-source AI coding agent that lives in your terminal.
 The package installs the `qwen` command. Open a new terminal after installing so the PATH change takes effect, then see the [Qwen Code documentation](https://qwenlm.github.io/qwen-code-docs/en/users/overview) for the available options.
 ]]></description>
     <summary>An open-source AI coding agent that lives in your terminal</summary>
-    <releaseNotes>https://github.com/QwenLM/qwen-code/releases/tag/v0.24.1</releaseNotes>
+    <releaseNotes>https://github.com/QwenLM/qwen-code/releases/tag/v0.24.2</releaseNotes>
     <copyright>Copyright QwenLM</copyright>
     <tags>qwen-code ai coding-agent cli qwen</tags>
     <projectSourceUrl>https://github.com/QwenLM/qwen-code</projectSourceUrl>
