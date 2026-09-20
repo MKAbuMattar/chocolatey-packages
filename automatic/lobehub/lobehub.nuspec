@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>lobehub</id>
-    <version>2.2.17</version>
+    <version>2.2.18</version>
     <title>LobeHub</title>
     <authors>lobehub</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.
 ]]></description>
     <summary>LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team</summary>
-    <releaseNotes>https://github.com/lobehub/lobehub/releases/tag/v2.2.17</releaseNotes>
+    <releaseNotes>https://github.com/lobehub/lobehub/releases/tag/v2.2.18</releaseNotes>
     <copyright>Copyright lobehub</copyright>
     <tags>lobehub agent agent-collaboration agent-harness ai cao chatgpt claude deepseek</tags>
     <projectSourceUrl>https://github.com/lobehub/lobehub</projectSourceUrl>
