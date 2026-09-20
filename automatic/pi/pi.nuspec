@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pi</id>
-    <version>0.86.0</version>
+    <version>0.86.1</version>
     <title>pi</title>
     <authors>earendil-works</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI.
 ]]></description>
     <summary>AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI</summary>
-    <releaseNotes>https://github.com/earendil-works/pi/releases/tag/v0.86.0</releaseNotes>
+    <releaseNotes>https://github.com/earendil-works/pi/releases/tag/v0.86.1</releaseNotes>
     <copyright>Copyright 2025 Mario Zechner</copyright>
     <tags>pi ai agent llm cli tui</tags>
     <projectSourceUrl>https://github.com/earendil-works/pi</projectSourceUrl>
