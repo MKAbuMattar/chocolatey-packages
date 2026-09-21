@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>opensre</id>
-    <version>2026.9.20</version>
+    <version>2026.9.21</version>
     <title>OpenSRE</title>
     <authors>Tracer-Cloud</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -17,7 +17,7 @@ Build your own AI SRE agents. The open source toolkit for the AI era.
 Upstream describes it with these topics: ai-sre, alerting, datadog, grafana, incident-management, observability, remediation, root-cause-analysis.
 ]]></description>
     <summary>Build your own AI SRE agents. The open source toolkit for the AI era</summary>
-    <releaseNotes>https://github.com/Tracer-Cloud/opensre/releases/tag/v0.1.2026.9.20</releaseNotes>
+    <releaseNotes>https://github.com/Tracer-Cloud/opensre/releases/tag/v0.1.2026.9.21</releaseNotes>
     <copyright>Copyright Tracer-Cloud</copyright>
     <tags>opensre ai-sre alerting datadog grafana incident-management observability remediation root-cause-analysis ai sre reliability</tags>
     <projectSourceUrl>https://github.com/Tracer-Cloud/opensre</projectSourceUrl>
