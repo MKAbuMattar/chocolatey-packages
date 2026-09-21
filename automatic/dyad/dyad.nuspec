@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>dyad</id>
-    <version>1.15.0</version>
+    <version>1.16.0</version>
     <title>Dyad</title>
     <authors>dyad-sh</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Local, open-source AI app builder for power users v0 / Lovable / Replit / Bolt alternative Star if you like it!.
 ]]></description>
     <summary>Local, open-source AI app builder for power users v0 / Lovable / Replit / Bolt alternative Star if you like it!</summary>
-    <releaseNotes>https://github.com/dyad-sh/dyad/releases/tag/v1.15.0</releaseNotes>
+    <releaseNotes>https://github.com/dyad-sh/dyad/releases/tag/v1.16.0</releaseNotes>
     <copyright>Copyright dyad-sh</copyright>
     <tags>dyad ai-app-builder anthropic bolt deepseek gemini generative-ai github llm</tags>
     <projectSourceUrl>https://github.com/dyad-sh/dyad</projectSourceUrl>
