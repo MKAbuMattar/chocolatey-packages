@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>colibri</id>
-    <version>1.11.0</version>
+    <version>1.12.0</version>
     <title>Colibri</title>
     <authors>JustVugg</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Run frontier MoE models on hardware you already own , pure C, zero deps, experts streamed from disk. Tiny engine, immense model.
 ]]></description>
     <summary>Run frontier MoE models on hardware you already own , pure C, zero deps, experts streamed from disk. Tiny engine, immense model</summary>
-    <releaseNotes>https://github.com/JustVugg/colibri/releases/tag/v1.11.0</releaseNotes>
+    <releaseNotes>https://github.com/JustVugg/colibri/releases/tag/v1.12.0</releaseNotes>
     <copyright>Copyright JustVugg</copyright>
     <tags>colibri llm inference moe cli</tags>
     <projectSourceUrl>https://github.com/JustVugg/colibri</projectSourceUrl>

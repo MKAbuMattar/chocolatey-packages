@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/JustVugg/colibri/releases/download/v1.11.0/colibri-v1.11.0-windows-x86_64.zip'
-  checksum64     = 'c4bcfe75c4b1afbe325d16586f13651a0625027419767acca86066192961562f'
+  url64          = 'https://github.com/JustVugg/colibri/releases/download/v1.12.0/colibri-v1.12.0-windows-x86_64.zip'
+  checksum64     = 'c36e394ccda37637b4c864593a62c5d78a8abedfd224d138ad55f4b32975efbd'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
