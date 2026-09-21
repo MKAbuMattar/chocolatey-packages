@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>open-interpreter</id>
-    <version>0.0.43</version>
+    <version>0.0.45</version>
     <title>Open Interpreter</title>
     <authors>openinterpreter</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ A coding agent for open models like Kimi K3.
 The package installs the `interpreter` command. Open a new terminal after installing so the PATH change takes effect, then see the [Open Interpreter documentation](http://openinterpreter.com/) for the available options.
 ]]></description>
     <summary>A coding agent for open models like Kimi K3</summary>
-    <releaseNotes>https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.43</releaseNotes>
+    <releaseNotes>https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.45</releaseNotes>
     <copyright>Copyright openinterpreter</copyright>
     <tags>open-interpreter acp coding-agent deepseek kimi qwen rust ai llm cli</tags>
     <projectSourceUrl>https://github.com/openinterpreter/openinterpreter</projectSourceUrl>
