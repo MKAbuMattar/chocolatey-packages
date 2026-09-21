@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>omniget</id>
-    <version>0.9.1</version>
+    <version>0.10.1</version>
     <title>omniget</title>
     <authors>tonhowtf</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -20,7 +20,7 @@ Upstream also publishes a separate command line build, `omniget-cli`. This packa
 installs the desktop application.
 ]]></description>
     <summary>omniget is a desktop downloader for course platforms, video, music and books, covering more than 1,800 sites.</summary>
-    <releaseNotes>https://github.com/tonhowtf/omniget/releases/tag/v0.9.1</releaseNotes>
+    <releaseNotes>https://github.com/tonhowtf/omniget/releases/tag/v0.10.1</releaseNotes>
     <copyright>Copyright tonhowtf</copyright>
     <tags>omniget downloader download-manager media-downloader video youtube courses</tags>
     <projectSourceUrl>https://github.com/tonhowtf/omniget</projectSourceUrl>
