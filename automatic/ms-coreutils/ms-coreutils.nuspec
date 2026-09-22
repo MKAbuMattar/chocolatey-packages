@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ms-coreutils</id>
-    <version>2026.6.16</version>
+    <version>2026.9.3</version>
     <title>Coreutils for Windows</title>
     <authors>microsoft</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Coreutils for Windows: Installer & Packaging
 ]]></description>
     <summary>Coreutils for Windows: Installer &amp; Packaging</summary>
-    <releaseNotes>https://github.com/microsoft/coreutils/releases/tag/v2026.6.16</releaseNotes>
+    <releaseNotes>https://github.com/microsoft/coreutils/releases/tag/v2026.9.3</releaseNotes>
     <copyright>Copyright Microsoft Corporation</copyright>
     <tags>ms-coreutils command-line-tool coreutils gnu-coreutils</tags>
     <projectSourceUrl>https://github.com/microsoft/coreutils</projectSourceUrl>
