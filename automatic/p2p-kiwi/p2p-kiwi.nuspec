@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>p2p-kiwi</id>
-    <version>3.0.1</version>
+    <version>3.2.0</version>
     <title>p2p.kiwi</title>
     <authors>dont-be-evil-company</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -17,7 +17,7 @@ p2p.kiwi , Cross-Platform screen sharing made simple.
 Upstream describes it with these topics: cross-platform, multi-cursor, p2p, pair-programming, pairing, peer-to-peer, screensharing.
 ]]></description>
     <summary>p2p.kiwi , Cross-Platform screen sharing made simple</summary>
-    <releaseNotes>https://github.com/dont-be-evil-company/p2p.kiwi/releases/tag/v3.0.1</releaseNotes>
+    <releaseNotes>https://github.com/dont-be-evil-company/p2p.kiwi/releases/tag/v3.2.0</releaseNotes>
     <copyright>Copyright 2024+ mistweaverco</copyright>
     <tags>p2p-kiwi cross-platform multi-cursor p2p pair-programming pairing peer-to-peer screensharing screen-sharing desktop</tags>
     <projectSourceUrl>https://github.com/dont-be-evil-company/p2p.kiwi</projectSourceUrl>
