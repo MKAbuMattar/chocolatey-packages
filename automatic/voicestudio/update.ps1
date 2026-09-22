@@ -6,10 +6,10 @@ $repo = 'debpalash/VoiceStudio'
 function global:au_SearchReplace { Get-AuSearchReplace }
 
 function global:au_GetLatest {
-  # Upstream ships a per-machine MSI and a VoiceStudio_Current_User_* one beside it.
-  # Chocolatey installs for the whole machine, so the name is spelled out rather than
-  # matched by pattern, which would be free to pick either.
-  Get-GitHubLatest -Repo $repo -Asset 'VoiceStudio_{version}_x64_en-US.msi'
+  # 0.5.5 moved the app from Tauri to Electron, so the MSI this package installed is
+  # gone and the release ships one Windows build, an electron-builder NSIS exe. Match
+  # what is there rather than spell out a name upstream no longer uses.
+  Get-GitHubLatest -Repo $repo -AssetPattern 'VoiceStudio-Electron-*-win-x64.exe'
 }
 
 update -ChecksumFor 64
