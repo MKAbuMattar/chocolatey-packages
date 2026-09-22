@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>flet</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Flet</title>
     <authors>flet-dev</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Build realtime web, mobile and desktop apps in Python only. No frontend experience required.
 ]]></description>
     <summary>Build realtime web, mobile and desktop apps in Python only. No frontend experience required.</summary>
-    <releaseNotes>https://github.com/flet-dev/flet/releases/tag/v1.0.0</releaseNotes>
+    <releaseNotes>https://github.com/flet-dev/flet/releases/tag/v1.0.1</releaseNotes>
     <copyright>Copyright (C) 2023-2026 Appveyor Systems Inc.</copyright>
     <tags>flet android cross-platform desktop flutter ios python server-driven-ui web</tags>
     <projectSourceUrl>https://github.com/flet-dev/flet</projectSourceUrl>
