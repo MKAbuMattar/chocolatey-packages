@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openresearch</id>
-    <version>0.2.7</version>
+    <version>0.2.8</version>
     <title>OpenResearch</title>
     <authors>alphaXiv</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ OpenResearch, from alphaXiv, turns coding agents into research agents: it reads 
 The package installs the `orx` command. Open a new terminal after installing so the PATH change takes effect.
 ]]></description>
     <summary>OpenResearch, from alphaXiv, turns coding agents into research agents.</summary>
-    <releaseNotes>https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.7</releaseNotes>
+    <releaseNotes>https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.8</releaseNotes>
     <copyright>Copyright 2026 alphaXiv</copyright>
     <tags>openresearch research arxiv papers ai-agent cli</tags>
     <projectSourceUrl>https://github.com/alphaXiv/OpenResearch</projectSourceUrl>
