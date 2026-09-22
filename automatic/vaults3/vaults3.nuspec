@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vaults3</id>
-    <version>4.4.75</version>
+    <version>4.4.76</version>
     <title>VaultS3</title>
     <authors>Kodiqa-Solutions</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Lightweight, S3-compatible object storage server with built-in web dashboard. Single binary, low memory, encryption at rest.
 ]]></description>
     <summary>Lightweight, S3-compatible object storage server with built-in web dashboard. Single binary, low memory, encryption at rest</summary>
-    <releaseNotes>https://github.com/Kodiqa-Solutions/VaultS3/releases/tag/v4.4.75</releaseNotes>
+    <releaseNotes>https://github.com/Kodiqa-Solutions/VaultS3/releases/tag/v4.4.76</releaseNotes>
     <copyright>Copyright Kodiqa-Solutions</copyright>
     <tags>vaults3 s3 storage server self-hosted</tags>
     <projectSourceUrl>https://github.com/Kodiqa-Solutions/VaultS3</projectSourceUrl>
