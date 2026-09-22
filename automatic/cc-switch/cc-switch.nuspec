@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>cc-switch</id>
-    <version>3.20.3</version>
+    <version>3.20.4</version>
     <title>CC Switch</title>
     <authors>farion1231</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ Upstream also publishes a portable zip. This package installs the MSI, so Window
 the install and Chocolatey can uninstall it cleanly.
 ]]></description>
     <summary>CC Switch is a desktop assistant for switching between coding agents such as Claude Code, Codex and OpenCode.</summary>
-    <releaseNotes>https://github.com/farion1231/cc-switch/releases/tag/v3.20.3</releaseNotes>
+    <releaseNotes>https://github.com/farion1231/cc-switch/releases/tag/v3.20.4</releaseNotes>
     <copyright>Copyright 2025 Jason Young</copyright>
     <tags>cc-switch claude-code codex desktop-app ai-tools</tags>
     <projectSourceUrl>https://github.com/farion1231/cc-switch</projectSourceUrl>
