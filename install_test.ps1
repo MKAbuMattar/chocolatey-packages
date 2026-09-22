@@ -57,6 +57,19 @@ if (!$NoPack) {
 $failed = @()
 foreach ($pkg in $Name) {
     $dir = Join-Path $PSScriptRoot "automatic\$pkg"
+
+    # A metapackage installs nothing of its own, only the package its dependencies
+    # name, so there is no install script here to exercise. It also has no updater,
+    # which means AU packed no nupkg for it and the check below would call that a
+    # failure. Installing it for real would need the dependency resolved from the
+    # community feed rather than this folder, which is Chocolatey's job, not this
+    # script's; what this repository has to get right is the dependency itself, and
+    # the Pester suite asserts that.
+    if (!(Test-Path (Join-Path $dir 'tools\chocolateyInstall.ps1'))) {
+        Write-Host "Skipping $pkg : metapackage, nothing to install directly"
+        continue
+    }
+
     $nupkg = Get-ChildItem $dir -Filter *.nupkg -ErrorAction SilentlyContinue | Select-Object -First 1
     if (!$nupkg) {
         Write-Host "::error::$pkg packed no nupkg"

@@ -2,13 +2,13 @@
 
 ## What is Bananas?
 
-Bananas, Cross-Platform screen sharing made simple.
+Bananas was cross-platform screen sharing made simple. The project renamed itself to
+p2p.kiwi and moved to [p2p.kiwi](https://p2p.kiwi).
 
-## Renamed upstream
+## This package is deprecated
 
-At v1.0.0 the project renamed itself from Bananas to p2p.kiwi, moved to
-[p2p.kiwi](https://p2p.kiwi), and renamed the installer from `bananas-setup_x64.exe` to
-`p2p-kiwi-setup_x64.exe`. The GitHub repository is still `mistweaverco/bananas`.
+Install [p2p-kiwi](https://community.chocolatey.org/packages/p2p-kiwi) instead.
 
-This package keeps the id `bananas`, because a published Chocolatey id cannot be renamed
-in place. From 1.0.0 onward it installs p2p.kiwi.
+This package no longer carries the application. It depends on `p2p-kiwi`, so installing
+it still gets you the software, and anyone who already has `bananas` keeps working. A
+published Chocolatey id cannot be renamed, which is why the id stays.

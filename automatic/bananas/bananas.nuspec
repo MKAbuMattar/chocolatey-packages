@@ -12,18 +12,18 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Bananas?
 
-Bananas, Cross-Platform screen sharing made simple.
+Bananas was cross-platform screen sharing made simple. The project renamed itself to
+p2p.kiwi and moved to [p2p.kiwi](https://p2p.kiwi).
 
-## Renamed upstream
+## This package is deprecated
 
-At v1.0.0 the project renamed itself from Bananas to p2p.kiwi, moved to
-[p2p.kiwi](https://p2p.kiwi), and renamed the installer from `bananas-setup_x64.exe` to
-`p2p-kiwi-setup_x64.exe`. The GitHub repository is still `mistweaverco/bananas`.
+Install [p2p-kiwi](https://community.chocolatey.org/packages/p2p-kiwi) instead.
 
-This package keeps the id `bananas`, because a published Chocolatey id cannot be renamed
-in place. From 1.0.0 onward it installs p2p.kiwi.
+This package no longer carries the application. It depends on `p2p-kiwi`, so installing
+it still gets you the software, and anyone who already has `bananas` keeps working. A
+published Chocolatey id cannot be renamed, which is why the id stays.
 ]]></description>
-    <summary>Bananas, Cross-Platform screen sharing made simple</summary>
+    <summary>Deprecated. Renamed upstream to p2p.kiwi; installs the p2p-kiwi package</summary>
     <releaseNotes>https://github.com/mistweaverco/bananas/releases/tag/v3.2.0</releaseNotes>
     <copyright>Copyright 2024+ mistweaverco</copyright>
     <tags>bananas cross-platform multi-cursor p2p pair-programming pairing peer-to-peer screensharing</tags>
@@ -31,8 +31,8 @@ in place. From 1.0.0 onward it installs p2p.kiwi.
     <bugTrackerUrl>https://github.com/mistweaverco/bananas/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/bananas</packageSourceUrl>
     <docsUrl>https://getbananas.net</docsUrl>
+    <dependencies>
+      <dependency id="p2p-kiwi" version="3.0.1" />
+    </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
