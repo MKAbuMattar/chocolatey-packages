@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>open-knowledge</id>
-    <version>0.77.4</version>
+    <version>0.77.7</version>
     <title>Open Knowledge</title>
     <authors>inkeep</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Beautiful, AI-native markdown IDE and LLM wiki.
 ]]></description>
     <summary>Beautiful, AI-native markdown IDE and LLM wiki</summary>
-    <releaseNotes>https://github.com/inkeep/open-knowledge/releases/tag/v0.77.4</releaseNotes>
+    <releaseNotes>https://github.com/inkeep/open-knowledge/releases/tag/v0.77.7</releaseNotes>
     <copyright>Copyright inkeep</copyright>
     <tags>open-knowledge 2nd-brain agent-skills claude codex company-brain docs knowledge- knowledge-base markdown ide wiki</tags>
     <projectSourceUrl>https://github.com/inkeep/open-knowledge</projectSourceUrl>
