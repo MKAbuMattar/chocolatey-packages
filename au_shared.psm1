@@ -60,6 +60,11 @@ function Get-GitHubRelease {
         .Parameter WithAsset
             Only consider releases that actually carry an asset with this name.
 
+        .Parameter WithAssetPattern
+            Same, for an asset whose name carries the version and so cannot be named
+            literally. ever-gauzy tags a release for every merge and attaches a build
+            to roughly one in ten, so the newest tag is usually empty.
+
         .Parameter PerPage
             How many releases to read per request. 100 is the GitHub maximum.
 
@@ -73,13 +78,14 @@ function Get-GitHubRelease {
         [string]$TagPrefix,
         [string]$TagPattern,
         [string]$WithAsset,
+        [string]$WithAssetPattern,
         [int]$PerPage = 100,
         [int]$MaxPages = 1
     )
 
     $headers = Get-GitHubHeaders
 
-    if (!$TagPrefix -and !$TagPattern -and !$WithAsset) {
+    if (!$TagPrefix -and !$TagPattern -and !$WithAsset -and !$WithAssetPattern) {
         return Invoke-RestMethod "https://api.github.com/repos/$Repo/releases/latest" -Headers $headers
     }
 
@@ -95,7 +101,8 @@ function Get-GitHubRelease {
             -not $_.prerelease -and
             (!$TagPrefix -or $_.tag_name -like "$TagPrefix*") -and
             (!$TagPattern -or $_.tag_name -match $TagPattern) -and
-            (!$WithAsset -or ($_.assets.name -contains $WithAsset))
+            (!$WithAsset -or ($_.assets.name -contains $WithAsset)) -and
+            (!$WithAssetPattern -or ($_.assets.name -like $WithAssetPattern))
         } | Select-Object -First 1
     }
 
@@ -104,6 +111,7 @@ function Get-GitHubRelease {
             if ($TagPrefix) { "tag starting with '$TagPrefix'" }
             if ($TagPattern) { "tag matching '$TagPattern'" }
             if ($WithAsset) { "asset '$WithAsset'" }
+            if ($WithAssetPattern) { "asset matching '$WithAssetPattern'" }
         ) -join ', '
         throw "No stable release of $Repo with $wanted in the last $($PerPage * $MaxPages) releases"
     }
@@ -246,14 +254,17 @@ function Get-GitHubLatest {
     if (!$Asset -and !$AssetPattern) { throw 'Get-GitHubLatest needs -Asset or -AssetPattern' }
     # Releases are filtered by asset name, which is only known once the release is
     # picked, so a templated name cannot be the thing releases are searched for.
-    if ($RequireAsset -and $Asset -match '{(version|tag)}') {
-        throw 'Get-GitHubLatest -RequireAsset needs a literal -Asset; use -AssetPattern instead'
+    if ($RequireAsset -and !$AssetPattern -and $Asset -match '{(version|tag)}') {
+        throw 'Get-GitHubLatest -RequireAsset needs a literal -Asset or an -AssetPattern'
     }
 
     $find = @{ Repo = $Repo; PerPage = $PerPage; MaxPages = $MaxPages }
     if ($TagPrefix) { $find.TagPrefix = $TagPrefix }
     if ($TagPattern) { $find.TagPattern = $TagPattern }
-    if ($RequireAsset) { $find.WithAsset = $Asset }
+    if ($RequireAsset) {
+        if ($AssetPattern) { $find.WithAssetPattern = $AssetPattern }
+        else { $find.WithAsset = $Asset }
+    }
 
     $release = Get-GitHubRelease @find
     $tag = $release.tag_name

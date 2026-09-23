@@ -104,6 +104,13 @@ $Options = [ordered]@{
         # falls through to IgnoreOn below.
         'package version already exists'
         '409 (Conflict)'
+        # AU runs six packages at a time and prints this when one of those runspace
+        # jobs comes back null, which it words as "Vector smash ?". iroh-relay hit it
+        # on a run where its sibling from the same release passed, its updater
+        # resolves and its asset downloads in under a second, so there is nothing in
+        # the package to fix. Retry it. RepeatCount is 2, so a package that really
+        # does crash every time still fails the run rather than being swallowed.
+        'Job returned no object'
     )
 
     Report        = @{                                      # Run report, published as the workflow summary
