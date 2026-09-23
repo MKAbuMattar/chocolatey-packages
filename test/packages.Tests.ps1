@@ -25,6 +25,17 @@ BeforeAll {
     }
   }
 
+  # A metapackage carries no application: it has no install script and no updater,
+  # only a nuspec whose dependencies point at the package that replaced it. bananas is
+  # one, because upstream renamed the project to p2p.kiwi and a published Chocolatey id
+  # cannot be renamed in place. Checksums, download URLs and templated URLs are all
+  # properties of an install script, so those tests have nothing to assert here.
+  function Test-Metapackage {
+    param([System.IO.DirectoryInfo]$Package)
+
+    -not (Test-Path (Join-Path $Package.FullName 'tools/chocolateyInstall.ps1'))
+  }
+
   function Get-PackageNuspec {
     param([string]$Path)
 
@@ -62,7 +73,20 @@ Describe 'automatic package identity and metadata' {
     ([string]$metadata.releaseNotes) | Should -Not -BeNullOrEmpty
     Test-Path $paths.Readme | Should -BeTrue
     [IO.File]::ReadAllText($paths.Readme) | Should -Match '^\s*#\s+\S+'
-    Test-Path $paths.Install | Should -BeTrue
+
+    if (Test-Metapackage $Package) {
+      # Nothing would install, so a metapackage with no dependency is an empty package.
+      # Filter on id: with no <dependencies> element the property chain yields $null,
+      # and @($null).Count is 1, so counting the raw result passes for an empty package.
+      $dependencies = @($metadata.dependencies.dependency | Where-Object { $_.id })
+      $dependencies.Count | Should -BeGreaterThan 0 -Because `
+        "$($paths.Id) ships no install script, so it has to depend on the package that replaced it"
+      Test-Path $paths.Update | Should -BeFalse -Because `
+        "$($paths.Id) is a metapackage, so AU has nothing to update and should skip it"
+    }
+    else {
+      Test-Path $paths.Install | Should -BeTrue
+    }
   }
 }
 
@@ -92,6 +116,7 @@ Describe 'automatic package checksums' {
   It '<Package.Name> has valid SHA-256 checksums' -ForEach $packageCases {
     param($Package)
     $paths = Get-PackagePaths $Package
+    if (Test-Metapackage $Package) { return }
     $nuspec = Get-PackageNuspec $paths.Nuspec
     $installText = [IO.File]::ReadAllText($paths.Install)
     $checksums = [regex]::Matches(
@@ -123,6 +148,7 @@ Describe 'automatic package download URLs' {
   It '<Package.Name> uses HTTPS download URLs' -ForEach $packageCases {
     param($Package)
     $paths = Get-PackagePaths $Package
+    if (Test-Metapackage $Package) { return }
     $urls = Get-InstallUrls ([IO.File]::ReadAllText($paths.Install))
 
     foreach ($url in $urls) {
@@ -135,6 +161,7 @@ Describe 'automatic package version URLs' {
   It '<Package.Name> includes the package version in templated URLs' -ForEach $packageCases {
     param($Package)
     $paths = Get-PackagePaths $Package
+    if (Test-Metapackage $Package) { return }
     $version = [string](Get-PackageNuspec $paths.Nuspec).Xml.package.metadata.version
     $installText = [IO.File]::ReadAllText($paths.Install)
     $updateText = [IO.File]::ReadAllText($paths.Update)
