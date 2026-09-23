@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kilocode</id>
-    <version>7.7.7</version>
+    <version>7.7.9</version>
     <title>Kilo Code</title>
     <authors>Kilo-Org</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -17,7 +17,7 @@ Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate fa
 Upstream describes it with these topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt, claude, cli, gemini.
 ]]></description>
     <summary>Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent</summary>
-    <releaseNotes>https://github.com/Kilo-Org/kilocode/releases/tag/v7.7.7</releaseNotes>
+    <releaseNotes>https://github.com/Kilo-Org/kilocode/releases/tag/v7.7.9</releaseNotes>
     <copyright>Copyright 2026 Kilo Code</copyright>
     <tags>kilocode ai ai-age ai-coding ai-developer-tools chatgpt claude cli gemini coding ide vscode</tags>
     <projectSourceUrl>https://github.com/Kilo-Org/kilocode</projectSourceUrl>
