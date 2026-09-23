@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>bananas</id>
-    <version>3.2.0</version>
+    <version>3.3.0.1</version>
     <title>Bananas</title>
     <authors>mistweaverco</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -24,7 +24,7 @@ it still gets you the software, and anyone who already has `bananas` keeps worki
 published Chocolatey id cannot be renamed, which is why the id stays.
 ]]></description>
     <summary>Deprecated. Renamed upstream to p2p.kiwi; installs the p2p-kiwi package</summary>
-    <releaseNotes>https://github.com/mistweaverco/bananas/releases/tag/v3.2.0</releaseNotes>
+    <releaseNotes>https://github.com/mistweaverco/bananas/releases/tag/v3.3.0</releaseNotes>
     <copyright>Copyright 2024+ mistweaverco</copyright>
     <tags>bananas cross-platform multi-cursor p2p pair-programming pairing peer-to-peer screensharing</tags>
     <projectSourceUrl>https://github.com/mistweaverco/bananas</projectSourceUrl>
@@ -32,7 +32,7 @@ published Chocolatey id cannot be renamed, which is why the id stays.
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/bananas</packageSourceUrl>
     <docsUrl>https://getbananas.net</docsUrl>
     <dependencies>
-      <dependency id="p2p-kiwi" version="3.0.1" />
+      <dependency id="p2p-kiwi" version="3.3.0" />
     </dependencies>
   </metadata>
 </package>
