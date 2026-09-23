@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>qwen-audio-agent</id>
-    <version>1.11.0</version>
+    <version>2.0.0</version>
     <title>Qwen Audio Agent</title>
     <authors>QwenAudio</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 A realtime voice runtime that keeps Agents talking, working, and present. Real-time Voice Runtime for AI Agents.
 ]]></description>
     <summary>A realtime voice runtime that keeps Agents talking, working, and present. Real-time Voice Runtime for AI Agents</summary>
-    <releaseNotes>https://github.com/QwenAudio/qwen-audio-agent/releases/tag/v1.11.0</releaseNotes>
+    <releaseNotes>https://github.com/QwenAudio/qwen-audio-agent/releases/tag/v2.0.0</releaseNotes>
     <copyright>Copyright QwenAudio</copyright>
     <tags>qwen-audio-agent acp agent agentic-ai ai-coding claude-code codex developer-tools opencode ai voice realtime</tags>
     <projectSourceUrl>https://github.com/QwenAudio/qwen-audio-agent</projectSourceUrl>
