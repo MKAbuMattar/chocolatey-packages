@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/cloudnative-pg/cloudnative-pg/releases/download/v1.30.0/kubectl-cnpg_1.30.0_windows_x86_64.tar.gz'
-  checksum64     = 'bc6817105ef4ea1973a03a4a0e972baff7ad86b4542414960b654cc40ae81377'
+  url64          = 'https://github.com/cloudnative-pg/cloudnative-pg/releases/download/v1.30.1/kubectl-cnpg_1.30.1_windows_x86_64.tar.gz'
+  checksum64     = 'e0f59fd04d4842d456d8730b656517f37f6cf86862a5ef6506c742ab662391cd'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
