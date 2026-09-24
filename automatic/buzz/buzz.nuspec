@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>buzz</id>
-    <version>0.5.24-alpha</version>
+    <version>0.5.25-alpha</version>
     <title>Buzz</title>
     <authors>block</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -28,7 +28,7 @@ against a SHA256 checksum recorded in the install script, which confirms the fil
 one upstream published and says nothing about who wrote it.
 ]]></description>
     <summary>A hive mind communication platform</summary>
-    <releaseNotes>https://github.com/block/buzz/releases/tag/desktop-v0.5.24</releaseNotes>
+    <releaseNotes>https://github.com/block/buzz/releases/tag/desktop-v0.5.25</releaseNotes>
     <copyright>Copyright block</copyright>
     <tags>buzz chat communication desktop</tags>
     <projectSourceUrl>https://github.com/block/buzz</projectSourceUrl>
