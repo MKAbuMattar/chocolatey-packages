@@ -12,12 +12,18 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Openwork?
 
-The open-source alternative to Claude Cowork (powered by opencode).
+OpenWork is a free, open-source desktop app for sharing AI workflows, and an
+open-source alternative to Claude Cowork and Codex.
+
+It adds one MCP server to Codex, Claude Code, Cursor or another compatible agent, so
+the same skills, MCP connections and connected services carry across your tools,
+teammates and machines. The desktop app gives you a dedicated workspace, but it is
+optional: OpenWork also works from the agent you already use.
 ]]></description>
     <summary>The open-source alternative to Claude Cowork (powered by opencode)</summary>
     <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.52</releaseNotes>
     <copyright>Copyright different-ai</copyright>
-    <tags>openwork</tags>
+    <tags>openwork ai ai-agents mcp claude-code codex cursor opencode workflows desktop</tags>
     <projectSourceUrl>https://github.com/different-ai/openwork</projectSourceUrl>
     <bugTrackerUrl>https://github.com/different-ai/openwork/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/openwork</packageSourceUrl>
