@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/jub0t/Concat/releases/download/v0.2.3/Concat-0.2.3-windows-x86_64.msi'
-  checksum64     = 'ebc382a31e906ca0bf44c72d1beac988c8a8cca8d8fdef1002eb0013e50f6d5c'
+  url64          = 'https://github.com/jub0t/Concat/releases/download/v0.2.4/Concat-0.2.4-windows-x86_64.msi'
+  checksum64     = '19ee792587e438b1e747b0d95fac44e377df57565d6d580ddef33b8672710bfa'
   checksumType64 = 'sha256'
   softwareName   = 'Concat*'
   silentArgs     = '/qn /norestart'
