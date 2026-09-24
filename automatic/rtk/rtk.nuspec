@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>rtk</id>
-    <version>0.49.0</version>
+    <version>0.50.0</version>
     <title>rtk</title>
     <authors>rtk-ai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -17,7 +17,7 @@ development commands, upstream reporting 60 to 90 percent on those. It is a sing
 binary with no dependencies.
 ]]></description>
     <summary>rtk is a command line proxy that cuts LLM token use on common development commands.</summary>
-    <releaseNotes>https://github.com/rtk-ai/rtk/releases/tag/v0.49.0</releaseNotes>
+    <releaseNotes>https://github.com/rtk-ai/rtk/releases/tag/v0.50.0</releaseNotes>
     <copyright>Copyright rtk-ai</copyright>
     <tags>rtk cli llm tokens proxy developer-tools rust</tags>
     <projectSourceUrl>https://github.com/rtk-ai/rtk</projectSourceUrl>
