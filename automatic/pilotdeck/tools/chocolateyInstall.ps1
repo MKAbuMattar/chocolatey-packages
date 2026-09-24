@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/OpenBMB/PilotDeck/releases/download/v2026.09.24/PilotDeck-2026.924.0-win-x64-setup.exe'
-  checksum64     = 'e1958f1c7deece1cc050236893822bbf89b1aa3d2da6103afcf09573da4198fe'
+  url64          = 'https://github.com/OpenBMB/PilotDeck/releases/download/v2026.09.25/PilotDeck-2026.925.0-win-x64-setup.exe'
+  checksum64     = '0fd2474dbc77feb25af8dd707d2022fc31988a98915d65b4dd36eee32796ee3a'
   checksumType64 = 'sha256'
   softwareName   = 'PilotDeck*'
   silentArgs     = '/S'

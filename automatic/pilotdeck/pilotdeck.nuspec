@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pilotdeck</id>
-    <version>2026.9.24</version>
+    <version>2026.9.25</version>
     <title>PilotDeck</title>
     <authors>OpenBMB</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Task-oriented AI Agent productivity platform.
 ]]></description>
     <summary>Task-oriented AI Agent productivity platform</summary>
-    <releaseNotes>https://github.com/OpenBMB/PilotDeck/releases/tag/v2026.09.24</releaseNotes>
+    <releaseNotes>https://github.com/OpenBMB/PilotDeck/releases/tag/v2026.09.25</releaseNotes>
     <copyright>Copyright OpenBMB</copyright>
     <tags>pilotdeck ai agent productivity desktop</tags>
     <projectSourceUrl>https://github.com/OpenBMB/PilotDeck</projectSourceUrl>
