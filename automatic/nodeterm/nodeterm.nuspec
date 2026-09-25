@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>nodeterm</id>
-    <version>0.3.13</version>
+    <version>0.3.14</version>
     <title>NodeTerm</title>
     <authors>eneskirca</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -20,7 +20,7 @@ Upstream also publishes a browser Server Edition and builds for macOS and Linux.
 package installs the Windows desktop application.
 ]]></description>
     <summary>NodeTerm is a terminal manager that lays tmux-backed terminals out as draggable nodes on an infinite canvas, for running coding agents in parallel.</summary>
-    <releaseNotes>https://github.com/eneskirca/nodeterm/releases/tag/v0.3.13</releaseNotes>
+    <releaseNotes>https://github.com/eneskirca/nodeterm/releases/tag/v0.3.14</releaseNotes>
     <copyright>Copyright eneskirca</copyright>
     <tags>nodeterm terminal tmux terminal-manager ai-agents developer-tools</tags>
     <projectSourceUrl>https://github.com/eneskirca/nodeterm</projectSourceUrl>
