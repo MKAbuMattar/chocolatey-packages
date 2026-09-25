@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>codenomad</id>
-    <version>0.19.0</version>
+    <version>0.20.0</version>
     <title>CodeNomad</title>
     <authors>NeuralNomadsAI</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 CodeNomad: The command center that puts AI coding on steroids.
 ]]></description>
     <summary>CodeNomad: The command center that puts AI coding on steroids</summary>
-    <releaseNotes>https://github.com/NeuralNomadsAI/CodeNomad/releases/tag/v0.19.0</releaseNotes>
+    <releaseNotes>https://github.com/NeuralNomadsAI/CodeNomad/releases/tag/v0.20.0</releaseNotes>
     <copyright>Copyright 2026 Neural Nomads</copyright>
     <tags>codenomad ai coding-agent electron desktop</tags>
     <projectSourceUrl>https://github.com/NeuralNomadsAI/CodeNomad</projectSourceUrl>
