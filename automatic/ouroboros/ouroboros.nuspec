@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ouroboros</id>
-    <version>0.54.5</version>
+    <version>0.54.6</version>
     <title>Ouroboros</title>
     <authors>Q00</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ Agent OS: Stop prompting. Start specifying.
 The package installs the `ouroboros` command. Open a new terminal after installing so the PATH change takes effect, then see the [Ouroboros documentation](https://ouroboros.page/) for the available options.
 ]]></description>
     <summary>Agent OS: Stop prompting. Start specifying</summary>
-    <releaseNotes>https://github.com/Q00/ouroboros/releases/tag/v0.54.5</releaseNotes>
+    <releaseNotes>https://github.com/Q00/ouroboros/releases/tag/v0.54.6</releaseNotes>
     <copyright>Copyright 2025 Q00</copyright>
     <tags>ouroboros agent-os ai-agent llm-orchestration llm-runtime python ai agent spec cli tui</tags>
     <projectSourceUrl>https://github.com/Q00/ouroboros</projectSourceUrl>
