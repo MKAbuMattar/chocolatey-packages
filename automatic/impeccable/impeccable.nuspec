@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>impeccable</id>
-    <version>0.1.5</version>
+    <version>0.1.6</version>
     <title>Impeccable</title>
     <authors>pbakaus</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -24,7 +24,7 @@ PATH instead.
 The package installs the `impeccable` command. Open a new terminal after installing so the PATH change takes effect, then see the [Impeccable documentation](https://impeccable.style) for the available options.
 ]]></description>
     <summary>Impeccable is a design language for AI coding harnesses; this package installs its engine binary.</summary>
-    <releaseNotes>https://github.com/pbakaus/impeccable/releases/tag/engine-v0.1.5</releaseNotes>
+    <releaseNotes>https://github.com/pbakaus/impeccable/releases/tag/engine-v0.1.6</releaseNotes>
     <copyright>Copyright pbakaus</copyright>
     <tags>impeccable design ai cli developer-tools</tags>
     <projectSourceUrl>https://github.com/pbakaus/impeccable</projectSourceUrl>
