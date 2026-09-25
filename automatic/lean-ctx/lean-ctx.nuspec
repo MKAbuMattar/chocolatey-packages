@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>lean-ctx</id>
-    <version>3.10.2</version>
+    <version>3.10.3</version>
     <title>LeanCTX</title>
     <authors>yvgude</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ LeanCTX is context intelligence for AI systems: it compresses and curates what a
 The package installs the `lean-ctx` command. Open a new terminal after installing so the PATH change takes effect.
 ]]></description>
     <summary>LeanCTX is context intelligence for AI systems: it compresses and curates what an AI coding agent sees.</summary>
-    <releaseNotes>https://github.com/yvgude/lean-ctx/releases/tag/v3.10.2</releaseNotes>
+    <releaseNotes>https://github.com/yvgude/lean-ctx/releases/tag/v3.10.3</releaseNotes>
     <copyright>Copyright yvgude</copyright>
     <tags>lean-ctx context ai coding-agent cli compression</tags>
     <projectSourceUrl>https://github.com/yvgude/lean-ctx</projectSourceUrl>
