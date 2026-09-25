@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openhuman</id>
-    <version>0.63.12</version>
+    <version>0.64.0</version>
     <title>OpenHuman</title>
     <authors>tinyhumansai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 OpenHuman is an open source agent harness with local-first memory, agent orchestration, and workflows.
 ]]></description>
     <summary>OpenHuman is an open source agent harness with local-first memory, agent orchestration, and workflows.</summary>
-    <releaseNotes>https://github.com/tinyhumansai/openhuman/releases/tag/v0.63.12</releaseNotes>
+    <releaseNotes>https://github.com/tinyhumansai/openhuman/releases/tag/v0.64.0</releaseNotes>
     <copyright>Copyright tinyhumansai</copyright>
     <tags>openhuman ai-agents agent-orchestration llm local-first mcp personal-ai privacy desktop tauri rust</tags>
     <projectSourceUrl>https://github.com/tinyhumansai/openhuman</projectSourceUrl>
