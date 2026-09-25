@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/eneskirca/nodeterm/releases/download/v0.3.14/nodeterm-Setup-0.3.14.exe'
-  checksum64     = 'c82cd4c3969f22bafc0dcf47e3bc40a1c1ff8e645efa1bc2885be9c1f91c3b17'
+  url64          = 'https://github.com/eneskirca/nodeterm/releases/download/v0.3.15/nodeterm-Setup-0.3.15.exe'
+  checksum64     = '0726c4f03ce04c802b3daa39952b1f56f5ac859ab4290caf1381436a4f9a04a0'
   checksumType64 = 'sha256'
   softwareName   = 'NodeTerm*'
   silentArgs     = '/S'
