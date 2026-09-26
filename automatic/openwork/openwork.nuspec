@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openwork</id>
-    <version>0.18.52</version>
+    <version>0.18.54</version>
     <title>Openwork</title>
     <authors>different-ai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -21,7 +21,7 @@ teammates and machines. The desktop app gives you a dedicated workspace, but it 
 optional: OpenWork also works from the agent you already use.
 ]]></description>
     <summary>The open-source alternative to Claude Cowork (powered by opencode)</summary>
-    <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.52</releaseNotes>
+    <releaseNotes>https://github.com/different-ai/openwork/releases/tag/v0.18.54</releaseNotes>
     <copyright>Copyright different-ai</copyright>
     <tags>openwork ai ai-agents mcp claude-code codex cursor opencode workflows desktop</tags>
     <projectSourceUrl>https://github.com/different-ai/openwork</projectSourceUrl>
