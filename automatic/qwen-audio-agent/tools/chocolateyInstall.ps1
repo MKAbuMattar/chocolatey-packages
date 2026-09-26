@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/QwenAudio/qwen-audio-agent/releases/download/v2.0.0/qwen-audio-agent-2.0.0-win-x64.exe'
-  checksum64     = '074f3b28fc493fa36269f45409053a5807355e7b0f3cbc3816373c1195bf3921'
+  url64          = 'https://github.com/QwenAudio/qwen-audio-agent/releases/download/v2.0.1/qwen-audio-agent-2.0.1-win-x64.exe'
+  checksum64     = '732631a21aff36897751552a2d6c6ab5644623f8efabc6a92e374bb06e0aeb56'
   checksumType64 = 'sha256'
   softwareName   = 'Qwen Audio Agent*'
   silentArgs     = '/S'
