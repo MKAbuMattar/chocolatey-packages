@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/kortix-ai/suna/releases/download/v0.13.37/Kortix-Setup-0.13.37.exe'
-  checksum64     = '01a86c65851d2c4d04775c143bdaa35a010f18c5e55fee3eff5c2ec74f46076e'
+  url64          = 'https://github.com/kortix-ai/suna/releases/download/v0.13.38/Kortix-Setup-0.13.38.exe'
+  checksum64     = 'f1eb29fcc4ef61491cf3ce4cbb3f7a001b4da114a5219f38e803bbdab3c63506'
   checksumType64 = 'sha256'
   softwareName   = 'Kortix*'
   silentArgs     = '/S'
