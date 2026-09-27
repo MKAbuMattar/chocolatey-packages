@@ -7,22 +7,26 @@
     <authors>tonhowtf</authors>
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/tonhowtf/omniget/blob/main/LICENSE</licenseUrl>
-    <projectUrl>https://tonho.wtf</projectUrl>
+    <projectUrl>https://getomniget.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@e4f663cfefe907dab1d8f61e85e05de17cc4ea94/icons/omniget.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is omniget?
 
-A desktop downloader for course platforms, video, music and books, covering more than
-1,800 sites. It is free and open source, and it runs as a window rather than a command
-line, so there is nothing to type to fetch something.
+A free, open source desktop downloader for Windows, macOS and Linux. Paste a link from
+YouTube, Instagram, TikTok, X, Reddit, Twitch or one of the sites yt-dlp supports and the
+file lands in your folder: video, audio, image galleries, torrents and direct files, in
+one queue with resume and retry. It installs and updates yt-dlp and FFmpeg by itself.
+
+It also has an MCP server, so coding agents such as Claude Code can queue and track
+downloads, and it can run AI coding agents in a desktop window.
 
 Upstream also publishes a separate command line build, `omniget-cli`. This package
 installs the desktop application.
 ]]></description>
-    <summary>omniget is a desktop downloader for course platforms, video, music and books, covering more than 1,800 sites.</summary>
+    <summary>omniget is a free, open source desktop downloader for video, audio, images and torrents from YouTube, Instagram, TikTok, X and the sites yt-dlp supports.</summary>
     <releaseNotes>https://github.com/tonhowtf/omniget/releases/tag/v0.10.1</releaseNotes>
     <copyright>Copyright tonhowtf</copyright>
-    <tags>omniget downloader download-manager media-downloader video youtube courses</tags>
+    <tags>omniget downloader download-manager media-downloader video youtube yt-dlp mcp</tags>
     <projectSourceUrl>https://github.com/tonhowtf/omniget</projectSourceUrl>
     <bugTrackerUrl>https://github.com/tonhowtf/omniget/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/omniget</packageSourceUrl>
