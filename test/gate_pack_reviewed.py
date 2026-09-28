@@ -13,9 +13,10 @@ import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# omniget was in this round but was retired later: its upstream account was deleted.
 REVIEWED = [
     # Reviewer asked for the install/upgrade/uninstall/links/license sections to go.
-    "vaults3", "cc-switch", "open-pdf-studio", "rescript-editor", "omniget",
+    "vaults3", "cc-switch", "open-pdf-studio", "rescript-editor",
     "openhuman", "ouroboros", "rtk", "meetily", "nodeterm", "patent",
     "agent-orchestrator", "impeccable",
     # Reviewer asked for a <copyright>.
