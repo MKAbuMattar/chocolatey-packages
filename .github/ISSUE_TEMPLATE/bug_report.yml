@@ -78,7 +78,6 @@ body:
         - numbat-agent
         - octobot
         - omnictl
-        - omniget
         - onlook
         - open-interpreter
         - open-knowledge
