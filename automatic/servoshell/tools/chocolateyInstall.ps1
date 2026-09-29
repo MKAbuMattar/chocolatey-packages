@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/servo/servo/releases/download/v0.5.0/servo-x86_64-windows-msvc.zip'
-  checksum64     = '7f2f5e79914345d073e14b4814662ec8a9763448814b539eec54e5a6ac253c8b'
+  url64          = 'https://github.com/servo/servo/releases/download/v0.6.0/servo-x86_64-windows-msvc.zip'
+  checksum64     = 'b13edde2a93dc22586943e69de884e2781a8ba0d7e0ddd620653df01c85abada'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
