@@ -83,6 +83,13 @@ foreach ($dir in $dirs) {
     $icon = Join-Path $PSScriptRoot "icons/$id.png"
 
     if (!(Test-Path $nuspec)) { continue }
+
+    # Chocolatey treats iconUrl as optional, and some projects have no icon anywhere:
+    # KytyPS5 ships none in its repository, its executables or its site. A package that
+    # declares no iconUrl has nothing to pin. One that declares an iconUrl with no file
+    # behind it is still an error.
+    $declaresIcon = (Get-Content $nuspec -Raw) -match '<iconUrl>'
+    if (!$declaresIcon -and !(Test-Path $icon)) { continue }
     if (!(Test-Path $icon)) { $problems += "$id has no icons/$id.png"; continue }
 
     # The commit that last changed this icon is the newest commit guaranteed to contain

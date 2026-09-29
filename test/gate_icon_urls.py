@@ -45,7 +45,9 @@ for f in sorted(glob.glob(os.path.join(ROOT, "automatic", "*", "*.nuspec"))):
     pid = os.path.basename(os.path.dirname(f))
     text = open(f, encoding="utf-8-sig").read()
     m = re.search(r"<iconUrl>(.*?)</iconUrl>", text)
-    items.append((pid, m.group(1).strip() if m else ""))
+    # No iconUrl is allowed (see pin_icons.ps1); only a declared one has to resolve.
+    if m:
+        items.append((pid, m.group(1).strip()))
 
 problems = []
 with ThreadPoolExecutor(max_workers=8) as ex:
