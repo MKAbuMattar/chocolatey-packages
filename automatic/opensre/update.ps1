@@ -14,8 +14,11 @@ function global:au_GetLatest {
   # failed the run with "Invalid version: 0.1.2026.9.6". The leading 0.1 has not moved
   # across any release and the date is what identifies a build, so drop it and keep
   # YYYY.M.D. That still orders correctly, and 2026.9.10 sorts after 2026.9.9.
-  if ($raw -notmatch '^\d+\.\d+\.(\d{4})\.(\d{1,2})\.(\d{1,2})$') { throw "Unexpected tag format: $tag" }
+  # A second release on the same day adds one more part, v0.1.2026.9.29.1, which becomes
+  # the fourth segment so it still sorts after the first release of that day.
+  if ($raw -notmatch '^\d+\.\d+\.(\d{4})\.(\d{1,2})\.(\d{1,2})(?:\.(\d+))?$') { throw "Unexpected tag format: $tag" }
   $version = '{0}.{1}.{2}' -f $Matches[1], [int]$Matches[2], [int]$Matches[3]
+  if ($Matches[4]) { $version += '.{0}' -f [int]$Matches[4] }
 
   # The asset keeps the full upstream version, so it cannot be built from $version.
   $asset = Get-GitHubMatchingAsset -Release $release -Pattern 'opensre_*_windows-x64.zip'
