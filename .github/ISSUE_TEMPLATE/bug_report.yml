@@ -57,6 +57,7 @@ body:
         - kilocode
         - kortix
         - kubectl-cnpg
+        - kytyps5
         - lean-ctx
         - litestream
         - llmfit
@@ -77,6 +78,7 @@ body:
         - nub
         - numbat-agent
         - octobot
+        - oh-my-pi
         - omnictl
         - onlook
         - open-interpreter
