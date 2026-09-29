@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/ramonvermeulen/whosthere/releases/download/v0.8.3/whosthere_0.8.3_windows_amd64.tar.gz'
-  checksum64     = '59510c76f28e1a8215b7e1e89c1faba721078cf5064f1632a4222560e296bf0f'
+  url64          = 'https://github.com/ramonvermeulen/whosthere/releases/download/v0.9.0/whosthere_0.9.0_windows_amd64.tar.gz'
+  checksum64     = 'daf406b9833c1884fc6b5eccecfd70441a35a220b6ca887988faaa091392a2c2'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
