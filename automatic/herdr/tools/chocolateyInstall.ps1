@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/herdrdev/herdr/releases/download/v0.9.1/herdr-windows-x86_64.zip'
-  checksum64     = '04ce380cac5af27bfcf75d0951ac49b7afe4c984aee8852985806d4f71f93a6e'
+  url64          = 'https://github.com/herdrdev/herdr/releases/download/v0.9.2/herdr-windows-x86_64.zip'
+  checksum64     = 'de7529c55f3083a444f74673399ed16d1abe45ff08a43dbfea99e4d0edf47d42'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
