@@ -41,6 +41,21 @@ jobs:
       - name: Install Chocolatey AU
         run: choco install chocolatey-au --yes --no-progress
 
+      # The update step only pushes when upstream is newer than the nuspec, so a package
+      # added at upstream's latest version, or bumped by hand, never published. This
+      # pushes any package whose committed version the gallery has never seen. It runs
+      # first so it publishes what is committed, before AU moves anything, and forced
+      # runs skip it because they are dry runs.
+      - name: Publish versions the gallery has never seen
+        if: ${{ inputs.force != true }}
+        shell: powershell
+        env:
+          api_key: ${{ secrets.CHOCO_API_KEY }}
+          PACKAGES: ${{ inputs.packages }}
+        run: |
+          $names = $Env:PACKAGES -split '\s+' -ne ''
+          .\publish_missing.ps1 -Name $names
+
       - name: Update packages
         shell: powershell
         env:
