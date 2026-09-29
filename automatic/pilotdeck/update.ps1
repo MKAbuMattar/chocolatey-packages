@@ -14,8 +14,11 @@ function global:au_GetLatest {
   # normalise to YYYY.M.D. Accepting only the older form is what broke the run with
   # "Unexpected tag format: desktop-v2026.09.02".
   $raw = $tag -replace '^desktop-v', '' -replace '^v', ''
-  if ($raw -match '^(\d{4})\.(\d{1,2})\.(\d{1,2})$') {
+  # A rebuild on the same day is tagged v2026.09.29-r2; the revision becomes the fourth
+  # segment so it sorts after the day's first release, which packaged as 2026.9.29.
+  if ($raw -match '^(\d{4})\.(\d{1,2})\.(\d{1,2})(?:-r(\d+))?$') {
     $version = '{0}.{1}.{2}' -f $Matches[1], [int]$Matches[2], [int]$Matches[3]
+    if ($Matches[4]) { $version += '.{0}' -f [int]$Matches[4] }
   }
   elseif ($raw -match '^(\d{2})(\d{2})(\d{2})$') {
     $version = '20{0}.{1}.{2}' -f $Matches[1], [int]$Matches[2], [int]$Matches[3]
