@@ -96,6 +96,12 @@ $Options = [ordered]@{
     RepeatOn      = @(                                      # Transient - retry
         'Could not create SSL/TLS secure channel'
         'Unable to connect'
+        # GitHub's download CDN sometimes drops the connection mid-request. iroh-relay
+        # failed this way with a URL that returns 200 while iroh-dns-server, from the same
+        # release, passed in the same run. The same text has also stood in for a real 404
+        # (concat, ever-gauzy, voicestudio), and retrying does not hide those: after
+        # RepeatCount attempts a missing file still fails the run.
+        'The connection was closed unexpectedly'
         'The operation has timed out'
         'Internal Server Error'
         # The push endpoint returns 409 with this text both when a version really
