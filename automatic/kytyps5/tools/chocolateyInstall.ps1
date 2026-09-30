@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-09-29-73615c3/KytyPS5-2026-09-29-73615c3-Windows-x64.zip'
-  checksum64     = '33f9ea20092b77b14c3028bd88c80a4608765394ae7dba696e52252bf78d095e'
+  url64          = 'https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-09-30-840b9f5/KytyPS5-2026-09-30-840b9f5-Windows-x64.zip'
+  checksum64     = '77621e17a60361d9e5fe765f9f986dd09c3a41aaffb32c318cfbddd2d2e4891f'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
