@@ -143,7 +143,7 @@ if ($unknown) {
 }
 if (!$missing) {
     Write-Host 'Every package version is already on the gallery.'
-    return
+    exit 0
 }
 
 $republish = Join-Path $PSScriptRoot 'republish.ps1'
@@ -165,3 +165,8 @@ if ($failed) {
     Write-Host "::error::could not publish: $($failed -join ', ')"
     exit 1
 }
+
+# Say so explicitly. The runner's PowerShell wrapper exits with $LASTEXITCODE, which
+# still holds the last republish.ps1 result, so a run whose only problems were 403s
+# and 409s, reported above as warnings, failed the step anyway.
+exit 0
