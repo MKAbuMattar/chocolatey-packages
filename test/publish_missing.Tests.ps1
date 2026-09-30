@@ -82,3 +82,44 @@ Describe 'Get-PushOutcome' {
     Get-PushOutcome $Text | Should -Be $Outcome
   }
 }
+
+Describe 'publish_missing.ps1 exit code' {
+  # The runner's PowerShell wrapper ends every step with `exit $LASTEXITCODE`. The
+  # first live run left that at 1 from a 403, failed the step on warnings alone, and
+  # skipped the update step after it. These run the script the way the runner does.
+  BeforeAll {
+    function Invoke-AsRunner {
+      param([string]$RepublishOutput, [int]$RepublishExit)
+      $repo = Join-Path $TestDrive ([guid]::NewGuid().ToString('N'))
+      New-Item (Join-Path $repo 'automatic/fake') -ItemType Directory -Force | Out-Null
+      Copy-Item (Join-Path $PSScriptRoot '..' 'publish_missing.ps1') $repo
+      Set-Content (Join-Path $repo 'automatic/fake/fake.nuspec') `
+        '<package><metadata><id>fake</id><version>1.0.0</version></metadata></package>'
+      Set-Content (Join-Path $repo 'republish.ps1') `
+        "param([string[]]`$Name, [switch]`$WhatIf)`nWrite-Host '$RepublishOutput'`nexit $RepublishExit"
+      # Every gallery lookup answers 404, so the package counts as never published.
+      $stub = 'function Invoke-WebRequest { $e = [Exception]::new(''404''); ' +
+        '$e | Add-Member Response ([pscustomobject]@{ StatusCode = [pscustomobject]@{ value__ = 404 } }); throw $e }'
+      $script = Join-Path $repo 'publish_missing.ps1'
+      $out = pwsh -NoProfile -Command "$stub; & '$script'; exit `$LASTEXITCODE" 2>&1 | Out-String
+      [pscustomobject]@{ Exit = $LASTEXITCODE; Output = $out }
+    }
+  }
+
+  It 'succeeds when the only problem is the moderation queue cap' {
+    $r = Invoke-AsRunner -RepublishOutput 'Response status code does not indicate success: 403 (Forbidden).' -RepublishExit 1
+    $r.Output | Should -Match 'moderation queue cap'
+    $r.Exit | Should -Be 0
+  }
+
+  It 'succeeds when the version number is reserved' {
+    $r = Invoke-AsRunner -RepublishOutput 'Response status code does not indicate success: 409 (Conflict).' -RepublishExit 1
+    $r.Exit | Should -Be 0
+  }
+
+  It 'fails when a push fails for any other reason' {
+    $r = Invoke-AsRunner -RepublishOutput 'fake carries files that are not install scripts' -RepublishExit 1
+    $r.Output | Should -Match 'could not publish: fake'
+    $r.Exit | Should -Be 1
+  }
+}

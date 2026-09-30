@@ -56,7 +56,10 @@ jobs:
           $names = $Env:PACKAGES -split '\s+' -ne ''
           .\publish_missing.ps1 -Name $names
 
+      # Runs even when the publish step failed: a package that could not be published
+      # is no reason to stop every other package from updating.
       - name: Update packages
+        if: ${{ !cancelled() }}
         shell: powershell
         env:
           api_key: ${{ secrets.CHOCO_API_KEY }}
