@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/earendil-works/pi/releases/download/v0.99.1/pi-windows-x64.zip'
-  checksum64     = '7e5c2971c0be6019a8b89edc5e3f0efb4cbdeb0ac236fd3a3307c1f62057528f'
+  url64          = 'https://github.com/earendil-works/pi/releases/download/v0.99.2/pi-windows-x64.zip'
+  checksum64     = '6f0bd9869d5cf45d5adde79ebedb54357e0c26cb4c64bd4a256f7ae548995f22'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
