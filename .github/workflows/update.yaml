@@ -32,6 +32,10 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          # update_all.ps1 runs pin_icons.ps1, which reads each icon's last commit from
+          # git history and refuses to guess on the default single-commit checkout.
+          fetch-depth: 0
 
       - name: Configure git
         run: |
