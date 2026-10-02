@@ -14,6 +14,7 @@ body:
         - alertmanager
         - alpaca-electron
         - anythingllm
+        - archon
         - arrow-flight-sql-odbc
         - autoclaw
         - bananas
@@ -21,8 +22,10 @@ body:
         - buzz
         - cc-switch
         - cdxgen
+        - cherry-studio
         - claude-code-router
         - codenomad
+        - codewhale
         - colibri
         - concat
         - crush
@@ -40,6 +43,7 @@ body:
         - filebrowser
         - flet
         - flux-operator
+        - forgecode
         - fort-firewall
         - game-cheats-manager
         - genoffice
@@ -53,6 +57,7 @@ body:
         - iroh-dns-server
         - iroh-relay
         - iwe
+        - jcode
         - jqp
         - kilocode
         - kimi-code
@@ -108,6 +113,7 @@ body:
         - qodo-cover
         - qwen-audio-agent
         - qwen-code
+        - reasonix
         - rescript-editor
         - rtk
         - servoshell
