@@ -226,3 +226,24 @@ Describe 'automatic package description sections' {
     [IO.File]::ReadAllText($paths.Readme) | Should -Not -Match '(?m)^##\s+(Install|Upgrade|Uninstall|Links|License)\s*$'
   }
 }
+
+Describe 'README package table' {
+  # The table is edited by hand, and PR #21 left ten rows pointing their Upstream link at
+  # https://lmstudio.ai/ for months. The nuspec already names each package's upstream, so
+  # the row has to agree with it: projectSourceUrl, or projectUrl when there is no repo.
+  BeforeAll {
+    $script:readmeRows = (Get-Content (Join-Path $PSScriptRoot '..' 'README.md')) |
+      Where-Object { $_ -match '\]\(automatic/' }
+  }
+
+  It '<Package.Name> has one row linking to its upstream' -ForEach $packageCases {
+    param($Package)
+    $rows = @($script:readmeRows | Where-Object { $_ -match "\]\(automatic/$([regex]::Escape($Package.Name))\)" })
+    $rows.Count | Should -Be 1 -Because "$($Package.Name) should appear in the README table exactly once"
+
+    $metadata = ([xml](Get-Content (Join-Path $Package.FullName "$($Package.Name).nuspec") -Raw)).package.metadata
+    $expected = if ($metadata.projectSourceUrl) { $metadata.projectSourceUrl } else { $metadata.projectUrl }
+    $linked = [regex]::Match($rows[0], '\| \[[^\]]*\]\(([^)]*)\)\s*\|\s*$').Groups[1].Value
+    $linked.TrimEnd('/') | Should -Be $expected.TrimEnd('/')
+  }
+}
