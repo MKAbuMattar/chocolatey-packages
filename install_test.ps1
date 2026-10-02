@@ -120,8 +120,31 @@ foreach ($pkg in $Name) {
         # A shim left behind keeps answering for a package that is gone, so the
         # uninstall script has to remove what the install script added.
         $orphan = @($declared | Where-Object { Get-ChildItem $binRoot -Filter "$_.*" -ErrorAction Ignore })
+
+        # choco reports success even when it skips the uninstaller: sarab said "Skipping
+        # auto uninstaller" and exited 0 with the app still installed. A package that names
+        # its softwareName has to leave no uninstall entry matching it behind. NSIS
+        # uninstallers finish in the background, so give the entry a minute to go.
+        $software = [regex]::Match((Get-Content $script -Raw), "softwareName\s*=\s*'([^']+)'").Groups[1].Value
+        $left = @()
+        if ($software) {
+            $hives = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
+                     'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
+                     'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
+            for ($i = 0; $i -lt 60; $i++) {
+                $left = @(Get-ItemProperty $hives -ErrorAction Ignore |
+                    Where-Object { $_.DisplayName -like $software } | ForEach-Object DisplayName)
+                if (!$left) { break }
+                Start-Sleep 1
+            }
+        }
+
         if ($orphan) {
             Write-Host "::error::$pkg uninstalled but left shims behind: $($orphan -join ', ')"
+            $failed += $pkg
+        }
+        elseif ($left) {
+            Write-Host "::error::$pkg uninstalled but the app is still installed: $($left -join ', ')"
             $failed += $pkg
         }
         else {
