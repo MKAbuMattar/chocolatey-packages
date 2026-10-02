@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>himalaya</id>
-    <version>2.1.0</version>
+    <version>2.2.1</version>
     <title>Himalaya</title>
     <authors>pimalaya</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 CLI to manage emails.
 ]]></description>
     <summary>CLI to manage emails</summary>
-    <releaseNotes>https://github.com/pimalaya/himalaya/releases/tag/v2.1.0</releaseNotes>
+    <releaseNotes>https://github.com/pimalaya/himalaya/releases/tag/v2.2.1</releaseNotes>
     <copyright>Copyright pimalaya</copyright>
     <tags>himalaya cli client email gpg imap notmuch pgp smtp</tags>
     <projectSourceUrl>https://github.com/pimalaya/himalaya</projectSourceUrl>

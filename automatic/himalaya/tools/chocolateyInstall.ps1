@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/pimalaya/himalaya/releases/download/v2.1.0/himalaya.x86_64-windows.zip'
-  checksum64     = 'dd2682bf61baabd52c1dfead872e09156862b9b3ea076595a1f7f9559c8d4435'
+  url64          = 'https://github.com/pimalaya/himalaya/releases/download/v2.2.1/himalaya.x86_64-windows.zip'
+  checksum64     = '34ef6f148834aeafa2c9a558ec144a678fb12dcfcc618786b0eaeceb52794e00'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
