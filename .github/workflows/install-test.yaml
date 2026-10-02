@@ -45,8 +45,13 @@ jobs:
         env:
           github_api_key: ${{ secrets.GITHUB_TOKEN }}
           github_user_repo: ${{ github.repository }}
+          # Through env, not interpolated into the script, so a value typed into the
+          # dispatch form cannot inject PowerShell.
+          PACKAGES: ${{ inputs.packages }}
         run: |
-          $names = @()
+          # A manual run used to ignore its packages input: $names stayed empty and
+          # install_test.ps1 tested every package, over an hour, instead of the one asked for.
+          $names = @($Env:PACKAGES -split '\s+' -ne '')
           if ('${{ github.event_name }}' -eq 'pull_request') {
             $files = git diff --name-only origin/${{ github.base_ref }}...HEAD
             $names = $files | Where-Object { $_ -match '^automatic/([^/]+)/' } |
