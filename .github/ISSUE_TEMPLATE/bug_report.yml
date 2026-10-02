@@ -55,6 +55,7 @@ body:
         - iwe
         - jqp
         - kilocode
+        - kimi-code
         - kortix
         - kubectl-cnpg
         - kytyps5
@@ -132,6 +133,7 @@ body:
         - xiaomi-mimo-ai
         - xleak
         - ytsage
+        - zcode
         - the repository itself
     validations:
       required: true
