@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v0.20.0/CodeNomad-Electron-windows-x64-0.20.0.zip'
-  checksum64     = '8ea10d1d9b9ab113c72b20b10020a901672014bb7e6b2343bd60dd13678341ad'
+  url64          = 'https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v0.20.1/CodeNomad-Electron-windows-x64-0.20.1.zip'
+  checksum64     = 'ec22c33e1552bce585c21cea241921f1a8269491a851ae88216f5f50224bcc64'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
