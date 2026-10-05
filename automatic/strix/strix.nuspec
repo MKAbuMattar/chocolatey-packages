@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>strix</id>
-    <version>1.6.2</version>
+    <version>1.7.0</version>
     <title>Strix</title>
     <authors>usestrix</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ Open-source AI penetration testing tool to find and fix your app's vulnerabiliti
 The package installs the `strix` command. Open a new terminal after installing so the PATH change takes effect, then see the [Strix documentation](https://strix.ai) for the available options.
 ]]></description>
     <summary>Open-source AI penetration testing tool to find and fix your app's vulnerabilities</summary>
-    <releaseNotes>https://github.com/usestrix/strix/releases/tag/v1.6.2</releaseNotes>
+    <releaseNotes>https://github.com/usestrix/strix/releases/tag/v1.7.0</releaseNotes>
     <copyright>Copyright usestrix</copyright>
     <tags>strix agents ai-hacking ai-pentesting ai-security bug-bounty code-quality security pentest ai cli</tags>
     <projectSourceUrl>https://github.com/usestrix/strix</projectSourceUrl>
