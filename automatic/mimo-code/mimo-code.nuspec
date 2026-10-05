@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mimo-code</id>
-    <version>0.1.14</version>
+    <version>0.1.15</version>
     <title>MiMo Code</title>
     <authors>XiaomiMiMo</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ PATH change takes effect, then run `mimo` in a project directory. See the
 [MiMo Code website](https://mimo.xiaomi.com/mimocode) for setup and models.
 ]]></description>
     <summary>Terminal-native AI coding assistant from Xiaomi MiMo</summary>
-    <releaseNotes>https://github.com/XiaomiMiMo/MiMo-Code/releases/tag/v0.1.14</releaseNotes>
+    <releaseNotes>https://github.com/XiaomiMiMo/MiMo-Code/releases/tag/v0.1.15</releaseNotes>
     <copyright>Copyright (c) 2026 MiMo Code, Xiaomi Corporation, Copyright (c) 2025 opencode</copyright>
     <tags>mimo-code mimo xiaomi ai ai-agent coding-assistant cli terminal llm</tags>
     <projectSourceUrl>https://github.com/XiaomiMiMo/MiMo-Code</projectSourceUrl>
