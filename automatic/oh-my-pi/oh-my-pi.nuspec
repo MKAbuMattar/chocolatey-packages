@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>oh-my-pi</id>
-    <version>18.6.1</version>
+    <version>18.6.3</version>
     <title>Oh My Pi</title>
     <authors>can1357</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ change takes effect, then run `omp` in a project directory. See the
 [Oh My Pi documentation](https://omp.sh) for configuration and providers.
 ]]></description>
     <summary>A coding agent with the IDE wired in</summary>
-    <releaseNotes>https://github.com/can1357/oh-my-pi/releases/tag/v18.6.1</releaseNotes>
+    <releaseNotes>https://github.com/can1357/oh-my-pi/releases/tag/v18.6.3</releaseNotes>
     <copyright>Copyright (c) 2025 Mario Zechner, Copyright (c) 2025-2026 Can Bölük</copyright>
     <tags>oh-my-pi omp ai-agent ai-coding-agent coding-assistant cli tui mcp llm claude openai</tags>
     <projectSourceUrl>https://github.com/can1357/oh-my-pi</projectSourceUrl>
