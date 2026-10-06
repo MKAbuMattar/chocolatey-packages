@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>jcode</id>
-    <version>0.90.1</version>
+    <version>0.91.0</version>
     <title>jcode</title>
     <authors>1jehuang</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -21,7 +21,7 @@ The package installs the `jcode` command. Open a new terminal after installing s
 PATH change takes effect, then run `jcode` in a project directory.
 ]]></description>
     <summary>High-performance coding agent harness written in Rust</summary>
-    <releaseNotes>https://github.com/1jehuang/jcode/releases/tag/v0.90.1</releaseNotes>
+    <releaseNotes>https://github.com/1jehuang/jcode/releases/tag/v0.91.0</releaseNotes>
     <copyright>Copyright (c) 2025 Jeremy Huang</copyright>
     <tags>jcode ai ai-agent coding-assistant harness cli terminal rust</tags>
     <projectSourceUrl>https://github.com/1jehuang/jcode</projectSourceUrl>
