@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openship</id>
-    <version>0.8.0</version>
+    <version>0.8.1</version>
     <title>Openship</title>
     <authors>oblien</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Self-hosted deployment platform
 ]]></description>
     <summary>Self-hosted deployment platform</summary>
-    <releaseNotes>https://github.com/oblien/openship/releases/tag/v0.8.0</releaseNotes>
+    <releaseNotes>https://github.com/oblien/openship/releases/tag/v0.8.1</releaseNotes>
     <copyright>Copyright oblien</copyright>
     <tags>openship agents ai deployments self-hosted</tags>
     <projectSourceUrl>https://github.com/oblien/openship</projectSourceUrl>
