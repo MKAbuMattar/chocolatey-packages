@@ -6,7 +6,7 @@
     <title>Codewhale</title>
     <authors>Hmbown</authors>
     <owners>Mohammad Abu Mattar</owners>
-    <licenseUrl>https://github.com/Hmbown/Codewhale/blob/main/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/codewhale-hq/Codewhale/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://codewhale.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@560b6b0a211ebfd72acc4a581ef318c71eb7f9eb/icons/codewhale.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -22,11 +22,11 @@ terminal after installing so the PATH change takes effect, then run `codewhale` 
 project directory.
 ]]></description>
     <summary>Open-source coding agent for the terminal, built in Rust</summary>
-    <releaseNotes>https://github.com/Hmbown/Codewhale/releases/tag/v0.10.0</releaseNotes>
+    <releaseNotes>https://github.com/codewhale-hq/Codewhale/releases/tag/v0.10.0</releaseNotes>
     <copyright>Copyright (c) 2024-2025 DeepSeek-TUI Contributors</copyright>
     <tags>codewhale codew ai ai-agent coding-assistant cli terminal rust llm</tags>
-    <projectSourceUrl>https://github.com/Hmbown/Codewhale</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/Hmbown/Codewhale/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/codewhale-hq/Codewhale</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/codewhale-hq/Codewhale/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/codewhale</packageSourceUrl>
     <docsUrl>https://codewhale.net/</docsUrl>
   </metadata>

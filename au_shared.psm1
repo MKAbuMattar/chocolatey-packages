@@ -34,6 +34,54 @@ function Get-GitHubHeaders {
     if ($Env:github_api_key) { @{ Authorization = "token $Env:github_api_key" } } else { @{} }
 }
 
+function Invoke-GitHubApi {
+    <#
+        .Synopsis
+            GET a GitHub API URL and return the parsed JSON, keeping the token across
+            redirects.
+
+        .Description
+            GitHub answers a renamed repository with a 301 to /repositories/<id>.
+            Windows PowerShell 5.1, which the workflows run, follows that redirect but
+            drops the Authorization header, so the request goes out anonymous and
+            spends the runner IP's 60-an-hour budget. codewhale failed this way with
+            "API rate limit exceeded for 52.250.243.33" although the token was set.
+            Following the redirect by hand keeps the header, and the warning names the
+            new location so the package can be pointed at it.
+    #>
+    [CmdletBinding()]
+    param([Parameter(Mandatory)][string]$Url)
+
+    $headers = Get-GitHubHeaders
+    for ($hop = 0; $hop -lt 5; $hop++) {
+        $request = [Net.HttpWebRequest]::Create($Url)
+        $request.AllowAutoRedirect = $false
+        $request.UserAgent = 'chocolatey-packages'
+        $request.Accept = 'application/vnd.github+json'
+        foreach ($key in $headers.Keys) { $request.Headers[$key] = $headers[$key] }
+        try { $response = $request.GetResponse() }
+        catch [Net.WebException] {
+            $response = $_.Exception.Response
+            if (!$response) { throw }
+        }
+        try {
+            $status = [int]$response.StatusCode
+            if ($status -in 301, 302, 307, 308) {
+                $next = $response.Headers['Location']
+                Write-Warning "GitHub redirected $Url to $next; the repository was probably renamed."
+                $Url = $next
+                continue
+            }
+            $reader = New-Object IO.StreamReader($response.GetResponseStream())
+            try { $body = $reader.ReadToEnd() } finally { $reader.Dispose() }
+        }
+        finally { $response.Dispose() }
+        if ($status -ge 400) { throw "GitHub API $status for ${Url}: $body" }
+        return $body | ConvertFrom-Json
+    }
+    throw "Too many redirects for $Url"
+}
+
 function Get-GitHubRelease {
     <#
         .Synopsis
@@ -83,10 +131,9 @@ function Get-GitHubRelease {
         [int]$MaxPages = 1
     )
 
-    $headers = Get-GitHubHeaders
 
     if (!$TagPrefix -and !$TagPattern -and !$WithAsset -and !$WithAssetPattern) {
-        return Invoke-RestMethod "https://api.github.com/repos/$Repo/releases/latest" -Headers $headers
+        return Invoke-GitHubApi "https://api.github.com/repos/$Repo/releases/latest"
     }
 
     # A busy monorepo can push one component's newest release past the first page.
@@ -94,8 +141,7 @@ function Get-GitHubRelease {
     # 100 releases" while the release it wanted sat on page two.
     $release = $null
     for ($page = 1; $page -le $MaxPages -and !$release; $page++) {
-        $releases = Invoke-RestMethod `
-            "https://api.github.com/repos/$Repo/releases?per_page=$PerPage&page=$page" -Headers $headers
+        $releases = Invoke-GitHubApi "https://api.github.com/repos/$Repo/releases?per_page=$PerPage&page=$page"
         if (!$releases) { break }
         $release = $releases | Where-Object {
             -not $_.prerelease -and
@@ -319,6 +365,6 @@ function Get-AuSearchReplace {
     $map
 }
 
-Export-ModuleMember -Function Get-GitHubHeaders, Get-GitHubRelease, Get-VersionFromTag,
+Export-ModuleMember -Function Get-GitHubHeaders, Invoke-GitHubApi, Get-GitHubRelease, Get-VersionFromTag,
     Get-GitHubAssetUrl, Get-GitHubReleaseNotesUrl, Get-GitHubMatchingAsset,
     Get-GitHubLatest, Get-AuSearchReplace
