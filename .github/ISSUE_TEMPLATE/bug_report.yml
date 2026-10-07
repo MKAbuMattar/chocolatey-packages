@@ -13,6 +13,7 @@ body:
         - agent-orchestrator
         - alertmanager
         - alpaca-electron
+        - anyps5
         - anythingllm
         - archon
         - arrow-flight-sql-odbc
