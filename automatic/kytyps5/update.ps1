@@ -14,7 +14,7 @@ function global:au_GetLatest {
   # The API does not list releases in publish order either: on 29 Sep it put af4edc2
   # (20:20) above 05057c9 (21:03). Taking the first match could package an older build
   # than the newest, so sort by publish time and take the newest that ships Windows.
-  $releases = Invoke-RestMethod "https://api.github.com/repos/$repo/releases?per_page=100" -Headers (Get-GitHubHeaders)
+  $releases = Invoke-GitHubApi "https://api.github.com/repos/$repo/releases?per_page=100"
   $release = $releases |
     Where-Object { -not $_.prerelease -and ($_.assets.name -like 'KytyPS5-*-Windows-x64.zip') } |
     Sort-Object { ConvertTo-UtcTime $_.published_at } -Descending |

@@ -1,7 +1,7 @@
 import-module Chocolatey-AU
 Import-Module (Join-Path $PSScriptRoot '../../au_shared.psm1') -Global
 
-$repo = 'Hmbown/Codewhale'
+$repo = 'codewhale-hq/Codewhale'
 
 function global:au_SearchReplace { Get-AuSearchReplace }
 
