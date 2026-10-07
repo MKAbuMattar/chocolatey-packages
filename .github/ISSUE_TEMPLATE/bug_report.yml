@@ -16,6 +16,7 @@ body:
         - anythingllm
         - archon
         - arrow-flight-sql-odbc
+        - artcraft
         - autoclaw
         - bananas
         - boring-registry
@@ -34,13 +35,16 @@ body:
         - daytona
         - debug-skill
         - deepchat
+        - designcraft
         - dlman
         - dr-claw
         - dyad
         - e2ecp
+        - effectcraft
         - ever-gauzy
         - faceswap
         - filebrowser
+        - filmcraft
         - flet
         - flux-operator
         - forgecode
@@ -65,6 +69,7 @@ body:
         - kubectl-cnpg
         - kytyps5
         - lean-ctx
+        - lightcraft
         - litestream
         - llmfit
         - llrt
@@ -111,6 +116,7 @@ body:
         - pixi
         - pkl
         - posthog-cli
+        - printcraft
         - qodo-cover
         - qwen-audio-agent
         - qwen-code
@@ -131,6 +137,7 @@ body:
         - tuios
         - txm
         - vaults3
+        - vectorcraft
         - vercel-native
         - voicestudio
         - whisper-cpp
