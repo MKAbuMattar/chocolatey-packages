@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>reasonix</id>
-    <version>1.39.7</version>
+    <version>1.39.8</version>
     <title>Reasonix</title>
     <authors>esengine</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -21,7 +21,7 @@ The package installs the Reasonix desktop app. Start it from the Start Menu and 
 your model provider.
 ]]></description>
     <summary>A coding agent for complex software engineering tasks, built around DeepSeek</summary>
-    <releaseNotes>https://github.com/esengine/DeepSeek-Reasonix/releases/tag/desktop-v1.39.7</releaseNotes>
+    <releaseNotes>https://github.com/esengine/DeepSeek-Reasonix/releases/tag/desktop-v1.39.8</releaseNotes>
     <copyright>Copyright (c) 2026 Reasonix Contributors</copyright>
     <tags>reasonix deepseek ai ai-agent coding-assistant desktop llm</tags>
     <projectSourceUrl>https://github.com/esengine/DeepSeek-Reasonix</projectSourceUrl>
