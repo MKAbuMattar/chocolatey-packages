@@ -11,8 +11,7 @@ function global:au_GetLatest {
   # carries the version, so it cannot be matched as a literal asset and -RequireAsset
   # cannot be used. Walk the releases instead and take the newest stable one that
   # actually has an installer, rather than failing the run when a release ships without.
-  $headers = Get-GitHubHeaders
-  $releases = Invoke-RestMethod "https://api.github.com/repos/$repo/releases?per_page=30" -Headers $headers
+  $releases = Invoke-GitHubApi "https://api.github.com/repos/$repo/releases?per_page=30"
 
   $release = $releases | Where-Object {
     -not $_.prerelease -and ($_.assets.name -match '^nodeterm-Setup-.*\.exe$')

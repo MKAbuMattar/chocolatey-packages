@@ -6,8 +6,8 @@
     <title>Concat</title>
     <authors>jub0t</authors>
     <owners>Mohammad Abu Mattar</owners>
-    <licenseUrl>https://github.com/jub0t/Concat/blob/main/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/jub0t/Concat</projectUrl>
+    <licenseUrl>https://github.com/jub0t/concat/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jub0t/concat</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5e1a91e4df00df54c56144e126dbeb3745ee6009/icons/concat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Concat?
@@ -17,13 +17,13 @@ Free & Open-Source CapCut replacement.
 Upstream describes it with these topics: audio-processor, auto-caption, automation, capcut, capcut-alternative, content-creation, cross-platform, desktop-app.
 ]]></description>
     <summary>Free &amp; Open-Source CapCut replacement</summary>
-    <releaseNotes>https://github.com/jub0t/Concat/releases/tag/v0.2.6</releaseNotes>
+    <releaseNotes>https://github.com/jub0t/concat/releases/tag/v0.2.6</releaseNotes>
     <copyright>Copyright jub0t</copyright>
     <tags>concat audio-processor auto-caption automation capcut capcut-alternative content-creation cross-platform desktop-app video editor desktop</tags>
-    <projectSourceUrl>https://github.com/jub0t/Concat</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/jub0t/Concat/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/jub0t/concat</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/jub0t/concat/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/concat</packageSourceUrl>
-    <docsUrl>https://github.com/jub0t/Concat</docsUrl>
+    <docsUrl>https://github.com/jub0t/concat</docsUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

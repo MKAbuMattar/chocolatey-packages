@@ -1,7 +1,7 @@
 import-module Chocolatey-AU
 Import-Module (Join-Path $PSScriptRoot '../../au_shared.psm1') -Global
 
-$repo = 'jub0t/Concat'
+$repo = 'jub0t/concat'
 
 function global:au_SearchReplace { Get-AuSearchReplace }
 
