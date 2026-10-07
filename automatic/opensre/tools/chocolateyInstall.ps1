@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/Tracer-Cloud/opensre/releases/download/v0.1.2026.10.6/opensre_0.1.2026.10.6_windows-x64.zip'
-  checksum64     = '8b3a4380e20fac4a70d2976d45ba88761b77403524725051618e08952bc7e49a'
+  url64          = 'https://github.com/Tracer-Cloud/opensre/releases/download/v0.1.2026.10.7/opensre_0.1.2026.10.7_windows-x64.zip'
+  checksum64     = '8e015e4553f14caaca2a2d528caab6af62e9e7aad9cb5f08de03b88476be812a'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
