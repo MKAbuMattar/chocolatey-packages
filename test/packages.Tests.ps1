@@ -83,6 +83,11 @@ Describe 'automatic package identity and metadata' {
         "$($paths.Id) ships no install script, so it has to depend on the package that replaced it"
       Test-Path $paths.Update | Should -BeFalse -Because `
         "$($paths.Id) is a metapackage, so AU has nothing to update and should skip it"
+      # Without a <files> element choco pack takes every file in the folder, README.md
+      # included, and republish.ps1 then refuses the package; printcraft failed to publish
+      # that way. An empty <files /> ships the nuspec alone.
+      $nuspec.Text | Should -Match '<files\s*/>|<files>' -Because `
+        "$($paths.Id) needs an explicit <files /> or choco pack will bundle its README"
     }
     else {
       Test-Path $paths.Install | Should -BeTrue
