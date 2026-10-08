@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/openclaw/openclaw/releases/download/v2026.9.1/OpenClawCompanion-Setup-x64.exe'
-  checksum64     = '2e2aef8523fed5c8803f449bc161ade6fe3ba89c12b767d936c3df2388466e25'
+  url64          = 'https://github.com/openclaw/openclaw/releases/download/v2026.9.9/OpenClawCompanion-Setup-x64.exe'
+  checksum64     = '068c059da30dc7602f4abed00c5789ae3207bd27d15b350ca2e3256dd8af274d'
   checksumType64 = 'sha256'
   softwareName   = 'OpenClaw*'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
