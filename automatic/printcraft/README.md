@@ -1,15 +1,15 @@
-# PdfCraft Chocolatey Package
+# PrintCraft Chocolatey Package
 
-## What is PdfCraft?
+## What is PrintCraft?
 
-PdfCraft is an open-source PDF workbench written in Rust. It reads, organizes, combines,
-splits and secures PDFs in a fast native app, following the Adobe Acrobat workflow as a
-clean-room reimplementation.
+PrintCraft was an open-source PDF workbench written in Rust. At version 0.4.0 the project
+renamed itself to PdfCraft and moved to
+[storytold/pdfcraft](https://github.com/storytold/pdfcraft).
 
-It was called PrintCraft until version 0.4.0, which is why this package's id is still
-`printcraft`. Installing it over PrintCraft upgrades that install in place.
+## This package is deprecated
 
-## Usage
+Install [pdfcraft](https://community.chocolatey.org/packages/pdfcraft) instead.
 
-The package installs the PdfCraft desktop app. Start it from the Start Menu. See
-[PdfCraft on getartcraft.com](https://getartcraft.com/apps/pdfcraft) for more.
+This package no longer carries the application. It depends on `pdfcraft`, so installing
+it still gets you the software, and anyone who already has `printcraft` keeps working. A
+published Chocolatey id cannot be renamed, which is why the id stays.

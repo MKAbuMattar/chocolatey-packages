@@ -3,28 +3,28 @@
   <metadata>
     <id>printcraft</id>
     <version>0.4.0</version>
-    <title>PdfCraft</title>
+    <title>PrintCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/storytold/pdfcraft/blob/main/LICENSE-APACHE</licenseUrl>
     <projectUrl>https://getartcraft.com/apps/pdfcraft</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@23b0e290e41722f9927f72a4f55160370e77cda2/icons/printcraft.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## What is PdfCraft?
+    <description><![CDATA[## What is PrintCraft?
 
-PdfCraft is an open-source PDF workbench written in Rust. It reads, organizes, combines,
-splits and secures PDFs in a fast native app, following the Adobe Acrobat workflow as a
-clean-room reimplementation.
+PrintCraft was an open-source PDF workbench written in Rust. At version 0.4.0 the project
+renamed itself to PdfCraft and moved to
+[storytold/pdfcraft](https://github.com/storytold/pdfcraft).
 
-It was called PrintCraft until version 0.4.0, which is why this package's id is still
-`printcraft`. Installing it over PrintCraft upgrades that install in place.
+## This package is deprecated
 
-## Usage
+Install [pdfcraft](https://community.chocolatey.org/packages/pdfcraft) instead.
 
-The package installs the PdfCraft desktop app. Start it from the Start Menu. See
-[PdfCraft on getartcraft.com](https://getartcraft.com/apps/pdfcraft) for more.
+This package no longer carries the application. It depends on `pdfcraft`, so installing
+it still gets you the software, and anyone who already has `printcraft` keeps working. A
+published Chocolatey id cannot be renamed, which is why the id stays.
 ]]></description>
-    <summary>Open-source PDF workbench to read, organize, combine and secure PDFs, written in Rust</summary>
+    <summary>Deprecated. Renamed upstream to PdfCraft; installs the pdfcraft package</summary>
     <releaseNotes>https://github.com/storytold/pdfcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the PdfCraft contributors</copyright>
     <tags>printcraft pdfcraft pdf pdf-editor documents rust</tags>
@@ -32,8 +32,8 @@ The package installs the PdfCraft desktop app. Start it from the Start Menu. See
     <bugTrackerUrl>https://github.com/storytold/pdfcraft/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/printcraft</packageSourceUrl>
     <docsUrl>https://getartcraft.com/apps/pdfcraft</docsUrl>
+    <dependencies>
+      <dependency id="pdfcraft" version="0.4.0" />
+    </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
