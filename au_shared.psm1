@@ -77,7 +77,11 @@ function Invoke-GitHubApi {
         }
         finally { $response.Dispose() }
         if ($status -ge 400) { throw "GitHub API $status for ${Url}: $body" }
-        return $body | ConvertFrom-Json
+        # Windows PowerShell 5.1's ConvertFrom-Json emits a JSON array as one object, so a
+        # caller piping straight into Where-Object saw a single item: sharpemu's updater
+        # found no release under 5.1 and all of them under 7. ForEach-Object writes the
+        # elements one by one in both, the way PowerShell 7 already does.
+        return $body | ConvertFrom-Json | ForEach-Object { $_ }
     }
     throw "Too many redirects for $Url"
 }
