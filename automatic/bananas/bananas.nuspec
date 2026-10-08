@@ -35,4 +35,6 @@ published Chocolatey id cannot be renamed, which is why the id stays.
       <dependency id="p2p-kiwi" version="3.3.0" />
     </dependencies>
   </metadata>
+  <!-- A metapackage ships nothing: without this, choco pack would include README.md -->
+  <files />
 </package>
