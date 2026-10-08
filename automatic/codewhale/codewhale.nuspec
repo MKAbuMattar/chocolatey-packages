@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>codewhale</id>
-    <version>0.10.0</version>
+    <version>0.10.1</version>
     <title>Codewhale</title>
     <authors>Hmbown</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -22,7 +22,7 @@ terminal after installing so the PATH change takes effect, then run `codewhale` 
 project directory.
 ]]></description>
     <summary>Open-source coding agent for the terminal, built in Rust</summary>
-    <releaseNotes>https://github.com/codewhale-hq/Codewhale/releases/tag/v0.10.0</releaseNotes>
+    <releaseNotes>https://github.com/codewhale-hq/Codewhale/releases/tag/v0.10.1</releaseNotes>
     <copyright>Copyright (c) 2024-2025 DeepSeek-TUI Contributors</copyright>
     <tags>codewhale codew ai ai-agent coding-assistant cli terminal rust llm</tags>
     <projectSourceUrl>https://github.com/codewhale-hq/Codewhale</projectSourceUrl>
