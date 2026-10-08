@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>touchepx5</id>
+    <version>0.0.2-beta6</version>
+    <title>Touché PX5</title>
+    <authors>Techx3</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/Techx3/TouchePX5/blob/main/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/Techx3/TouchePX5</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@51eb35e9b43544404a37483ff0f18075b4d3acb3/icons/touchepx5.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is Touché PX5?
+
+Touché PX5 is an experimental PlayStation 5 emulator for PC, written in C#. It
+originated from [SharpEmu](https://github.com/sharpemu/sharpemu) and shares much
+of its code.
+
+Upstream has published only beta builds, and none since July 2026. For an actively
+developed emulator from the same lineage, see the `sharpemu` package.
+
+It is not affiliated with Sony Interactive Entertainment. It does not provide games or
+system software; use only game files you have obtained legally.
+
+## Usage
+
+The package installs the `touchepx5` command and a Start Menu shortcut, both of which open
+Touché PX5. See the [project README](https://github.com/Techx3/TouchePX5#readme) for requirements and
+game compatibility.
+]]></description>
+    <summary>Experimental PlayStation 5 emulator, a fork of SharpEmu</summary>
+    <releaseNotes>https://github.com/Techx3/TouchePX5/releases/tag/v0.0.2-beta.6</releaseNotes>
+    <copyright>Copyright (C) 2026 Touché PX5 contributors, Copyright (C) 2026 SharpEmu Emulator Project</copyright>
+    <tags>touchepx5 ps5 playstation5 emulator emulation vulkan games</tags>
+    <projectSourceUrl>https://github.com/Techx3/TouchePX5</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Techx3/TouchePX5/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/touchepx5</packageSourceUrl>
+    <docsUrl>https://github.com/Techx3/TouchePX5#readme</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

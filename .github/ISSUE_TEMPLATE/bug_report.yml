@@ -30,6 +30,7 @@ body:
         - codewhale
         - colibri
         - concat
+        - craziiemu
         - crush
         - dashbeam
         - data-formulator
@@ -110,6 +111,7 @@ body:
         - p2p-kiwi
         - patent
         - pdf-brain
+        - pdfcraft
         - pentesterflow
         - photocraft
         - pi
@@ -126,6 +128,7 @@ body:
         - rtk
         - sarab
         - servoshell
+        - sharpemu
         - sql-studio
         - squad
         - strix
@@ -134,6 +137,7 @@ body:
         - terax
         - terralist
         - tiny-rdm
+        - touchepx5
         - traccar
         - tuios
         - txm

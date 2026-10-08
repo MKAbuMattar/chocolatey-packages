@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>sharpemu</id>
+    <version>0.0.5.396140</version>
+    <title>SharpEmu</title>
+    <authors>sharpemu</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/sharpemu/sharpemu/blob/main/LICENSE.txt</licenseUrl>
+    <projectUrl>https://sharpemu.app</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@51eb35e9b43544404a37483ff0f18075b4d3acb3/icons/sharpemu.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is SharpEmu?
+
+SharpEmu is an experimental, open-source PlayStation 5 emulator written in C#. It runs
+PS5 executables directly on the host x86-64 CPU and renders through Vulkan. It is in
+early development, and game compatibility varies widely between titles and builds.
+
+It is not affiliated with Sony Interactive Entertainment. It does not provide games or
+system software; use only game files you have obtained legally.
+
+## Usage
+
+The package installs the `sharpemu` command and a Start Menu shortcut, both of which open
+SharpEmu. See the [project README](https://github.com/sharpemu/sharpemu#readme) for requirements and
+game compatibility.
+]]></description>
+    <summary>Experimental PlayStation 5 emulator written in C#</summary>
+    <releaseNotes>https://github.com/sharpemu/sharpemu/releases/tag/v0.0.5-nexus</releaseNotes>
+    <copyright>Copyright (C) 2026 SharpEmu Emulator Project</copyright>
+    <tags>sharpemu ps5 playstation5 emulator emulation vulkan games</tags>
+    <projectSourceUrl>https://github.com/sharpemu/sharpemu</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/sharpemu/sharpemu/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/sharpemu</packageSourceUrl>
+    <docsUrl>https://github.com/sharpemu/sharpemu#readme</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

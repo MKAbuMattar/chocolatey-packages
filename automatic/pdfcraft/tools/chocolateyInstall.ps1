@@ -4,10 +4,10 @@ $ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/printcraft/releases/download/v0.2.1/printcraft-0.2.1-windows-x64.msi'
-  checksum64     = '35408d34f23fbb1224251a95d04a4a7c3472f24faa6609ba8c953f4d46fcc6cf'
+  url64          = 'https://github.com/storytold/pdfcraft/releases/download/v0.4.0/pdfcraft-0.4.0-windows-x64.msi'
+  checksum64     = '76e61e2791cab97273c0d900dc95411c1114699386e9c381a07e5fe31a643e3a'
   checksumType64 = 'sha256'
-  softwareName   = 'PrintCraft*'
+  softwareName   = 'PdfCraft*'
   silentArgs     = '/qn /norestart'
   validExitCodes = @(0, 3010, 1641)
 }
