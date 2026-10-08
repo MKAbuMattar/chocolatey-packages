@@ -32,6 +32,11 @@ param(
 
 # Local runs read secrets from update_vars.ps1 (git ignored), CI sets them as env vars.
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
+# Or from CHOCO_API_KEY in .env (git ignored), the same name the CI secret has.
+if (!$Env:api_key -and (Test-Path $PSScriptRoot/.env)) {
+    $line = Get-Content $PSScriptRoot/.env | Where-Object { $_ -match '^\s*CHOCO_API_KEY\s*=' } | Select-Object -First 1
+    if ($line) { $Env:api_key = ($line -replace '^\s*CHOCO_API_KEY\s*=\s*', '').Trim().Trim('"', "'") }
+}
 
 $ErrorActionPreference = 'Stop'
 
