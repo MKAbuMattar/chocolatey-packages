@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>octobot</id>
-    <version>3.0.0-beta2</version>
+    <version>3.0.0-beta3</version>
     <title>OctoBot</title>
     <authors>Drakkar-Software</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ Free open source crypto trading bot to automate AI, Grid, DCA and TradingView st
 The package installs the `OctoBot` command. Open a new terminal after installing so the PATH change takes effect, then see the [OctoBot documentation](https://www.octobot.cloud) for the available options.
 ]]></description>
     <summary>Free open source crypto trading bot to automate AI, Grid, DCA and TradingView strategies on Binance, Hyperliquid and 15+ exchanges, with a simple interface</summary>
-    <releaseNotes>https://github.com/Drakkar-Software/OctoBot/releases/tag/3.0.0-beta2</releaseNotes>
+    <releaseNotes>https://github.com/Drakkar-Software/OctoBot/releases/tag/3.0.0-beta3</releaseNotes>
     <copyright>Copyright Drakkar-Software</copyright>
     <tags>octobot ai-trading backtest binance-api bitcoin coinbase-bot cryptocurrencies free paper-trading</tags>
     <projectSourceUrl>https://github.com/Drakkar-Software/OctoBot</projectSourceUrl>
