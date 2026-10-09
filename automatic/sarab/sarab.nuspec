@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sarab</id>
-    <version>0.0.9</version>
+    <version>0.0.10</version>
     <title>Sarab</title>
     <authors>MKAbuMattar</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -25,7 +25,7 @@ The package installs the Sarab desktop app. Start it from the Start Menu and pic
 wallpaper. See [sarab.mkabumattar.com](https://sarab.mkabumattar.com) for more.
 ]]></description>
     <summary>Animated desktop wallpapers for Windows that rest when you work</summary>
-    <releaseNotes>https://github.com/MKAbuMattar/sarab/releases/tag/v0.0.9</releaseNotes>
+    <releaseNotes>https://github.com/MKAbuMattar/sarab/releases/tag/v0.0.10</releaseNotes>
     <copyright>Copyright Sarab contributors</copyright>
     <tags>sarab wallpaper animated-wallpaper live-wallpaper video-wallpaper desktop windows</tags>
     <projectSourceUrl>https://github.com/MKAbuMattar/sarab</projectSourceUrl>
