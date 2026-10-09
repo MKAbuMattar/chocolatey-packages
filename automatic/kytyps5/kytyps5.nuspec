@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kytyps5</id>
-    <version>2026.10.8.1833</version>
+    <version>2026.10.9.118</version>
     <title>KytyPS5</title>
     <authors>KytyPS5</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -26,7 +26,7 @@ the KytyPS5 launcher. See the [project README](https://github.com/KytyPS5/KytyPS
 for system requirements and current game compatibility.
 ]]></description>
     <summary>Free and open-source PlayStation 5 emulator</summary>
-    <releaseNotes>https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-08-2f4b8a3</releaseNotes>
+    <releaseNotes>https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-10-09-7b9997b</releaseNotes>
     <copyright>Copyright KytyPS5</copyright>
     <tags>kytyps5 kyty ps5 playstation5 emulator emulation vulkan games</tags>
     <projectSourceUrl>https://github.com/KytyPS5/KytyPS5</projectSourceUrl>
