@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/block/buzz/releases/download/desktop-v0.5.27/Buzz_0.5.27_x64-setup_alpha-unsigned.exe'
-  checksum64     = '4e25bdc472cd8a06b0c085e7a313650821b438ecc762076e3e87fa4da79cb460'
+  url64          = 'https://github.com/block/buzz/releases/download/desktop-v0.5.28/Buzz_0.5.28_x64-setup_alpha-unsigned.exe'
+  checksum64     = 'dfecae208e81f6606efeacfb476e9947c9c14dfc6ba992742c57bb469d594b5d'
   checksumType64 = 'sha256'
   softwareName   = 'Buzz*'
   silentArgs     = '/S'
