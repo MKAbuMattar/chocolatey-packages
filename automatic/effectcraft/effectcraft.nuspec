@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>effectcraft</id>
-    <version>0.4.0</version>
+    <version>0.6.0</version>
     <title>EffectCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the EffectCraft desktop app. Start it from the Start Menu. 
 [EffectCraft on getartcraft.com](https://getartcraft.com/apps/effectcraft) for more.
 ]]></description>
     <summary>Open-source motion graphics and visual effects compositor, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/effectcraft/releases/tag/v0.4.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/effectcraft/releases/tag/v0.6.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the EffectCraft contributors</copyright>
     <tags>effectcraft motion-graphics vfx compositing animation video rust</tags>
     <projectSourceUrl>https://github.com/storytold/effectcraft</projectSourceUrl>
