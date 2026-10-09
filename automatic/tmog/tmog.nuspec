@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>tmog</id>
+    <version>1.0.1</version>
+    <title>Task Manager TMOG</title>
+    <authors>Plummer's Software LLC</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://tmog.org/rtm/pro-info.html#commercial-product-license</licenseUrl>
+    <projectUrl>https://tmog.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@bde19dc9e3e8649d18cb87f910702573129fa30e/icons/tmog.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is Task Manager TMOG?
+
+Task Manager TMOG is a task manager and system monitor from Dave Plummer, the original
+author of Windows Task Manager. It shows system metrics, processes and performance
+history in a native app, and adds a system-load screensaver and swappable skins.
+
+The free edition is closed source and free to use under the license shipped with the
+app. TMOG PRO is a paid upgrade with more features; see
+[TMOG PRO](https://tmog.org/rtm/pro-info.html).
+
+## Usage
+
+The package installs Task Manager TMOG for all users. Start it from the Start Menu.
+]]></description>
+    <summary>Native task manager and system monitor with process views and performance history</summary>
+    <releaseNotes>https://tmog.org/rtm/release-notes.html</releaseNotes>
+    <copyright>Copyright (c) 2026 Plummers' Software LLC</copyright>
+    <tags>tmog task-manager system-monitor process-monitor performance freeware</tags>
+    <bugTrackerUrl>https://tmog.org/rtm/feedback.html</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/tmog</packageSourceUrl>
+    <docsUrl>https://tmog.org/rtm/support.html</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
