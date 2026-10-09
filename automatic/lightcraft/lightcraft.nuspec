@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>lightcraft</id>
-    <version>0.2.1</version>
+    <version>0.4.0</version>
     <title>LightCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -22,7 +22,7 @@ The package installs the LightCraft desktop app. Start it from the Start Menu. S
 [LightCraft on getartcraft.com](https://getartcraft.com/apps/lightcraft) for more.
 ]]></description>
     <summary>Open-source photo library and raw developer, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/lightcraft/releases/tag/v0.2.1</releaseNotes>
+    <releaseNotes>https://github.com/storytold/lightcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the LightCraft contributors</copyright>
     <tags>lightcraft photo raw photography photo-library rust</tags>
     <projectSourceUrl>https://github.com/storytold/lightcraft</projectSourceUrl>
