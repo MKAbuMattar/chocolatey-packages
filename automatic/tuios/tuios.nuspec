@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>tuios</id>
-    <version>0.9.1</version>
+    <version>0.9.2</version>
     <title>TuiOS</title>
     <authors>Gaurav-Gosain</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Terminal UI OS (Terminal Multiplexer).
 ]]></description>
     <summary>Terminal UI OS (Terminal Multiplexer)</summary>
-    <releaseNotes>https://github.com/Gaurav-Gosain/tuios/releases/tag/v0.9.1</releaseNotes>
+    <releaseNotes>https://github.com/Gaurav-Gosain/tuios/releases/tag/v0.9.2</releaseNotes>
     <copyright>Copyright 2025 Gaurav Gosain</copyright>
     <tags>tuios bubbletea charm go multiplexer pty terminal tui cli</tags>
     <projectSourceUrl>https://github.com/Gaurav-Gosain/tuios</projectSourceUrl>
