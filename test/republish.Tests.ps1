@@ -33,12 +33,12 @@ BeforeAll {
   }
 
   function Invoke-Republish {
-    param([string[]]$Name, [switch]$WhatIf)
+    param([string[]]$Name, [switch]$WhatIf, [switch]$NoKey)
     Set-Content -LiteralPath $script:ChocoLogPath -Value '' -NoNewline
     $env:CHOCO_STUB_MODE = 'clean'
     $env:CHOCO_STUB_FAILING_PACKAGE = ''
     $env:CHOCO_STUB_LOG_PATH = $script:ChocoLogPath
-    $env:api_key = 'fixture-api-key'
+    if ($NoKey) { Remove-Item Env:api_key -ErrorAction SilentlyContinue } else { $env:api_key = 'fixture-api-key' }
     $params = @{ Name = $Name }
     if ($WhatIf) { $params.WhatIf = $true }
     (& $republishScript @params) *>&1 | Out-String
@@ -148,6 +148,24 @@ Describe 'republish.ps1' {
     }
     finally {
       Remove-Item $varsPath -ErrorAction SilentlyContinue
+    }
+  }
+
+  It 'reads CHOCO_API_KEY from .env when api_key is not set' {
+    New-RepublishPackage -Name env-secrets | Out-Null
+    Remove-Item Env:api_key -ErrorAction SilentlyContinue
+    $envPath = Join-Path $TestDrive '.env'
+    Set-Content -LiteralPath $envPath -Value "OTHER=x`nCHOCO_API_KEY = `"env-secret`""
+
+    try {
+      Invoke-Republish -Name env-secrets -NoKey
+
+      $push = @(Get-Content $script:ChocoLogPath |
+        Where-Object { $_ -match '^push ' })[0]
+      $push | Should -Match '--api-key env-secret'
+    }
+    finally {
+      Remove-Item $envPath -ErrorAction SilentlyContinue
     }
   }
 
