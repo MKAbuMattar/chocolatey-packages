@@ -6,9 +6,8 @@ $repo = 'storytold/wordcraft'
 function global:au_SearchReplace { Get-AuSearchReplace }
 
 function global:au_GetLatest {
-  # The release also carries x86 and arm64 MSIs and portable zips; this matches only
-  # the x64 MSI.
-  Get-GitHubLatest -Repo $repo -AssetPattern 'wordcraft-*-windows-x64.msi'
+  # The x64 portable zip, not the MSI; chocolateyInstall.ps1 says why.
+  Get-GitHubLatest -Repo $repo -AssetPattern 'wordcraft-*-windows-x64-portable.zip'
 }
 
 update -ChecksumFor 64

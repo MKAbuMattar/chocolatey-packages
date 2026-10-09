@@ -9,5 +9,6 @@ and runs natively.
 
 ## Usage
 
-The package installs the WordCraft desktop app. Start it from the Start Menu. See the
+The package installs WordCraft's portable build, with a Start Menu shortcut and the
+`wordcraft` and `wordcraft-cli` commands. See the
 [project README](https://github.com/storytold/wordcraft#readme) for more.
