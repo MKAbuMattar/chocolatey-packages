@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>filmcraft</id>
-    <version>0.2.1</version>
+    <version>0.4.0</version>
     <title>FilmCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -22,7 +22,7 @@ The package installs the FilmCraft desktop app. Start it from the Start Menu. Se
 [FilmCraft on getartcraft.com](https://getartcraft.com/apps/filmcraft) for more.
 ]]></description>
     <summary>Open-source video editor for editing, color and sound, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/filmcraft/releases/tag/v0.2.1</releaseNotes>
+    <releaseNotes>https://github.com/storytold/filmcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the FilmCraft contributors</copyright>
     <tags>filmcraft video-editor video editing color audio rust</tags>
     <projectSourceUrl>https://github.com/storytold/filmcraft</projectSourceUrl>
