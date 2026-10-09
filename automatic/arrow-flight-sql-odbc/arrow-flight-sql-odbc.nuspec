@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>arrow-flight-sql-odbc</id>
-    <version>25.0.1</version>
+    <version>26.0.0</version>
     <title>Apache Arrow Flight SQL ODBC Driver</title>
     <authors>apache</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics.
 ]]></description>
     <summary>Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics</summary>
-    <releaseNotes>https://github.com/apache/arrow/releases/tag/apache-arrow-25.0.1</releaseNotes>
+    <releaseNotes>https://github.com/apache/arrow/releases/tag/apache-arrow-26.0.0</releaseNotes>
     <copyright>Copyright apache</copyright>
     <tags>arrow-flight-sql-odbc arrow parquet odbc driver sql data</tags>
     <projectSourceUrl>https://github.com/apache/arrow</projectSourceUrl>
