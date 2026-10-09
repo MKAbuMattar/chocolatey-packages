@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>designcraft</id>
-    <version>0.2.1</version>
+    <version>0.4.0</version>
     <title>DesignCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -22,7 +22,7 @@ The package installs the DesignCraft desktop app. Start it from the Start Menu. 
 [DesignCraft on getartcraft.com](https://getartcraft.com/apps/designcraft) for more.
 ]]></description>
     <summary>Open-source page layout and publishing app, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/designcraft/releases/tag/v0.2.1</releaseNotes>
+    <releaseNotes>https://github.com/storytold/designcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the DesignCraft contributors</copyright>
     <tags>designcraft desktop-publishing page-layout typography design rust</tags>
     <projectSourceUrl>https://github.com/storytold/designcraft</projectSourceUrl>
