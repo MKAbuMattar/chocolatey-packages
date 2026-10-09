@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/tinyhumansai/openhuman/releases/download/v0.64.10/OpenHuman_0.64.10_x64_en-US.msi'
-  checksum64     = 'c1ab12e4205b89825f7aaf0eb52dc6773beeb8f7e427566fbd463aba81ac8efe'
+  url64          = 'https://github.com/tinyhumansai/openhuman/releases/download/v0.64.14/OpenHuman_0.64.14_x64_en-US.msi'
+  checksum64     = '1e16d26ca390577fa7325657616b0b2031aca077e983ad4e327d5dafbb5d09fd'
   checksumType64 = 'sha256'
   softwareName   = 'OpenHuman*'
   silentArgs     = '/qn /norestart'
