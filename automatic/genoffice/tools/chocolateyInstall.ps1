@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/genspark-ai/genoffice/releases/download/v0.11.411/GenOfficeSetup-v0.11.411-x64.exe'
-  checksum64     = '260413a2121dbc931b8d3e114f48c4882307d086dda7b7b580f9d2e761cda487'
+  url64          = 'https://github.com/genspark-ai/genoffice/releases/download/v0.11.505/GenOfficeSetup-v0.11.505-x64.exe'
+  checksum64     = '17718a80e807a51384a42d91fc06d362ecbb57149ca8e94140336e12740d5e4a'
   checksumType64 = 'sha256'
   softwareName   = 'GenOffice*'
   silentArgs     = '/S'
