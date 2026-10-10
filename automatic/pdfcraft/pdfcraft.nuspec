@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pdfcraft</id>
-    <version>0.4.0</version>
+    <version>0.5.0</version>
     <title>PdfCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -25,7 +25,7 @@ The package installs the PdfCraft desktop app. Start it from the Start Menu. See
 [PdfCraft on getartcraft.com](https://getartcraft.com/apps/pdfcraft) for more.
 ]]></description>
     <summary>Open-source PDF workbench to read, organize, combine and secure PDFs, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/pdfcraft/releases/tag/v0.4.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/pdfcraft/releases/tag/v0.5.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the PdfCraft contributors</copyright>
     <tags>pdfcraft printcraft pdf pdf-editor documents rust</tags>
     <projectSourceUrl>https://github.com/storytold/pdfcraft</projectSourceUrl>
