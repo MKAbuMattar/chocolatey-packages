@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/MKAbuMattar/sarab/releases/download/v0.0.11/Sarab_0.0.11_x64-setup.exe'
-  checksum64     = '07450c69c2bc8b87478c295dd9e03dd441eef68ae027221b3b8426fedcd09515'
+  url64          = 'https://github.com/MKAbuMattar/sarab/releases/download/v0.0.12/Sarab_0.0.12_x64-setup.exe'
+  checksum64     = '7d6a254990a3adf14c1c690cb701cfab1f03699473800f7549811632157b08f4'
   checksumType64 = 'sha256'
   softwareName   = 'Sarab*'
   silentArgs     = '/S'
