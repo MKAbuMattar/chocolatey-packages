@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>soundcraft</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <title>SoundCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the SoundCraft desktop app. Start it from the Start Menu. S
 [project README](https://github.com/storytold/soundcraft#readme) for more.
 ]]></description>
     <summary>Open-source digital audio workstation for recording, editing and mixing, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/soundcraft/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/soundcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the SoundCraft contributors</copyright>
     <tags>soundcraft daw audio music recording mixing midi rust</tags>
     <projectSourceUrl>https://github.com/storytold/soundcraft</projectSourceUrl>
