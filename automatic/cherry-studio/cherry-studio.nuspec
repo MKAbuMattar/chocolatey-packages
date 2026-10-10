@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>cherry-studio</id>
-    <version>2.1.4</version>
+    <version>2.1.5</version>
     <title>Cherry Studio</title>
     <authors>CherryHQ</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -22,7 +22,7 @@ The package installs the Cherry Studio desktop app. Start it from the Start Menu
 the model providers you use.
 ]]></description>
     <summary>AI productivity studio with chat, autonomous agents and 300+ assistants</summary>
-    <releaseNotes>https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.4</releaseNotes>
+    <releaseNotes>https://github.com/CherryHQ/cherry-studio/releases/tag/v2.1.5</releaseNotes>
     <copyright>Copyright CherryHQ</copyright>
     <tags>cherry-studio ai llm chat agents assistant desktop</tags>
     <projectSourceUrl>https://github.com/CherryHQ/cherry-studio</projectSourceUrl>
