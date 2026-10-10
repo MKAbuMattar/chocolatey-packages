@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>gridcraft</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <title>GridCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -22,7 +22,7 @@ The package installs the GridCraft desktop app. Start it from the Start Menu. Se
 [project README](https://github.com/storytold/gridcraft#readme) for more.
 ]]></description>
     <summary>Open-source spreadsheet app, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/gridcraft/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/gridcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the GridCraft contributors</copyright>
     <tags>gridcraft spreadsheet excel data office rust</tags>
     <projectSourceUrl>https://github.com/storytold/gridcraft</projectSourceUrl>
