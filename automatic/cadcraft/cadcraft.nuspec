@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>cadcraft</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <title>CADCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the CADCraft desktop app. Start it from the Start Menu. See
 [project README](https://github.com/storytold/cadcraft#readme) for more.
 ]]></description>
     <summary>Open-source computer-aided design and drafting app, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/cadcraft/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/cadcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the CADCraft contributors</copyright>
     <tags>cadcraft cad drafting dxf autocad design rust</tags>
     <projectSourceUrl>https://github.com/storytold/cadcraft</projectSourceUrl>
