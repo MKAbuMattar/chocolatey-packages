@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>photocraft</id>
-    <version>0.5.0</version>
+    <version>0.6.0</version>
     <title>PhotoCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the PhotoCraft desktop app. Start it from the Start Menu. S
 [PhotoCraft on getartcraft.com](https://getartcraft.com/apps/photocraft) for more.
 ]]></description>
     <summary>Open-source image editor with layers, masks, brushes and PSD support, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/photocraft/releases/tag/v0.5.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/photocraft/releases/tag/v0.6.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the PhotoCraft contributors</copyright>
     <tags>photocraft image-editor photo-editor psd layers graphics rust</tags>
     <projectSourceUrl>https://github.com/storytold/photocraft</projectSourceUrl>
