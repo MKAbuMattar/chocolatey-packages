@@ -88,6 +88,9 @@ Describe 'automatic package identity and metadata' {
       # that way. An empty <files /> ships the nuspec alone.
       $nuspec.Text | Should -Match '<files\s*/>|<files>' -Because `
         "$($paths.Id) needs an explicit <files /> or choco pack will bundle its README"
+      # Moderators ask for this so the gallery shows it is no longer the package to install.
+      ([string]$metadata.title) | Should -Match '^\[Deprecated\] ' -Because `
+        "$($paths.Id) is a metapackage pointing at its replacement"
     }
     else {
       Test-Path $paths.Install | Should -BeTrue
