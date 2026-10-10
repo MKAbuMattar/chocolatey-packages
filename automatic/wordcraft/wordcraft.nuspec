@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>wordcraft</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <title>WordCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -24,7 +24,7 @@ The package installs WordCraft's portable build, with a Start Menu shortcut and 
 [project README](https://github.com/storytold/wordcraft#readme) for more.
 ]]></description>
     <summary>Open-source word processor that reads and writes .docx, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/wordcraft/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/wordcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the WordCraft contributors</copyright>
     <tags>wordcraft word-processor docx documents writing office rust</tags>
     <projectSourceUrl>https://github.com/storytold/wordcraft</projectSourceUrl>

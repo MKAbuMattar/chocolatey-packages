@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
@@ -7,8 +7,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 # it is the newer one (https://github.com/storytold/wordcraft/issues/61).
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/storytold/wordcraft/releases/download/v0.3.0/wordcraft-0.3.0-windows-x64-portable.zip'
-  checksum64     = '51230628ff51977126d4d8f6db44942aac9b6e1ef4d42e3220a9f030a0503aed'
+  url64          = 'https://github.com/storytold/wordcraft/releases/download/v0.4.0/wordcraft-0.4.0-windows-x64-portable.zip'
+  checksum64     = '2e43b7d49eb9d0ff22f9df95b24eede135fd049bbd0c15706438bc588d29c512'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
