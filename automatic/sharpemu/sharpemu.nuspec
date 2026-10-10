@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sharpemu</id>
-    <version>0.0.5.396140</version>
+    <version>0.0.5.404578</version>
     <title>SharpEmu</title>
     <authors>sharpemu</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -26,7 +26,7 @@ SharpEmu. See the [project README](https://github.com/sharpemu/sharpemu#readme) 
 game compatibility.
 ]]></description>
     <summary>Experimental PlayStation 5 emulator written in C#</summary>
-    <releaseNotes>https://github.com/sharpemu/sharpemu/releases/tag/v0.0.5-nexus</releaseNotes>
+    <releaseNotes>https://github.com/sharpemu/sharpemu/releases/tag/v0.0.5-nexus-release.2</releaseNotes>
     <copyright>Copyright (C) 2026 SharpEmu Emulator Project</copyright>
     <tags>sharpemu ps5 playstation5 emulator emulation vulkan games</tags>
     <projectSourceUrl>https://github.com/sharpemu/sharpemu</projectSourceUrl>

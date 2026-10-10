@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/sharpemu/sharpemu/releases/download/v0.0.5-nexus/sharpemu-0.0.5-nexus-win-x64.zip'
-  checksum64     = '7ef3166bc44971b54df924e44f4fddc5f42869c2447be8284b387e3e45e5c028'
+  url64          = 'https://github.com/sharpemu/sharpemu/releases/download/v0.0.5-nexus-release.2/sharpemu-0.0.5-nexus-release.2-win-x64.zip'
+  checksum64     = '580d6b48431857ea50b67bd8af2439cd37777eb26799dfb5d8395cb837c5a6e7'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
