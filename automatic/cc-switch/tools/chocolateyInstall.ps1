@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/farion1231/cc-switch/releases/download/v4.0.7/CC-Switch-v4.0.7-Windows.msi'
-  checksum64     = '3b9cc9f1c7d72268c52af9f17c29707e61dc7c7baf98ea23ae0442605802a2ba'
+  url64          = 'https://github.com/farion1231/cc-switch/releases/download/v4.0.8/CC-Switch-v4.0.8-Windows.msi'
+  checksum64     = 'c9e603369b06e0ed57f0468cef4f563ffa0513b1ce8c605f22a88a46769ffbe6'
   checksumType64 = 'sha256'
   softwareName   = 'CC Switch*'
   silentArgs     = '/qn /norestart'
