@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>deckcraft</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <title>DeckCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the DeckCraft desktop app. Start it from the Start Menu. Se
 [project README](https://github.com/storytold/deckcraft#readme) for more.
 ]]></description>
     <summary>Open-source presentation and slide show app, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/deckcraft/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/deckcraft/releases/tag/v0.4.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the DeckCraft contributors</copyright>
     <tags>deckcraft presentation slides slideshow powerpoint office rust</tags>
     <projectSourceUrl>https://github.com/storytold/deckcraft</projectSourceUrl>
