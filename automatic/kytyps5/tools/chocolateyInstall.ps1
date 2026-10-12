@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-10-11-e51de54/KytyPS5-2026-10-11-e51de54-Windows-x64.zip'
-  checksum64     = 'a74935265320f1f087d5ae8442992370dd950150807ec016111fae63affd6207'
+  url64          = 'https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-10-12-dad900c/KytyPS5-2026-10-12-dad900c-Windows-x64.zip'
+  checksum64     = 'b8ed364e5eb0376d7d0cbbf8bec5db799abc3b9d1ab1e523f0b5349b9bac8490'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
