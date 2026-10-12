@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/pdfcraft/releases/download/v0.6.0/pdfcraft-0.6.0-windows-x64.msi'
-  checksum64     = '528b2fec067ea907894d67c7c686d8023aa943a32941a5586ee402070af458b3'
+  url64          = 'https://github.com/storytold/pdfcraft/releases/download/v0.7.1/pdfcraft-0.7.1-windows-x64.msi'
+  checksum64     = '07f6d8838db6e9d55242d480ab4d782c76d130df5c1730385b5ee7cd9c81dafc'
   checksumType64 = 'sha256'
   softwareName   = 'PdfCraft*'
   silentArgs     = '/qn /norestart'
