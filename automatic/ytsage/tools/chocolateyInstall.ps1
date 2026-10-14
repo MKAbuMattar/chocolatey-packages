@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/oop7/YTSage/releases/download/v5.5.6/YTSage-v5.5.6-Setup.exe'
-  checksum64     = '0d173f844cfc89e3c8aad7bf5da6ef0dc1e4ce804265075fecb5ca2676e0cb68'
+  url64          = 'https://github.com/oop7/YTSage/releases/download/v5.6.0/YTSage-v5.6.0-Setup.exe'
+  checksum64     = '0dc3aa70499201d13efaa87093a11489f5afc1ae790679179b54b77df53cf08b'
   checksumType64 = 'sha256'
   softwareName   = 'YTSage*'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
