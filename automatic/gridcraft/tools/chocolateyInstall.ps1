@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/gridcraft/releases/download/v0.6.1/gridcraft-0.6.1-windows-x64.msi'
-  checksum64     = '984e9a85942ce55953ce2b875c4e93ddd70d47fb4bf5f07c74d1d9f9b98e56c9'
+  url64          = 'https://github.com/storytold/gridcraft/releases/download/v0.7.0/gridcraft-0.7.0-windows-x64.msi'
+  checksum64     = '546dc5110c0912a61f95bdea867f05002b68136d2b151e4244f44d7dc5ea12ba'
   checksumType64 = 'sha256'
   softwareName   = 'GridCraft*'
   silentArgs     = '/qn /norestart'
