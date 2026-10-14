@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/designcraft/releases/download/v0.7.1/designcraft-0.7.1-windows-x64.msi'
-  checksum64     = '650c6f70ef965f1d922d6c233fc768dfac214054a833a516c2b25741c4b1c758'
+  url64          = 'https://github.com/storytold/designcraft/releases/download/v0.8.0/designcraft-0.8.0-windows-x64.msi'
+  checksum64     = 'd0090227d5aa27948fa19604444ac033b80e4387294c49f088110a1dff8cc1a0'
   checksumType64 = 'sha256'
   softwareName   = 'DesignCraft*'
   silentArgs     = '/qn /norestart'
