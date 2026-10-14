@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/tonyantony300/dashbeam/releases/download/v0.7.1/DashBeam_0.7.1_x64_en-US.msi'
-  checksum64     = '624477c2f237dbddfb5b1e04fd7e5e0bc6004e660543cf9e6377f44b9dc3f4b4'
+  url64          = 'https://github.com/tonyantony300/dashbeam/releases/download/v0.7.2/DashBeam_0.7.2_x64_en-US.msi'
+  checksum64     = 'a6d28e153590117665745a92be03539476e41062da0d5b3ab9e89e10c05a31ac'
   checksumType64 = 'sha256'
   softwareName   = 'DashBeam*'
   silentArgs     = '/qn /norestart'
