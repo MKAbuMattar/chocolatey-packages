@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/alphaXiv/OpenResearch/releases/download/v0.2.18/openresearch-cli-x86_64-pc-windows-msvc.zip'
-  checksum64     = '235d1641b42fd3b2ad047a0e043f95ab602f5f8ab2df6cd664abbb017324c302'
+  url64          = 'https://github.com/alphaXiv/OpenResearch/releases/download/v0.2.19/openresearch-cli-x86_64-pc-windows-msvc.zip'
+  checksum64     = '6e4b8f538349014d1f2c4ab5a1a41ea46acac21c3062946d18091dbec684e675'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
