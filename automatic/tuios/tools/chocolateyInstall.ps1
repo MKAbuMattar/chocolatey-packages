@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/Gaurav-Gosain/tuios/releases/download/v0.9.3/tuios_0.9.3_Windows_x86_64.tar.gz'
-  checksum64     = '204e9e663f78f7462164eb313814fb64bde8cd6187582b561cea667aecd1cd40'
+  url64          = 'https://github.com/Gaurav-Gosain/tuios/releases/download/v0.10.0/tuios_0.10.0_Windows_x86_64.tar.gz'
+  checksum64     = 'dac85e1737b900d46f272cdb22503c1f31031275dbc76e75c090ef228226e7f1'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
