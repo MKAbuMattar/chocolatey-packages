@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>terax</id>
-    <version>0.8.6</version>
+    <version>0.9.0</version>
     <title>Terax</title>
     <authors>crynta</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Lightweight (7MB) Terminal-first AI-native dev workspace.
 ]]></description>
     <summary>Lightweight (7MB) Terminal-first AI-native dev workspace</summary>
-    <releaseNotes>https://github.com/crynta/terax-ai/releases/tag/v0.8.6</releaseNotes>
+    <releaseNotes>https://github.com/crynta/terax-ai/releases/tag/v0.9.0</releaseNotes>
     <copyright>Copyright crynta</copyright>
     <tags>terax agents ai code-editor linux macos reactjs rust tauri</tags>
     <projectSourceUrl>https://github.com/crynta/terax-ai</projectSourceUrl>
