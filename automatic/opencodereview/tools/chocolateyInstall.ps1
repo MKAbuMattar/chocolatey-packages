@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/alibaba/open-code-review/releases/download/v1.13.0/opencodereview-windows-amd64.exe'
-  checksum64     = '595aafc7f072f1aaf531823121341886687aae9cd45a60323383c9db635d19d9'
+  url64          = 'https://github.com/alibaba/open-code-review/releases/download/v1.13.1/opencodereview-windows-amd64.exe'
+  checksum64     = 'a9a2b2148bd983be42b8f8fc1cd433e9100b620014408481495bf86cd64ea3ec'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'opencodereview.exe'
 }
