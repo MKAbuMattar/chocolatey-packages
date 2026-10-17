@@ -6,8 +6,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 # shims `archon`; the nuspec excludes it from the package so it is never bundled.
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/coleam00/Archon/releases/download/v0.12.0/archon-windows-x64.exe'
-  checksum64     = '45051de0800fcf126b6c04c212638599c7097ce6728c22f969322da0d6153441'
+  url64          = 'https://github.com/coleam00/Archon/releases/download/v0.12.1/archon-windows-x64.exe'
+  checksum64     = '1f413aa0290ea55f973231f956cc00a54c60140fc5c66552d81991f8d7b43e9e'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'archon.exe'
 }
