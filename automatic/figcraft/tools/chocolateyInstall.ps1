@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 # A per-machine MSI (ALLUSERS=1), so Chocolatey's auto-uninstaller finds it by product name.
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/figcraft/releases/download/v0.6.0/figcraft-0.6.0-windows-x64.msi'
-  checksum64     = 'e3fd2fb6e7a283fcd08ba99752cf983d7e93597d069f173d0b226e4017c5c161'
+  url64          = 'https://github.com/storytold/figcraft/releases/download/v0.7.0/figcraft-0.7.0-windows-x64.msi'
+  checksum64     = '897e1a2cec07e3cd6ffb024cccc7da4d3a2366c667f69ba539981b6f59051a6f'
   checksumType64 = 'sha256'
   softwareName   = 'FigCraft*'
   silentArgs     = '/qn /norestart'

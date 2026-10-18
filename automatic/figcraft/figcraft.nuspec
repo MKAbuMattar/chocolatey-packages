@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>figcraft</id>
-    <version>0.6.0</version>
+    <version>0.7.0</version>
     <title>FigCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the FigCraft desktop app. Start it from the Start Menu. See
 [FigCraft on getartcraft.com](https://getartcraft.com/apps/figcraft) for more.
 ]]></description>
     <summary>Open-source interface design and prototyping app, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/figcraft/releases/tag/v0.6.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/figcraft/releases/tag/v0.7.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the FigCraft contributors</copyright>
     <tags>figcraft ui-design ux prototyping design vector figma rust</tags>
     <projectSourceUrl>https://github.com/storytold/figcraft</projectSourceUrl>
