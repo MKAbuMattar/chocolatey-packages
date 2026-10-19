@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v2026.42.10/Open.PDF.Studio_2026.42.10_x64-setup.exe'
-  checksum64     = '11a525fd56bb8e5e9b764e6d5de0cb072132afc7778295d40772271429858681'
+  url64          = 'https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v2026.42.11/Open.PDF.Studio_2026.42.11_x64-setup.exe'
+  checksum64     = 'e12b8543493c3928283b88c31a4b71ad0fcdb3ceea4ae6bd5b153334696bbeaa'
   checksumType64 = 'sha256'
   softwareName   = 'Open PDF Studio*'
   silentArgs     = '/S'
