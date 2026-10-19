@@ -6,8 +6,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 # shims `jcode`; the nuspec excludes it from the package so it is never bundled.
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/1jehuang/jcode/releases/download/v0.98.1/jcode-windows-x86_64.exe'
-  checksum64     = '9f586dd57303103a9c859816ef0c10fcd1c9d8246a07382b0ec2d90969743dfd'
+  url64          = 'https://github.com/1jehuang/jcode/releases/download/v0.99.0/jcode-windows-x86_64.exe'
+  checksum64     = 'c4a0699e17daf780c468238c0c0f88f950b28fac6acd7b5ebc08cf547f07168e'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'jcode.exe'
 }
