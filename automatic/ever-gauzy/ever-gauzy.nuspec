@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ever-gauzy</id>
-    <version>111.0.11.1</version>
+    <version>111.44.48</version>
     <title>Ever Gauzy Agent</title>
     <authors>ever-co</authors>
     <owners>Mohammad Abu Mattar</owners>
-    <licenseUrl>https://github.com/ever-co/ever-gauzy/blob/develop/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/ever-co/ever-gauzy-agent/blob/develop/LICENSE</licenseUrl>
     <projectUrl>https://gauzy.co</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@0faecb4c371a5df080a9e8f04687586c503b31cb/icons/ever-gauzy.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,11 +15,11 @@
 Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co.
 ]]></description>
     <summary>Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co</summary>
-    <releaseNotes>https://github.com/ever-co/ever-gauzy/releases/tag/v111.0.11</releaseNotes>
+    <releaseNotes>https://github.com/ever-co/ever-gauzy-agent/releases/tag/v111.44.48</releaseNotes>
     <copyright>Copyright ever-co</copyright>
     <tags>ever-gauzy accounting billing bookkeeping crm crm-platform erp expenses hr hrm business desktop</tags>
-    <projectSourceUrl>https://github.com/ever-co/ever-gauzy</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/ever-co/ever-gauzy/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/ever-co/ever-gauzy-agent</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/ever-co/ever-gauzy-agent/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/ever-gauzy</packageSourceUrl>
     <docsUrl>https://gauzy.co</docsUrl>
   </metadata>
