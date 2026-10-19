@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>factory-desktop</id>
+    <version>0.201.0</version>
+    <title>Factory Desktop</title>
+    <authors>Factory AI</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://factory.com/legal/terms-individual</licenseUrl>
+    <projectUrl>https://factory.com/product/desktop</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@82163b65cf045188cccceb1368f1e435324ef7d2/icons/factory-desktop.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is Factory Desktop?
+
+Factory Desktop is the desktop app for [Factory](https://factory.com), an agent-native
+software development platform. You work with Droid, Factory's AI coding agent, preview
+and review everything it makes, and keep each session in one native app.
+
+Factory Desktop needs a Factory account. See [pricing](https://factory.com/pricing).
+
+## Usage
+
+The package installs Factory Desktop. Start it from the Start Menu and sign in.
+
+The installer is per-user: it installs into the profile of the account that runs choco,
+under `%LOCALAPPDATA%\Factory`, and updates itself from there.
+]]></description>
+    <summary>Desktop app for Factory's Droid AI coding agents</summary>
+    <releaseNotes>https://docs.factory.com/changelog/release-notes</releaseNotes>
+    <copyright>Copyright © 2026 Factory AI</copyright>
+    <tags>factory-desktop factory droid ai ai-agent coding-assistant desktop</tags>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/factory-desktop</packageSourceUrl>
+    <docsUrl>https://docs.factory.com/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
