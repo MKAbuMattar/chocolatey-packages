@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>fieldcraft</id>
+    <version>0.7.0</version>
+    <title>FieldCraft</title>
+    <authors>tangency-labs</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/tangency-labs/fieldcraft/blob/develop/LICENSE-APACHE</licenseUrl>
+    <projectUrl>https://tangency-labs.github.io/fieldcraft/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@8c792d33c52e9afa210e240a2bde1a66eacd2559/icons/fieldcraft.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is FieldCraft?
+
+FieldCraft is an open-source engineering simulation (CAE) application written in Rust.
+It takes a parametric [SolidCraft](https://solidcraft.io) part to a verified analysis:
+tetrahedral and hexahedral meshing, its own nonlinear implicit, explicit and thermal
+finite element solvers, lattice Boltzmann CFD, and decks for Abaqus, Nastran and
+LS-DYNA. The desktop app, the command line and AI agents (over MCP) drive the same
+commands.
+
+It is early software: it works end to end, and its roadmap lists what is still missing.
+
+## Usage
+
+The package installs FieldCraft's portable build, with a Start Menu shortcut and the
+`fieldcraft` and `fieldcraft-cli` commands. See the
+[FieldCraft site](https://tangency-labs.github.io/fieldcraft/) for more.
+]]></description>
+    <summary>Open-source finite element analysis and CFD for structures, heat and fluids, written in Rust</summary>
+    <releaseNotes>https://github.com/tangency-labs/fieldcraft/releases/tag/v0.7.0</releaseNotes>
+    <copyright>Copyright (c) 2026 FieldCraft contributors</copyright>
+    <tags>fieldcraft cae fea cfd simulation meshing engineering mcp rust</tags>
+    <projectSourceUrl>https://github.com/tangency-labs/fieldcraft</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/tangency-labs/fieldcraft/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/fieldcraft</packageSourceUrl>
+    <docsUrl>https://tangency-labs.github.io/fieldcraft/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
