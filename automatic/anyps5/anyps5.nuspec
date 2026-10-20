@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>anyps5</id>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
     <title>AnyPS5</title>
     <authors>boykopovar</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -27,7 +27,7 @@ with `relinker --windows source\input.elf app.exe`, then copy that `libs` folder
 for the input layout and options.
 ]]></description>
     <summary>Converts PS5 executables into native Windows and Linux programs, without emulation</summary>
-    <releaseNotes>https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.2</releaseNotes>
+    <releaseNotes>https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.3</releaseNotes>
     <copyright>Copyright boykopovar</copyright>
     <tags>anyps5 ps5 playstation5 relinker porting games cli</tags>
     <projectSourceUrl>https://github.com/boykopovar/AnyPS5</projectSourceUrl>

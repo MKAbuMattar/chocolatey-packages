@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>worldmonitor</id>
-    <version>2.11.0</version>
+    <version>2.11.2</version>
     <title>World Monitor</title>
     <authors>koala73</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface.
 ]]></description>
     <summary>Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface</summary>
-    <releaseNotes>https://github.com/koala73/worldmonitor/releases/tag/v2.11.0</releaseNotes>
+    <releaseNotes>https://github.com/koala73/worldmonitor/releases/tag/v2.11.2</releaseNotes>
     <copyright>Copyright koala73</copyright>
     <tags>worldmonitor agent ai dashboard geopolitics mcp mcp-server monitoring news</tags>
     <projectSourceUrl>https://github.com/koala73/worldmonitor</projectSourceUrl>
