@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 # A per-machine MSI (ALLUSERS=1), so Chocolatey's auto-uninstaller finds it by product name.
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/tangency-labs/solidcraft/releases/download/v0.17.0/solidcraft-0.17.0-windows-x64.msi'
-  checksum64     = '8a7ad649fa10de697ba285dd033b8f5c70b1f7bed800841efd5a34b1eea36eb5'
+  url64          = 'https://github.com/tangency-labs/solidcraft/releases/download/v0.18.2/solidcraft-0.18.2-windows-x64.msi'
+  checksum64     = '3ce64d64a5019efb437fa1dae600c4de77b91c33261c49a613d00c2467db69a6'
   checksumType64 = 'sha256'
   softwareName   = 'SolidCraft*'
   silentArgs     = '/qn /norestart'
