@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/flet-dev/flet/releases/download/v1.0.4/flet-windows.zip'
-  checksum64     = 'daea81356d6996e4e660a61b9edb2c82eb1c45371a3f8ada217b22fcb690d83f'
+  url64          = 'https://github.com/flet-dev/flet/releases/download/v1.0.5/flet-windows.zip'
+  checksum64     = '6b5bddbcf2df8d0986dec60eab0b28c8cd8be1c0cd96cd73d5e34a3122ca867d'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
