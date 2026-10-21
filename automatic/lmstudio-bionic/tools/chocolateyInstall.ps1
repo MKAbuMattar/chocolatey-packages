@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://bionic-installers.lmstudio.ai/win32/x64/1.1.8-10/Bionic-1.1.8-10-x64.exe'
-  checksum64     = 'd9f1fba548eb88f46b330d55929dba5fdec3ef27910943237150aea2cd93cb14'
+  url64          = 'https://bionic-installers.lmstudio.ai/win32/x64/1.1.9-6/Bionic-1.1.9-6-x64.exe'
+  checksum64     = 'bc45fe0fff0f813d0bc1b72f23f0d053814dbc3aa14e1a95d7034263fb428ef2'
   checksumType64 = 'sha256'
   softwareName   = 'Bionic*'
   silentArgs     = '/S'
