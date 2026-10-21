@@ -58,6 +58,10 @@ function Invoke-GitHubApi {
         $request.AllowAutoRedirect = $false
         $request.UserAgent = 'chocolatey-packages'
         $request.Accept = 'application/vnd.github+json'
+        # HttpWebRequest does not ask for compression unless told to. A page of 100
+        # releases is megabytes of JSON uncompressed: atom's took 91s this way and
+        # dropped the connection mid-body, against 13s compressed.
+        $request.AutomaticDecompression = [Net.DecompressionMethods]::GZip -bor [Net.DecompressionMethods]::Deflate
         foreach ($key in $headers.Keys) { $request.Headers[$key] = $headers[$key] }
         try { $response = $request.GetResponse() }
         catch [Net.WebException] {
