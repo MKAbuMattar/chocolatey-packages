@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/esengine/DeepSeek-Reasonix/releases/download/desktop-v1.39.9/Reasonix-windows-amd64-installer.exe'
-  checksum64     = 'dec21d668e758dcd16c93d0bafc9c6e9fbaec105d018643f3c36c23cd442c181'
+  url64          = 'https://github.com/esengine/DeepSeek-Reasonix/releases/download/desktop-v1.39.10/Reasonix-windows-amd64-installer.exe'
+  checksum64     = 'a3c5d85c767d7e9c517f262eb50d852d2b82b5731ed6870d5071f2a62eb4a7fa'
   checksumType64 = 'sha256'
   softwareName   = 'Reasonix*'
   silentArgs     = '/S'
