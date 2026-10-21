@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/Mintplex-Labs/anything-llm/releases/download/v1.16.1/AnythingLLMDesktop.exe'
-  checksum64     = '8b5d9583abbbb236a5f8f3970b8e9d47e6b167a7707a16c8fe6a655a32c92775'
+  url64          = 'https://github.com/Mintplex-Labs/anything-llm/releases/download/v1.18.0/AnythingLLMDesktop.exe'
+  checksum64     = 'b572dc48fbf6967bd3d7a408468fbdb7aa3adbc75d90fc52421385fd1a799e5e'
   checksumType64 = 'sha256'
   softwareName   = 'AnythingLLM*'
   silentArgs     = '/S'

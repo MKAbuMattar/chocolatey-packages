@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>anythingllm</id>
-    <version>1.16.1</version>
+    <version>1.18.0</version>
     <title>AnythingLLM Desktop</title>
     <authors>Mintplex-Labs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience.
 ]]></description>
     <summary>Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience</summary>
-    <releaseNotes>https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.16.1</releaseNotes>
+    <releaseNotes>https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.18.0</releaseNotes>
     <copyright>Copyright Mintplex Labs Inc</copyright>
     <tags>anythingllm agent-computer agent-harness agent-orchestration agentic-ai ai-agents computer-use hermes-agent llm</tags>
     <projectSourceUrl>https://github.com/Mintplex-Labs/anything-llm</projectSourceUrl>
