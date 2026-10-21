@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>solidcraft</id>
-    <version>0.18.3</version>
+    <version>0.18.4</version>
     <title>SolidCraft</title>
     <authors>tangency-labs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -22,7 +22,7 @@ The package installs the SolidCraft desktop app. Start it from the Start Menu. S
 [solidcraft.io](https://solidcraft.io) for more.
 ]]></description>
     <summary>Open-source parametric 3D CAD application, written in Rust</summary>
-    <releaseNotes>https://github.com/tangency-labs/solidcraft/releases/tag/v0.18.3</releaseNotes>
+    <releaseNotes>https://github.com/tangency-labs/solidcraft/releases/tag/v0.18.4</releaseNotes>
     <copyright>Copyright (c) 2026 SolidCraft contributors</copyright>
     <tags>solidcraft cad 3d parametric modeling engineering mcp rust</tags>
     <projectSourceUrl>https://github.com/tangency-labs/solidcraft</projectSourceUrl>
