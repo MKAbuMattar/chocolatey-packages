@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/n0-computer/iroh/releases/download/v1.4.0/iroh-dns-server-v1.4.0-x86_64-pc-windows-msvc.zip'
-  checksum64     = '7646034c62527dc216d1ec69b356bda127e44f1b2c3c144d3656a25a71f7bed7'
+  url64          = 'https://github.com/n0-computer/iroh/releases/download/v1.4.1/iroh-dns-server-v1.4.1-x86_64-pc-windows-msvc.zip'
+  checksum64     = 'e45de592dfc2aa47d5cd603c52be4dff0532d89fd62075f155ebd6c813ce5e4d'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
