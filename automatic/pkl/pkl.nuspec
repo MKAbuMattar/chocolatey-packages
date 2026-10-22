@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pkl</id>
-    <version>0.32.1</version>
+    <version>0.32.2</version>
     <title>Pkl</title>
     <authors>apple</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -19,7 +19,7 @@ A configuration as code language with rich validation and tooling.
 The package installs the `pkl` command. Open a new terminal after installing so the PATH change takes effect, then see the [Pkl documentation](https://pkl-lang.org) for the available options.
 ]]></description>
     <summary>A configuration as code language with rich validation and tooling</summary>
-    <releaseNotes>https://github.com/apple/pkl/releases/tag/0.32.1</releaseNotes>
+    <releaseNotes>https://github.com/apple/pkl/releases/tag/0.32.2</releaseNotes>
     <copyright>Copyright apple</copyright>
     <tags>pkl config configuration data functional java json kotlin language cli apple</tags>
     <projectSourceUrl>https://github.com/apple/pkl</projectSourceUrl>
