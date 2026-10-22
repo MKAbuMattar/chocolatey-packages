@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/QwenLM/qwen-code/releases/download/v0.25.3/qwen-code-win-x64.zip'
-  checksum64     = '76474b13ed4456c952040b92aaf2e4fbba73b16a4c4a1e6786f481757ba28214'
+  url64          = 'https://github.com/QwenLM/qwen-code/releases/download/v0.26.0/qwen-code-win-x64.zip'
+  checksum64     = 'a7e23d6c04d4d3442853b02f7bfdd5bd2cc81fc7f0e83be2b2bb2d0a071d06b6'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
