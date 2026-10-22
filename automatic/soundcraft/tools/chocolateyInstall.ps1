@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/soundcraft/releases/download/v0.11.0/soundcraft-0.11.0-windows-x64.msi'
-  checksum64     = 'f87edb22ff9ffaa56523ff2e5a5cbb346c84b4b732c47048ea6a54ddf5744173'
+  url64          = 'https://github.com/storytold/soundcraft/releases/download/v0.12.1/soundcraft-0.12.1-windows-x64.msi'
+  checksum64     = 'e7be784b880f6a596d51bca1d8d784b0b9d6afe9e89ee61c390809aadcbb4857'
   checksumType64 = 'sha256'
   softwareName   = 'SoundCraft*'
   silentArgs     = '/qn /norestart'
