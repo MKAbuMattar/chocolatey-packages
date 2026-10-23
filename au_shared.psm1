@@ -58,6 +58,10 @@ function Invoke-GitHubApi {
         $request.AllowAutoRedirect = $false
         $request.UserAgent = 'chocolatey-packages'
         $request.Accept = 'application/vnd.github+json'
+        # HttpWebRequest does not ask for compression unless told to. A page of 100
+        # releases is megabytes of JSON uncompressed: atom's took 91s this way and
+        # dropped the connection mid-body, against 13s compressed.
+        $request.AutomaticDecompression = [Net.DecompressionMethods]::GZip -bor [Net.DecompressionMethods]::Deflate
         foreach ($key in $headers.Keys) { $request.Headers[$key] = $headers[$key] }
         try { $response = $request.GetResponse() }
         catch [Net.WebException] {
@@ -264,8 +268,9 @@ function Get-GitHubLatest {
             upstreams whose file names do not track the tag. Use instead of -Asset.
 
         .Parameter RequireAsset
-            Skip releases that do not carry -Asset, for upstreams that publish
-            releases without the Windows build.
+            Search only releases that carry -Asset, for upstreams that publish
+            releases without the Windows build. Without it, the release picked is
+            still swapped for the newest one carrying the asset when it lacks it.
 
         .Parameter TagPrefix
             See Get-GitHubRelease. Also dropped from the tag to get the version.
@@ -317,6 +322,18 @@ function Get-GitHubLatest {
     }
 
     $release = Get-GitHubRelease @find
+
+    # Upstreams publish releases before their build uploads anything, or with no
+    # Windows build at all: meshery's v1.0.72 came out empty, and mesheryctl failed on
+    # a 404 for a file that never existed. When the release picked lacks the asset,
+    # take the newest one that has it. A release that has it is picked as before.
+    $glob = if ($AssetPattern) { $AssetPattern } else { $Asset.Replace('{version}', '*').Replace('{tag}', '*') }
+    if (!$RequireAsset -and !($release.assets.name -like $glob)) {
+        Write-Warning "$Repo $($release.tag_name) has no asset matching '$glob'; using the newest release that has one"
+        $find.WithAssetPattern = $glob
+        $release = Get-GitHubRelease @find
+    }
+
     $tag = $release.tag_name
     $version = Get-VersionFromTag -Tag $tag -Prefix $TagPrefix
 
