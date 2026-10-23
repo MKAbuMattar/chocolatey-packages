@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/different-ai/openwork/releases/download/v0.18.61/openwork-win-x64-0.18.61.exe'
-  checksum64     = 'dcc0665aebf0af11413f3c801f0e7eb2d17987106fa02adf682b7c928eaa6dd7'
+  url64          = 'https://github.com/different-ai/openwork/releases/download/v0.18.62/openwork-win-x64-0.18.62.exe'
+  checksum64     = '71c1dedf29acc31480bc02966f86f8bfbb01ba23d0df32f5fa8b946c9ac69b04'
   checksumType64 = 'sha256'
   softwareName   = 'Openwork*'
   silentArgs     = '/S'
