@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/koala73/worldmonitor/releases/download/v2.11.3/World.Monitor_2.11.3_x64_en-US.msi'
-  checksum64     = 'd86c349aab1749fc01eb327b4d9e2415742240bcbd80a0e5f2da8ff396da15dc'
+  url64          = 'https://github.com/koala73/worldmonitor/releases/download/v2.11.4/World.Monitor_2.11.4_x64_en-US.msi'
+  checksum64     = 'eb7f2a7db835108c13b768ad0f77c1354c2d0a2adbddfcaa5ab0ff5c71176ba4'
   checksumType64 = 'sha256'
   softwareName   = 'World Monitor*'
   silentArgs     = '/qn /norestart'
