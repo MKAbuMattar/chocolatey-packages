@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/figcraft/releases/download/v0.10.0/figcraft-0.10.0-windows-x64.msi'
-  checksum64     = 'dcc28d1cf22cfae5758fc7fba10a104d3929ac99f2aa7dd7bf4211607d4fe416'
+  url64          = 'https://github.com/storytold/figcraft/releases/download/v0.11.2/figcraft-0.11.2-windows-x64.msi'
+  checksum64     = 'e2cb0f21d84c491a8f570d4f5d0f2f89dc2d53209a508399b080ee5f7525d712'
   checksumType64 = 'sha256'
   softwareName   = 'FigCraft*'
   silentArgs     = '/qn /norestart'
