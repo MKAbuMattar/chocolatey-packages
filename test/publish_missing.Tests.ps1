@@ -106,19 +106,29 @@ Describe 'publish_missing.ps1 exit code' {
     }
   }
 
-  It 'succeeds when the only problem is the moderation queue cap' {
-    $r = Invoke-AsRunner -RepublishOutput 'Response status code does not indicate success: 403 (Forbidden).' -RepublishExit 1
+  # What republish.ps1 printed for ever-gauzy in run 40372912259. The runner turned
+  # its ::error:: lines into two red annotations on a run the 403 did not fail.
+  It 'succeeds when the only problem is the moderation queue cap, without error annotations' {
+    $r = Invoke-AsRunner -RepublishExit 1 -RepublishOutput (
+      "Response status code does not indicate success: 403 (Forbidden).`n" +
+      "::error::fake push failed with 1`n::error::failed: fake")
     $r.Output | Should -Match 'moderation queue cap'
+    $r.Output | Should -Not -Match '(?m)^::error::'
     $r.Exit | Should -Be 0
   }
 
-  It 'succeeds when the version number is reserved' {
-    $r = Invoke-AsRunner -RepublishOutput 'Response status code does not indicate success: 409 (Conflict).' -RepublishExit 1
+  It 'succeeds when the version number is reserved, without error annotations' {
+    $r = Invoke-AsRunner -RepublishExit 1 -RepublishOutput (
+      "Response status code does not indicate success: 409 (Conflict).`n" +
+      "::error::fake push failed with 1`n::error::failed: fake")
+    $r.Output | Should -Not -Match '(?m)^::error::'
     $r.Exit | Should -Be 0
   }
 
-  It 'fails when a push fails for any other reason' {
-    $r = Invoke-AsRunner -RepublishOutput 'fake carries files that are not install scripts' -RepublishExit 1
+  It 'fails, and keeps the error annotations, when a push fails for any other reason' {
+    $r = Invoke-AsRunner -RepublishExit 1 -RepublishOutput (
+      "::error::fake carries files that are not install scripts`n::error::failed: fake")
+    $r.Output | Should -Match '(?m)^::error::fake carries files'
     $r.Output | Should -Match 'could not publish: fake'
     $r.Exit | Should -Be 1
   }

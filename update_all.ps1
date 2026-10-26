@@ -85,6 +85,11 @@ $Options = [ordered]@{
     IgnoreOn      = @(                                      # Not our problem - ignore, don't fail the run
         'The operation has timed out'
         'Internal Server Error'
+        # Still failing after RepeatCount retries means GitHub is down for longer than
+        # the retries wait. The next hourly run picks the package up again.
+        '(502)'
+        '(503)'
+        '(504)'
         'package version already exists'
         # The community repository caps how many packages one maintainer can have
         # awaiting moderation. Over that cap a push returns 403 until the queue
@@ -104,6 +109,14 @@ $Options = [ordered]@{
         'The connection was closed unexpectedly'
         'The operation has timed out'
         'Internal Server Error'
+        # GitHub's download servers answer 504 for minutes at a time. Run 40372912259
+        # failed 14 packages in a row on "(504) Gateway Timeout" while validating URLs
+        # that all returned 200 an hour later. Matched by code: Windows PowerShell 5.1,
+        # which runs AU in CI, calls 503 "Server Unavailable" and PowerShell 7
+        # "Service Unavailable".
+        '(502)'
+        '(503)'
+        '(504)'
         # The push endpoint returns 409 with this text both when a version really
         # exists and, occasionally, for no lasting reason. Retrying first means a
         # transient conflict no longer silently drops the package; a real one still
