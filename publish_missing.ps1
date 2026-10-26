@@ -151,10 +151,17 @@ $failed = @()
 foreach ($id in $missing) {
     # One package per call, so each outcome can be read from its own output.
     $out = & $republish -Name $id -WhatIf:$WhatIf *>&1 | Out-String
-    Write-Host $out
-    if ($LASTEXITCODE -eq 0) { continue }
+    if ($LASTEXITCODE -eq 0) { Write-Host $out; continue }
 
-    switch (Get-PushOutcome $out) {
+    $outcome = Get-PushOutcome $out
+    # republish.ps1 marks any failed push with ::error:: lines, which the runner turns
+    # into red annotations. A 403 or 409 is reported below as a warning and does not
+    # fail the run, so print those lines as plain text: ever-gauzy's 403 showed two
+    # errors on a run it did not fail.
+    if ($outcome -ne 'failed') { $out = $out -replace '(?m)^::error::', 'error: ' }
+    Write-Host $out
+
+    switch ($outcome) {
         'queue-cap' { Write-Warning "$id hit the moderation queue cap (403); the next run will retry." }
         'reserved' { Write-Warning "$id's version is taken on the gallery (409), most likely rejected; it needs a new version." }
         default { $failed += $id }
