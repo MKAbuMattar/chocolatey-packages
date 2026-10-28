@@ -6,8 +6,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 # and saves it as omp.exe, so the package does the same and Chocolatey shims `omp`.
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/can1357/oh-my-pi/releases/download/v18.13.2/omp-windows-x64.exe'
-  checksum64     = '95c45f53fff419ae4aff5cf07e6af38f297fc7e754947bcb85d9d2253fcae17a'
+  url64          = 'https://github.com/can1357/oh-my-pi/releases/download/v18.13.3/omp-windows-x64.exe'
+  checksum64     = 'ce97a82dc767f4cf5683ad17e08f095a27de9a15208dc702668cce24feb1b4fb'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'omp.exe'
 }
