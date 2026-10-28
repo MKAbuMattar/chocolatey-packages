@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>factory-desktop</id>
-    <version>0.207.0</version>
+    <version>0.208.0</version>
     <title>Factory Desktop</title>
     <authors>Factory AI</authors>
     <owners>Mohammad Abu Mattar</owners>
