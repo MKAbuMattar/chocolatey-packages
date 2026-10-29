@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/terralist/terralist/releases/download/v0.11.0/terralist_windows_amd64.zip'
-  checksum64     = 'deb42c635e471ab035833e98d2b499bde234a07d58e991bdd2a06b765e7e9c38'
+  url64          = 'https://github.com/terralist/terralist/releases/download/v0.11.1/terralist_windows_amd64.zip'
+  checksum64     = '05d7bf2f3559bfaf35030565797dc6c1a7261e3ea0070c5fb121eaa1c3fe9ae6'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
