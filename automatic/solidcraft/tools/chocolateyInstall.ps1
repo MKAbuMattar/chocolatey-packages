@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/tangency-labs/solidcraft/releases/download/v0.25.1/solidcraft-0.25.1-windows-x64.msi'
-  checksum64     = '477e01295c954c82f9bc1ead2003dcd28c174ceffbc5a313696fcf7c49b4787e'
+  url64          = 'https://github.com/tangency-labs/solidcraft/releases/download/v0.26.0/solidcraft-0.26.0-windows-x64.msi'
+  checksum64     = 'd63edeb45ee1160e38cb24d42a1e41d556b478d245408a145ea5046db016c6fd'
   checksumType64 = 'sha256'
   softwareName   = 'SolidCraft*'
   silentArgs     = '/qn /norestart'
