@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>archon</id>
-    <version>0.13.0</version>
+    <version>0.13.1</version>
     <title>Archon</title>
     <authors>coleam00</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -21,7 +21,7 @@ The package installs the `archon` command. Open a new terminal after installing 
 PATH change takes effect. See [archon.diy](https://archon.diy) for setup.
 ]]></description>
     <summary>Open-source harness builder for AI coding</summary>
-    <releaseNotes>https://github.com/coleam00/Archon/releases/tag/v0.13.0</releaseNotes>
+    <releaseNotes>https://github.com/coleam00/Archon/releases/tag/v0.13.1</releaseNotes>
     <copyright>Copyright (c) 2025-2026 Cole Medin</copyright>
     <tags>archon ai ai-agent coding-assistant harness workflow cli</tags>
     <projectSourceUrl>https://github.com/coleam00/Archon</projectSourceUrl>
