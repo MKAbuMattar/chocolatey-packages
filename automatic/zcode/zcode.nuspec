@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>zcode</id>
-    <version>3.14.3</version>
+    <version>3.17.1</version>
     <title>ZCode</title>
     <authors>zai-org</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -21,7 +21,7 @@ The package installs the ZCode desktop app. Start it from the Start Menu and sig
 with your Z.ai account. See [zcode.z.ai](https://zcode.z.ai/) for setup.
 ]]></description>
     <summary>Z.ai's coding agent desktop app</summary>
-    <releaseNotes>https://github.com/zai-org/ZCode/releases/tag/v3.14.3</releaseNotes>
+    <releaseNotes>https://github.com/zai-org/ZCode/releases/tag/v3.17.1</releaseNotes>
     <copyright>Copyright 2026 Z.AI Co., Ltd</copyright>
     <tags>zcode z.ai zai glm ai ai-agent coding-assistant desktop</tags>
     <projectSourceUrl>https://github.com/zai-org/ZCode</projectSourceUrl>
