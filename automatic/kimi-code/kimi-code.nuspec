@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kimi-code</id>
-    <version>2.4.0</version>
+    <version>2.4.1</version>
     <title>Kimi Code</title>
     <authors>MoonshotAI</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ PATH change takes effect, then run `kimi` in a project directory. See the
 [Kimi Code documentation](https://www.kimi.com/code/docs/) for sign-in and models.
 ]]></description>
     <summary>Kimi's terminal coding agent from Moonshot AI</summary>
-    <releaseNotes>https://github.com/MoonshotAI/kimi-code/releases/tag/@moonshot-ai/kimi-code@2.4.0</releaseNotes>
+    <releaseNotes>https://github.com/MoonshotAI/kimi-code/releases/tag/@moonshot-ai/kimi-code@2.4.1</releaseNotes>
     <copyright>Copyright (c) 2026 Moonshot AI</copyright>
     <tags>kimi-code kimi moonshot ai ai-agent coding-assistant cli terminal llm</tags>
     <projectSourceUrl>https://github.com/MoonshotAI/kimi-code</projectSourceUrl>
