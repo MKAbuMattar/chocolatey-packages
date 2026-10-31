@@ -22,11 +22,6 @@ Stop renting your intelligence. Own it with AnythingLLM. Everything you need for
     <bugTrackerUrl>https://github.com/Mintplex-Labs/anything-llm/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/anythingllm</packageSourceUrl>
     <docsUrl>https://anythingllm.com</docsUrl>
-    <!-- AnythingLLM's installer runs its bundled VC_redist itself during setup; with the
-    runtime already present that step returns at once instead of installing it mid-setup. -->
-    <dependencies>
-      <dependency id="vcredist140" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
