@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>manta</id>
-    <version>1.1.4</version>
+    <version>1.1.4.20261031</version>
     <title>Manta</title>
     <authors>hql287</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -13,6 +13,11 @@
     <description><![CDATA[## What is Manta?
 
 Flexible invoicing desktop app with beautiful & customizable templates.
+
+## Usage
+
+Manta ships as a single portable executable. The package keeps it in its own folder
+and adds a Start Menu shortcut and the `manta` command, both of which open Manta.
 ]]></description>
     <summary>Flexible invoicing desktop app with beautiful &amp; customizable templates.</summary>
     <releaseNotes>https://github.com/hql287/Manta/releases/tag/v1.1.4</releaseNotes>
