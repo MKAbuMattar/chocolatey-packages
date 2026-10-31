@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>gridcraft</id>
-    <version>0.14.2</version>
+    <version>0.14.2.20261031</version>
     <title>GridCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>

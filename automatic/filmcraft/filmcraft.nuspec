@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>filmcraft</id>
-    <version>0.15.0</version>
+    <version>0.15.0.20261031</version>
     <title>FilmCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>

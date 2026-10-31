@@ -1,6 +1,8 @@
 $ErrorActionPreference = 'Stop'
 
-# A per-machine MSI (ALLUSERS=1), so Chocolatey's auto-uninstaller finds it by product name.
+# A per-machine install, so Chocolatey's auto-uninstaller finds it by product name.
+# The Craft MSIs became dual-mode and install per user unless told ALLUSERS=1, which
+# fails with 1603 beside an earlier per-machine copy.
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
@@ -8,7 +10,7 @@ $packageArgs = @{
   checksum64     = '255f963ba8acb799b231ac23a5ef04ca157a8d26f9b9b279b3e55a59db29be77'
   checksumType64 = 'sha256'
   softwareName   = 'ArtCraft*'
-  silentArgs     = '/qn /norestart'
+  silentArgs     = '/qn /norestart ALLUSERS=1'
   validExitCodes = @(0, 3010, 1641)
 }
 
