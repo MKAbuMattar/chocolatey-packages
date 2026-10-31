@@ -22,6 +22,11 @@ DeepChat - A smart assistant that connects powerful AI to your personal world.
     <bugTrackerUrl>https://github.com/ThinkInAIXYZ/deepchat/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/deepchat</packageSourceUrl>
     <docsUrl>https://deepchat.thinkinai.xyz/</docsUrl>
+    <!-- DeepChat's installer asks to download the Visual C++ runtime when it is missing, in a
+    dialog /S does not suppress; on a clean machine the install waited on it for good. -->
+    <dependencies>
+      <dependency id="vcredist140" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
