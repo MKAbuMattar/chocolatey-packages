@@ -70,6 +70,8 @@ Describe 'automatic package identity and metadata' {
     $nuspec.Text | Should -Match '(?s)<description><!\[CDATA\[.*?\]\]></description>'
     ([string]$metadata.licenseUrl) | Should -Match '^https?://'
     ([string]$metadata.projectUrl) | Should -Match '^https?://'
+    # The validator flags a package without it as a guideline; autoclaw shipped without one.
+    ([string]$metadata.packageSourceUrl) | Should -Be "https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/$($paths.Id)"
     ([string]$metadata.releaseNotes) | Should -Not -BeNullOrEmpty
     Test-Path $paths.Readme | Should -BeTrue
     [IO.File]::ReadAllText($paths.Readme) | Should -Match '^\s*#\s+\S+'
