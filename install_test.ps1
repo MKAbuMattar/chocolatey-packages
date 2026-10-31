@@ -77,6 +77,17 @@ foreach ($pkg in $Name) {
         continue
     }
 
+    # A dependency such as vcredist140 lives only on the community feed, and --source
+    # below is the package folder alone, so choco could not resolve it. Install those
+    # first; the package itself must still come from this folder, not from a gallery
+    # copy of the same version.
+    $deps = @(([xml](Get-Content (Join-Path $dir "$pkg.nuspec") -Raw)).package.metadata.dependencies.dependency |
+        Where-Object { $_.id } | ForEach-Object id)
+    if ($deps) {
+        Write-Host "`n=== $pkg : dependencies $($deps -join ', ') ===" -ForegroundColor Cyan
+        choco install @deps --source https://community.chocolatey.org/api/v2/ --yes --no-progress --limit-output --verbosity=error
+    }
+
     Write-Host "`n=== $pkg : install ===" -ForegroundColor Cyan
     # --pre or choco cannot see a prerelease version at all, and reports the package
     # as not found rather than as skipped. buzz, llrt and octobot all ship prereleases.
