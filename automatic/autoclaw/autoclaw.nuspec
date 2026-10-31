@@ -21,6 +21,7 @@ An account is needed to use it. The application is free to download, and it is c
     <copyright>Copyright Z.ai</copyright>
     <tags>autoclaw z-ai glm ai-agent assistant automation desktop</tags>
     <docsUrl>https://autoclaw.z.ai/</docsUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/autoclaw</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
