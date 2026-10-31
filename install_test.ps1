@@ -110,6 +110,22 @@ foreach ($pkg in $Name) {
         Write-Host "$pkg shimmed: $($declared -join ', ')"
     }
 
+    # An MSI package installs for every user. The Craft apps moved to dual-mode MSIs
+    # that install per user unless told ALLUSERS=1, which passes here on a clean
+    # machine and then fails with 1603 beside an earlier per-machine copy: gridcraft
+    # 0.13.0 did that next to 0.12.1. Require the entry under HKLM, not HKCU.
+    $installText = Get-Content $script -Raw
+    if ($installText -match "fileType\s*=\s*'MSI'") {
+        $msiName = [regex]::Match($installText, "softwareName\s*=\s*'([^']+)'").Groups[1].Value
+        $machine = @(Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
+            'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' -ErrorAction Ignore |
+            Where-Object { $_.DisplayName -like $msiName })
+        if (!$machine) {
+            Write-Host "::error::$pkg installed its MSI for the current user only; pass ALLUSERS=1"
+            $failed += $pkg
+        }
+    }
+
     Write-Host "`n=== $pkg : uninstall ===" -ForegroundColor Cyan
     choco uninstall $pkg --yes --no-progress --limit-output --verbosity=error
     if ($LASTEXITCODE -ne 0) {
