@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-windows-x64.msi'
-  checksum64     = 'fc0956fd18e338d9ed24977e03f93be4d91d0a54d02956f95ee9deb229cbe154'
+  url64          = 'https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-windows-x64.msi'
+  checksum64     = '6133f27569668fa473807b4db29ef6f02bba3730b0c5b4de6a059fcde14d7498'
   checksumType64 = 'sha256'
   softwareName   = 'LightCraft*'
   silentArgs     = '/qn /norestart'
