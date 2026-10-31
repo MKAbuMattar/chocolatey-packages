@@ -85,7 +85,6 @@ body:
         - mimo-code
         - mindwalk
         - ms-apm
-        - ms-coreutils
         - neohtop
         - nginx-ui
         - nodeterm
