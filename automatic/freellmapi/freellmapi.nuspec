@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>freellmapi</id>
+    <version>0.16.15</version>
+    <title>FreeLLMAPI</title>
+    <authors>tashfeenahmed</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/tashfeenahmed/freellmapi/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://freellmapi.co</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@49dc8c1d54cd106a9eec04b79d33685a4e278579/icons/freellmapi.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is FreeLLMAPI?
+
+FreeLLMAPI aggregates the free tiers of dozens of LLM providers, plus any custom
+OpenAI-compatible endpoint, behind a single OpenAI-compatible `/v1` API. A router picks
+the best available model for each request, fails over to the next provider when one is
+rate-limited, and tracks per-key usage so you stay under every free-tier cap. Keys are
+stored encrypted.
+
+Upstream states it is for personal experimentation only.
+
+## Usage
+
+The package installs the FreeLLMAPI desktop app. Start it from the Start Menu, add your
+provider keys and point any OpenAI client at its `/v1` endpoint. See
+[freellmapi.co](https://freellmapi.co) for more.
+]]></description>
+    <summary>Free LLM provider tiers behind one OpenAI-compatible endpoint</summary>
+    <releaseNotes>https://github.com/tashfeenahmed/freellmapi/releases/tag/v0.16.15</releaseNotes>
+    <copyright>Copyright tashfeenahmed</copyright>
+    <tags>freellmapi llm ai openai-compatible api-gateway router proxy</tags>
+    <projectSourceUrl>https://github.com/tashfeenahmed/freellmapi</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/tashfeenahmed/freellmapi/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/freellmapi</packageSourceUrl>
+    <docsUrl>https://github.com/tashfeenahmed/freellmapi/tree/main/docs</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
