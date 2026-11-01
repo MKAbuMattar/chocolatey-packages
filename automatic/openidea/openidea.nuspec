@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>openidea</id>
+    <version>0.1.32</version>
+    <title>OpenIDEA</title>
+    <authors>l0ng-ai</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/l0ng-ai/openidea/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/l0ng-ai/openidea</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@49dc8c1d54cd106a9eec04b79d33685a4e278579/icons/openidea.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is OpenIDEA?
+
+OpenIDEA is the IDE you know, rebuilt in Rust. It brings the IntelliJ IDEA way of
+working, its keymap, its tool windows and its search-everywhere habits, to a fast native
+app. It ships an editor, code insight, a debugger, Git, a terminal, and database and HTTP
+clients for 60+ languages.
+
+## Usage
+
+The package installs the OpenIDEA desktop app. Start it from the Start Menu and open a
+project. See [github.com/l0ng-ai/openidea](https://github.com/l0ng-ai/openidea) for more.
+]]></description>
+    <summary>The IDE you know, rebuilt in Rust</summary>
+    <releaseNotes>https://github.com/l0ng-ai/openidea/releases/tag/v0.1.32</releaseNotes>
+    <copyright>Copyright OpenIDEA contributors</copyright>
+    <tags>openidea ide intellij code-editor rust tauri debugger git lsp developer-tools</tags>
+    <projectSourceUrl>https://github.com/l0ng-ai/openidea</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/l0ng-ai/openidea/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/openidea</packageSourceUrl>
+    <docsUrl>https://github.com/l0ng-ai/openidea#readme</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
