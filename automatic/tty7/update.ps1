@@ -7,7 +7,7 @@ function global:au_SearchReplace { Get-AuSearchReplace }
 
 # The repo also publishes 'nightly' and 'mobile-v*' (Android) releases, so only v<digit>.
 function global:au_GetLatest {
-  Get-GitHubLatest -Repo $repo -TagPattern '^v\d' -Asset 'tty7-{version}-windows-x86_64-setup.exe' -RequireAsset
+  Get-GitHubLatest -Repo $repo -TagPattern '^v\d' -AssetPattern 'tty7-*-windows-x86_64-setup.exe' -RequireAsset
 }
 
 update -ChecksumFor 64
