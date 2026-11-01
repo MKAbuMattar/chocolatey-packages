@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/l0ng-ai/openidea/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/l0ng-ai/openidea</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@49dc8c1d54cd106a9eec04b79d33685a4e278579/icons/openidea.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@3818cd79bb694333c532431668de552492b3942c/icons/openidea.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is OpenIDEA?
 
