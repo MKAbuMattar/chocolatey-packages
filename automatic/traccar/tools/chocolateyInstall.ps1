@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/traccar/traccar/releases/download/v6.16.0/traccar-windows-64-6.16.0.zip'
-  checksum64     = 'c7b3a495767fe027dcaaf50133eade6565e63070fb2c139420a99543c3f41c95'
+  url64          = 'https://github.com/traccar/traccar/releases/download/v6.17.0/traccar-windows-64-6.17.0.zip'
+  checksum64     = 'e321921a4af0d9eb06e3cae09117561b05b212da075c152fb589f6180527b015'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
