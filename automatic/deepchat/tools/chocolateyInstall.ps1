@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/ThinkInAIXYZ/deepchat/releases/download/v1.1.2/DeepChat-1.1.2-windows-x64.exe'
-  checksum64     = 'c74fa41072daf6e22c69121ff19d81fd32ee9337dfd645f4c44d265f9bd24376'
+  url64          = 'https://github.com/ThinkInAIXYZ/deepchat/releases/download/v1.1.3/DeepChat-1.1.3-windows-x64.exe'
+  checksum64     = '7b34ab55605c94ad17f7f4bf20d1ffbda0f7a27606b168b948cbb771d77e459d'
   checksumType64 = 'sha256'
   softwareName   = 'DeepChat*'
   silentArgs     = '/S'
