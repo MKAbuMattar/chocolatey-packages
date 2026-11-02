@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/dyad-sh/dyad/releases/download/v1.21.0/dyad-1.21.0.Setup.exe'
-  checksum64     = '73bf05e7441ae5d0c99f5e99e76f245fe683f38b1ed6de627e000331cd00c2b8'
+  url64          = 'https://github.com/dyad-sh/dyad/releases/download/v1.22.0/dyad-1.22.0.Setup.exe'
+  checksum64     = 'f985928bb5b7e3e2fc6d478c35679f6373161719645c5317cb84b299bdf965ef'
   checksumType64 = 'sha256'
   softwareName   = 'Dyad*'
   silentArgs     = '--silent'
