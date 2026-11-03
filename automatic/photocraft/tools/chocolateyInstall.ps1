@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-windows-x64.msi'
-  checksum64     = 'b351c9253275a928cc1bec1c4a3a551f4fe5b90d57f908b782f37af7970e7f05'
+  url64          = 'https://github.com/storytold/photocraft/releases/download/v0.20.1/photocraft-0.20.1-windows-x64.msi'
+  checksum64     = 'ad14e3c43c10e10e94e50ccd61b503dccb29c4f1464bbd17ae6e3c2b703b3f80'
   checksumType64 = 'sha256'
   softwareName   = 'PhotoCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
