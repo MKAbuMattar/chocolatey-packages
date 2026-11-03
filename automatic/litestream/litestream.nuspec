@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>litestream</id>
-    <version>0.5.17</version>
+    <version>0.5.18</version>
     <title>Litestream</title>
     <authors>benbjohnson</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Streaming replication for SQLite.
 ]]></description>
     <summary>Streaming replication for SQLite</summary>
-    <releaseNotes>https://github.com/benbjohnson/litestream/releases/tag/v0.5.17</releaseNotes>
+    <releaseNotes>https://github.com/benbjohnson/litestream/releases/tag/v0.5.18</releaseNotes>
     <copyright>Copyright benbjohnson</copyright>
     <tags>litestream replication s3 sqlite backup server</tags>
     <projectSourceUrl>https://github.com/benbjohnson/litestream</projectSourceUrl>
