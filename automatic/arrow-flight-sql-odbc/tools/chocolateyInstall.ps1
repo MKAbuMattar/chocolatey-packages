@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/apache/arrow/releases/download/apache-arrow-26.0.0/Apache-Arrow-Flight-SQL-ODBC-26.0.0-win64.msi'
-  checksum64     = '3f89ccf8aa7f4ce540815864fddb62cc500952dbf6feaf8976807e1014279e12'
+  url64          = 'https://github.com/apache/arrow/releases/download/apache-arrow-26.0.1/Apache-Arrow-Flight-SQL-ODBC-26.0.1-win64.msi'
+  checksum64     = '88483faaff08c563fe8f5343930683e8f178dfd486a68a8d78b9a10a6d108125'
   checksumType64 = 'sha256'
   softwareName   = 'Apache Arrow Flight SQL ODBC*'
   silentArgs     = '/qn /norestart'
