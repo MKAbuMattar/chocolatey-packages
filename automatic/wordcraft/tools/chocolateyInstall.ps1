@@ -7,8 +7,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 # it is the newer one (https://github.com/storytold/wordcraft/issues/61).
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/storytold/wordcraft/releases/download/v0.15.0/wordcraft-0.15.0-windows-x64-portable.zip'
-  checksum64     = '2d16f589fe4f8448cd6a8124ef92cfa61e075b9c02c401e6c1f67172aa9495a8'
+  url64          = 'https://github.com/storytold/wordcraft/releases/download/v0.15.1/wordcraft-0.15.1-windows-x64-portable.zip'
+  checksum64     = 'bac0813a7652526d0a17ff4fd1fcb88d4671277786ee6f27806baa329929f903'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
