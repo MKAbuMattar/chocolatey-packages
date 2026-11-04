@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/meshery/meshery/releases/download/v1.0.74/mesheryctl_1.0.74_Windows_x86_64.zip'
-  checksum64     = 'cb7769e28383c1d8d00a8c312855928ee3279790b1bd8373e6e0be5390f027a7'
+  url64          = 'https://github.com/meshery/meshery/releases/download/v1.0.75/mesheryctl_1.0.75_Windows_x86_64.zip'
+  checksum64     = '61017eafbf88950a4a21a6c19289d7733af2d586b78dedc79c31385662a72440'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
