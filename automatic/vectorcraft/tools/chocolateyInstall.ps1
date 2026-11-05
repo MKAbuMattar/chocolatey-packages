@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/vectorcraft/releases/download/v0.21.0/vectorcraft-0.21.0-windows-x64.msi'
-  checksum64     = 'b14eeedfa4601e94802f6e1ebc28c247253ef86761764d7ed92a6c68c883f25b'
+  url64          = 'https://github.com/storytold/vectorcraft/releases/download/v0.21.1/vectorcraft-0.21.1-windows-x64.msi'
+  checksum64     = '6c639490afc96de0d0a726f5daf8cc412bae51158e4914da91f92ca7c6bdf285'
   checksumType64 = 'sha256'
   softwareName   = 'VectorCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
