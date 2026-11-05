@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/apple/pkl/releases/download/0.32.2/pkl-windows-amd64.exe'
-  checksum64     = 'ac3c55c2e43c20964dc5faf51e47bf73a90150dfe1874aa37753651753edf201'
+  url64          = 'https://github.com/apple/pkl/releases/download/0.33.0/pkl-windows-amd64.exe'
+  checksum64     = '9875af0d17d3535ed0e3903f3ae71fc8007268949328f73c2d12942fca11840c'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'pkl.exe'
 }
