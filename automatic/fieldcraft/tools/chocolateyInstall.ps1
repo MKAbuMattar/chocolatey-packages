@@ -1,12 +1,12 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 # FieldCraft ships only a portable zip for Windows.
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/tangency-labs/fieldcraft/releases/download/v0.7.0/fieldcraft-0.7.0-windows-x64.zip'
-  checksum64     = '98bbac7a5b2266fb30e64aa34bf5379db986660d3c3753e3ee8be06f2460961d'
+  url64          = 'https://github.com/tangency-labs/fieldcraft/releases/download/v0.7.5/fieldcraft-0.7.5-windows-x64.zip'
+  checksum64     = '0fe9375e98a4a15f667a1609f5aff4402984e464d36dda4182ff21c41e48df02'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
