@@ -18,7 +18,7 @@ Upstream describes it with these topics: cross-platform, multi-cursor, p2p, pair
 ]]></description>
     <summary>p2p.kiwi , Cross-Platform screen sharing made simple</summary>
     <releaseNotes>https://github.com/dont-be-evil-company/p2p.kiwi/releases/tag/v3.10.0</releaseNotes>
-    <copyright>Copyright 2024+ mistweaverco</copyright>
+    <copyright>Copyright (c) 2026+ The Don't Be Evil Company, Copyright (c) 2024-2025 mistweaverco</copyright>
     <tags>p2p-kiwi cross-platform multi-cursor p2p pair-programming pairing peer-to-peer screensharing screen-sharing desktop</tags>
     <projectSourceUrl>https://github.com/dont-be-evil-company/p2p.kiwi</projectSourceUrl>
     <bugTrackerUrl>https://github.com/dont-be-evil-company/p2p.kiwi/issues</bugTrackerUrl>
