@@ -1,7 +1,7 @@
 import-module Chocolatey-AU
 Import-Module (Join-Path $PSScriptRoot '../../au_shared.psm1') -Global
 
-$repo = 'kortix-ai/suna'
+$repo = 'kortix-ai/CompanyOS'
 
 function global:au_SearchReplace { Get-AuSearchReplace }
 

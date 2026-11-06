@@ -121,6 +121,10 @@ function Get-GitHubRelease {
             literally. ever-gauzy tags a release for every merge and attaches a build
             to roughly one in ten, so the newest tag is usually empty.
 
+        .Parameter WithAssetTemplate
+            Same, for a name built from each release's own tag: '{version}' and
+            '{tag}' are filled in per release, as Get-GitHubLatest -Asset does.
+
         .Parameter PerPage
             How many releases to read per request. 100 is the GitHub maximum.
 
@@ -135,12 +139,13 @@ function Get-GitHubRelease {
         [string]$TagPattern,
         [string]$WithAsset,
         [string]$WithAssetPattern,
+        [string]$WithAssetTemplate,
         [int]$PerPage = 100,
         [int]$MaxPages = 1
     )
 
 
-    if (!$TagPrefix -and !$TagPattern -and !$WithAsset -and !$WithAssetPattern) {
+    if (!$TagPrefix -and !$TagPattern -and !$WithAsset -and !$WithAssetPattern -and !$WithAssetTemplate) {
         return Invoke-GitHubApi "https://api.github.com/repos/$Repo/releases/latest"
     }
 
@@ -156,7 +161,8 @@ function Get-GitHubRelease {
             (!$TagPrefix -or $_.tag_name -like "$TagPrefix*") -and
             (!$TagPattern -or $_.tag_name -match $TagPattern) -and
             (!$WithAsset -or ($_.assets.name -contains $WithAsset)) -and
-            (!$WithAssetPattern -or ($_.assets.name -like $WithAssetPattern))
+            (!$WithAssetPattern -or ($_.assets.name -like $WithAssetPattern)) -and
+            (!$WithAssetTemplate -or ($_.assets.name -contains (Expand-AssetTemplate $WithAssetTemplate $_.tag_name $TagPrefix)))
         } | Select-Object -First 1
     }
 
@@ -166,6 +172,7 @@ function Get-GitHubRelease {
             if ($TagPattern) { "tag matching '$TagPattern'" }
             if ($WithAsset) { "asset '$WithAsset'" }
             if ($WithAssetPattern) { "asset matching '$WithAssetPattern'" }
+            if ($WithAssetTemplate) { "asset '$WithAssetTemplate' for its own version" }
         ) -join ', '
         throw "No stable release of $Repo with $wanted in the last $($PerPage * $MaxPages) releases"
     }
@@ -194,6 +201,12 @@ function Get-VersionFromTag {
     $version = $Tag
     if ($Prefix) { $version = $version -replace ('^' + [regex]::Escape($Prefix)), '' }
     $version -replace $script:TagVersionPrefix, ''
+}
+
+function Expand-AssetTemplate {
+    # The asset name a release should carry: '{version}' and '{tag}' filled from its tag.
+    param([string]$Template, [string]$Tag, [string]$Prefix)
+    $Template.Replace('{version}', (Get-VersionFromTag -Tag $Tag -Prefix $Prefix)).Replace('{tag}', $Tag)
 }
 
 function Get-GitHubAssetUrl {
@@ -327,10 +340,14 @@ function Get-GitHubLatest {
     # Windows build at all: meshery's v1.0.72 came out empty, and mesheryctl failed on
     # a 404 for a file that never existed. When the release picked lacks the asset,
     # take the newest one that has it. A release that has it is picked as before.
-    $glob = if ($AssetPattern) { $AssetPattern } else { $Asset.Replace('{version}', '*').Replace('{tag}', '*') }
-    if (!$RequireAsset -and !($release.assets.name -like $glob)) {
-        Write-Warning "$Repo $($release.tag_name) has no asset matching '$glob'; using the newest release that has one"
-        $find.WithAssetPattern = $glob
+    # A built name is checked exactly, not as a wildcard: kortix's v0.15.0 carried only
+    # Kortix-Setup-0.14.19.exe, which matched Kortix-Setup-*.exe, so the URL built for
+    # Kortix-Setup-0.15.0.exe was a 404.
+    $has = if ($AssetPattern) { $release.assets.name -like $AssetPattern }
+           else { $release.assets.name -contains (Expand-AssetTemplate $Asset $release.tag_name $TagPrefix) }
+    if (!$RequireAsset -and !$has) {
+        Write-Warning "$Repo $($release.tag_name) does not carry its '$(if ($AssetPattern) { $AssetPattern } else { $Asset })'; using the newest release that does"
+        if ($AssetPattern) { $find.WithAssetPattern = $AssetPattern } else { $find.WithAssetTemplate = $Asset }
         $release = Get-GitHubRelease @find
     }
 
@@ -341,8 +358,7 @@ function Get-GitHubLatest {
         (Get-GitHubMatchingAsset -Release $release -Pattern $AssetPattern).browser_download_url
     }
     else {
-        $name = $Asset.Replace('{version}', $version).Replace('{tag}', $tag)
-        Get-GitHubAssetUrl -Repo $Repo -Tag $tag -Asset $name
+        Get-GitHubAssetUrl -Repo $Repo -Tag $tag -Asset (Expand-AssetTemplate $Asset $tag $TagPrefix)
     }
 
     $latest = @{
