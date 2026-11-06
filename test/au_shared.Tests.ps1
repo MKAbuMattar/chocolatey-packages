@@ -33,6 +33,15 @@ Describe 'Get-GitHubLatest against GitHub' -Tag 'Integration' {
     Get-StatusCode $latest.URL64 | Should -Be 200
   }
 
+  # kortix-ai/suna v0.15.0 carried only Kortix-Setup-0.14.19.exe, so a wildcard check
+  # passed and the URL built for 0.15.0 was a 404. Whichever release this resolves to,
+  # the file named for its own version has to download.
+  It 'returns a downloadable URL for a templated -Asset on kortix' {
+    $latest = Get-GitHubLatest -Repo 'kortix-ai/suna' -Asset 'Kortix-Setup-{version}.exe' 3>$null
+    $latest.URL64 | Should -Be "https://github.com/kortix-ai/suna/releases/download/v$($latest.Version)/Kortix-Setup-$($latest.Version).exe"
+    Get-StatusCode $latest.URL64 | Should -Be 200
+  }
+
   # The case that failed: meshery published v1.0.72 with no assets, and the asset
   # name built from its tag was a 404. Whichever release this resolves to, its URL has
   # to download.
