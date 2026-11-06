@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>texturecraft</id>
+    <version>0.4.0</version>
+    <title>TextureCraft</title>
+    <authors>storytold</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/storytold/texturecraft/blob/main/LICENSE-APACHE</licenseUrl>
+    <projectUrl>https://getartcraft.com/apps/texturecraft</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@05c90dda6f0e99b61e2adf44ae0b23d66127f329/icons/texturecraft.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is TextureCraft?
+
+TextureCraft is an open-source 3D texture painting app written in Rust. You paint PBR
+materials onto models in layers with masks, bake mesh maps, drive smart materials from
+them, and export textures for any engine. It runs natively.
+
+## Usage
+
+The package installs the TextureCraft desktop app. Start it from the Start Menu. See
+[TextureCraft on getartcraft.com](https://getartcraft.com/apps/texturecraft) for more.
+]]></description>
+    <summary>Open-source 3D texture painting app, written in Rust</summary>
+    <releaseNotes>https://github.com/storytold/texturecraft/releases/tag/v0.4.0</releaseNotes>
+    <copyright>Copyright (c) 2026 ArtCraft Team and the TextureCraft contributors</copyright>
+    <tags>texturecraft texture-painting 3d pbr materials texturing rust</tags>
+    <projectSourceUrl>https://github.com/storytold/texturecraft</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/storytold/texturecraft/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/texturecraft</packageSourceUrl>
+    <docsUrl>https://getartcraft.com/apps/texturecraft</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
