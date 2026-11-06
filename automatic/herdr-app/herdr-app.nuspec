@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>herdr-app</id>
+    <version>0.1.13</version>
+    <title>Herdr</title>
+    <authors>herdr</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/herdrdev/herdr-app/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://herdr.dev</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@e15794df857a527b0f187423e03c042a22db624a/icons/herdr-app.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is Herdr?
+
+Herdr is a desktop app for terminals and coding agents. You keep work in spaces, see
+which agents need you, and leave terminals running when you close the window.
+
+This is the desktop app. The `herdr` package is the separate herdr command-line
+runtime.
+
+## Usage
+
+The package installs Herdr with a Start Menu shortcut and the `herdr-app` command.
+Herdr runs on herdr-core, which it offers to install the first time it opens.
+]]></description>
+    <summary>Desktop app for terminals and coding agents that keep running</summary>
+    <releaseNotes>https://github.com/herdrdev/herdr-app/commits/master</releaseNotes>
+    <copyright>Copyright herdr</copyright>
+    <tags>herdr-app herdr terminal coding-agent ai-agent desktop</tags>
+    <projectSourceUrl>https://github.com/herdrdev/herdr-app</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/herdrdev/herdr-app/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/herdr-app</packageSourceUrl>
+    <docsUrl>https://github.com/herdrdev/herdr-app#readme</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
