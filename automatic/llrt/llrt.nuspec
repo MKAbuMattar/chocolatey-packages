@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>llrt</id>
-    <version>0.9.0-beta</version>
+    <version>0.10.0-beta</version>
     <title>LLRT</title>
     <authors>awslabs</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 LLRT (Low Latency Runtime) is an experimental, lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications.
 ]]></description>
     <summary>LLRT (Low Latency Runtime) is an experimental, lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications</summary>
-    <releaseNotes>https://github.com/awslabs/llrt/releases/tag/v0.9.0-beta</releaseNotes>
+    <releaseNotes>https://github.com/awslabs/llrt/releases/tag/v0.10.0-beta</releaseNotes>
     <copyright>Copyright awslabs</copyright>
     <tags>llrt javascript runtime lambda cli</tags>
     <projectSourceUrl>https://github.com/awslabs/llrt</projectSourceUrl>
