@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://mimocode-cdn.xiaomimimo.com/mimocode/mimodesktopai/XiaomiMiMo-AI-26.1102.21158-x64-setup.exe'
-  checksum64     = '8edc9d3e27af6185de934f655d6e3da436eb91c97296d8c91d54176625747f65'
+  url64          = 'https://mimocode-cdn.xiaomimimo.com/mimocode/mimodesktopai/XiaomiMiMo-AI-26.1106.61620-x64-setup.exe'
+  checksum64     = 'da1400b668518e5b060c8a48927d877247c31bdb80260d579b460e3370494a9a'
   checksumType64 = 'sha256'
   softwareName   = 'Xiaomi MiMo AI*'
   silentArgs     = '/S'
