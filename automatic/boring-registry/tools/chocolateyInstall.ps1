@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/boring-registry/boring-registry/releases/download/v0.19.0/boring-registry_0.19.0_Windows_x86_64.tar.gz'
-  checksum64     = 'dcfba0715eb728e93ee04b572b776c87cfbaa88781767d7f5580c7023753796e'
+  url64          = 'https://github.com/boring-registry/boring-registry/releases/download/v0.19.1/boring-registry_0.19.1_Windows_x86_64.tar.gz'
+  checksum64     = '4ce7cf70499bfdc8a24a319be4da93b91cd7b7ceff1275e42df238094e877063'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
