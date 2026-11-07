@@ -34,8 +34,16 @@ jobs:
         with:
           fetch-depth: 0
 
+      # The community feed sometimes answers 503, and choco then reports "installed 0/0"
+      # and exits 0: the next step failed on "updateall is not recognized" instead.
       - name: Install Chocolatey AU
-        run: choco install chocolatey-au --yes --no-progress
+        shell: powershell
+        run: |
+          for ($i = 1; $i -le 5 -and !(Get-Module -ListAvailable Chocolatey-AU); $i++) {
+            if ($i -gt 1) { Write-Host "Chocolatey-AU is not installed yet, retrying in 30s"; Start-Sleep 30 }
+            choco install chocolatey-au --yes --no-progress
+          }
+          if (!(Get-Module -ListAvailable Chocolatey-AU)) { throw 'Chocolatey-AU could not be installed; the community feed may be down' }
 
       # A real install and uninstall of each package from the nupkg AU just packed,
       # so the install script's silent arguments and shims are exercised, not just

@@ -42,8 +42,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      # The community feed sometimes answers 503, and choco then reports "installed 0/0"
+      # and exits 0: the next step failed on "updateall is not recognized" instead.
       - name: Install Chocolatey AU
-        run: choco install chocolatey-au --yes --no-progress
+        shell: powershell
+        run: |
+          for ($i = 1; $i -le 5 -and !(Get-Module -ListAvailable Chocolatey-AU); $i++) {
+            if ($i -gt 1) { Write-Host "Chocolatey-AU is not installed yet, retrying in 30s"; Start-Sleep 30 }
+            choco install chocolatey-au --yes --no-progress
+          }
+          if (!(Get-Module -ListAvailable Chocolatey-AU)) { throw 'Chocolatey-AU could not be installed; the community feed may be down' }
 
       # The update step only pushes when upstream is newer than the nuspec, so a package
       # added at upstream's latest version, or bumped by hand, never published. This

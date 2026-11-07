@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/storytold/materialcraft/blob/main/LICENSE-APACHE</licenseUrl>
     <projectUrl>https://getartcraft.com/apps/materialcraft</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@05c90dda6f0e99b61e2adf44ae0b23d66127f329/icons/materialcraft.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@b67bccc0486490fb10649f121051d02dd6f77804/icons/materialcraft.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is MaterialCraft?
 

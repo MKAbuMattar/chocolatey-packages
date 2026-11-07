@@ -51,8 +51,16 @@ jobs:
           # default single-commit checkout does not have.
           fetch-depth: 0
 
+      # The community feed sometimes answers 503, and choco then reports "installed 0/0"
+      # and exits 0: the next step failed on "updateall is not recognized" instead.
       - name: Install Chocolatey AU
-        run: choco install chocolatey-au --yes --no-progress
+        shell: powershell
+        run: |
+          for ($i = 1; $i -le 5 -and !(Get-Module -ListAvailable Chocolatey-AU); $i++) {
+            if ($i -gt 1) { Write-Host "Chocolatey-AU is not installed yet, retrying in 30s"; Start-Sleep 30 }
+            choco install chocolatey-au --yes --no-progress
+          }
+          if (!(Get-Module -ListAvailable Chocolatey-AU)) { throw 'Chocolatey-AU could not be installed; the community feed may be down' }
 
       # The nuspec description is generated from the package README. Fail here rather
       # than let a pull request land a README the package page will never show.

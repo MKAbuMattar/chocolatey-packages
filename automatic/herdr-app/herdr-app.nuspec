@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/herdrdev/herdr-app/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://herdr.dev</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@e15794df857a527b0f187423e03c042a22db624a/icons/herdr-app.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5c16f3f017bc0273122af14a8c4cd6f27411c701/icons/herdr-app.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Herdr?
 

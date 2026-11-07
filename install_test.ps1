@@ -124,9 +124,11 @@ foreach ($pkg in $Name) {
     # An MSI package installs for every user. The Craft apps moved to dual-mode MSIs
     # that install per user unless told ALLUSERS=1, which passes here on a clean
     # machine and then fails with 1603 beside an earlier per-machine copy: gridcraft
-    # 0.13.0 did that next to 0.12.1. Require the entry under HKLM, not HKCU.
+    # 0.13.0 did that next to 0.12.1. Require the entry under HKLM, not HKCU. An MSI
+    # authored per user only (artcraft-launcher installs under %LOCALAPPDATA%) says so
+    # with a "# Per-user MSI" comment in its install script, and is exempt.
     $installText = Get-Content $script -Raw
-    if ($installText -match "fileType\s*=\s*'MSI'") {
+    if ($installText -match "fileType\s*=\s*'MSI'" -and $installText -notmatch '# Per-user MSI') {
         $msiName = [regex]::Match($installText, "softwareName\s*=\s*'([^']+)'").Groups[1].Value
         $machine = @(Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
             'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' -ErrorAction Ignore |
