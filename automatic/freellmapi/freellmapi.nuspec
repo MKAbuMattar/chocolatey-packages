@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>freellmapi</id>
-    <version>0.16.20</version>
+    <version>0.16.21</version>
     <title>FreeLLMAPI</title>
     <authors>tashfeenahmed</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -27,7 +27,7 @@ provider keys and point any OpenAI client at its `/v1` endpoint. See
 [freellmapi.co](https://freellmapi.co) for more.
 ]]></description>
     <summary>Free LLM provider tiers behind one OpenAI-compatible endpoint</summary>
-    <releaseNotes>https://github.com/tashfeenahmed/freellmapi/releases/tag/v0.16.20</releaseNotes>
+    <releaseNotes>https://github.com/tashfeenahmed/freellmapi/releases/tag/v0.16.21</releaseNotes>
     <copyright>Copyright tashfeenahmed</copyright>
     <tags>freellmapi llm ai openai-compatible api-gateway router proxy</tags>
     <projectSourceUrl>https://github.com/tashfeenahmed/freellmapi</projectSourceUrl>
