@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>artcraft</id>
-    <version>0.41.0</version>
+    <version>0.41.1</version>
     <title>ArtCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -26,7 +26,7 @@ The package installs the ArtCraft desktop app. Start it from the Start Menu. See
 [ArtCraft on getartcraft.com](https://getartcraft.com) for more.
 ]]></description>
     <summary>The IDE for artists: interactive AI image and video creation</summary>
-    <releaseNotes>https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.1</releaseNotes>
     <copyright>Copyright storytold</copyright>
     <tags>artcraft ai image-generation video-generation 3d creative design</tags>
     <projectSourceUrl>https://github.com/storytold/artcraft</projectSourceUrl>
