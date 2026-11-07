@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>artcraft-launcher</id>
+    <version>0.15.0</version>
+    <title>ArtCraft Launcher</title>
+    <authors>storytold</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/storytold/craft-launcher/blob/main/LICENSE-APACHE</licenseUrl>
+    <projectUrl>https://github.com/storytold/craft-launcher</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5df8fa6aa3c6f789cf57e7729685862e23d852e8/icons/artcraft-launcher.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is ArtCraft Launcher?
+
+ArtCraft Launcher is one place to install, update and open every app in the Craft App
+Suite: PhotoCraft, FilmCraft, DeckCraft, GridCraft and the rest, with the right build
+for your computer, kept up to date. It is open source and written in Rust.
+
+## Usage
+
+The package installs ArtCraft Launcher for the account that runs choco, under
+`%LOCALAPPDATA%\Programs\ArtCraft\Launcher`; its installer has no all-users mode.
+Start it from the Start Menu.
+
+Apps the launcher installs are its own and are not tracked by Chocolatey. Each Craft
+app is also available as its own Chocolatey package.
+]]></description>
+    <summary>One place to install, update and open every app in the Craft App Suite</summary>
+    <releaseNotes>https://github.com/storytold/craft-launcher/releases/tag/v0.15.0</releaseNotes>
+    <copyright>Copyright (c) 2026 ArtCraft Team and the ArtCraft Launcher contributors</copyright>
+    <tags>artcraft-launcher artcraft launcher craft-suite app-manager rust</tags>
+    <projectSourceUrl>https://github.com/storytold/craft-launcher</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/storytold/craft-launcher/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/artcraft-launcher</packageSourceUrl>
+    <docsUrl>https://github.com/storytold/craft-launcher#readme</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
