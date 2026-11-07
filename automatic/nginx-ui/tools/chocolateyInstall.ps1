@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/0xJacky/nginx-ui/releases/download/v3.0.0/nginx-ui-windows-64.zip'
-  checksum64     = '6d89e7ae40f641c9fe9e1868c3d504d12d04422778fe3fc65078d653156d7589'
+  url64          = 'https://github.com/0xJacky/nginx-ui/releases/download/v3.0.1/nginx-ui-windows-64.zip'
+  checksum64     = 'a4a3848137fe094c64428bc080908c086b5440ff5eaae03b5c498ce0d7918a2d'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
