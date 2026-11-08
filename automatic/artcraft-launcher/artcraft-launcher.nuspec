@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/storytold/craft-launcher/blob/main/LICENSE-APACHE</licenseUrl>
     <projectUrl>https://github.com/storytold/craft-launcher</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5df8fa6aa3c6f789cf57e7729685862e23d852e8/icons/artcraft-launcher.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@895a8c2d6e6a5efd71d9958886cec539b950cc73/icons/artcraft-launcher.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is ArtCraft Launcher?
 
