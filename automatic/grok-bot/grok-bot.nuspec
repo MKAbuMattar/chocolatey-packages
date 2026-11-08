@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>grok-bot</id>
+    <version>0.79.3</version>
+    <title>Grok Bot</title>
+    <authors>SpaceXAI</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://x.ai/legal/terms-of-service</licenseUrl>
+    <projectUrl>https://x.ai/bot</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@8e0166453da529e816e46754a91198eba3dd6608/icons/grok-bot.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is Grok Bot?
+
+Grok Bot is the desktop agent for Grok, xAI's AI assistant. It is closed source and
+needs a Grok account.
+
+## Usage
+
+The package installs Grok Bot for the account that runs choco. Start it from the
+Start Menu and sign in. It updates itself.
+]]></description>
+    <summary>Grok Bot desktop agent from xAI</summary>
+    <releaseNotes>https://x.ai/bot</releaseNotes>
+    <copyright>Copyright © 2026 SpaceXAI</copyright>
+    <tags>grok-bot grok xai ai ai-agent desktop</tags>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/grok-bot</packageSourceUrl>
+    <docsUrl>https://x.ai/bot</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
