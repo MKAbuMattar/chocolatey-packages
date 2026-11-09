@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/deckcraft/releases/download/v0.16.0/deckcraft-0.16.0-windows-x64.msi'
-  checksum64     = '5af540fb72460dcaa046ec968a4adbc1de7e59afd4dcce0a14a1248e580fc5ab'
+  url64          = 'https://github.com/storytold/deckcraft/releases/download/v0.17.0/deckcraft-0.17.0-windows-x64.msi'
+  checksum64     = '57847b658554e3587fa0cacbd89e0061c1b14037ae9c52daff423f7c3f04f96c'
   checksumType64 = 'sha256'
   softwareName   = 'DeckCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
