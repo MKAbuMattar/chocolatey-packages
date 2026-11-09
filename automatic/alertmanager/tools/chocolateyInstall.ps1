@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/prometheus/alertmanager/releases/download/v0.34.2/alertmanager-0.34.2.windows-amd64.zip'
-  checksum64     = '7c322f966693f3aed7f62c643fa75de42312ab27ae4957b077c2e12ee78c153a'
+  url64          = 'https://github.com/prometheus/alertmanager/releases/download/v0.35.0/alertmanager-0.35.0.windows-amd64.zip'
+  checksum64     = 'cdf8cd664889bf3f27771881e10814f3d5916310aba90717b4424deb358b0fa3'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
