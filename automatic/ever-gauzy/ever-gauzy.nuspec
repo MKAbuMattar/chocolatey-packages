@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ever-gauzy</id>
-    <version>111.44.48</version>
+    <version>111.138.2</version>
     <title>Ever Gauzy Agent</title>
     <authors>ever-co</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co.
 ]]></description>
     <summary>Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co</summary>
-    <releaseNotes>https://github.com/ever-co/ever-gauzy-agent/releases/tag/v111.44.48</releaseNotes>
+    <releaseNotes>https://github.com/ever-co/ever-gauzy-agent/releases/tag/v111.138.2</releaseNotes>
     <copyright>Copyright ever-co</copyright>
     <tags>ever-gauzy accounting billing bookkeeping crm crm-platform erp expenses hr hrm business desktop</tags>
     <projectSourceUrl>https://github.com/ever-co/ever-gauzy-agent</projectSourceUrl>
