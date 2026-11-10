@@ -5,8 +5,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/craft-launcher/releases/download/v0.17.0/artcraft-launcher-0.17.0-windows-x64.msi'
-  checksum64     = 'aa96c6c207d5a176899947c74566b8512471fc90b1bc8e287b1c9b7b209ff1be'
+  url64          = 'https://github.com/storytold/craft-launcher/releases/download/v0.18.0/artcraft-launcher-0.18.0-windows-x64.msi'
+  checksum64     = '6383b4b1c38c94316fc94d2dd0819a5cc9b2c939e3eb7adad84e0b0aabba41ba'
   checksumType64 = 'sha256'
   softwareName   = 'ArtCraft Launcher*'
   silentArgs     = '/qn /norestart'

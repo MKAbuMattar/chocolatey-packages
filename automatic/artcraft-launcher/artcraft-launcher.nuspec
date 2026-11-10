@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>artcraft-launcher</id>
-    <version>0.17.0</version>
+    <version>0.18.0</version>
     <title>ArtCraft Launcher</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -26,7 +26,7 @@ Apps the launcher installs are its own and are not tracked by Chocolatey. Each C
 app is also available as its own Chocolatey package.
 ]]></description>
     <summary>One place to install, update and open every app in the Craft App Suite</summary>
-    <releaseNotes>https://github.com/storytold/craft-launcher/releases/tag/v0.17.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/craft-launcher/releases/tag/v0.18.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the ArtCraft Launcher contributors</copyright>
     <tags>artcraft-launcher artcraft launcher craft-suite app-manager rust</tags>
     <projectSourceUrl>https://github.com/storytold/craft-launcher</projectSourceUrl>
