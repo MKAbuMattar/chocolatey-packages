@@ -9,8 +9,8 @@ $archive = Join-Path $toolsPath 'herdr-app.tar.gz'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $archive
-  url64          = 'https://releases.herdr.dev/app/0.1.14/herdr-app-windows-x86_64.tar.gz'
-  checksum64     = 'c8a9da0e1b7c8ec85e2e131006797ba0fe0fc7793f3ab80e482f7622a5516b01'
+  url64          = 'https://releases.herdr.dev/app/0.1.15/herdr-app-windows-x86_64.tar.gz'
+  checksum64     = '62ddf27ee9acc13d9b3421389817d1cabdc906c23f9ff1363f6cdbc8af3da39c'
   checksumType64 = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs
