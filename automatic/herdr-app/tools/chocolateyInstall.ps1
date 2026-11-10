@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
@@ -9,8 +9,8 @@ $archive = Join-Path $toolsPath 'herdr-app.tar.gz'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $archive
-  url64          = 'https://releases.herdr.dev/app/0.1.13/herdr-app-windows-x86_64.tar.gz'
-  checksum64     = '72cb26f92a6b77e1125fecd2b18f87cc69a18c2da766a8ed8a5bcbd7b16c6012'
+  url64          = 'https://releases.herdr.dev/app/0.1.14/herdr-app-windows-x86_64.tar.gz'
+  checksum64     = 'c8a9da0e1b7c8ec85e2e131006797ba0fe0fc7793f3ab80e482f7622a5516b01'
   checksumType64 = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs
