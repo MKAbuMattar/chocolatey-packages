@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 # A per-machine install, so Chocolatey's auto-uninstaller finds it by product name.
 # The Craft MSIs became dual-mode and install per user unless told ALLUSERS=1, which
@@ -6,8 +6,8 @@ $ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/craft-anything/releases/download/v0.5.0/craft-anything-0.5.0-windows-x64.msi'
-  checksum64     = '48a85388cff97a28cea28486a66b4f76b69bbf3dea71e9ba4680a55c6dcb6254'
+  url64          = 'https://github.com/storytold/craft-anything/releases/download/v0.6.0/craft-anything-0.6.0-windows-x64.msi'
+  checksum64     = 'a650c94819e6f8f6edccb2bbd804130413a273148a746edaff07e3590c75d042'
   checksumType64 = 'sha256'
   softwareName   = 'Craft Anything*'
   silentArgs     = '/qn /norestart ALLUSERS=1'

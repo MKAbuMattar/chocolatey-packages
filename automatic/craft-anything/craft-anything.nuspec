@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>craft-anything</id>
-    <version>0.5.0</version>
+    <version>0.6.0</version>
     <title>Craft Anything</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the Craft Anything desktop app. Start it from the Start Men
 [Craft Anything on getartcraft.com](https://getartcraft.com/apps/craft-anything) for more.
 ]]></description>
     <summary>See how any website, app or game works, then have AI build your own version</summary>
-    <releaseNotes>https://github.com/storytold/craft-anything/releases/tag/v0.5.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/craft-anything/releases/tag/v0.6.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the Craft Anything contributors</copyright>
     <tags>craft-anything ai coding-agent clone reverse-engineering rust</tags>
     <projectSourceUrl>https://github.com/storytold/craft-anything</projectSourceUrl>
