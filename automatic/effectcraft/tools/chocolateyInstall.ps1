@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-windows-x64.msi'
-  checksum64     = '17c45826a3cc4057f81d4d4c16fe2fc6767dfe0fb759a5d29852f1eb3588cefd'
+  url64          = 'https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-windows-x64.msi'
+  checksum64     = '4ccfc6efe361402e64fedaf9c00439b4651d44721b8409ced647a0adf72fe198'
   checksumType64 = 'sha256'
   softwareName   = 'EffectCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
