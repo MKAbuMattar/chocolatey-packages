@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 # A per-machine install, so Chocolatey's auto-uninstaller finds it by product name.
 # The Craft MSIs became dual-mode and install per user unless told ALLUSERS=1, which
@@ -6,8 +6,8 @@ $ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/materialcraft/releases/download/v0.2.0/materialcraft-0.2.0-windows-x64.msi'
-  checksum64     = 'd400ea8ab51a8508e1893de58f93d4c43e87c50525d94477d34001ac5864c543'
+  url64          = 'https://github.com/storytold/materialcraft/releases/download/v0.3.0/materialcraft-0.3.0-windows-x64.msi'
+  checksum64     = '6096c3a75f074bc4426fc5e94c1c4db354bc316060a27ffb20fecf569a83bb12'
   checksumType64 = 'sha256'
   softwareName   = 'MaterialCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'

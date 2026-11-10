@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>materialcraft</id>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
     <title>MaterialCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the MaterialCraft desktop app. Start it from the Start Menu
 [MaterialCraft on getartcraft.com](https://getartcraft.com/apps/materialcraft) for more.
 ]]></description>
     <summary>Open-source node-based procedural material designer, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/materialcraft/releases/tag/v0.2.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/materialcraft/releases/tag/v0.3.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the MaterialCraft contributors</copyright>
     <tags>materialcraft procedural-materials node-graph pbr textures 3d rust</tags>
     <projectSourceUrl>https://github.com/storytold/materialcraft</projectSourceUrl>
