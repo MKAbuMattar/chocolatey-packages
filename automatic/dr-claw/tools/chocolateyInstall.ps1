@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/OpenLAIR/dr-claw/releases/download/v1.2.0/Dr.Claw-1.2.0-win-x64.exe'
-  checksum64     = '3405c6dccd7bdc914f35fc2f203bc5a9d5833f94bbede06ae5964a1d03391850'
+  url64          = 'https://github.com/OpenLAIR/dr-claw/releases/download/v1.3.0/Dr.Claw-1.3.0-win-x64.exe'
+  checksum64     = 'ee9fe6ad70b2186d6dded5032ba98a32372c9f2d412184571efa2aac65b57e5a'
   checksumType64 = 'sha256'
   softwareName   = 'Dr. Claw*'
   # electron-builder assisted installer (oneClick: false, allowToChangeInstallationDirectory:
