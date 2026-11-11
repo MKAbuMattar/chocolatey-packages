@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/openinterpreter/openinterpreter/releases/download/rust-v0.0.60/open-interpreter-package-x86_64-pc-windows-msvc.tar.gz'
-  checksum64     = 'c18241ea18e45b3b2ac52787cd13119ce07fd6d161953ea4218d9d162692d183'
+  url64          = 'https://github.com/openinterpreter/openinterpreter/releases/download/rust-v0.0.61/open-interpreter-package-x86_64-pc-windows-msvc.tar.gz'
+  checksum64     = 'f33bf04d13fbbcba43ed21a212b6b3fe806abb59c39e771061159fa55bb82e87'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
