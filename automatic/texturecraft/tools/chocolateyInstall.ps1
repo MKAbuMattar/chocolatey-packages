@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/texturecraft/releases/download/v0.5.0/texturecraft-0.5.0-windows-x64.msi'
-  checksum64     = '28538f55af61c8300758fd4afc9d45b64700e5802aca4eba95576f619e6f3163'
+  url64          = 'https://github.com/storytold/texturecraft/releases/download/v0.6.0/texturecraft-0.6.0-windows-x64.msi'
+  checksum64     = '9da7b303ac4027c2972aad655b9c89b294bb70c23758962f3a31310c8e8339d0'
   checksumType64 = 'sha256'
   softwareName   = 'TextureCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
