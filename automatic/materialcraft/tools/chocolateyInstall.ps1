@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/materialcraft/releases/download/v0.3.0/materialcraft-0.3.0-windows-x64.msi'
-  checksum64     = '6096c3a75f074bc4426fc5e94c1c4db354bc316060a27ffb20fecf569a83bb12'
+  url64          = 'https://github.com/storytold/materialcraft/releases/download/v0.4.0/materialcraft-0.4.0-windows-x64.msi'
+  checksum64     = '5d130af5b35dd05bd2edaa15e4716011d3965a9c273f6b86157413fc821dea5b'
   checksumType64 = 'sha256'
   softwareName   = 'MaterialCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
