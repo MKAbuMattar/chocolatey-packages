@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/jub0t/Concat/releases/download/v0.2.9/Concat-0.2.9-windows-x86_64.msi'
-  checksum64     = '6c6db4110bc351662fb032c1a0ede9ab88e960e41fd025c0adb0ccd7a27443fc'
+  url64          = 'https://github.com/jub0t/Concat/releases/download/v0.2.10/Concat-0.2.10-windows-x86_64.msi'
+  checksum64     = 'fbaef298c24632e0dd4c0733c4027746b65c7485940f6c8697bfee90379535ca'
   checksumType64 = 'sha256'
   softwareName   = 'Concat*'
   silentArgs     = '/qn /norestart'
