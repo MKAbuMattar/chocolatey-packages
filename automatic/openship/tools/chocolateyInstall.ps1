@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/oblien/openship/releases/download/v0.9.11/Openship-win32-x64.zip'
-  checksum64     = '65526a5afd8c55d515b048531858dd3d1273c17f16a19fd71a98bc54b40f23a7'
+  url64          = 'https://github.com/oblien/openship/releases/download/v0.9.12/Openship-win32-x64.zip'
+  checksum64     = 'd31c47e9ff9ebf0ff5520c4169a77cdba06172a4821f2c417fcc7fccb3b8dc04'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
