@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/CherryHQ/cherry-studio/releases/download/v2.2.0/Cherry-Studio-2.2.0-win-x64-setup.exe'
-  checksum64     = '51eb2fc733742b101605ccca85abaf518c2572078f3c3cac491f812f9b372a97'
+  url64          = 'https://github.com/CherryHQ/cherry-studio/releases/download/v2.2.1/Cherry-Studio-2.2.1-win-x64-setup.exe'
+  checksum64     = '365db7bbb4be5117ee6869f718fa92c8d9d0fd8f4918ed3e5e9c92f1da638601'
   checksumType64 = 'sha256'
   softwareName   = 'Cherry Studio*'
   silentArgs     = '/S'
