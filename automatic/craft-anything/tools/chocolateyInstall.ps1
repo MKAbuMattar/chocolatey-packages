@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/craft-anything/releases/download/v0.6.0/craft-anything-0.6.0-windows-x64.msi'
-  checksum64     = 'a650c94819e6f8f6edccb2bbd804130413a273148a746edaff07e3590c75d042'
+  url64          = 'https://github.com/storytold/craft-anything/releases/download/v0.6.1/craft-anything-0.6.1-windows-x64.msi'
+  checksum64     = 'e0d4daf96d657f98efda7348b20d399b183f2411cde00aea0116a685e6af2cdd'
   checksumType64 = 'sha256'
   softwareName   = 'Craft Anything*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
