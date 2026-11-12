@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>texturecraft</id>
-    <version>0.6.0</version>
+    <version>0.6.1</version>
     <title>TextureCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -22,7 +22,7 @@ The package installs the TextureCraft desktop app. Start it from the Start Menu.
 [TextureCraft on getartcraft.com](https://getartcraft.com/apps/texturecraft) for more.
 ]]></description>
     <summary>Open-source 3D texture painting app, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/texturecraft/releases/tag/v0.6.0</releaseNotes>
+    <releaseNotes>https://github.com/storytold/texturecraft/releases/tag/v0.6.1</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the TextureCraft contributors</copyright>
     <tags>texturecraft texture-painting 3d pbr materials texturing rust</tags>
     <projectSourceUrl>https://github.com/storytold/texturecraft</projectSourceUrl>
