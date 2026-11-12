@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/filmcraft/releases/download/v0.20.0/filmcraft-0.20.0-windows-x64.msi'
-  checksum64     = '10d3b7748b609e5a90d07c4f16ff4be9dc579ebc2d6e77fceeb7cf2e7b3a1dc8'
+  url64          = 'https://github.com/storytold/filmcraft/releases/download/v0.20.1/filmcraft-0.20.1-windows-x64.msi'
+  checksum64     = '165c0f333d995ced16c0b0ebc0b29cc9b7ad358bc812c705659d78e59aa25449'
   checksumType64 = 'sha256'
   softwareName   = 'FilmCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
