@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/cadcraft/releases/download/v0.20.0/cadcraft-0.20.0-windows-x64.msi'
-  checksum64     = '14101fe317298afda535bab21cbfbf8e4e62a73f0a75af20f5aebf29bca1b1ea'
+  url64          = 'https://github.com/storytold/cadcraft/releases/download/v0.20.1/cadcraft-0.20.1-windows-x64.msi'
+  checksum64     = 'a2a179eba42b72f77eb0714fbf5570470a173fb913bc7443dabd536c0f08253c'
   checksumType64 = 'sha256'
   softwareName   = 'CADCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'
