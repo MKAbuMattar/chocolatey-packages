@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/lobehub/lobehub/releases/download/v2.3.2/LobeHub-2.3.2-setup.exe'
-  checksum64     = '7ac7056d7cd51b85506184cd0cdb3c1e058cc45188ddb29f9031d7aa3958d563'
+  url64          = 'https://github.com/lobehub/lobehub/releases/download/v2.3.3/LobeHub-2.3.3-setup.exe'
+  checksum64     = '5d50dbd64e1282b99bfea3ee0b82b3ba4bdeb72a65d3a2b25b27fb9ee5744d1a'
   checksumType64 = 'sha256'
   softwareName   = 'LobeHub*'
   silentArgs     = '/S'
