@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/nubjs/nub/releases/download/v0.10.0/nub-win32-x64.zip'
-  checksum64     = '53fe2a1719d93e1fa209cd3737cc438690596ecfe1c867135b24f7f133c7a7f8'
+  url64          = 'https://github.com/nubjs/nub/releases/download/v0.11.0/nub-win32-x64.zip'
+  checksum64     = '14e428c144cb6728287cedee5cd5e5a2b0c359a2fbe2eb0bbc5db5c266d9cee1'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
