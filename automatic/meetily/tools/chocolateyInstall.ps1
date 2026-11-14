@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/Zackriya-Solutions/meetily/releases/download/v0.4.1/meetily_0.4.1_x64_en-US.msi'
-  checksum64     = 'fe31ec9fb247821de411e95635c43a3399354dd8a2ce9263460412b021a4d72b'
+  url64          = 'https://github.com/Zackriya-Solutions/meetily/releases/download/v0.5.0/meetily_0.5.0_x64_en-US.msi'
+  checksum64     = '34333b28a2f8f5851ee546e5f917e2612dcca36729d1d6989a7854a86ba4d7ba'
   checksumType64 = 'sha256'
   softwareName   = 'meetily*'
   silentArgs     = '/qn /norestart'
