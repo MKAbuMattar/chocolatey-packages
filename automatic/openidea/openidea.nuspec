@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>openidea</id>
-    <version>0.1.44</version>
+    <version>0.1.45</version>
     <title>OpenIDEA</title>
     <authors>l0ng-ai</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -23,7 +23,7 @@ The package installs the OpenIDEA desktop app. Start it from the Start Menu and 
 project. See [github.com/l0ng-ai/openidea](https://github.com/l0ng-ai/openidea) for more.
 ]]></description>
     <summary>The IDE you know, rebuilt in Rust</summary>
-    <releaseNotes>https://github.com/l0ng-ai/openidea/releases/tag/v0.1.44</releaseNotes>
+    <releaseNotes>https://github.com/l0ng-ai/openidea/releases/tag/v0.1.45</releaseNotes>
     <copyright>Copyright OpenIDEA contributors</copyright>
     <tags>openidea ide intellij code-editor rust tauri debugger git lsp developer-tools</tags>
     <projectSourceUrl>https://github.com/l0ng-ai/openidea</projectSourceUrl>
