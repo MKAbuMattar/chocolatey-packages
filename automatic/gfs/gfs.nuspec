@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>gfs</id>
-    <version>0.4.0</version>
+    <version>0.5.0</version>
     <title>GFS</title>
     <authors>Guepard-Corp</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 Git For database Systems.
 ]]></description>
     <summary>Git For database Systems</summary>
-    <releaseNotes>https://github.com/Guepard-Corp/gfs/releases/tag/v0.4.0</releaseNotes>
+    <releaseNotes>https://github.com/Guepard-Corp/gfs/releases/tag/v0.5.0</releaseNotes>
     <copyright>Copyright 2026 Guepard, Inc</copyright>
     <tags>gfs agentic-ai agents clickhouse database mcp mysql postgresql version-control git versioning cli</tags>
     <projectSourceUrl>https://github.com/Guepard-Corp/gfs</projectSourceUrl>
