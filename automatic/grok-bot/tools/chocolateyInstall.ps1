@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://downloads.cursor.com/grokbot/stable/win32-x64/1.0.3/Grok_Bot_1.0.3_Setup.exe'
-  checksum64     = '183bbc6752e80163f4eb7a729ba4326884d4554957337872509b426a1d856729'
+  url64          = 'https://downloads.cursor.com/grokbot/stable/win32-x64/1.1.0/Grok_Bot_1.1.0_Setup.exe'
+  checksum64     = '01ccb10f2144ea0eb787042c54fc4b8ca2c6f43eccb7dabe5fe5eb86fa5ed044'
   checksumType64 = 'sha256'
   softwareName   = 'Grok Bot*'
   silentArgs     = '/S'
