@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sql-studio</id>
-    <version>0.1.53</version>
+    <version>0.1.54</version>
     <title>SQL Studio</title>
     <authors>frectonz</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -15,7 +15,7 @@
 SQL Database Explorer [SQLite, libSQL, PostgreSQL, MySQL/MariaDB, ClickHouse, DuckDB, Microsoft SQL Server]
 ]]></description>
     <summary>SQL Database Explorer [SQLite, libSQL, PostgreSQL, MySQL/MariaDB, ClickHouse, DuckDB, Microsoft SQL Server]</summary>
-    <releaseNotes>https://github.com/frectonz/sql-studio/releases/tag/0.1.53</releaseNotes>
+    <releaseNotes>https://github.com/frectonz/sql-studio/releases/tag/0.1.54</releaseNotes>
     <copyright>Copyright 2024 frectonz</copyright>
     <tags>sql-studio duckdb libsql mariadb microsoft-sql-server mssql mysql postgresql rust</tags>
     <projectSourceUrl>https://github.com/frectonz/sql-studio</projectSourceUrl>
