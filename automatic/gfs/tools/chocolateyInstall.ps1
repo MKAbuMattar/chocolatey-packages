@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/Guepard-Corp/gfs/releases/download/v0.5.0/gfs-windows-x86_64.tar.gz'
-  checksum64     = 'f46582108840fa49a64f6266043d90d9ba0759d22f9d9c0d39d4d49e85af1255'
+  url64          = 'https://github.com/Guepard-Corp/gfs/releases/download/v0.5.2/gfs-windows-x86_64.tar.gz'
+  checksum64     = '5313d8996d408f7d68e8f2b5b7883e06a8e13354a62b868f7af7c510dc4f923c'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
