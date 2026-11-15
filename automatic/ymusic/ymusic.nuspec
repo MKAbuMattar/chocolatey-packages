@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ymusic</id>
+    <version>4.0.22</version>
+    <title>YMusic</title>
+    <authors>ymusic-io</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/ymusic-io/YMusicV4/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://ymusic.io</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@b0566101e5a745a59ddfbbdaa5997ed7d10fcf4d/icons/ymusic.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is YMusic?
+
+YMusic is an open-source music player for music and videos from YouTube, plus your own
+library. The desktop app is a native app written in Rust, built from the same player and
+engine as YMusic for Android and iOS.
+
+## Usage
+
+The package installs YMusic for all users. Start it from the Start Menu.
+]]></description>
+    <summary>Open-source music player for YouTube music and videos, plus your own library</summary>
+    <releaseNotes>https://github.com/ymusic-io/YMusicV4/releases/tag/release-v4.0.22</releaseNotes>
+    <copyright>Copyright ymusic-io</copyright>
+    <tags>ymusic music music-player youtube video player rust</tags>
+    <projectSourceUrl>https://github.com/ymusic-io/YMusicV4</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/ymusic-io/YMusicV4/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/ymusic</packageSourceUrl>
+    <docsUrl>https://github.com/ymusic-io/YMusicV4#readme</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
