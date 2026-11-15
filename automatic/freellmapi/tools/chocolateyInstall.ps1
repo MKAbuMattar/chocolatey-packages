@@ -5,8 +5,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/tashfeenahmed/freellmapi/releases/download/v0.16.29/FreeLLMAPI-Setup-0.16.29.exe'
-  checksum64     = 'b7bd3af4f8f5af9b8b665865d6946c5bd6ad026fdeb5f8d37cdf2b2a18b1f1f4'
+  url64          = 'https://github.com/tashfeenahmed/freellmapi/releases/download/v0.16.30/FreeLLMAPI-Setup-0.16.30.exe'
+  checksum64     = 'cb7a23beedd111d008867c0c2005883b268a066a24ac27e7c64dd833509f57ba'
   checksumType64 = 'sha256'
   softwareName   = 'FreeLLMAPI*'
   silentArgs     = '/S'
