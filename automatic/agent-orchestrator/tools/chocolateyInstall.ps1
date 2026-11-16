@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/OrchestratorInc/agent-orchestrator/releases/download/v0.15.2/Agent.Orchestrator.Setup.0.15.2.exe'
-  checksum64     = 'd6ba0f7f6d6746b3ef1d60959c15a714611a6004868d503b22dc4617c93cc3de'
+  url64          = 'https://github.com/OrchestratorInc/agent-orchestrator/releases/download/v0.15.3/Agent.Orchestrator.Setup.0.15.3.exe'
+  checksum64     = 'ea00e55137c4559edca3deb89b717964b714264c5a89feffd0af655eb5cb362a'
   checksumType64 = 'sha256'
   softwareName   = 'Agent Orchestrator*'
   silentArgs     = '/S'
