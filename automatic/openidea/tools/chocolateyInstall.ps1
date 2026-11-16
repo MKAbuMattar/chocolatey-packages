@@ -5,8 +5,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/l0ng-ai/openidea/releases/download/v0.1.45/OpenIDEA_0.1.45_x64_en-US.msi'
-  checksum64     = '86b10fd86b241ba89daaa1dae9200bdaec0dbfa2d0dca920bc00bc4b70fe6470'
+  url64          = 'https://github.com/l0ng-ai/openidea/releases/download/v0.1.46/OpenIDEA_0.1.46_x64_en-US.msi'
+  checksum64     = 'ee62b6ae3c04c9634440d7545c4e959f94f69c27c7ec43314e293bb635236525'
   checksumType64 = 'sha256'
   softwareName   = 'OpenIDEA*'
   silentArgs     = '/qn /norestart'
