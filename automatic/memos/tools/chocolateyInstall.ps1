@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/usememos/memos/releases/download/26.11.0/memos_26.11.0_windows_amd64.zip'
-  checksum64     = '3b5f7b92e11dc38b39a70e68ba4e734de870e5e098ea5a43f2c6b2817e1cbcc0'
+  url64          = 'https://github.com/usememos/memos/releases/download/26.11.1/memos_26.11.1_windows_amd64.zip'
+  checksum64     = 'b8aee773308cfe33642ee71a2f56ae58bdb169d7928b9d6e666a107335fb1d10'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
