@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/microsoft/apm/releases/download/v0.35.1/apm-windows-x86_64.zip'
-  checksum64     = '5725ca5c817c5d0b68a3093dbdd2c64c119ea85b5b588d6d4103801680809177'
+  url64          = 'https://github.com/microsoft/apm/releases/download/v0.36.0/apm-windows-x86_64.zip'
+  checksum64     = '7eaaa597dfcd9763cb76d4b982517a6b95ed152d8a97c4978c3ef3490b3eebb7'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
