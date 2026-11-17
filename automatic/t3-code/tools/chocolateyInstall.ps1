@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/pingdotgg/t3code/releases/download/v0.1.9/T3-Code-0.1.9-x64.exe'
-  checksum64     = '93603e971f1541c268cd9197341c713670a82a60027f2b56bd74fd54bc0a9122'
+  url64          = 'https://github.com/pingdotgg/t3code/releases/download/v0.1.10/T3-Code-0.1.10-x64.exe'
+  checksum64     = '65b009c28ca73586409bb81a15d2987681e456d1a695fb2575a1fda77d1c1ff3'
   checksumType64 = 'sha256'
   softwareName   = 'T3 Code*'
   silentArgs     = '/S'
