@@ -15,3 +15,12 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+
+# The MSI also installs anicraft-cli.exe, the app's command line and MCP server
+# (`anicraft-cli mcp`), but leaves it off PATH. The install folder differs between
+# Craft apps, so find it.
+$roots = @($env:ProgramFiles, ${env:ProgramFiles(x86)}) -ne $null
+$cli = Get-ChildItem $roots -Recurse -Depth 2 -Filter 'anicraft-cli.exe' -ErrorAction Ignore |
+  Select-Object -First 1
+if (!$cli) { throw 'anicraft-cli.exe was not found after the install.' }
+Install-BinFile -Name 'anicraft-cli' -Path $cli.FullName
