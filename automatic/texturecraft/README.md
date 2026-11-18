@@ -10,3 +10,6 @@ them, and export textures for any engine. It runs natively.
 
 The package installs the TextureCraft desktop app. Start it from the Start Menu. See
 [TextureCraft on getartcraft.com](https://getartcraft.com/apps/texturecraft) for more.
+
+It also puts `texturecraft-cli` on the PATH: `texturecraft-cli mcp` runs
+TextureCraft's MCP server, so AI agents can drive the app.

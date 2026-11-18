@@ -10,3 +10,6 @@ and can be driven end to end by AI agents over MCP.
 
 The package installs the LightCraft desktop app. Start it from the Start Menu. See
 [LightCraft on getartcraft.com](https://getartcraft.com/apps/lightcraft) for more.
+
+It also puts `lightcraft-cli` on the PATH: `lightcraft-cli mcp` runs
+LightCraft's MCP server, so AI agents can drive the app.

@@ -15,3 +15,12 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+
+# The MSI also installs craft-anything-cli.exe, the app's command line and MCP server
+# (`craft-anything-cli mcp`), but leaves it off PATH. The install folder differs between
+# Craft apps, so find it.
+$roots = @($env:ProgramFiles, ${env:ProgramFiles(x86)}) -ne $null
+$cli = Get-ChildItem $roots -Recurse -Depth 2 -Filter 'craft-anything-cli.exe' -ErrorAction Ignore |
+  Select-Object -First 1
+if (!$cli) { throw 'craft-anything-cli.exe was not found after the install.' }
+Install-BinFile -Name 'craft-anything-cli' -Path $cli.FullName

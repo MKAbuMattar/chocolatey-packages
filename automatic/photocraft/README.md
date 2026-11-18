@@ -11,3 +11,6 @@ users already know. It runs natively on a GPU compositor and works offline.
 
 The package installs the PhotoCraft desktop app. Start it from the Start Menu. See
 [PhotoCraft on getartcraft.com](https://getartcraft.com/apps/photocraft) for more.
+
+It also puts `photocraft-cli` on the PATH: `photocraft-cli mcp` runs
+PhotoCraft's MCP server, so AI agents can drive the app.

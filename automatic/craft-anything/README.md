@@ -11,3 +11,6 @@ and needs a coding agent to do the building.
 
 The package installs the Craft Anything desktop app. Start it from the Start Menu. See
 [Craft Anything on getartcraft.com](https://getartcraft.com/apps/craft-anything) for more.
+
+It also puts `craft-anything-cli` on the PATH: `craft-anything-cli mcp` runs
+Craft Anything's MCP server, so AI agents can drive the app.

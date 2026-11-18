@@ -11,3 +11,6 @@ natively and works offline.
 
 The package installs the FigCraft desktop app. Start it from the Start Menu. See
 [FigCraft on getartcraft.com](https://getartcraft.com/apps/figcraft) for more.
+
+It also puts `figcraft-cli` on the PATH: `figcraft-cli mcp` runs
+FigCraft's MCP server, so AI agents can drive the app.

@@ -11,3 +11,6 @@ natively.
 
 The package installs the MaterialCraft desktop app. Start it from the Start Menu. See
 [MaterialCraft on getartcraft.com](https://getartcraft.com/apps/materialcraft) for more.
+
+It also puts `materialcraft-cli` on the PATH: `materialcraft-cli mcp` runs
+MaterialCraft's MCP server, so AI agents can drive the app.

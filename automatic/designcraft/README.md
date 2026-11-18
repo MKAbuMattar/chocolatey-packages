@@ -10,3 +10,6 @@ workflow as a clean-room reimplementation, and runs natively.
 
 The package installs the DesignCraft desktop app. Start it from the Start Menu. See
 [DesignCraft on getartcraft.com](https://getartcraft.com/apps/designcraft) for more.
+
+It also puts `designcraft-cli` on the PATH: `designcraft-cli mcp` runs
+DesignCraft's MCP server, so AI agents can drive the app.
