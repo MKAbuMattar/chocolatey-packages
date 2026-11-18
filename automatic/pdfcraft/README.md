@@ -13,3 +13,6 @@ install in place.
 
 The package installs the PdfCraft desktop app. Start it from the Start Menu. See
 [PdfCraft on getartcraft.com](https://getartcraft.com/apps/pdfcraft) for more.
+
+It also puts `pdfcraft-cli` on the PATH: `pdfcraft-cli mcp` runs
+PdfCraft's MCP server, so AI agents can drive the app.

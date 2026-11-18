@@ -21,6 +21,9 @@ natively.
 
 The package installs the MaterialCraft desktop app. Start it from the Start Menu. See
 [MaterialCraft on getartcraft.com](https://getartcraft.com/apps/materialcraft) for more.
+
+It also puts `materialcraft-cli` on the PATH: `materialcraft-cli mcp` runs
+MaterialCraft's MCP server, so AI agents can drive the app.
 ]]></description>
     <summary>Open-source node-based procedural material designer, written in Rust</summary>
     <releaseNotes>https://github.com/storytold/materialcraft/releases/tag/v0.4.1</releaseNotes>

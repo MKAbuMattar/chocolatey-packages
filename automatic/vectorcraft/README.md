@@ -10,3 +10,6 @@ Pathfinder operations, effects and clipping masks, and runs natively.
 
 The package installs the VectorCraft desktop app. Start it from the Start Menu. See
 [VectorCraft on getartcraft.com](https://getartcraft.com/apps/vectorcraft) for more.
+
+It also puts `vectorcraft-cli` on the PATH: `vectorcraft-cli mcp` runs
+VectorCraft's MCP server, so AI agents can drive the app.

@@ -10,3 +10,6 @@ reimplementation, and runs natively.
 
 The package installs the FilmCraft desktop app. Start it from the Start Menu. See
 [FilmCraft on getartcraft.com](https://getartcraft.com/apps/filmcraft) for more.
+
+It also puts `filmcraft-cli` on the PATH: `filmcraft-cli mcp` runs
+FilmCraft's MCP server, so AI agents can drive the app.

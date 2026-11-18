@@ -11,3 +11,6 @@ It runs natively.
 
 The package installs the CADCraft desktop app. Start it from the Start Menu. See the
 [project README](https://github.com/storytold/cadcraft#readme) for more.
+
+It also puts `cadcraft-cli` on the PATH: `cadcraft-cli mcp` runs
+CADCraft's MCP server, so AI agents can drive the app.

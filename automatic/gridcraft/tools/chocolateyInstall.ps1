@@ -15,3 +15,12 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+
+# The MSI also installs gridcraft-cli.exe, the app's command line and MCP server
+# (`gridcraft-cli mcp`), but leaves it off PATH. The install folder differs between
+# Craft apps, so find it.
+$roots = @($env:ProgramFiles, ${env:ProgramFiles(x86)}) -ne $null
+$cli = Get-ChildItem $roots -Recurse -Depth 2 -Filter 'gridcraft-cli.exe' -ErrorAction Ignore |
+  Select-Object -First 1
+if (!$cli) { throw 'gridcraft-cli.exe was not found after the install.' }
+Install-BinFile -Name 'gridcraft-cli' -Path $cli.FullName

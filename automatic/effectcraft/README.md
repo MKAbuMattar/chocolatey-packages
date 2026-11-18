@@ -11,3 +11,6 @@ clean-room reimplementation.
 
 The package installs the EffectCraft desktop app. Start it from the Start Menu. See
 [EffectCraft on getartcraft.com](https://getartcraft.com/apps/effectcraft) for more.
+
+It also puts `effectcraft-cli` on the PATH: `effectcraft-cli mcp` runs
+EffectCraft's MCP server, so AI agents can drive the app.

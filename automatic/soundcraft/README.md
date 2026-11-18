@@ -11,3 +11,6 @@ natively.
 
 The package installs the SoundCraft desktop app. Start it from the Start Menu. See the
 [project README](https://github.com/storytold/soundcraft#readme) for more.
+
+It also puts `soundcraft-cli` on the PATH: `soundcraft-cli mcp` runs
+SoundCraft's MCP server, so AI agents can drive the app.

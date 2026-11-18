@@ -10,3 +10,6 @@ conditional formatting, sparklines and charts, and runs natively.
 
 The package installs the GridCraft desktop app. Start it from the Start Menu. See the
 [project README](https://github.com/storytold/gridcraft#readme) for more.
+
+It also puts `gridcraft-cli` on the PATH: `gridcraft-cli mcp` runs
+GridCraft's MCP server, so AI agents can drive the app.

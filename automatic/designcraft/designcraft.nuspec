@@ -20,6 +20,9 @@ workflow as a clean-room reimplementation, and runs natively.
 
 The package installs the DesignCraft desktop app. Start it from the Start Menu. See
 [DesignCraft on getartcraft.com](https://getartcraft.com/apps/designcraft) for more.
+
+It also puts `designcraft-cli` on the PATH: `designcraft-cli mcp` runs
+DesignCraft's MCP server, so AI agents can drive the app.
 ]]></description>
     <summary>Open-source page layout and publishing app, written in Rust</summary>
     <releaseNotes>https://github.com/storytold/designcraft/releases/tag/v0.20.1</releaseNotes>
