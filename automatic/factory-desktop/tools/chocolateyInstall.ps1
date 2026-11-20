@@ -5,8 +5,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://downloads.factory.ai/factory-desktop/releases/1.15.0/win32/x64/Factory-1.15.0%20Setup.exe'
-  checksum64     = '3f90b43053d2ce8d1017e386040151b3e69fbc75f0d4b2210cf0ff6cb5a39afb'
+  url64          = 'https://downloads.factory.ai/factory-desktop/releases/1.16.0/win32/x64/Factory-1.16.0%20Setup.exe'
+  checksum64     = '541cd45da9516ff61d596149c9ed46bfaf7bccf6204865a837dc579b87a601cd'
   checksumType64 = 'sha256'
   softwareName   = 'Factory'
   silentArgs     = '--silent'
