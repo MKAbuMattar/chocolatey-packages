@@ -4,8 +4,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/ymusic-io/YMusicV4/releases/download/release-v4.0.26/YMusic-4.0.26-windows-x64-setup.exe'
-  checksum64     = 'ebac24b87a3e1dc683a6e1a6f54114d5799645a878116f89aead0ad2dd81d718'
+  url64          = 'https://github.com/ymusic-io/YMusicV4/releases/download/release-v4.0.27/YMusic-4.0.27-windows-x64-setup.exe'
+  checksum64     = 'f7c1e7f490e800697d6aeb3ef10d28f3ec555a2bafd94a14284601abf738b0b9'
   checksumType64 = 'sha256'
   softwareName   = 'YMusic*'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
