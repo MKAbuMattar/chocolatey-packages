@@ -6,8 +6,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 # Chocolatey shims; the .bat helpers beside them are not.
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/codewhale-hq/Codewhale/releases/download/v0.10.2/codewhale-windows-x64.zip'
-  checksum64     = '21b27337a24d2f555ca3b4a1c5c47f5808a4939a363be14076655c4521ab272c'
+  url64          = 'https://github.com/codewhale-hq/Codewhale/releases/download/v0.10.3/codewhale-windows-x64.zip'
+  checksum64     = 'b11f3a144dd7c422114a5aaa99ab58493500f690f7e1c6a0ee199da850e4ef76'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
