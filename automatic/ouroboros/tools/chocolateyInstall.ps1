@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/Q00/ouroboros/releases/download/v0.65.1/ouroboros-tui-x86_64-pc-windows-msvc.exe'
-  checksum64     = '49bcb5da2a60e83e2a66d94446a79208073e50bfe5afd578557187bb97b6e881'
+  url64          = 'https://github.com/Q00/ouroboros/releases/download/v0.65.2/ouroboros-tui-x86_64-pc-windows-msvc.exe'
+  checksum64     = '179d33bb210995e8da5bb7d16447dc241789c3e654270bb46e5e94541590ffcb'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'ouroboros.exe'
 }
