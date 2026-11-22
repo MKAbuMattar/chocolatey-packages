@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/JustVugg/colibri/releases/download/v2.1.0/colibri-v2.1.0-windows-x86_64.zip'
-  checksum64     = '195ee0be129d563789f1ade2383e023bde5519230d6fb508516e63767ee85465'
+  url64          = 'https://github.com/JustVugg/colibri/releases/download/v2.2.0/colibri-v2.2.0-windows-x86_64.zip'
+  checksum64     = 'e0591f374bbfd95c181cf0212d494edd09660455d0677288232853f00ba063e1'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
