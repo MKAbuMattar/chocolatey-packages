@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/n8n-io/nod/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://nod.n8n.io/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@9d87bad4450045c7dd2e7ef41b327b845e4a6703/icons/nod.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@c522ab79f60a6b81462d6d9a108faf4034a93fe0/icons/nod.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Nod?
 
