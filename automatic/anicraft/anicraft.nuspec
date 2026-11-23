@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/storytold/anicraft/blob/main/LICENSE-APACHE</licenseUrl>
     <projectUrl>https://getartcraft.com/apps/anicraft</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@c3c4fbcbed271ba7bf948065d3b4923c007a797d/icons/anicraft.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@a48ac91d7d43b2259e583025f25376adbb8839f6/icons/anicraft.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is AniCraft?
 
