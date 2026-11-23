@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pyrefly</id>
+    <version>1.5.0</version>
+    <title>Pyrefly</title>
+    <authors>pyrefly-org</authors>
+    <owners>Mohammad Abu Mattar</owners>
+    <licenseUrl>https://github.com/pyrefly-org/pyrefly/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://pyrefly.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@main/icons/pyrefly.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## What is Pyrefly?
+
+Pyrefly is a fast type checker and language server for Python, written in Rust. It
+checks large codebases in seconds, infers types for unannotated code, and powers IDE
+features such as go-to-definition, hover and completions.
+
+## Usage
+
+The package puts `pyrefly` on the PATH. Run `pyrefly init` in a project to create its
+config, then `pyrefly check` to type check it. See [pyrefly.org](https://pyrefly.org/)
+for more.
+]]></description>
+    <summary>A fast type checker and language server for Python</summary>
+    <releaseNotes>https://github.com/pyrefly-org/pyrefly/releases/tag/1.5.0</releaseNotes>
+    <copyright>Copyright Meta Platforms, Inc. and affiliates</copyright>
+    <tags>pyrefly python type-checker typing language-server lsp rust cli</tags>
+    <projectSourceUrl>https://github.com/pyrefly-org/pyrefly</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/pyrefly-org/pyrefly/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/MKAbuMattar/chocolatey-packages/tree/main/automatic/pyrefly</packageSourceUrl>
+    <docsUrl>https://pyrefly.org/en/docs/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
