@@ -8,7 +8,7 @@
     <owners>Mohammad Abu Mattar</owners>
     <licenseUrl>https://github.com/pyrefly-org/pyrefly/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://pyrefly.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@4a4af2fcad6470255ff49022fa335ebda1ba3d8b/icons/pyrefly.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/MKAbuMattar/chocolatey-packages@5b0208157ccea01b1b818bd73bf58cc1803c1358/icons/pyrefly.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## What is Pyrefly?
 
