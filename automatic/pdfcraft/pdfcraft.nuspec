@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>pdfcraft</id>
-    <version>0.21.1</version>
+    <version>0.22.0</version>
     <title>PdfCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -28,7 +28,7 @@ It also puts `pdfcraft-cli` on the PATH: `pdfcraft-cli mcp` runs
 PdfCraft's MCP server, so AI agents can drive the app.
 ]]></description>
     <summary>Open-source PDF workbench to read, organize, combine and secure PDFs, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/pdfcraft/releases/tag/v0.21.1</releaseNotes>
+    <releaseNotes>https://github.com/storytold/pdfcraft/releases/tag/v0.22.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the PdfCraft contributors</copyright>
     <tags>pdfcraft printcraft pdf pdf-editor documents rust</tags>
     <projectSourceUrl>https://github.com/storytold/pdfcraft</projectSourceUrl>
