@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/sharpemu/sharpemu/releases/download/v0.0.7-pulse/sharpemu-0.0.7-pulse-win-x64.zip'
-  checksum64     = '3ab0ac49f2401dc8aa73ec671e6c83fb7785f7aacbaedc194de15c2bc4d0733c'
+  url64          = 'https://github.com/sharpemu/sharpemu/releases/download/v0.0.8-ember/sharpemu-0.0.8-ember-win-x64.zip'
+  checksum64     = '90bc73f0a87cee238dffa0328bc4bd5bf2bd23831fe6f4888e282fcff8e6c229'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
