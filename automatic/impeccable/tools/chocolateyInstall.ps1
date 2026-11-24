@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/pbakaus/impeccable/releases/download/engine-v0.1.29/impeccable-windows-x64.exe'
-  checksum64     = 'f1d636673a945601b90c4f37ddeee51014ee759e715af41f07199abf07386ed6'
+  url64          = 'https://github.com/pbakaus/impeccable/releases/download/engine-v0.1.30/impeccable-windows-x64.exe'
+  checksum64     = '8d24aca8fafda621dae8c717c427552d8007b2eaeb40309e80298b41caa54361'
   checksumType64 = 'sha256'
   fileFullPath   = Join-Path $toolsPath 'impeccable.exe'
 }
