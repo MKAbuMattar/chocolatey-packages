@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64          = 'https://github.com/tnodir/fort/releases/download/v3.21.1/FortFirewall-3.21.1-windows10-x86_64.exe'
-  checksum64     = 'b237f1eef238bb7061889af60017e87f8af57b4231532deee4a31ee878473833'
+  url64          = 'https://github.com/tnodir/fort/releases/download/v3.21.2/FortFirewall-3.21.2-windows10-x86_64.exe'
+  checksum64     = '4ba3b803de02c7db3f8bd0fdcf5890ed186d23e9ea6d00770353b3d75570c5ff'
   checksumType64 = 'sha256'
   softwareName   = 'Fort Firewall*'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
