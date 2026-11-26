@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/charmbracelet/crush/releases/download/v0.102.0/crush_0.102.0_Windows_x86_64.zip'
-  checksum64     = 'd9e60f2003210b54946b840dc1ef20a266ff633bdf67b43b8b8d155eadfd2f13'
+  url64          = 'https://github.com/charmbracelet/crush/releases/download/v0.103.0/crush_0.103.0_Windows_x86_64.zip'
+  checksum64     = 'e5845ae5cc160c7ea47c33fd96035d5361246db9efb2ed7a22ea6c1cfe718753'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
