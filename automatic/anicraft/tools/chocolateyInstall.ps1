@@ -6,8 +6,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'MSI'
-  url64          = 'https://github.com/storytold/anicraft/releases/download/v0.2.1/anicraft-0.2.1-windows-x64.msi'
-  checksum64     = '835ef10e964ae18169cc65bb5189953f5b4894d9725a31739cd16b2221fe8b92'
+  url64          = 'https://github.com/storytold/anicraft/releases/download/v0.3.0/anicraft-0.3.0-windows-x64.msi'
+  checksum64     = 'b5aeef74c989811159bef331faac80fb4508307c56b74a139573bb03b1e4cbcb'
   checksumType64 = 'sha256'
   softwareName   = 'AniCraft*'
   silentArgs     = '/qn /norestart ALLUSERS=1'

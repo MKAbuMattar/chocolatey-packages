@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>anicraft</id>
-    <version>0.2.1</version>
+    <version>0.3.0</version>
     <title>AniCraft</title>
     <authors>storytold</authors>
     <owners>Mohammad Abu Mattar</owners>
@@ -25,7 +25,7 @@ It also puts `anicraft-cli` on the PATH: `anicraft-cli mcp` runs
 AniCraft's MCP server, so AI agents can drive the app.
 ]]></description>
     <summary>Open-source 2D vector animation app, written in Rust</summary>
-    <releaseNotes>https://github.com/storytold/anicraft/releases/tag/v0.2.1</releaseNotes>
+    <releaseNotes>https://github.com/storytold/anicraft/releases/tag/v0.3.0</releaseNotes>
     <copyright>Copyright (c) 2026 ArtCraft Team and the AniCraft contributors</copyright>
     <tags>anicraft animation 2d-animation vector tweening keyframes rust</tags>
     <projectSourceUrl>https://github.com/storytold/anicraft</projectSourceUrl>
