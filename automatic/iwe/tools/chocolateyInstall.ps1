@@ -4,8 +4,8 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url64          = 'https://github.com/iwe-org/iwe/releases/download/iwe-v0.35.1/iwe-v0.35.1-x86_64-pc-windows-msvc.zip'
-  checksum64     = '9c20fa3e01237fb43d08473055f2a5827c873e4822008d874e4b164a4a519f76'
+  url64          = 'https://github.com/iwe-org/iwe/releases/download/iwe-v0.36.0/iwe-v0.36.0-x86_64-pc-windows-msvc.zip'
+  checksum64     = '9dcd15bd6bac87aa2896881ec44bc60d2ef84692681c7b8fccdbcc0323cf218f'
   checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
